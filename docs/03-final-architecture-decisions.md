@@ -4,7 +4,8 @@
 **Document Type:** Architecture Decision Baseline  
 **Status:** Approved baseline for execution planning  
 **Date:** 2026-09-29  
-**Purpose:** Freeze the current architectural decisions before creating the implementation plan and before selecting any final open-source backend.
+**Purpose:** Freeze the current architectural decisions before creating the implementation plan and before selecting any final open-source backend.  
+**Revision note:** Provider scope and observed provider/client compatibility updated to the verified 2026-09-29 operational baseline.
 
 ---
 
@@ -134,12 +135,19 @@ Level 2 must be designed to support:
 
 ## Providers
 
-- RelayRouter
+### Initial live providers
+
 - A6api
-- OpenRouter
+- RelayRouter
+
+### Future / optional provider adapter targets
+
 - generic OpenAI-compatible providers
 - generic Anthropic-compatible providers
 - future/custom providers
+- OpenRouter may be added later, but it is **out of the initial live provider scope**
+
+The architecture must remain provider-extensible even though only A6api and RelayRouter are required for the initial live implementation and POC.
 
 ## Compatibility
 
@@ -704,15 +712,16 @@ Each test must have objective pass/fail criteria.
 
 # 21. Provider Scope for Initial Planning
 
-Initial providers:
+The initial **live** provider scope is:
 
 ```text
-RelayRouter
 A6api
-OpenRouter
+RelayRouter
 ```
 
-The architecture must also support:
+OpenRouter is **not** part of the initial live implementation or mandatory POC provider set.
+
+The architecture must still remain able to support:
 
 ```text
 Generic OpenAI-Compatible Provider
@@ -720,7 +729,132 @@ Generic Anthropic-Compatible Provider
 Future Custom Providers
 ```
 
-Direct OpenAI and/or Anthropic access may be used as control baselines during testing if credentials are available.
+OpenRouter, Direct OpenAI, Direct Anthropic, or other providers may be added later through those replaceable provider interfaces without changing Shofni's canonical contracts.
+
+## Current Operational Provider Roles
+
+### A6api — Primary Provider
+
+A6api is the current primary operational provider.
+
+Observed project baseline:
+
+```text
+Codex        ✅ supported
+Claude Code  ✅ supported
+OpenCode     ✅ supported
+
+Chat         ✅ supported
+Tools        ✅ supported
+Agent use    ✅ supported
+```
+
+A6api is therefore the initial positive-control provider for client, protocol, tool, and agent-workflow POC testing.
+
+A6api also provides provider-side routing across multiple underlying source/supplier routes for logical model IDs, including official-source options and smart source selection where available.
+
+Shofni must treat these as two distinct fallback layers:
+
+```text
+Layer 1:
+A6api internal source / supplier selection and failover
+
+Layer 2:
+Shofni provider / model routing and fallback
+```
+
+They must not be conflated in diagnostics, evidence, or task-continuity logic.
+
+A model ID exposed through A6api should therefore be treated as a logical model route unless an underlying supplier/source is explicitly pinned.
+
+### RelayRouter — OpenCode Chat-Only Compatibility Target
+
+RelayRouter has a narrower observed role.
+
+Current project baseline:
+
+```text
+OpenCode chat                 ✅ supported
+
+OpenCode native usable tools  ❌ unsupported
+OpenCode tool-dependent work  ❌ unsupported directly
+
+Codex                         ❌ unsupported
+Claude Code                   ❌ unsupported
+```
+
+RelayRouter must **not** be represented as a general direct provider for all three clients.
+
+Its currently proven Level 2 direct-client role is:
+
+```text
+OpenCode
+→ RelayRouter
+→ chat only
+```
+
+Its strategic value is as a real chat-only compatibility target for Shofni capabilities such as:
+
+```text
+tool emulation
+text-to-tool parsing
+malformed tool-call repair
+sequential continuation
+capability probing
+compatibility diagnostics
+```
+
+The target path is:
+
+```text
+OpenCode
+↓
+Shofni
+↓
+RelayRouter chat
+↓
+text / structured action intent
+↓
+Shofni parsing / emulation / repair
+↓
+valid OpenCode tool call
+↓
+OpenCode executes locally
+```
+
+There is currently no direct RelayRouter Level 2 path for Codex or Claude Code.
+
+Protocol-level chat-only tests for Codex Responses or Claude Code Messages must use controlled synthetic provider fixtures/test doubles unless a future live provider path is separately proven.
+
+## Provider Evidence Rule
+
+Provider documentation and compatibility labels do not override reproducible runtime evidence.
+
+Use this precedence:
+
+```text
+1. Reproducible live runtime test
+2. Shofni capability probe
+3. Provider documentation
+4. Static model metadata
+5. Compatibility / marketing labels
+```
+
+Therefore the current operational matrix is:
+
+| Client | A6api | RelayRouter |
+|---|---|---|
+| Codex | ✅ Working | ❌ Unsupported |
+| Claude Code | ✅ Working | ❌ Unsupported |
+| OpenCode | ✅ Working with tools | ⚠️ Chat only |
+
+The detailed provider capability source of truth is maintained in:
+
+```text
+04-provider-inventory.md
+```
+
+When this architecture file contains older exploratory provider assumptions, the newer verified provider inventory takes precedence for operational planning.
 
 ---
 
@@ -859,14 +993,17 @@ The following decisions are considered approved for the implementation-plan stag
 10. Runtime POC candidates are OpenHands SDK and Mastra.
 11. Tool emulation, repair, capability probing, and compatibility testing are strategic Shofni concerns.
 12. Initial clients are Codex, Claude Code, and OpenCode.
-13. Initial providers are RelayRouter, A6api, and OpenRouter.
-14. Level 2 tool execution is client-owned.
-15. Level 3 tool execution is runtime-owned.
-16. Default Shofni execution authorization is unrestricted.
-17. Reliability validation remains mandatory even in unrestricted mode.
-18. The project is intended for public GitHub distribution.
-19. Backend selection is blocked on objective POC evidence.
-20. The implementation plan must preserve a clean Level 2 → Level 3 evolution path.
+13. Initial live providers are A6api and RelayRouter; OpenRouter is outside the initial live scope.
+14. A6api is the primary provider and is currently observed working with Codex, Claude Code, and OpenCode, including usable tool/agent workflows.
+15. RelayRouter is currently an OpenCode chat-only provider: native usable tools are unavailable, and direct Codex/Claude Code support is not part of the current operational baseline.
+16. A6api provider-side source/supplier selection and failover is separate from Shofni provider/model fallback and must be diagnosed separately.
+17. Level 2 tool execution is client-owned.
+18. Level 3 tool execution is runtime-owned.
+19. Default Shofni execution authorization is unrestricted.
+20. Reliability validation remains mandatory even in unrestricted mode.
+21. The project is intended for public GitHub distribution.
+22. Backend selection is blocked on objective POC evidence.
+23. The implementation plan must preserve a clean Level 2 → Level 3 evolution path.
 
 ---
 
