@@ -1,0 +1,3 @@
+{"arguments_fragment":"","content_delta":"Inspecting the fixture input.","event_type":"response.content.delta","sequence":0,"terminal":false,"tool_call_id_fragment":""}
+{"arguments_fragment":"{\"path\":\"inpu","content_delta":"","event_type":"response.output_item.added","sequence":1,"terminal":false,"tool_call_id_fragment":"call_98b8e3871"}
+{"arguments_fragment":"t/alpha.txt\"}","content_delta":"","event_type":"response.function_call_arguments.delta","sequence":2,"terminal":false,"tool_call_id_fragment":"299d35a3b056818"}
