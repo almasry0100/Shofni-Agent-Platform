@@ -390,7 +390,7 @@ No secrets belong in Git.
 | Python 3.12 | ✅ READY |
 | Python pip | ✅ READY |
 | A6api credential | ✅ PRESENT |
-| RelayRouter credential | ⚠️ NOT VISIBLE |
+| RelayRouter credential | ✅ PRESENT |
 | OpenRouter credential | ⚠️ NOT VISIBLE |
 | Direct OpenAI credential | OPTIONAL |
 | Direct Anthropic credential | OPTIONAL |
@@ -416,9 +416,9 @@ GitHub CLI ✅
 Python 3.12 ✅
 ```
 
-Remaining credential gaps should be resolved only when the corresponding live provider scenario is about to run.
+No credential gaps remain for the initial live-provider scope (A6api + RelayRouter).
 
-They do not block writing the POC specification.
+Optional or future provider credentials may remain unconfigured until those providers are intentionally added to the execution scope.
 
 ---
 

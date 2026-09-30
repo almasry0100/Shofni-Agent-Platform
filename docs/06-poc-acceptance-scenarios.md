@@ -1654,7 +1654,7 @@ Current workstation evidence already establishes readiness for the client/toolch
 
 A6api credential was present in the latest readiness snapshot.
 
-RelayRouter credential was not visible in that snapshot, so RelayRouter live tests remain blocked until that variable is configured in the execution environment.
+RelayRouter credential is now available to the execution environment, persists across new PowerShell processes, and live authentication against the RelayRouter Chat Completions route has been verified. RelayRouter live POC scenarios are therefore unblocked.
 
 ---
 
