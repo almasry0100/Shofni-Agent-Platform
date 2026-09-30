@@ -1,0 +1,26 @@
+from __future__ import annotations
+
+from typing import Protocol, runtime_checkable
+
+from ._serialization import JSONMapping
+from .checkpoint import Checkpoint
+from .task_state import TaskState
+
+
+@runtime_checkable
+class RuntimeBackend(Protocol):
+    def start(self) -> None: ...
+
+    def stop(self) -> None: ...
+
+    def create_task(self, task_spec: JSONMapping) -> TaskState: ...
+
+    def run(self, task_id: str) -> TaskState: ...
+
+    def checkpoint(self, task_id: str) -> Checkpoint: ...
+
+    def resume(self, checkpoint: Checkpoint) -> TaskState: ...
+
+    def interrupt(self, task_id: str) -> TaskState: ...
+
+    def inspect(self, task_id: str) -> TaskState: ...

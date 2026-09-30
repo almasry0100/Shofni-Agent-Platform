@@ -1,0 +1,54 @@
+{
+  "attempt_id": null,
+  "behavior_mode": "NOT_APPLICABLE",
+  "candidate": null,
+  "checkpoint_id": null,
+  "client": null,
+  "client_version": null,
+  "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+  "failure_class": null,
+  "live_provider_requests": 0,
+  "model_id": null,
+  "operation_id": null,
+  "phase": 1,
+  "protocol": null,
+  "provenance_references": [
+    {
+      "artifact_pin": null,
+      "candidate_tree_hash": null,
+      "digest": "sha256:ced63763eee8b9e0ee638304245867dc45c3d9763c132176374ff4556ff358e6",
+      "reference": "docs/poc/candidate-lock.json",
+      "reference_type": "candidate-lock",
+      "status": "PHASE_0_LOCK_REVALIDATED"
+    }
+  ],
+  "provider": null,
+  "request_id": null,
+  "result_status": "PASS",
+  "session_id": null,
+  "task_id": null,
+  "test_command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc",
+  "test_id": "PHASE_1_CONTRACTS_HARNESS_REDACTION_TAXONOMY",
+  "test_process_runs": [
+    {
+      "exit_code": 0,
+      "fresh_process": true,
+      "process": 1,
+      "tests_failed": 0,
+      "tests_passed": 15
+    },
+    {
+      "exit_code": 0,
+      "fresh_process": true,
+      "process": 2,
+      "tests_failed": 0,
+      "tests_passed": 15
+    }
+  ],
+  "test_run_id": "phase1-20260930T114201Z",
+  "tests_failed_per_process": 0,
+  "tests_passed_per_process": 15,
+  "timestamp_utc": "2026-09-30T11:42:01Z",
+  "tool_call_id": null,
+  "workspace_id": null
+}

@@ -1,0 +1,27 @@
+{
+  "categories_checked": [
+    "authorization_header_values",
+    "bearer_tokens",
+    "x_api_key_values",
+    "provider_api_keys",
+    "api_key_shaped_values",
+    "credential_environment_values",
+    "cookies_and_set_cookie_values",
+    "secret_query_parameters",
+    "github_tokens",
+    "windows_private_paths",
+    "posix_private_paths",
+    "nested_objects_and_lists",
+    "structured_error_messages_and_strings"
+  ],
+  "corpus_source": "synthetic_test_values_only",
+  "phase": 1,
+  "private_paths_checked": 2,
+  "private_paths_remaining_in_serialized_sanitized_output": 0,
+  "raw_debug_evidence_created": false,
+  "real_environment_values_read": false,
+  "result_status": "PASS",
+  "run_id": "phase1-20260930T114201Z",
+  "secret_values_checked": 13,
+  "secret_values_remaining_in_serialized_sanitized_output": 0
+}
