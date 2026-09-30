@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0",
+  "captured_date": "2026-09-30",
+  "tree_hash_definition": {
+    "algorithm": "shofni-tree-sha256-v1",
+    "description": "Enumerate regular files and symlink entries under the candidate root without following directory symlinks. Normalize each relative path to Unicode NFC with forward slashes. Hash each regular file's raw bytes with SHA-256; hash each symlink as SHA-256(bytes 'SYMLINK' + 0x00 + UTF-8 link target). Sort records by normalized relative path using ordinal Unicode order. The tree digest is SHA-256 over the UTF-8 bytes of each path, NUL, lowercase per-entry SHA-256 hex, LF, concatenated in sorted order. Empty directories are not represented.",
+    "excluded_directory_names": [
+      ".git", "node_modules", ".venv", "venv", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache", ".turbo", "dist", "build", "coverage", ".next", ".cache", ".pnpm-store"
+    ],
+    "exclusion_rule": "Exclude only directory names in the list above, which are VCS metadata, dependency caches, generated build output, test caches, or local runtime/cache state. No source file was excluded. Exclusions present in a particular hashed tree are listed in that candidate's provenance_notes."
+  },
+  "candidates": [
+    {
+      "candidate_name": "Bifrost",
+      "role": "Level 2 gateway candidate",
+      "sanitized_local_path": "<WORKSPACE_PARENT>/bifrost-dev",
+      "git_metadata_present": false,
+      "upstream_reference": "https://github.com/maximhq/bifrost",
+      "declared_version": null,
+      "tree_hash_algorithm": "shofni-tree-sha256-v1",
+      "tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+      "hash_exclusions": {
+        "directory_names_excluded_if_present": [".git", "node_modules", ".venv", "venv", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache", ".turbo", "dist", "build", "coverage", ".next", ".cache", ".pnpm-store"],
+        "present_exclusions": [],
+        "included_file_count": 5172
+      },
+      "manifest_files": [
+        "transports/go.mod", "core/go.mod", "framework/go.mod",
+        "plugins/compat/go.mod", "plugins/governance/go.mod", "plugins/jsonparser/go.mod", "plugins/logging/go.mod", "plugins/maxim/go.mod", "plugins/mocker/go.mod", "plugins/modelcatalogresolver/go.mod", "plugins/otel/go.mod", "plugins/prompts/go.mod", "plugins/routing/go.mod", "plugins/semanticcache/go.mod", "plugins/telemetry/go.mod", "transports/Dockerfile", "transports/bifrost-http/main.go", "LICENSE"
+      ],
+      "manifest_hashes": {
+        "transports/go.mod": "sha256:b0d6eb393e080abd97dcb719ac5c784dcdbd27f7ca3e8b162c8daaee29a2c666",
+        "core/go.mod": "sha256:71c1e50e1cded87dcedd4718fd4a9fc3eb850665b0c830f7f94d1b8f2dcd7f3f",
+        "framework/go.mod": "sha256:e114c19145de21b16445ca664c4befa72716a1702ae115f1db9f127aca62e5e7",
+        "plugins/compat/go.mod": "sha256:4ec8c11b59bbe69067f6d7602b060a0fb3171549d11b86b581100db25b27ea42",
+        "plugins/governance/go.mod": "sha256:7c329d92fb3a63305471077611cc92e8ec7a5889ae7b928d189c2a98d9fd68ff",
+        "plugins/jsonparser/go.mod": "sha256:8ad634a991c29db44754719f55803ce823ee3bebe8d52844f7cb9a40c0ce1ee8",
+        "plugins/logging/go.mod": "sha256:f3f11d0c15f7bb925adec0370fec97c3fe0c1213ea9361a8ab16bc7f5ac74ce8",
+        "plugins/maxim/go.mod": "sha256:e93216ce5ab755bb6000b729e43ede3eca6311976c151546f2ed4edf95d7bdbc",
+        "plugins/mocker/go.mod": "sha256:a38a67012a4b242d7001a698c3492c4176b28f6261fd4757375dee2cd414394a",
+        "plugins/modelcatalogresolver/go.mod": "sha256:1d6c5ff66e7b227be427f81560344c11e1d639525fe0206b917bef869bfac31a",
+        "plugins/otel/go.mod": "sha256:8ecd410e166167f10a90ff4d463a359deaccbf059e20dae00098bc49855b5d76",
+        "plugins/prompts/go.mod": "sha256:8953843c3feba5d82b32e9bb162deb7a816ded7410c29f4dd346fe59b73cdd17",
+        "plugins/routing/go.mod": "sha256:f40d49aebd6f875d2176d5d61d30df7b451bab496d7395fc26f71a2a2cef61d1",
+        "plugins/semanticcache/go.mod": "sha256:c43b020dd3490e0a4c180091638800eb4e655b5a177f34d228180b582243cc16",
+        "plugins/telemetry/go.mod": "sha256:8c9fd457622c40766971b99ab95650810a5788d32f8a15ba12f8a5afa4c7531a",
+        "transports/Dockerfile": "sha256:923e5a28e173e3e1d8c56666f9226062864d275310b59b2b91bea15ea3a26661",
+        "transports/bifrost-http/main.go": "sha256:7e29c5cf637e5c36363f51c1f1cbf454cb01730bd0c1bfcbfd5a6d130c0fd50f",
+        "LICENSE": "sha256:9108c6efb701f19614cf2ac8d644f1459b7d67bc570ffa15547e4dc2e734b4d1"
+      },
+      "lock_files": ["transports/go.sum", "core/go.sum", "framework/go.sum", "plugins/compat/go.sum", "plugins/governance/go.sum", "plugins/jsonparser/go.sum", "plugins/logging/go.sum", "plugins/maxim/go.sum", "plugins/mocker/go.sum", "plugins/modelcatalogresolver/go.sum", "plugins/otel/go.sum", "plugins/prompts/go.sum", "plugins/routing/go.sum", "plugins/semanticcache/go.sum", "plugins/telemetry/go.sum"],
+      "lock_hashes": {
+        "transports/go.sum": "sha256:bdcad63e90a33703b3ca9d1b49b8089d41230e6a45a7c2c8e380f1c325dbb09f",
+        "core/go.sum": "sha256:9778c17f7395dfc0bf5c1f56fdce4a1079042f8dd2fe8ac23bf92732da9dc407",
+        "framework/go.sum": "sha256:4b085ed3f8a7a2e92d279c0967ebfce6e10ab813f46b82277dc198049dda5abd",
+        "plugins/compat/go.sum": "sha256:54867a4bbb911aae564be31e5814d31325caf5e405d32edced3eb88dda4d64b6",
+        "plugins/governance/go.sum": "sha256:54867a4bbb911aae564be31e5814d31325caf5e405d32edced3eb88dda4d64b6",
+        "plugins/jsonparser/go.sum": "sha256:368b7ff636bac8b848b8cf8f0acf7402ad2f788b73c2c8d10612962a42ae5a2c",
+        "plugins/logging/go.sum": "sha256:54867a4bbb911aae564be31e5814d31325caf5e405d32edced3eb88dda4d64b6",
+        "plugins/maxim/go.sum": "sha256:2e0b2423699646ea82969c7a3c8939aee25ff204b5a01896f1b0a01909367238",
+        "plugins/mocker/go.sum": "sha256:d70d63dcdb1f11203585ca8ce5d3fa024e557657fcd8d8aa0f88e257d429f609",
+        "plugins/modelcatalogresolver/go.sum": "sha256:54867a4bbb911aae564be31e5814d31325caf5e405d32edced3eb88dda4d64b6",
+        "plugins/otel/go.sum": "sha256:927aa228eb7095ede28aec9609b790d88202e92b46daf4b444d4a2906288b348",
+        "plugins/prompts/go.sum": "sha256:db6ba3db11e99dfd43de5077acfe05223fe1c82ae9d27bfc39938f1573f3d616",
+        "plugins/routing/go.sum": "sha256:5059445ee3282b13f981290d9743530097b3c21afe624fa83d6b9f1569788a99",
+        "plugins/semanticcache/go.sum": "sha256:dfc71b698fa4f4775abe0de19c798a14fe146c00ca46c34dd444561e1d1d576b",
+        "plugins/telemetry/go.sum": "sha256:b2cb083681965408aa6d48db4ed4260a827a764f317c41f52b56978353d919f4"
+      },
+      "license": "Apache-2.0; LICENSE",
+      "excluded_license_boundaries": [],
+      "proposed_future_execution_artifact": "Local transports Go module/binary built from transports/; checked-in transports/Dockerfile also builds the transport module and resolves core/framework/plugins from published module requirements.",
+      "artifact_digest_or_pin_if_already_known": null,
+      "provenance_status": "BLOCKED",
+      "provenance_notes": [
+        "Root go.mod and go.work are absent; transports/go.mod exists and contains no replace directives.",
+        "transports/go.mod requires published core v1.10.2, framework v1.7.4, compat v0.3.3, governance v1.8.3, logging v1.8.3, maxim v1.7.6, modelcatalogresolver v1.1.6, otel v1.5.6, prompts v1.1.6, routing v1.1.3, semanticcache v1.6.6, telemetry v1.8.2, and indirect mocker v1.6.6; transports/go.sum pins Go module checksums. Local core/framework/plugin trees are not consumed by that transport module as checked in.",
+        "Dockerfile copies transports/ and builds from transports/go.mod; it does not build the sibling inspected local core/plugin source. Its builder/runtime base images have digests, but no output image digest has been selected or built.",
+        "Path A (local transport plus published core/framework/plugins) is distinct from path B (the inspected local core/plugin source). No local-source-equivalent external workspace has been validated, and Go is unavailable. BIFROST_EXECUTION_PROVENANCE = BLOCKED. Do not start by silently using path A as evidence for path B.",
+        "No candidate tag/revision is derivable from this metadata-only extraction; no commit SHA is invented. Hash covers 5172 included files; no present generated/cache exclusions."
+      ]
+    },
+    {
+      "candidate_name": "LiteLLM",
+      "role": "Level 2 gateway candidate",
+      "sanitized_local_path": "<WORKSPACE_PARENT>/litellm-main",
+      "git_metadata_present": false,
+      "upstream_reference": "https://github.com/BerriAI/litellm",
+      "declared_version": "1.104.0",
+      "tree_hash_algorithm": "shofni-tree-sha256-v1",
+      "tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+      "hash_exclusions": {
+        "directory_names_excluded_if_present": [".git", "node_modules", ".venv", "venv", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache", ".turbo", "dist", "build", "coverage", ".next", ".cache", ".pnpm-store"],
+        "present_exclusions": ["dist"],
+        "included_file_count": 12075
+      },
+      "manifest_files": ["pyproject.toml", "litellm-rust/Cargo.toml", "litellm-rust/crates/python-bridge/Cargo.toml", "LICENSE"],
+      "manifest_hashes": {
+        "pyproject.toml": "sha256:4c34d6d5819ceddde9428b1c0c9fce3bd8eab420e9eac5bc51080fe6677203a9",
+        "litellm-rust/Cargo.toml": "sha256:bea0be04c5fac1eb9387a0f52ba0a824e28661e0c347e7fd16782d4f697dda76",
+        "litellm-rust/crates/python-bridge/Cargo.toml": "sha256:15d1b76e30736641fb468d369011319b0acd3f7537d1ccca2894102b4b140cc3",
+        "LICENSE": "sha256:b170d6bf8e8835dd357e011681db028f4d51e2fb0ea892058f56e01fb39b8273"
+      },
+      "lock_files": ["uv.lock", "litellm-rust/Cargo.lock"],
+      "lock_hashes": {
+        "uv.lock": "sha256:7c895926f4017f79613328233156a590e25aeec7ce9c3acf0001720e8978b18d",
+        "litellm-rust/Cargo.lock": "sha256:e8bbf1dbc1adee0b82afe2bb5f8555b9af66cf712f4458fa9bd467db8e318874"
+      },
+      "license": "MIT outside enterprise/; root LICENSE",
+      "excluded_license_boundaries": ["enterprise/", "litellm/proxy/enterprise/"],
+      "proposed_future_execution_artifact": "Wheel built from the inspected LiteLLM 1.104.0 source with the pinned Python/Rust dependency locks, or an image built from that same pinned source; exclude enterprise features and extras.",
+      "artifact_digest_or_pin_if_already_known": null,
+      "provenance_status": "PARTIAL",
+      "provenance_notes": [
+        "pyproject.toml declares Python >=3.10,<3.15 and Maturin build backend for the Rust/Python extension. uv.lock and litellm-rust/Cargo.lock are hashed.",
+        "Root UV workspace includes enterprise/ and litellm-proxy-extras; the open-source POC must exclude enterprise code and enterprise extras. Root LICENSE states enterprise has a separate license boundary; enterprise/LICENSE is referenced but absent in this extracted tree, so no enterprise terms are inferred.",
+        "Source tree, declared version, and lockfiles are identified; no wheel or image digest has been selected. Pin exact source and output artifact digest before Phase 4 startup.",
+        "A known historical PyPI incident involved 1.82.7 and 1.82.8. That history is not evidence that this inspected 1.104.0 source is compromised.",
+        "Hash covers 12075 included files; generated dist/ was excluded."
+      ]
+    },
+    {
+      "candidate_name": "OpenHands Software Agent SDK",
+      "role": "Level 3 runtime candidate",
+      "sanitized_local_path": "<WORKSPACE_PARENT>/software-agent-sdk-main",
+      "git_metadata_present": false,
+      "upstream_reference": "https://github.com/OpenHands/software-agent-sdk",
+      "declared_version": "1.49.6",
+      "tree_hash_algorithm": "shofni-tree-sha256-v1",
+      "tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+      "hash_exclusions": {
+        "directory_names_excluded_if_present": [".git", "node_modules", ".venv", "venv", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache", ".turbo", "dist", "build", "coverage", ".next", ".cache", ".pnpm-store"],
+        "present_exclusions": [],
+        "included_file_count": 1796
+      },
+      "manifest_files": ["pyproject.toml", "openhands-sdk/pyproject.toml", "openhands-workspace/pyproject.toml", "openhands-tools/pyproject.toml", "openhands-agent-server/pyproject.toml", "LICENSE"],
+      "manifest_hashes": {
+        "pyproject.toml": "sha256:e461d50436dfa92ac04f02b441baa09916bc8c6a6580a07b48698e668957b0eb",
+        "openhands-sdk/pyproject.toml": "sha256:a04bba1da1dafffd1d1358cb4a86a3190c4608c8a8bb7086ae13f1ea1b9128a7",
+        "openhands-workspace/pyproject.toml": "sha256:d4fa2cb003e7e3eaa5466d42c5adbca5a999acc244dbba02b0ba25ce5c8b283a",
+        "openhands-tools/pyproject.toml": "sha256:bccf6fd7f20952291ee7f44c00f63cc15f3d9ba645028ee41848c1d480b46e9a",
+        "openhands-agent-server/pyproject.toml": "sha256:060e346e1d55fb527e25c3a663d405f821f94ebd09c8d84cb9eed0edb05c548a",
+        "LICENSE": "sha256:14a9b631c658eee682c6c2973525fbdf808c3457176bc47513052c559cc5ce86"
+      },
+      "lock_files": ["uv.lock"],
+      "lock_hashes": {"uv.lock": "sha256:58c8b04e867891f3d7671bb0c34e459d5de5fa61fb25e3c10f63ec57b1bdd02e"},
+      "license": "MIT; root LICENSE",
+      "excluded_license_boundaries": [],
+      "proposed_future_execution_artifact": "Local UV workspace package set centered on openhands-sdk 1.49.6 and openhands-workspace 1.49.6 for controlled local workspace operations; include openhands-tools only if the selected tool fixture requires it.",
+      "artifact_digest_or_pin_if_already_known": null,
+      "provenance_status": "PARTIAL",
+      "provenance_notes": [
+        "The UV workspace includes openhands-sdk, openhands-tools, openhands-workspace, and openhands-agent-server; package metadata declares Python >=3.12. openhands-sdk and openhands-workspace are the minimum likely POC package surface.",
+        "No Git revision or built wheel digest is present. The source tree and workspace lock are identified; pin exact package artifacts before Phase 7 startup.",
+        "Hash covers 1796 included files; no present generated/cache exclusions."
+      ]
+    },
+    {
+      "candidate_name": "Mastra",
+      "role": "Level 3 runtime candidate",
+      "sanitized_local_path": "<WORKSPACE_PARENT>/mastra-main",
+      "git_metadata_present": false,
+      "upstream_reference": "https://github.com/mastra-ai/mastra",
+      "declared_version": "@mastra/core 1.72.0-alpha.8",
+      "tree_hash_algorithm": "shofni-tree-sha256-v1",
+      "tree_hash": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05",
+      "hash_exclusions": {
+        "directory_names_excluded_if_present": [".git", "node_modules", ".venv", "venv", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache", ".turbo", "dist", "build", "coverage", ".next", ".cache", ".pnpm-store"],
+        "present_exclusions": ["build"],
+        "included_file_count": 18938
+      },
+      "manifest_files": ["package.json", "pnpm-workspace.yaml", "turbo.json", "packages/core/package.json", "LICENSE.md", "ee/LICENSE"],
+      "manifest_hashes": {
+        "package.json": "sha256:76922d123a1470c98819b95b50ab0cbbfeab1fbb6430344e41f7d875b0f0fc58",
+        "pnpm-workspace.yaml": "sha256:b1601a73111b0c18f69e6f56362dc2dab1dab0cfb09ea8ba45e606ba7f015640",
+        "turbo.json": "sha256:246785bda3a365287835eb3cd2b43091af1a6dd90676b6277a0bd0264a6ac9c7",
+        "packages/core/package.json": "sha256:6ee4eb8fce128eeb8308a671ca6def3224dc1933ddef62b759d106dd523cb3d0",
+        "LICENSE.md": "sha256:f0351b469d1548e547882f01d2486a90f6bd0ff3c89defec841bbf5641265776",
+        "ee/LICENSE": "sha256:96bc23758db3694296e7b91774b0c7109a3bb8394cceac58a058080ecf8d32cc"
+      },
+      "lock_files": ["pnpm-lock.yaml"],
+      "lock_hashes": {"pnpm-lock.yaml": "sha256:0eab30f28bb2ccd340090be696f6b3ba730ec3dae3203a17ee31082bbd7a4ba3"},
+      "license": "Apache-2.0 for the open-source tree; LICENSE.md",
+      "excluded_license_boundaries": ["ee/ (separately licensed; ee/LICENSE)"],
+      "proposed_future_execution_artifact": "Minimum likely workspace build centered on @mastra/core 1.72.0-alpha.8 plus internal workspace packages required by its declared dependency graph and filesystem storage; exclude ee/.",
+      "artifact_digest_or_pin_if_already_known": null,
+      "provenance_status": "PARTIAL",
+      "provenance_notes": [
+        "Root package.json declares workspace version 0.1.11, pnpm >=11, and packageManager pnpm 11.21.0 with integrity; @mastra/core declares 1.72.0-alpha.8 and Apache-2.0. pnpm-lock.yaml uses lockfileVersion 9.0; Turbo metadata is present.",
+        "This is a broad pnpm/Turbo monorepo. @mastra/core has workspace dependencies; exact minimum package closure and produced package artifact digest must be pinned before Phase 8 startup. Host pnpm 11.25.0 is not the declared packageManager version.",
+        "Exclude the entire ee/ tree. ee/LICENSE identifies separately licensed source-available enterprise features; no ee source is part of the proposed POC artifact.",
+        "Hash covers 18938 included files; generated build/ was excluded."
+      ]
+    }
+  ]
+}

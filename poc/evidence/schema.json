@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://shofni.dev/schemas/poc-evidence-1.0.json",
+  "title": "Shofni POC Evidence Envelope",
+  "description": "Phase 0 schema definition for future sanitized POC evidence. No evidence records are created by this file.",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "test_run_id": {"type": "string", "minLength": 1},
+    "test_id": {"type": ["string", "null"]},
+    "candidate": {"type": ["string", "null"]},
+    "client": {"type": ["string", "null"]},
+    "client_version": {"type": ["string", "null"]},
+    "provider": {"type": ["string", "null"]},
+    "model_id": {"type": ["string", "null"]},
+    "protocol": {"type": ["string", "null"]},
+    "request_id": {"type": ["string", "null"]},
+    "task_id": {"type": ["string", "null"]},
+    "session_id": {"type": ["string", "null"]},
+    "attempt_id": {"type": ["string", "null"]},
+    "workspace_id": {"type": ["string", "null"]},
+    "checkpoint_id": {"type": ["string", "null"]},
+    "tool_call_id": {"type": ["string", "null"]},
+    "operation_id": {"type": ["string", "null"]},
+    "timestamp_utc": {"type": "string", "format": "date-time"},
+    "evidence_type": {
+      "type": "string",
+      "enum": ["LIVE_PROVIDER_EVIDENCE", "SYNTHETIC_FIXTURE_EVIDENCE", "SOURCE_INSPECTION_EVIDENCE", "BASELINE_EVIDENCE"]
+    },
+    "behavior_mode": {
+      "type": ["string", "null"],
+      "enum": ["NATIVE", "EMULATED", "REPAIRED", "UNSUPPORTED", "UNVERIFIED", "NOT_APPLICABLE", null]
+    },
+    "result_status": {
+      "type": "string",
+      "enum": ["PASS", "FAIL", "BLOCKED", "NOT_APPLICABLE", "PENDING"]
+    },
+    "failure_class": {"type": ["string", "null"]},
+    "provenance_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "reference_type": {"type": "string"},
+          "reference": {"type": ["string", "null"]},
+          "digest": {"type": ["string", "null"]},
+          "candidate_tree_hash": {"type": ["string", "null"]},
+          "artifact_pin": {"type": ["string", "null"]},
+          "status": {"type": ["string", "null"]}
+        },
+        "required": ["reference_type", "reference", "digest", "candidate_tree_hash", "artifact_pin", "status"]
+      }
+    }
+  },
+  "required": [
+    "test_run_id", "test_id", "candidate", "client", "client_version", "provider", "model_id", "protocol", "request_id", "task_id", "session_id", "attempt_id", "workspace_id", "checkpoint_id", "tool_call_id", "operation_id", "timestamp_utc", "evidence_type", "behavior_mode", "result_status", "failure_class", "provenance_references"
+  ]
+}
