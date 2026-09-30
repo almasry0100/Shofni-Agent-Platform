@@ -1,0 +1,34 @@
+{
+  "adapter_status": "FAIL",
+  "candidate": "Bifrost",
+  "candidate_history_modified": false,
+  "candidate_process_started": false,
+  "candidate_source_modified": false,
+  "checks": {
+    "shutdown": {
+      "api_port_released": true,
+      "container_removed": true,
+      "status": "PASS"
+    }
+  },
+  "cleanup": {
+    "candidate_api_port_released": true,
+    "candidate_container_removed": true,
+    "fixture_container_removed": true,
+    "internal_network_removed": true,
+    "temporary_app_config_removed": true
+  },
+  "errors": [
+    {
+      "error_type": "RuntimeError",
+      "stage": "startup_or_setup"
+    }
+  ],
+  "failure_class": "SETUP_FAILURE",
+  "fixture_status": "FAIL",
+  "live_provider_calls": 0,
+  "phase": "phase_3",
+  "run_id": "phase3-remediation-20260930T172952Z",
+  "startup_status": "FAIL",
+  "status": "BLOCKED"
+}

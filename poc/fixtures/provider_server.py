@@ -6,6 +6,7 @@ import ipaddress
 import json
 import socket
 import threading
+import time
 import urllib.error
 import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -15,7 +16,7 @@ from typing import Any
 from poc.evidence.redactor import redact_string
 
 from . import FIXTURE_VERSION
-from .providers import ChatOnlyProviderFixture
+from .providers import ChatOnlyProviderFixture, deterministic_id
 
 
 _TRANSIENT_SETUP_ERRNOS = {
@@ -39,13 +40,19 @@ class _FixtureHandler(BaseHTTPRequestHandler):
     server: _FixtureHttpServer
 
     def do_GET(self) -> None:
-        if self.path != "/health":
-            self.send_error(404)
+        if self.path == "/health":
+            self._send_json(200, {"status": "ok", "fixture_version": FIXTURE_VERSION})
             return
-        self._send_json(200, {"status": "ok", "fixture_version": FIXTURE_VERSION})
+        if self.path == "/v1/models":
+            self._send_json(200, {
+                "object": "list",
+                "data": [{"id": "fixture-chat-only", "object": "model", "owned_by": "shofni-fixture"}],
+            })
+            return
+        self.send_error(404)
 
     def do_POST(self) -> None:
-        if self.path != "/v1/chat/completions":
+        if self.path not in {"/v1/chat/completions", "/v1/responses"}:
             self.send_error(404)
             return
         try:
@@ -53,13 +60,140 @@ class _FixtureHandler(BaseHTTPRequestHandler):
             if length <= 0 or length > 65536:
                 raise ValueError("request body length is invalid")
             request = json.loads(self.rfile.read(length))
-            if not isinstance(request, dict) or not isinstance(request.get("seed"), str):
-                raise ValueError("request must contain a string seed")
-            response = self.server.fixture.respond(request, request["seed"])
+            if not isinstance(request, dict):
+                raise ValueError("request must be a JSON object")
         except (ValueError, json.JSONDecodeError):
             self._send_json(400, {"error": "invalid_fixture_request"})
             return
-        self._send_json(200, response)
+
+        if self.path == "/v1/chat/completions" and isinstance(request.get("seed"), str) and "messages" not in request:
+            self._send_json(200, self.server.fixture.respond(request, request["seed"]))
+            return
+
+        seed = self._fixture_seed(request, self.path)
+        if seed == "phase3-bifrost-rate-limit":
+            self._send_json(429, {
+                "error": {
+                    "message": "synthetic fixture rate limit",
+                    "type": "rate_limit_error",
+                    "code": "rate_limit_exceeded",
+                },
+            })
+            return
+
+        metadata = request.get("metadata")
+        fixture_request = {
+            "path": metadata.get("shofni_fixture_path", "input/alpha.txt") if isinstance(metadata, dict) else "input/alpha.txt",
+        }
+        output = self.server.fixture.respond(fixture_request, seed)
+        if self.path == "/v1/responses":
+            self._send_json(200, self._responses_response(request, seed, output["content"] or ""))
+        elif request.get("stream") is True:
+            self._send_chat_stream(request, seed, output["content"] or "")
+        else:
+            self._send_json(200, self._chat_response(request, seed, output["content"] or ""))
+
+    @staticmethod
+    def _fixture_seed(request: dict[str, Any], path: str) -> str:
+        metadata = request.get("metadata")
+        if isinstance(metadata, dict) and isinstance(metadata.get("shofni_fixture_seed"), str):
+            return metadata["shofni_fixture_seed"]
+        user = request.get("user")
+        if isinstance(user, str) and user:
+            return user
+        messages = request.get("messages")
+        if isinstance(messages, list):
+            for message in messages:
+                if not isinstance(message, dict):
+                    continue
+                content = message.get("content")
+                if isinstance(content, str) and "phase3-bifrost-rate-limit" in content:
+                    return "phase3-bifrost-rate-limit"
+        return "openai-responses-fixture" if path == "/v1/responses" else "openai-chat-fixture"
+
+    @staticmethod
+    def _chat_response(request: dict[str, Any], seed: str, content: str) -> dict[str, Any]:
+        model = request.get("model") if isinstance(request.get("model"), str) else "fixture-chat-only"
+        return {
+            "id": deterministic_id("chatcmpl", seed, request),
+            "object": "chat.completion",
+            "created": int(time.time()),
+            "model": model,
+            "choices": [{
+                "index": 0,
+                "message": {"role": "assistant", "content": content},
+                "finish_reason": "stop",
+            }],
+            "usage": {"prompt_tokens": 1, "completion_tokens": len(content.split()), "total_tokens": 1 + len(content.split())},
+        }
+
+    @staticmethod
+    def _responses_response(request: dict[str, Any], seed: str, content: str) -> dict[str, Any]:
+        response_id = deterministic_id("resp", seed, request)
+        message_id = deterministic_id("msg", seed, request)
+        model = request.get("model") if isinstance(request.get("model"), str) else "fixture-chat-only"
+        return {
+            "id": response_id,
+            "object": "response",
+            "created_at": int(time.time()),
+            "status": "completed",
+            "error": None,
+            "incomplete_details": None,
+            "model": model,
+            "output": [{
+                "id": message_id,
+                "type": "message",
+                "status": "completed",
+                "role": "assistant",
+                "content": [{"type": "output_text", "text": content, "annotations": []}],
+            }],
+            "output_text": content,
+            "usage": {
+                "input_tokens": 1,
+                "input_tokens_details": {"cached_tokens": 0},
+                "output_tokens": len(content.split()),
+                "output_tokens_details": {"reasoning_tokens": 0},
+                "total_tokens": 1 + len(content.split()),
+            },
+        }
+
+    def _send_chat_stream(self, request: dict[str, Any], seed: str, content: str) -> None:
+        model = request.get("model") if isinstance(request.get("model"), str) else "fixture-chat-only"
+        completion_id = deterministic_id("chatcmpl", seed, request)
+        self.send_response(200)
+        self.send_header("Content-Type", "text/event-stream")
+        self.send_header("Cache-Control", "no-cache")
+        self.end_headers()
+        events = [{"role": "assistant"}]
+        events.extend({"content": content[index : index + 24]} for index in range(0, len(content), 24))
+        for delta in events:
+            self._write_sse({
+                "id": completion_id,
+                "object": "chat.completion.chunk",
+                "created": int(time.time()),
+                "model": model,
+                "choices": [{"index": 0, "delta": delta, "finish_reason": None}],
+            })
+        self._write_sse({
+            "id": completion_id,
+            "object": "chat.completion.chunk",
+            "created": int(time.time()),
+            "model": model,
+            "choices": [{"index": 0, "delta": {}, "finish_reason": "stop"}],
+        })
+        try:
+            self.wfile.write(b"data: [DONE]\n\n")
+            self.wfile.flush()
+        except OSError:
+            return
+
+    def _write_sse(self, value: dict[str, Any]) -> None:
+        body = json.dumps(value, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        try:
+            self.wfile.write(b"data: " + body + b"\n\n")
+            self.wfile.flush()
+        except OSError:
+            return
 
     def _send_json(self, status: int, value: dict[str, Any]) -> None:
         body = json.dumps(value, sort_keys=True, ensure_ascii=True, separators=(",", ":")).encode("utf-8")

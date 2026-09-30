@@ -1,0 +1,47 @@
+{
+  "batch_run_id": "batch-b-remediation-20260930T155149Z",
+  "candidate_processes_started": 2,
+  "candidate_source_modified": false,
+  "candidate_tree_hashes_referenced": {
+    "Bifrost": "docs/poc/candidate-lock.json",
+    "LiteLLM": "docs/poc/candidate-lock.json"
+  },
+  "carried_forward_from_run_id": "level2-remediation-20260930T194948Z",
+  "cleanup": [
+    {
+      "api_port_released": true,
+      "candidate_container_removed": true,
+      "errors": [],
+      "network_removed": true,
+      "temporary_config_removed": true
+    },
+    {
+      "api_port_released": true,
+      "candidate_container_removed": true,
+      "errors": [],
+      "network_removed": true,
+      "temporary_config_removed": true
+    }
+  ],
+  "created_at_utc": "2026-09-30T21:59:34.323512Z",
+  "current_run_live_provider_requests": 6,
+  "evidence_files": [
+    "matrix.json",
+    "matrix.sha256",
+    "manifest.json"
+  ],
+  "live_provider_requests": 54,
+  "phase": "phase_5",
+  "provider_key_presence": {
+    "A6api": true
+  },
+  "raw_evidence_created": false,
+  "result_status": "PARTIAL",
+  "run_id": "level2-remediation-20260930T225100Z",
+  "targeted_diagnostic_ref": "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+  "targeted_t03_repetitions": {
+    "Bifrost": 3,
+    "LiteLLM": 3
+  },
+  "targeted_t03_status": "FAIL"
+}

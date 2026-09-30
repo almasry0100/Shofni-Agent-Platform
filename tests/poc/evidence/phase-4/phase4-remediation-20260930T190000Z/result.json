@@ -1,0 +1,39 @@
+{
+  "adapter_status": "FAIL",
+  "candidate": "LiteLLM",
+  "candidate_history_modified": false,
+  "candidate_process_started": true,
+  "candidate_source_modified": false,
+  "checks": {
+    "shutdown": {
+      "api_port_released": true,
+      "container_removed": true,
+      "status": "PASS"
+    }
+  },
+  "cleanup": {
+    "candidate_api_port_released": true,
+    "candidate_container_removed": true,
+    "fixture_container_removed": true,
+    "internal_network_removed": true,
+    "temporary_config_removed": false
+  },
+  "errors": [
+    {
+      "error": "unsupported operand type(s) for +: 'NoneType' and 'str'",
+      "error_type": "TypeError",
+      "stage": "startup_or_setup"
+    },
+    {
+      "error_type": "TemporaryDirectoryNotRemoved",
+      "stage": "config_cleanup"
+    }
+  ],
+  "failure_class": "SETUP_FAILURE",
+  "fixture_status": "PASS",
+  "live_provider_calls": 0,
+  "phase": "phase_4",
+  "run_id": "phase4-remediation-20260930T190000Z",
+  "startup_status": "FAIL",
+  "status": "BLOCKED"
+}

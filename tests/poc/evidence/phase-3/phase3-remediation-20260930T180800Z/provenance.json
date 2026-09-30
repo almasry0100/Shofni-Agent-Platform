@@ -1,0 +1,84 @@
+{
+  "artifact_path": "artifacts-remediation/bifrost-http",
+  "artifact_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+  "build_command": "GOWORK=/go.work go build -mod=readonly -trimpath -buildvcs=false -o /artifacts/bifrost-http .",
+  "candidate": "Bifrost",
+  "candidate_source_modified": false,
+  "candidate_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+  "enterprise_source_used": false,
+  "external_go_workspace_sha256": "sha256:e075341fa7895f7705a570fa2384b8f9d1731e269f8b71f720641e8ea9d3337a",
+  "fixture_route_only": true,
+  "go_module_graph_command": "GOWORK=/go.work go list -m -f '{{.Path}} => {{.Dir}}' all",
+  "go_toolchain_image": "docker.io/library/golang:1.27.0-bookworm@sha256:ba5ef6614ca131b80a635fc6a7b715d9ee8a7f333debdbb81afb68259c7d48d4",
+  "go_version": "go1.27.0 linux/amd64",
+  "in_network_http_client": "pinned Python fixture sidecar",
+  "included_file_count": 5172,
+  "internal_network": true,
+  "live_provider_calls": 0,
+  "local_module_graph": [
+    {
+      "module_path": "github.com/maximhq/bifrost/core",
+      "resolved_directory": "/candidate/core"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/framework",
+      "resolved_directory": "/candidate/framework"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/plugins/compat",
+      "resolved_directory": "/candidate/plugins/compat"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/plugins/governance",
+      "resolved_directory": "/candidate/plugins/governance"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/plugins/logging",
+      "resolved_directory": "/candidate/plugins/logging"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/plugins/maxim",
+      "resolved_directory": "/candidate/plugins/maxim"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/plugins/mocker",
+      "resolved_directory": "/candidate/plugins/mocker"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/plugins/modelcatalogresolver",
+      "resolved_directory": "/candidate/plugins/modelcatalogresolver"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/plugins/otel",
+      "resolved_directory": "/candidate/plugins/otel"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/plugins/prompts",
+      "resolved_directory": "/candidate/plugins/prompts"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/plugins/routing",
+      "resolved_directory": "/candidate/plugins/routing"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/plugins/semanticcache",
+      "resolved_directory": "/candidate/plugins/semanticcache"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/plugins/telemetry",
+      "resolved_directory": "/candidate/plugins/telemetry"
+    },
+    {
+      "module_path": "github.com/maximhq/bifrost/transports",
+      "resolved_directory": "/candidate/transports"
+    }
+  ],
+  "openrouter_used": false,
+  "python_fixture_image": "docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7",
+  "remaining_published_bifrost_modules": [],
+  "run_id": "phase3-remediation-20260930T180800Z",
+  "source_snapshot_pre_ui_overlay_matches_candidate": true,
+  "toolchain_platform": "linux/amd64",
+  "ui_overlay_file_count": 563,
+  "ui_overlay_manifest_sha256": "sha256:46a32efc789f8f8364282a0243059bcac313715c1143651d8a622c09760dac45"
+}

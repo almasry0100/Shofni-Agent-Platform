@@ -1,0 +1,37 @@
+{
+  "behavior_mode": "NATIVE",
+  "candidate": "Bifrost",
+  "candidate_execution": true,
+  "client": "Codex",
+  "client_version": "0.159.0",
+  "evidence_refs": [
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/1-T01.json"
+  ],
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "failure_class": null,
+  "model_id": "gpt-5.4-mini",
+  "observations": {
+    "response_id": "resp_elysiumai-20260930194531785628428d4bb237bxAIpjLeM",
+    "tool_call_count": 1,
+    "tool_calls": [
+      {
+        "arguments": "{\"path\":\"input/alpha.txt\"}",
+        "call_id": "call_1QScAJzJ4MGzczgLkAeD2IwN",
+        "id": "call_1QScAJzJ4MGzczgLkAeD2IwN",
+        "name": "read_fixture",
+        "quality": "",
+        "result": "",
+        "role": "",
+        "size": "",
+        "status": "completed",
+        "type": "function_call"
+      }
+    ]
+  },
+  "protocol": "Responses",
+  "provider": "A6api",
+  "repetition": 1,
+  "run_id": "level2-remediation-20260930T194529Z",
+  "status": "PASS",
+  "test_id": "T01"
+}

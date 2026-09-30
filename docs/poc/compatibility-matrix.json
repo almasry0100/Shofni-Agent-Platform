@@ -1,0 +1,4582 @@
+{
+  "candidate_decision": "NONE",
+  "historical_level2_runs": [
+    {
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-20260930T150128Z/matrix.json"
+      ],
+      "observed_at": "2026-09-30T15:15:10Z",
+      "run_id": "level2-20260930T150128Z",
+      "status": "PARTIAL"
+    },
+    {
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/manifest.json"
+      ],
+      "observed_at": "2026-09-30T19:36:35.818031Z",
+      "run_id": "level2-remediation-20260930T200500Z",
+      "status": "PARTIAL"
+    },
+    {
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/manifest.json"
+      ],
+      "observed_at": "2026-09-30T19:45:29.169510Z",
+      "run_id": "level2-remediation-20260930T194529Z",
+      "status": "PARTIAL"
+    },
+    {
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/manifest.json"
+      ],
+      "observed_at": "2026-09-30T19:49:48.063816Z",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PARTIAL"
+    },
+    {
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/manifest.json"
+      ],
+      "observed_at": "2026-09-30T21:59:34.323512Z",
+      "run_id": "level2-remediation-20260930T225100Z",
+      "status": "PARTIAL"
+    }
+  ],
+  "historical_sanitization_lineage": "tests/poc/evidence/phase-4/historical-sanitization-lineage.json",
+  "historical_setup_attempts": {
+    "Bifrost": [
+      {
+        "attempt_id": "phase3-20260930T150128Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+          "tests/poc/evidence/phase-3/phase3-20260930T150128Z/provenance.json",
+          "tests/poc/evidence/phase-3/phase3-20260930T150128Z/manifest.json"
+        ],
+        "historical": true,
+        "status": "BLOCKED"
+      },
+      {
+        "attempt_id": "phase3-remediation-20260930T172952Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/result.json",
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/provenance.json",
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/manifest.json"
+        ],
+        "historical": false,
+        "status": "BLOCKED"
+      },
+      {
+        "attempt_id": "phase3-remediation-20260930T173130Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/result.json",
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/provenance.json",
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/manifest.json"
+        ],
+        "historical": false,
+        "status": "BLOCKED"
+      },
+      {
+        "attempt_id": "phase3-remediation-20260930T174700Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/result.json",
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/provenance.json",
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/manifest.json"
+        ],
+        "historical": false,
+        "status": "BLOCKED"
+      },
+      {
+        "attempt_id": "phase3-remediation-20260930T180300Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/result.json",
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/provenance.json",
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/manifest.json"
+        ],
+        "historical": false,
+        "status": "FAIL"
+      },
+      {
+        "attempt_id": "phase3-remediation-20260930T180800Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/provenance.json",
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/manifest.json"
+        ],
+        "historical": false,
+        "status": "PASS"
+      }
+    ],
+    "LiteLLM": [
+      {
+        "attempt_id": "phase4-20260930T150128Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+          "tests/poc/evidence/phase-4/phase4-20260930T150128Z/provenance.json",
+          "tests/poc/evidence/phase-4/phase4-20260930T150128Z/manifest.json"
+        ],
+        "historical": true,
+        "status": "BLOCKED"
+      },
+      {
+        "attempt_id": "phase4-remediation-20260930T190000Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/result.json",
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/provenance.json",
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/manifest.json"
+        ],
+        "historical": false,
+        "status": "BLOCKED"
+      },
+      {
+        "attempt_id": "phase4-remediation-20260930T190500Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/result.json",
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/provenance.json",
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/manifest.json"
+        ],
+        "historical": false,
+        "status": "BLOCKED"
+      },
+      {
+        "attempt_id": "phase4-remediation-20260930T191000Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/result.json",
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/provenance.json",
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/manifest.json"
+        ],
+        "historical": false,
+        "status": "FAIL"
+      },
+      {
+        "attempt_id": "phase4-remediation-20260930T191500Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/result.json",
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/provenance.json",
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/manifest.json"
+        ],
+        "historical": false,
+        "status": "FAIL"
+      },
+      {
+        "attempt_id": "phase4-remediation-20260930T192000Z",
+        "evidence_references": [
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json",
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/manifest.json"
+        ],
+        "historical": false,
+        "status": "PASS"
+      }
+    ]
+  },
+  "observed_at": "2026-09-30T21:59:34.323512Z",
+  "original_batch_manifest": "poc/runs/batch-b-20260930T150128Z/manifest.json",
+  "original_batch_run_id": "batch-b-20260930T150128Z",
+  "phase_2_fixture_controls": {
+    "evidence_ref": "tests/poc/evidence/phase-2/phase2-20260930T132937Z/result.json",
+    "scope": "Shofni fixture/harness only; synthetic rows do not establish live provider behavior.",
+    "status": "PASS"
+  },
+  "phase_3_status": "PASS",
+  "phase_4_status": "PASS",
+  "phase_5_status": "PARTIAL",
+  "records": [
+    {
+      "candidate_artifact": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+      "candidate_artifact_identity": {
+        "artifact_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+        "candidate_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+        "go_toolchain_image": "docker.io/library/golang:1.27.0-bookworm@sha256:ba5ef6614ca131b80a635fc6a7b715d9ee8a7f333debdbb81afb68259c7d48d4"
+      },
+      "candidate_source": "<WORKSPACE_PARENT>/bifrost-dev",
+      "candidate_source_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+      "capabilities": {
+        "anthropic_messages": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "chat": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "chat_completions": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "emulated_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "error_normalization": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "fallback_eligibility": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "native_tools": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "parallel_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "responses": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "sequential_continuation": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "streaming": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "tool_result": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        }
+      },
+      "client": "Codex",
+      "client_version": "0.159.0",
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/3-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/3-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/matrix.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+      ],
+      "evidence_types": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "SOURCE_INSPECTION_EVIDENCE"
+      ],
+      "failure_class": null,
+      "gateway_candidate": "Bifrost",
+      "historical_setup_attempts": [
+        {
+          "attempt_id": "phase3-20260930T150128Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/manifest.json"
+          ],
+          "historical": true,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T172952Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T173130Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T174700Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T180300Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T180800Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "PASS"
+        }
+      ],
+      "model_id": "gpt-5.4-mini",
+      "observed_at": "2026-09-30T21:59:34.323512Z",
+      "observed_failures": [],
+      "protocol": "Responses",
+      "provider": "A6api",
+      "setup_status": "PASS",
+      "status": "PASS"
+    },
+    {
+      "candidate_artifact": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+      "candidate_artifact_identity": {
+        "artifact_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+        "candidate_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+        "go_toolchain_image": "docker.io/library/golang:1.27.0-bookworm@sha256:ba5ef6614ca131b80a635fc6a7b715d9ee8a7f333debdbb81afb68259c7d48d4"
+      },
+      "candidate_source": "<WORKSPACE_PARENT>/bifrost-dev",
+      "candidate_source_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+      "capabilities": {
+        "anthropic_messages": {
+          "behavior": "MIXED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "chat": {
+          "behavior": "MIXED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "chat_completions": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "emulated_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "error_normalization": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "fallback_eligibility": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "native_tools": {
+          "behavior": "MIXED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "parallel_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "responses": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "sequential_continuation": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "streaming": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "tool_result": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        }
+      },
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+      ],
+      "evidence_types": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "SOURCE_INSPECTION_EVIDENCE"
+      ],
+      "failure_class": "MIXED_FAILURES",
+      "gateway_candidate": "Bifrost",
+      "historical_setup_attempts": [
+        {
+          "attempt_id": "phase3-20260930T150128Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/manifest.json"
+          ],
+          "historical": true,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T172952Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T173130Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T174700Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T180300Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T180800Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "PASS"
+        }
+      ],
+      "model_id": [
+        "claude-sonnet-4-5",
+        "gpt-5.4-mini"
+      ],
+      "observed_at": "2026-09-30T21:59:34.323512Z",
+      "observed_failures": [
+        {
+          "failure_class": "CLIENT_FAILURE",
+          "repetition": 1,
+          "status": "FAIL",
+          "test_id": "T03"
+        },
+        {
+          "failure_class": "CLIENT_FAILURE",
+          "repetition": 2,
+          "status": "FAIL",
+          "test_id": "T03"
+        },
+        {
+          "failure_class": "CLIENT_FAILURE",
+          "repetition": 3,
+          "status": "FAIL",
+          "test_id": "T03"
+        },
+        {
+          "failure_class": "MODEL_BEHAVIOR_FAILURE",
+          "repetition": 1,
+          "status": "FAIL",
+          "test_id": "T03"
+        },
+        {
+          "failure_class": "MODEL_BEHAVIOR_FAILURE",
+          "repetition": 2,
+          "status": "FAIL",
+          "test_id": "T03"
+        }
+      ],
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "setup_status": "PASS",
+      "status": "FAIL"
+    },
+    {
+      "candidate_artifact": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+      "candidate_artifact_identity": {
+        "artifact_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+        "candidate_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+        "go_toolchain_image": "docker.io/library/golang:1.27.0-bookworm@sha256:ba5ef6614ca131b80a635fc6a7b715d9ee8a7f333debdbb81afb68259c7d48d4"
+      },
+      "candidate_source": "<WORKSPACE_PARENT>/bifrost-dev",
+      "candidate_source_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+      "capabilities": {
+        "anthropic_messages": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "chat": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "chat_completions": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "emulated_tools": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "error_normalization": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "fallback_eligibility": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "native_tools": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "parallel_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "responses": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "sequential_continuation": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "streaming": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "tool_result": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "PASS",
+          "observed": "PASS",
+          "probed": "PASS"
+        }
+      },
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/matrix.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+      ],
+      "evidence_types": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "SOURCE_INSPECTION_EVIDENCE"
+      ],
+      "failure_class": null,
+      "gateway_candidate": "Bifrost",
+      "historical_setup_attempts": [
+        {
+          "attempt_id": "phase3-20260930T150128Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/manifest.json"
+          ],
+          "historical": true,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T172952Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T173130Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T174700Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T180300Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T180800Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "PASS"
+        }
+      ],
+      "model_id": "gpt-5.4-mini",
+      "observed_at": "2026-09-30T21:59:34.323512Z",
+      "observed_failures": [],
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "setup_status": "PASS",
+      "status": "PASS"
+    },
+    {
+      "candidate_artifact": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+      "candidate_artifact_identity": {
+        "artifact_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+        "candidate_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+        "go_toolchain_image": "docker.io/library/golang:1.27.0-bookworm@sha256:ba5ef6614ca131b80a635fc6a7b715d9ee8a7f333debdbb81afb68259c7d48d4"
+      },
+      "candidate_source": "<WORKSPACE_PARENT>/bifrost-dev",
+      "candidate_source_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+      "capabilities": {
+        "anthropic_messages": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "chat": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "chat_completions": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "emulated_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "error_normalization": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "fallback_eligibility": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "native_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "parallel_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "responses": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "sequential_continuation": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "streaming": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "tool_result": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        }
+      },
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/matrix.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/manifest.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/provenance.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+      ],
+      "evidence_types": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "SOURCE_INSPECTION_EVIDENCE"
+      ],
+      "failure_class": "GATEWAY_FAILURE",
+      "gateway_candidate": "Bifrost",
+      "historical_setup_attempts": [
+        {
+          "attempt_id": "phase3-20260930T150128Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/manifest.json"
+          ],
+          "historical": true,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T172952Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T173130Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T174700Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T180300Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T180800Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/provenance.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "PASS"
+        }
+      ],
+      "model_id": "stealth/openai/gpt-5.6-sol",
+      "observed_at": "2026-09-30T21:59:34.323512Z",
+      "observed_failures": [
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 1,
+          "status": "FAIL",
+          "test_id": "T04"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 1,
+          "status": "FAIL",
+          "test_id": "T07"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 1,
+          "status": "FAIL",
+          "test_id": "T08"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 2,
+          "status": "FAIL",
+          "test_id": "T04"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 2,
+          "status": "FAIL",
+          "test_id": "T07"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 2,
+          "status": "FAIL",
+          "test_id": "T08"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 3,
+          "status": "FAIL",
+          "test_id": "T04"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 3,
+          "status": "FAIL",
+          "test_id": "T07"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 3,
+          "status": "FAIL",
+          "test_id": "T08"
+        }
+      ],
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "setup_status": "PASS",
+      "status": "FAIL"
+    },
+    {
+      "candidate_artifact": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+      "candidate_artifact_identity": {
+        "candidate_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+        "python_base_image": "docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7",
+        "runtime_image_digest": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+        "rust_build_image": "docker.io/library/rust:1.88.0-bookworm@sha256:4727898c104ecd2e22d780925832502faee9fe4e70581b8572af081370b315a0",
+        "uv_image": "ghcr.io/astral-sh/uv:0.11.7@sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8",
+        "wheel_sha256": "sha256:762b286fe81491f242040b14f28338da0ebf4f32fea50972b6969ee578011d52"
+      },
+      "candidate_source": "<WORKSPACE_PARENT>/litellm-main",
+      "candidate_source_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+      "capabilities": {
+        "anthropic_messages": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "chat": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "chat_completions": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "emulated_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "error_normalization": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "fallback_eligibility": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "native_tools": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "parallel_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "responses": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "sequential_continuation": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "streaming": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "tool_result": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        }
+      },
+      "client": "Codex",
+      "client_version": "0.159.0",
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/3-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/3-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-3.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/matrix.json",
+        "tests/poc/evidence/phase-4/historical-sanitization-lineage.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "evidence_types": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "SOURCE_INSPECTION_EVIDENCE"
+      ],
+      "failure_class": null,
+      "gateway_candidate": "LiteLLM",
+      "historical_setup_attempts": [
+        {
+          "attempt_id": "phase4-20260930T150128Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/manifest.json"
+          ],
+          "historical": true,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T190000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T190500Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T191000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T191500Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T192000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "PASS"
+        }
+      ],
+      "model_id": "a6api-openai",
+      "observed_at": "2026-09-30T21:59:34.323512Z",
+      "observed_failures": [],
+      "protocol": "Responses",
+      "provider": "A6api",
+      "setup_status": "PASS",
+      "status": "PASS"
+    },
+    {
+      "candidate_artifact": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+      "candidate_artifact_identity": {
+        "candidate_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+        "python_base_image": "docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7",
+        "runtime_image_digest": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+        "rust_build_image": "docker.io/library/rust:1.88.0-bookworm@sha256:4727898c104ecd2e22d780925832502faee9fe4e70581b8572af081370b315a0",
+        "uv_image": "ghcr.io/astral-sh/uv:0.11.7@sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8",
+        "wheel_sha256": "sha256:762b286fe81491f242040b14f28338da0ebf4f32fea50972b6969ee578011d52"
+      },
+      "candidate_source": "<WORKSPACE_PARENT>/litellm-main",
+      "candidate_source_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+      "capabilities": {
+        "anthropic_messages": {
+          "behavior": "MIXED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "chat": {
+          "behavior": "MIXED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "chat_completions": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "emulated_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "error_normalization": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "fallback_eligibility": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "native_tools": {
+          "behavior": "MIXED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "parallel_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "responses": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "sequential_continuation": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "streaming": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "tool_result": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        }
+      },
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-3.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+        "tests/poc/evidence/phase-4/historical-sanitization-lineage.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "evidence_types": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "SOURCE_INSPECTION_EVIDENCE"
+      ],
+      "failure_class": "MIXED_FAILURES",
+      "gateway_candidate": "LiteLLM",
+      "historical_setup_attempts": [
+        {
+          "attempt_id": "phase4-20260930T150128Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/manifest.json"
+          ],
+          "historical": true,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T190000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T190500Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T191000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T191500Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T192000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "PASS"
+        }
+      ],
+      "model_id": [
+        "a6api-anthropic",
+        "gpt-5.4-mini"
+      ],
+      "observed_at": "2026-09-30T21:59:34.323512Z",
+      "observed_failures": [
+        {
+          "failure_class": "CLIENT_FAILURE",
+          "repetition": 1,
+          "status": "FAIL",
+          "test_id": "T03"
+        },
+        {
+          "failure_class": "CLIENT_FAILURE",
+          "repetition": 2,
+          "status": "FAIL",
+          "test_id": "T03"
+        },
+        {
+          "failure_class": "CLIENT_FAILURE",
+          "repetition": 3,
+          "status": "FAIL",
+          "test_id": "T03"
+        },
+        {
+          "failure_class": "MODEL_BEHAVIOR_FAILURE",
+          "repetition": 1,
+          "status": "FAIL",
+          "test_id": "T03"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 2,
+          "status": "FAIL",
+          "test_id": "T03"
+        }
+      ],
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "setup_status": "PASS",
+      "status": "FAIL"
+    },
+    {
+      "candidate_artifact": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+      "candidate_artifact_identity": {
+        "candidate_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+        "python_base_image": "docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7",
+        "runtime_image_digest": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+        "rust_build_image": "docker.io/library/rust:1.88.0-bookworm@sha256:4727898c104ecd2e22d780925832502faee9fe4e70581b8572af081370b315a0",
+        "uv_image": "ghcr.io/astral-sh/uv:0.11.7@sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8",
+        "wheel_sha256": "sha256:762b286fe81491f242040b14f28338da0ebf4f32fea50972b6969ee578011d52"
+      },
+      "candidate_source": "<WORKSPACE_PARENT>/litellm-main",
+      "candidate_source_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+      "capabilities": {
+        "anthropic_messages": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "chat": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "chat_completions": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "emulated_tools": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "error_normalization": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "fallback_eligibility": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "native_tools": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "parallel_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "responses": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "sequential_continuation": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "streaming": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "NATIVE",
+          "observed": "PASS",
+          "probed": "PASS"
+        },
+        "tool_result": {
+          "behavior": "NATIVE",
+          "declared": "UNVERIFIED",
+          "effective": "PASS",
+          "observed": "PASS",
+          "probed": "PASS"
+        }
+      },
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/matrix.json",
+        "tests/poc/evidence/phase-4/historical-sanitization-lineage.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "evidence_types": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "SOURCE_INSPECTION_EVIDENCE"
+      ],
+      "failure_class": null,
+      "gateway_candidate": "LiteLLM",
+      "historical_setup_attempts": [
+        {
+          "attempt_id": "phase4-20260930T150128Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/manifest.json"
+          ],
+          "historical": true,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T190000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T190500Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T191000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T191500Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T192000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "PASS"
+        }
+      ],
+      "model_id": "a6api-openai",
+      "observed_at": "2026-09-30T21:59:34.323512Z",
+      "observed_failures": [],
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "setup_status": "PASS",
+      "status": "PASS"
+    },
+    {
+      "candidate_artifact": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+      "candidate_artifact_identity": {
+        "candidate_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+        "python_base_image": "docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7",
+        "runtime_image_digest": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+        "rust_build_image": "docker.io/library/rust:1.88.0-bookworm@sha256:4727898c104ecd2e22d780925832502faee9fe4e70581b8572af081370b315a0",
+        "uv_image": "ghcr.io/astral-sh/uv:0.11.7@sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8",
+        "wheel_sha256": "sha256:762b286fe81491f242040b14f28338da0ebf4f32fea50972b6969ee578011d52"
+      },
+      "candidate_source": "<WORKSPACE_PARENT>/litellm-main",
+      "candidate_source_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+      "capabilities": {
+        "anthropic_messages": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "chat": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "chat_completions": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "emulated_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "error_normalization": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "fallback_eligibility": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "native_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "parallel_tools": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "responses": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "UNVERIFIED",
+          "observed": "UNVERIFIED",
+          "probed": "UNVERIFIED"
+        },
+        "sequential_continuation": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "streaming": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        },
+        "tool_result": {
+          "behavior": "UNVERIFIED",
+          "declared": "UNVERIFIED",
+          "effective": "FAIL",
+          "observed": "FAIL",
+          "probed": "FAIL"
+        }
+      },
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_references": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/matrix.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/manifest.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/matrix.json",
+        "tests/poc/evidence/phase-4/historical-sanitization-lineage.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/manifest.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "evidence_types": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "SOURCE_INSPECTION_EVIDENCE"
+      ],
+      "failure_class": "MIXED_FAILURES",
+      "gateway_candidate": "LiteLLM",
+      "historical_setup_attempts": [
+        {
+          "attempt_id": "phase4-20260930T150128Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/manifest.json"
+          ],
+          "historical": true,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T190000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T190500Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T191000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T191500Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T192000Z",
+          "evidence_references": [
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/manifest.json"
+          ],
+          "historical": false,
+          "status": "PASS"
+        }
+      ],
+      "model_id": "relay-openai",
+      "observed_at": "2026-09-30T21:59:34.323512Z",
+      "observed_failures": [
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 1,
+          "status": "FAIL",
+          "test_id": "T04"
+        },
+        {
+          "failure_class": "CLIENT_FAILURE",
+          "repetition": 1,
+          "status": "FAIL",
+          "test_id": "T07"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 1,
+          "status": "FAIL",
+          "test_id": "T08"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 2,
+          "status": "FAIL",
+          "test_id": "T04"
+        },
+        {
+          "failure_class": "CLIENT_FAILURE",
+          "repetition": 2,
+          "status": "FAIL",
+          "test_id": "T07"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 2,
+          "status": "FAIL",
+          "test_id": "T08"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 3,
+          "status": "FAIL",
+          "test_id": "T04"
+        },
+        {
+          "failure_class": "CLIENT_FAILURE",
+          "repetition": 3,
+          "status": "FAIL",
+          "test_id": "T07"
+        },
+        {
+          "failure_class": "GATEWAY_FAILURE",
+          "repetition": 3,
+          "status": "FAIL",
+          "test_id": "T08"
+        }
+      ],
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "setup_status": "PASS",
+      "status": "FAIL"
+    },
+    {
+      "candidate_artifact": null,
+      "candidate_artifact_identity": {},
+      "candidate_source": null,
+      "candidate_source_tree_hash": null,
+      "capabilities": {
+        "anthropic_messages": "NOT_APPLICABLE",
+        "chat": "NOT_APPLICABLE",
+        "chat_completions": "NOT_APPLICABLE",
+        "emulated_tools": "NOT_APPLICABLE",
+        "error_normalization": "NOT_APPLICABLE",
+        "fallback_eligibility": "NOT_APPLICABLE",
+        "native_tools": "NOT_APPLICABLE",
+        "parallel_tools": "NOT_APPLICABLE",
+        "responses": "NOT_APPLICABLE",
+        "sequential_continuation": "NOT_APPLICABLE",
+        "streaming": "NOT_APPLICABLE",
+        "tool_result": "NOT_APPLICABLE"
+      },
+      "client": "Codex",
+      "client_version": "0.159.0",
+      "evidence_references": [
+        "docs/05-client-targets.md"
+      ],
+      "evidence_types": [
+        "SOURCE_INSPECTION_EVIDENCE"
+      ],
+      "failure_class": null,
+      "gateway_candidate": null,
+      "model_id": "NOT_APPLICABLE",
+      "observed_at": "2026-09-30T21:59:34.323512Z",
+      "protocol": "Direct client/provider pairing",
+      "provider": "RelayRouter",
+      "reason": "Known unsupported direct pairing; not a gateway failure.",
+      "setup_status": "NOT_APPLICABLE",
+      "status": "NOT_APPLICABLE"
+    },
+    {
+      "candidate_artifact": null,
+      "candidate_artifact_identity": {},
+      "candidate_source": null,
+      "candidate_source_tree_hash": null,
+      "capabilities": {
+        "anthropic_messages": "NOT_APPLICABLE",
+        "chat": "NOT_APPLICABLE",
+        "chat_completions": "NOT_APPLICABLE",
+        "emulated_tools": "NOT_APPLICABLE",
+        "error_normalization": "NOT_APPLICABLE",
+        "fallback_eligibility": "NOT_APPLICABLE",
+        "native_tools": "NOT_APPLICABLE",
+        "parallel_tools": "NOT_APPLICABLE",
+        "responses": "NOT_APPLICABLE",
+        "sequential_continuation": "NOT_APPLICABLE",
+        "streaming": "NOT_APPLICABLE",
+        "tool_result": "NOT_APPLICABLE"
+      },
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_references": [
+        "docs/05-client-targets.md"
+      ],
+      "evidence_types": [
+        "SOURCE_INSPECTION_EVIDENCE"
+      ],
+      "failure_class": null,
+      "gateway_candidate": null,
+      "model_id": "NOT_APPLICABLE",
+      "observed_at": "2026-09-30T21:59:34.323512Z",
+      "protocol": "Direct client/provider pairing",
+      "provider": "RelayRouter",
+      "reason": "Known unsupported direct pairing; not a gateway failure.",
+      "setup_status": "NOT_APPLICABLE",
+      "status": "NOT_APPLICABLE"
+    }
+  ],
+  "remediation_manifest": "poc/runs/batch-b-remediation-20260930T155149Z/manifest.json",
+  "report_id": "batch-b-remediation-20260930T155149Z",
+  "scenario_rows": [
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "Bifrost",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T02"
+    },
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "Bifrost",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T05"
+    },
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "Bifrost",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T06"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T09-A"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T09-B"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "Codex",
+      "client_version": "0.159.0",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/1-T01.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "response_id": "resp_0b6920dd4ecc45ed016abd67deecd887d09ee7d1e95e2005da",
+        "tool_call_count": 1,
+        "tool_calls": [
+          {
+            "arguments": "{\"path\":\"input/alpha.txt\"}",
+            "call_id": "call_ZKG3UwtdKUmvOdLVTp09FtyS",
+            "id": "fc_0b6920dd4ecc45ed016abd67df9bf887d0adcda2af06e875c2",
+            "name": "read_fixture",
+            "status": "completed",
+            "type": "function_call"
+          }
+        ]
+      },
+      "protocol": "Responses",
+      "provider": "A6api",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T01"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "Codex",
+      "client_version": "0.159.0",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/2-T01.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "response_id": "resp_0c5849d358fe156e016abd67e146cc87d0b83030711bbd06b1",
+        "tool_call_count": 1,
+        "tool_calls": [
+          {
+            "arguments": "{\"path\":\"input/alpha.txt\"}",
+            "call_id": "call_1Y9h43TcqBA3TCoffoPI9Zus",
+            "id": "fc_0c5849d358fe156e016abd67e28e1487d0be54a38f91d20e8a",
+            "name": "read_fixture",
+            "status": "completed",
+            "type": "function_call"
+          }
+        ]
+      },
+      "protocol": "Responses",
+      "provider": "A6api",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T01"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "Codex",
+      "client_version": "0.159.0",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/3-T01.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "response_id": "resp_0a712b3abae2ffe4016abd67e38c2487d0b42ef186145a822c",
+        "tool_call_count": 1,
+        "tool_calls": [
+          {
+            "arguments": "{\"path\":\"input/alpha.txt\"}",
+            "call_id": "call_njXvauYThaMXob7NsMeEQqG6",
+            "id": "fc_0a712b3abae2ffe4016abd67e44a8887d08aa0a32ebe3c0d8e",
+            "name": "read_fixture",
+            "status": "completed",
+            "type": "function_call"
+          }
+        ]
+      },
+      "protocol": "Responses",
+      "provider": "A6api",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T01"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/1-T03.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "CLIENT_FAILURE",
+      "historical_attempt": true,
+      "model_id": "claude-sonnet-4-5",
+      "observations": {
+        "error": "gateway returned HTTP 400",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T03"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/2-T03.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "CLIENT_FAILURE",
+      "historical_attempt": true,
+      "model_id": "claude-sonnet-4-5",
+      "observations": {
+        "error": "gateway returned HTTP 400",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T03"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/3-T03.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "CLIENT_FAILURE",
+      "historical_attempt": true,
+      "model_id": "claude-sonnet-4-5",
+      "observations": {
+        "error": "gateway returned HTTP 400",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T03"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "response_id": "resp_0c0e8c144012b2e4016abd67e70f4887d0b7741c0328911f23",
+        "text": "Hello! How can I help?",
+        "textual_tool_call": null
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "continuation_response_id": "resp_067a3ed42534c694016abd67ebc64887d08d9978ed75e546cb",
+        "final_text_present": true,
+        "first_tool_call": {
+          "arguments": "{\"path\":\"input/alpha.txt\"}",
+          "id": "call_6aEBYjSvMgrCPJDBYHJzH6cN",
+          "name": "read_fixture"
+        }
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "delta_count": 1,
+        "event_count": 3,
+        "finish_reasons": [
+          "stop"
+        ],
+        "terminal_event": true,
+        "valid": true
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "response_id": "resp_0838d01d75099615016abd67f47f8c87d0900dbc4127ef703c",
+        "text": "Hello! How can I help?",
+        "textual_tool_call": null
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "continuation_response_id": "resp_091085ecf4ce37aa016abd67f7ba5487d0a2e1820bc743fb6b",
+        "final_text_present": true,
+        "first_tool_call": {
+          "arguments": "{\"path\":\"input/alpha.txt\"}",
+          "id": "call_LNeKpV42nqVzrSIIR130G5xI",
+          "name": "read_fixture"
+        }
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "delta_count": 1,
+        "event_count": 3,
+        "finish_reasons": [
+          "stop"
+        ],
+        "terminal_event": true,
+        "valid": true
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "response_id": "resp_092fa491d16f3009016abd67fea3a087d08cc0f3316b41ddd0",
+        "text": "Hello! How can I help?",
+        "textual_tool_call": null
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "continuation_response_id": "resp_063c2e4467983d86016abd6802cb8887d0a546d60ed1a2381a",
+        "final_text_present": true,
+        "first_tool_call": {
+          "arguments": "{\"path\":\"input/alpha.txt\"}",
+          "id": "call_5levneWPOcotqjl1nv1RvvZr",
+          "name": "read_fixture"
+        }
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "delta_count": 1,
+        "event_count": 3,
+        "finish_reasons": [
+          "stop"
+        ],
+        "terminal_event": true,
+        "valid": true
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "stealth/openai/gpt-5.6-sol",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "stealth/openai/gpt-5.6-sol",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "stealth/openai/gpt-5.6-sol",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "stealth/openai/gpt-5.6-sol",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "stealth/openai/gpt-5.6-sol",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "stealth/openai/gpt-5.6-sol",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "stealth/openai/gpt-5.6-sol",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "stealth/openai/gpt-5.6-sol",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "stealth/openai/gpt-5.6-sol",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "LiteLLM",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T02"
+    },
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "LiteLLM",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T05"
+    },
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "LiteLLM",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T06"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T09-A"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T09-B"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "Codex",
+      "client_version": "0.159.0",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/1-T01.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "response_id": "resp_bGl0ZWxsbTpjdXN0b21fbGxtX3Byb3ZpZGVyOm9wZW5haTttb2RlbF9pZDo0MjRmYzI1NWViYWFiN2EyYWY5NjMzZGYxOGI2MDVjMGY2MjUxM2YzYmJlNTdhZDA4NWFlZTE0Mzk4ZDUyOGM3O3Jlc3BvbnNlX2lkOnJlc3BfMGFlZjhhZWIzZWEzY2M4YzAxNmFiZDY4MTY2MWM0ODdkMGJkNDhiOWZhODZlOWJhNzE=",
+        "tool_call_count": 1,
+        "tool_calls": [
+          {
+            "arguments": "{\"path\":\"input/alpha.txt\"}",
+            "call_id": "call_G5dDaRFYuNtALNftnPqdNFmk",
+            "id": "fc_0aef8aeb3ea3cc8c016abd681718cc87d0a7a51e6b4d1f3933",
+            "name": "read_fixture",
+            "namespace": null,
+            "status": "completed",
+            "type": "function_call"
+          }
+        ]
+      },
+      "protocol": "Responses",
+      "provider": "A6api",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T01"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "Codex",
+      "client_version": "0.159.0",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/2-T01.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "response_id": "resp_bGl0ZWxsbTpjdXN0b21fbGxtX3Byb3ZpZGVyOm9wZW5haTttb2RlbF9pZDo0MjRmYzI1NWViYWFiN2EyYWY5NjMzZGYxOGI2MDVjMGY2MjUxM2YzYmJlNTdhZDA4NWFlZTE0Mzk4ZDUyOGM3O3Jlc3BvbnNlX2lkOnJlc3BfMGRhZDk1OWJhZWY3OWViMDAxNmFiZDY4MTg0MzA0ODdkMDhjNDEwZDZjYjNjZWFlMTE=",
+        "tool_call_count": 1,
+        "tool_calls": [
+          {
+            "arguments": "{\"path\":\"input/alpha.txt\"}",
+            "call_id": "call_LdPaYYKxngp4OKkg1Cvk1V6k",
+            "id": "fc_0dad959baef79eb0016abd6818f45c87d0b6bd94539d7ee642",
+            "name": "read_fixture",
+            "namespace": null,
+            "status": "completed",
+            "type": "function_call"
+          }
+        ]
+      },
+      "protocol": "Responses",
+      "provider": "A6api",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T01"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "Codex",
+      "client_version": "0.159.0",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/3-T01.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "response_id": "resp_bGl0ZWxsbTpjdXN0b21fbGxtX3Byb3ZpZGVyOm9wZW5haTttb2RlbF9pZDo0MjRmYzI1NWViYWFiN2EyYWY5NjMzZGYxOGI2MDVjMGY2MjUxM2YzYmJlNTdhZDA4NWFlZTE0Mzk4ZDUyOGM3O3Jlc3BvbnNlX2lkOnJlc3BfMGM1ZGIyYjJhYmMwYzJmODAxNmFiZDY4MTllYTFjODdkMDlmMTczMmY4NTkwM2RjMzA=",
+        "tool_call_count": 1,
+        "tool_calls": [
+          {
+            "arguments": "{\"path\":\"input/alpha.txt\"}",
+            "call_id": "call_gtfAIS90QKUxfU5mAnY3RGDT",
+            "id": "fc_0c5db2b2abc0c2f8016abd681c2c9887d09c6e8d0064534784",
+            "name": "read_fixture",
+            "namespace": null,
+            "status": "completed",
+            "type": "function_call"
+          }
+        ]
+      },
+      "protocol": "Responses",
+      "provider": "A6api",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T01"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/1-T03.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "CLIENT_FAILURE",
+      "historical_attempt": true,
+      "model_id": "a6api-anthropic",
+      "observations": {
+        "error": "gateway returned HTTP 400",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T03"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/2-T03.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "CLIENT_FAILURE",
+      "historical_attempt": true,
+      "model_id": "a6api-anthropic",
+      "observations": {
+        "error": "gateway returned HTTP 400",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T03"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/3-T03.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "CLIENT_FAILURE",
+      "historical_attempt": true,
+      "model_id": "a6api-anthropic",
+      "observations": {
+        "error": "gateway returned HTTP 400",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T03"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "response_id": "resp_0411e5b58cbf64c7016abd681e673c87d0bbe1d71c1ed0bb35",
+        "text": "Hello! How can I help?",
+        "textual_tool_call": null
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "continuation_response_id": "resp_08584aadc89d9e43016abd6822a2b087d0913b2e875c838eda",
+        "final_text_present": true,
+        "first_tool_call": {
+          "arguments": "{\"path\":\"input/alpha.txt\"}",
+          "id": "call_7patAywaHCVU00xjZL1YFJ1R",
+          "name": "read_fixture"
+        }
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "delta_count": 1,
+        "event_count": 3,
+        "finish_reasons": [
+          "stop"
+        ],
+        "terminal_event": true,
+        "valid": true
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "response_id": "resp_0e1438728ea3005c016abd6836cb1087d089947ac5093cb39c",
+        "text": "Hello! How can I help?",
+        "textual_tool_call": null
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "continuation_response_id": "resp_09460ef47255fbfc016abd683c166887d0bca1475e7b1ae03c",
+        "final_text_present": true,
+        "first_tool_call": {
+          "arguments": "{\"path\":\"input/alpha.txt\"}",
+          "id": "call_mcITf3qhWIjy1PtEkJHnZ2S2",
+          "name": "read_fixture"
+        }
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "delta_count": 1,
+        "event_count": 3,
+        "finish_reasons": [
+          "stop"
+        ],
+        "terminal_event": true,
+        "valid": true
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "response_id": "resp_0314546d0a200ca2016abd68418d9487d093e6dc2d651cb491",
+        "text": "Hello! How can I help?",
+        "textual_tool_call": null
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "continuation_response_id": "resp_05030e649db4adc3016abd68475d6887d0b0ddbaa13f38f898",
+        "final_text_present": true,
+        "first_tool_call": {
+          "arguments": "{\"path\":\"input/alpha.txt\"}",
+          "id": "call_s1W7tMmj64W0QcaSAZNWrCDq",
+          "name": "read_fixture"
+        }
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "model_id": "a6api-openai",
+      "observations": {
+        "delta_count": 1,
+        "event_count": 3,
+        "finish_reasons": [
+          "stop"
+        ],
+        "terminal_event": true,
+        "valid": true
+      },
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "relay-openai",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "CLIENT_FAILURE",
+      "model_id": "relay-openai",
+      "observations": {
+        "error": "gateway returned HTTP 400",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "relay-openai",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 1,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "relay-openai",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "CLIENT_FAILURE",
+      "model_id": "relay-openai",
+      "observations": {
+        "error": "gateway returned HTTP 400",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "relay-openai",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 2,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T04.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "relay-openai",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T04"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T07.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "CLIENT_FAILURE",
+      "model_id": "relay-openai",
+      "observations": {
+        "error": "gateway returned HTTP 400",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T07"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "OpenCode",
+      "client_version": "1.18.33",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T08.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "model_id": "relay-openai",
+      "observations": {
+        "error": "gateway returned HTTP 530",
+        "error_type": "GatewayRequestError"
+      },
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "repetition": 3,
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "FAIL",
+      "test_id": "T08"
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "MODEL_BEHAVIOR_FAILURE",
+      "inbound_model_id": "gpt-5.4-mini",
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "response_id": "resp_1790805476298239279",
+        "tool_call_count": 0,
+        "tool_calls": []
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 1,
+      "root_cause_correction": "Route Anthropic Messages ingress to A6api's inventory-listed OpenAI-compatible gpt-5.4-mini model instead of native Anthropic passthrough.",
+      "run_id": "level2-remediation-20260930T225100Z",
+      "status": "FAIL",
+      "test_id": "T03",
+      "upstream_wire_contract": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "gateway_endpoint": "/anthropic/v1/messages",
+        "inbound_model_id": "gpt-5.4-mini",
+        "inbound_protocol": "Anthropic Messages",
+        "max_tokens_mapping": "max_tokens -> max_output_tokens",
+        "provider_selected": "openai",
+        "system_role_mapping": "Anthropic top-level system/messages -> Responses input items",
+        "tool_choice_mapping": "Anthropic type=tool/name -> Responses type=function/name",
+        "tool_schema_mapping": "Anthropic input_schema -> Responses function parameters",
+        "unsupported_anthropic_only_fields": [],
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_url_base": "https://api.a6api.com",
+        "upstream_url_path": "/v1/responses"
+      },
+      "wire_evidence": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "failure_class": "MODEL_BEHAVIOR_FAILURE",
+        "gateway_endpoint": "/anthropic/v1/messages",
+        "inbound_client_protocol": "Anthropic Messages",
+        "normalized_request": {
+          "max_tokens": 256,
+          "messages": [
+            {
+              "content": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+              "role": "user"
+            }
+          ],
+          "model": "gpt-5.4-mini",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "tool"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "input_schema": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "name": "read_fixture"
+            }
+          ]
+        },
+        "provider_http_status": 200,
+        "provider_selected": "openai",
+        "redacted_provider_error_body": null,
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_request": {
+          "input": [
+            {
+              "content": [
+                {
+                  "text": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+                  "type": "input_text"
+                }
+              ],
+              "role": "user",
+              "type": "message"
+            }
+          ],
+          "max_output_tokens": 256,
+          "model": "gpt-5.4-mini",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "function"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "name": "read_fixture",
+              "parameters": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "strict": false,
+              "type": "function"
+            }
+          ]
+        },
+        "upstream_url_path": "/v1/responses"
+      }
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "MODEL_BEHAVIOR_FAILURE",
+      "inbound_model_id": "gpt-5.4-mini",
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "response_id": "resp_1790805478657260659",
+        "tool_call_count": 0,
+        "tool_calls": []
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 2,
+      "root_cause_correction": "Route Anthropic Messages ingress to A6api's inventory-listed OpenAI-compatible gpt-5.4-mini model instead of native Anthropic passthrough.",
+      "run_id": "level2-remediation-20260930T225100Z",
+      "status": "FAIL",
+      "test_id": "T03",
+      "upstream_wire_contract": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "gateway_endpoint": "/anthropic/v1/messages",
+        "inbound_model_id": "gpt-5.4-mini",
+        "inbound_protocol": "Anthropic Messages",
+        "max_tokens_mapping": "max_tokens -> max_output_tokens",
+        "provider_selected": "openai",
+        "system_role_mapping": "Anthropic top-level system/messages -> Responses input items",
+        "tool_choice_mapping": "Anthropic type=tool/name -> Responses type=function/name",
+        "tool_schema_mapping": "Anthropic input_schema -> Responses function parameters",
+        "unsupported_anthropic_only_fields": [],
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_url_base": "https://api.a6api.com",
+        "upstream_url_path": "/v1/responses"
+      },
+      "wire_evidence": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "failure_class": "MODEL_BEHAVIOR_FAILURE",
+        "gateway_endpoint": "/anthropic/v1/messages",
+        "inbound_client_protocol": "Anthropic Messages",
+        "normalized_request": {
+          "max_tokens": 256,
+          "messages": [
+            {
+              "content": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+              "role": "user"
+            }
+          ],
+          "model": "gpt-5.4-mini",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "tool"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "input_schema": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "name": "read_fixture"
+            }
+          ]
+        },
+        "provider_http_status": 200,
+        "provider_selected": "openai",
+        "redacted_provider_error_body": null,
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_request": {
+          "input": [
+            {
+              "content": [
+                {
+                  "text": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+                  "type": "input_text"
+                }
+              ],
+              "role": "user",
+              "type": "message"
+            }
+          ],
+          "max_output_tokens": 256,
+          "model": "gpt-5.4-mini",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "function"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "name": "read_fixture",
+              "parameters": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "strict": false,
+              "type": "function"
+            }
+          ]
+        },
+        "upstream_url_path": "/v1/responses"
+      }
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "inbound_model_id": "gpt-5.4-mini",
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "response_id": "resp_1790805487519422645",
+        "tool_call_count": 1,
+        "tool_calls": [
+          {
+            "id": "call_0",
+            "input": {
+              "path": "input/alpha.txt"
+            },
+            "name": "read_fixture",
+            "type": "tool_use"
+          }
+        ]
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 3,
+      "root_cause_correction": "Route Anthropic Messages ingress to A6api's inventory-listed OpenAI-compatible gpt-5.4-mini model instead of native Anthropic passthrough.",
+      "run_id": "level2-remediation-20260930T225100Z",
+      "status": "PASS",
+      "test_id": "T03",
+      "upstream_wire_contract": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "gateway_endpoint": "/anthropic/v1/messages",
+        "inbound_model_id": "gpt-5.4-mini",
+        "inbound_protocol": "Anthropic Messages",
+        "max_tokens_mapping": "max_tokens -> max_output_tokens",
+        "provider_selected": "openai",
+        "system_role_mapping": "Anthropic top-level system/messages -> Responses input items",
+        "tool_choice_mapping": "Anthropic type=tool/name -> Responses type=function/name",
+        "tool_schema_mapping": "Anthropic input_schema -> Responses function parameters",
+        "unsupported_anthropic_only_fields": [],
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_url_base": "https://api.a6api.com",
+        "upstream_url_path": "/v1/responses"
+      },
+      "wire_evidence": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "failure_class": null,
+        "gateway_endpoint": "/anthropic/v1/messages",
+        "inbound_client_protocol": "Anthropic Messages",
+        "normalized_request": {
+          "max_tokens": 256,
+          "messages": [
+            {
+              "content": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+              "role": "user"
+            }
+          ],
+          "model": "gpt-5.4-mini",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "tool"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "input_schema": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "name": "read_fixture"
+            }
+          ]
+        },
+        "provider_http_status": 200,
+        "provider_selected": "openai",
+        "redacted_provider_error_body": null,
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_request": {
+          "input": [
+            {
+              "content": [
+                {
+                  "text": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+                  "type": "input_text"
+                }
+              ],
+              "role": "user",
+              "type": "message"
+            }
+          ],
+          "max_output_tokens": 256,
+          "model": "gpt-5.4-mini",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "function"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "name": "read_fixture",
+              "parameters": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "strict": false,
+              "type": "function"
+            }
+          ]
+        },
+        "upstream_url_path": "/v1/responses"
+      }
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "MODEL_BEHAVIOR_FAILURE",
+      "inbound_model_id": "a6api-anthropic",
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "response_id": "resp_bGl0ZWxsbTpjdXN0b21fbGxtX3Byb3ZpZGVyOm9wZW5haTttb2RlbF9pZDpmODcxNmVlMDBjMWI1Mjg0MWVjYmNjODJhNGI0ZWM2YTY5ZDlkMmUzZjJhNTVlNjhjYmVlOWE4NDUyYmVlNjczO3Jlc3BvbnNlX2lkOnJlc3BfMTc5MDgwNTUwMjQyODQwMDg4NA==",
+        "tool_call_count": 0,
+        "tool_calls": []
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 1,
+      "root_cause_correction": "Route Anthropic Messages ingress to A6api's inventory-listed OpenAI-compatible gpt-5.4-mini model instead of native Anthropic passthrough.",
+      "run_id": "level2-remediation-20260930T225100Z",
+      "status": "FAIL",
+      "test_id": "T03",
+      "upstream_wire_contract": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "gateway_endpoint": "/v1/messages",
+        "inbound_model_id": "a6api-anthropic",
+        "inbound_protocol": "Anthropic Messages",
+        "max_tokens_mapping": "max_tokens -> max_output_tokens",
+        "provider_selected": "openai",
+        "system_role_mapping": "Anthropic system/messages -> Responses instructions/input message items",
+        "tool_choice_mapping": "Anthropic type=tool/name -> Responses type=function/name",
+        "tool_schema_mapping": "Anthropic input_schema -> Responses function parameters with strict=false",
+        "unsupported_anthropic_only_fields": [],
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_url_base": "https://api.a6api.com",
+        "upstream_url_path": "/v1/responses"
+      },
+      "wire_evidence": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "failure_class": "MODEL_BEHAVIOR_FAILURE",
+        "gateway_endpoint": "/v1/messages",
+        "inbound_client_protocol": "Anthropic Messages",
+        "normalized_request": {
+          "max_tokens": 256,
+          "messages": [
+            {
+              "content": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+              "role": "user"
+            }
+          ],
+          "model": "a6api-anthropic",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "tool"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "input_schema": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "name": "read_fixture"
+            }
+          ]
+        },
+        "provider_http_status": 200,
+        "provider_selected": "openai",
+        "redacted_provider_error_body": null,
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_request": {
+          "input": [
+            {
+              "content": [
+                {
+                  "text": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+                  "type": "input_text"
+                }
+              ],
+              "role": "user",
+              "type": "message"
+            }
+          ],
+          "max_output_tokens": 256,
+          "model": "gpt-5.4-mini",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "function"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "name": "read_fixture",
+              "parameters": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "strict": false,
+              "type": "function"
+            }
+          ]
+        },
+        "upstream_url_path": "/v1/responses"
+      }
+    },
+    {
+      "behavior_mode": "UNVERIFIED",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": "GATEWAY_FAILURE",
+      "inbound_model_id": "a6api-anthropic",
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "error": "timed out",
+        "error_type": "TimeoutError"
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 2,
+      "root_cause_correction": "Route Anthropic Messages ingress to A6api's inventory-listed OpenAI-compatible gpt-5.4-mini model instead of native Anthropic passthrough.",
+      "run_id": "level2-remediation-20260930T225100Z",
+      "status": "FAIL",
+      "test_id": "T03",
+      "upstream_wire_contract": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "gateway_endpoint": "/v1/messages",
+        "inbound_model_id": "a6api-anthropic",
+        "inbound_protocol": "Anthropic Messages",
+        "max_tokens_mapping": "max_tokens -> max_output_tokens",
+        "provider_selected": "openai",
+        "system_role_mapping": "Anthropic system/messages -> Responses instructions/input message items",
+        "tool_choice_mapping": "Anthropic type=tool/name -> Responses type=function/name",
+        "tool_schema_mapping": "Anthropic input_schema -> Responses function parameters with strict=false",
+        "unsupported_anthropic_only_fields": [],
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_url_base": "https://api.a6api.com",
+        "upstream_url_path": "/v1/responses"
+      },
+      "wire_evidence": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "failure_class": "GATEWAY_FAILURE",
+        "gateway_endpoint": "/v1/messages",
+        "inbound_client_protocol": "Anthropic Messages",
+        "normalized_request": {
+          "max_tokens": 256,
+          "messages": [
+            {
+              "content": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+              "role": "user"
+            }
+          ],
+          "model": "a6api-anthropic",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "tool"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "input_schema": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "name": "read_fixture"
+            }
+          ]
+        },
+        "provider_http_status": null,
+        "provider_selected": "openai",
+        "redacted_provider_error_body": null,
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_request": {
+          "input": [
+            {
+              "content": [
+                {
+                  "text": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+                  "type": "input_text"
+                }
+              ],
+              "role": "user",
+              "type": "message"
+            }
+          ],
+          "max_output_tokens": 256,
+          "model": "gpt-5.4-mini",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "function"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "name": "read_fixture",
+              "parameters": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "strict": false,
+              "type": "function"
+            }
+          ]
+        },
+        "upstream_url_path": "/v1/responses"
+      }
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": true,
+      "client": "Claude Code",
+      "client_version": "2.1.278",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+      ],
+      "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+      "failure_class": null,
+      "inbound_model_id": "a6api-anthropic",
+      "model_id": "gpt-5.4-mini",
+      "observations": {
+        "response_id": "resp_bGl0ZWxsbTpjdXN0b21fbGxtX3Byb3ZpZGVyOm9wZW5haTttb2RlbF9pZDpmODcxNmVlMDBjMWI1Mjg0MWVjYmNjODJhNGI0ZWM2YTY5ZDlkMmUzZjJhNTVlNjhjYmVlOWE4NDUyYmVlNjczO3Jlc3BvbnNlX2lkOnJlc3BfMTc5MDgwNTU3MDE3NTQ2OTY4OQ==",
+        "tool_call_count": 1,
+        "tool_calls": [
+          {
+            "id": "call_0",
+            "input": {
+              "path": "input/alpha.txt"
+            },
+            "name": "read_fixture",
+            "type": "tool_use"
+          }
+        ]
+      },
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "repetition": 3,
+      "root_cause_correction": "Route Anthropic Messages ingress to A6api's inventory-listed OpenAI-compatible gpt-5.4-mini model instead of native Anthropic passthrough.",
+      "run_id": "level2-remediation-20260930T225100Z",
+      "status": "PASS",
+      "test_id": "T03",
+      "upstream_wire_contract": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "gateway_endpoint": "/v1/messages",
+        "inbound_model_id": "a6api-anthropic",
+        "inbound_protocol": "Anthropic Messages",
+        "max_tokens_mapping": "max_tokens -> max_output_tokens",
+        "provider_selected": "openai",
+        "system_role_mapping": "Anthropic system/messages -> Responses instructions/input message items",
+        "tool_choice_mapping": "Anthropic type=tool/name -> Responses type=function/name",
+        "tool_schema_mapping": "Anthropic input_schema -> Responses function parameters with strict=false",
+        "unsupported_anthropic_only_fields": [],
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_url_base": "https://api.a6api.com",
+        "upstream_url_path": "/v1/responses"
+      },
+      "wire_evidence": {
+        "a6api_model_route_id": "gpt-5.4-mini",
+        "failure_class": null,
+        "gateway_endpoint": "/v1/messages",
+        "inbound_client_protocol": "Anthropic Messages",
+        "normalized_request": {
+          "max_tokens": 256,
+          "messages": [
+            {
+              "content": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+              "role": "user"
+            }
+          ],
+          "model": "a6api-anthropic",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "tool"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "input_schema": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "name": "read_fixture"
+            }
+          ]
+        },
+        "provider_http_status": 200,
+        "provider_selected": "openai",
+        "redacted_provider_error_body": null,
+        "upstream_protocol": "OpenAI Responses",
+        "upstream_request": {
+          "input": [
+            {
+              "content": [
+                {
+                  "text": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+                  "type": "input_text"
+                }
+              ],
+              "role": "user",
+              "type": "message"
+            }
+          ],
+          "max_output_tokens": 256,
+          "model": "gpt-5.4-mini",
+          "tool_choice": {
+            "name": "read_fixture",
+            "type": "function"
+          },
+          "tools": [
+            {
+              "description": "Read one fixture file.",
+              "name": "read_fixture",
+              "parameters": {
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path"
+                ],
+                "type": "object"
+              },
+              "strict": false,
+              "type": "function"
+            }
+          ]
+        },
+        "upstream_url_path": "/v1/responses"
+      }
+    }
+  ],
+  "schema_version": "1.1",
+  "synthetic_controls": [
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "Bifrost",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T02"
+    },
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "Bifrost",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T05"
+    },
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "Bifrost",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T06"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T09-A"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "Bifrost",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T09-B"
+    },
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "LiteLLM",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T02"
+    },
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "LiteLLM",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T05"
+    },
+    {
+      "behavior_mode": "EMULATED",
+      "candidate": "LiteLLM",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T06"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T09-A"
+    },
+    {
+      "behavior_mode": "NATIVE",
+      "candidate": "LiteLLM",
+      "candidate_execution": false,
+      "client": "candidate-neutral fixture harness",
+      "client_version": null,
+      "evidence_refs": [
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json"
+      ],
+      "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+      "failure_class": null,
+      "fixture_control_status": "PASS_IN_PHASE_2_ONLY",
+      "model_id": "synthetic",
+      "protocol": "candidate-neutral fixture contract",
+      "provider": "Shofni synthetic fixture",
+      "run_id": "level2-remediation-20260930T194948Z",
+      "status": "PASS",
+      "test_id": "T09-B"
+    }
+  ]
+}

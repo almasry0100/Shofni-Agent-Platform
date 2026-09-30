@@ -1,0 +1,242 @@
+{
+  "batch_run_id": "batch-b-remediation-20260930T155149Z",
+  "candidate_source_modified": false,
+  "diagnostic_run_id": "targeted-b-20260930T224500Z",
+  "direct_controls": [
+    {
+      "control": "A6api direct OpenAI Chat Completions",
+      "endpoint_path": "/v1/chat/completions",
+      "key_env": "A6API_KEY",
+      "key_present": true,
+      "model": "gpt-5.4-mini",
+      "request": {
+        "max_tokens": 16,
+        "messages": [
+          {
+            "content": "Reply with OK.",
+            "role": "user"
+          }
+        ],
+        "model": "gpt-5.4-mini"
+      },
+      "request_headers": {
+        "accept": "application/json",
+        "auth_header_present": true,
+        "content_type": "application/json",
+        "vendor_key_header_present": false
+      },
+      "request_id": null,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "annotations": [],
+              "content": "I cannot comply with this request, as it attempts to override my core identit",
+              "refusal": null,
+              "role": "assistant"
+            }
+          }
+        ],
+        "created": 1790803061,
+        "id": "chatcmpl-029e7326d212206abd5eb0bb",
+        "model": "gpt-5.4-mini",
+        "object": "chat.completion",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 17,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens": 955,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 950
+          },
+          "total_tokens": 972
+        }
+      },
+      "status": 200
+    },
+    {
+      "control": "A6api direct OpenAI Responses with T03 tool schema",
+      "endpoint_path": "/v1/responses",
+      "error": "The read operation timed out",
+      "error_type": "TimeoutError",
+      "key_env": "A6API_KEY",
+      "key_present": true,
+      "model": "gpt-5.4-mini",
+      "request": {
+        "input": [
+          {
+            "content": [
+              {
+                "text": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+                "type": "input_text"
+              }
+            ],
+            "role": "user",
+            "type": "message"
+          }
+        ],
+        "max_output_tokens": 256,
+        "model": "gpt-5.4-mini",
+        "tool_choice": {
+          "name": "read_fixture",
+          "type": "function"
+        },
+        "tools": [
+          {
+            "description": "Read one fixture file.",
+            "name": "read_fixture",
+            "parameters": {
+              "properties": {
+                "path": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "path"
+              ],
+              "type": "object"
+            },
+            "strict": false,
+            "type": "function"
+          }
+        ]
+      },
+      "request_headers": {
+        "accept": "application/json",
+        "auth_header_present": true,
+        "content_type": "application/json",
+        "vendor_key_header_present": false
+      },
+      "status": "ERROR"
+    },
+    {
+      "control": "A6api direct native Anthropic Messages /messages",
+      "endpoint_path": "/messages",
+      "key_env": "A6API_KEY",
+      "key_present": true,
+      "model": "claude-sonnet-4-5",
+      "request": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "Reply with OK.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-sonnet-4-5"
+      },
+      "request_headers": {
+        "accept": "application/json",
+        "auth_header_present": false,
+        "content_type": "application/json",
+        "vendor_key_header_present": true
+      },
+      "request_id": "20260930215410396153488268d9d6lhE6fmzz",
+      "response": {
+        "error": {
+          "code": "invalid_api_key",
+          "message": "API Key \u65e0\u6548\uff0c\u8bf7\u68c0\u67e5\u540e\u91cd\u8bd5\u3002 \u539f\u56e0\uff1a\u5f53\u524d\u8bf7\u6c42\u4f7f\u7528\u7684 API Key \u65e0\u6548\u3001\u5df2\u5220\u9664\u3001\u5df2\u7981\u7528\u6216\u683c\u5f0f\u4e0d\u6b63\u786e\u3002 \u89e3\u51b3\u65b9\u6848\uff1a\u8bf7\u68c0\u67e5 Authorization \u662f\u5426\u4e3a Bearer \u683c\u5f0f\uff0c\u5e76\u5728\u63a7\u5236\u53f0\u91cd\u65b0\u590d\u5236\u6709\u6548\u4ee4\u724c\u3002 request_id: 20260930215410396153488268d9d6lhE6fmzz",
+          "reason": "\u5f53\u524d\u8bf7\u6c42\u4f7f\u7528\u7684 API Key \u65e0\u6548\u3001\u5df2\u5220\u9664\u3001\u5df2\u7981\u7528\u6216\u683c\u5f0f\u4e0d\u6b63\u786e\u3002",
+          "request_id": "20260930215410396153488268d9d6lhE6fmzz",
+          "solution": "\u8bf7\u68c0\u67e5 Authorization \u662f\u5426\u4e3a Bearer \u683c\u5f0f\uff0c\u5e76\u5728\u63a7\u5236\u53f0\u91cd\u65b0\u590d\u5236\u6709\u6548\u4ee4\u724c\u3002",
+          "type": "invalid_api_key"
+        }
+      },
+      "status": 401
+    },
+    {
+      "control": "A6api direct native Anthropic Messages /v1/messages",
+      "endpoint_path": "/v1/messages",
+      "key_env": "A6API_KEY",
+      "key_present": true,
+      "model": "claude-sonnet-4-5",
+      "request": {
+        "max_tokens": 256,
+        "messages": [
+          {
+            "content": "Reply with OK.",
+            "role": "user"
+          }
+        ],
+        "model": "claude-sonnet-4-5"
+      },
+      "request_headers": {
+        "accept": "application/json",
+        "auth_header_present": false,
+        "content_type": "application/json",
+        "vendor_key_header_present": true
+      },
+      "request_id": null,
+      "response": {
+        "error": {
+          "message": "\u8bf7\u6c42\u53c2\u6570\u4e0d\u6b63\u786e\uff0c\u8bf7\u68c0\u67e5\u8bf7\u6c42\u4f53\u540e\u91cd\u8bd5\u3002 \u539f\u56e0\uff1a\u8bf7\u6c42\u4e2d\u5b58\u5728\u76ee\u6807\u63a5\u53e3\u4e0d\u652f\u6301\u7684\u5b57\u6bb5\u3001\u7f3a\u5c11\u5fc5\u586b\u5b57\u6bb5\uff0c\u6216 JSON \u683c\u5f0f\u4e0d\u5b8c\u6574\u3002 \u89e3\u51b3\u65b9\u6848\uff1a\u8bf7\u6309\u76ee\u6807\u63a5\u53e3\u6587\u6863\u68c0\u67e5\u53c2\u6570\u540d\u3001\u5b57\u6bb5\u7c7b\u578b\u548c JSON \u683c\u5f0f\uff1b\u79fb\u9664\u4e0d\u652f\u6301\u7684\u53c2\u6570\u540e\u91cd\u8bd5\u3002 request_id: 202609302154102990052618268d9d6loLgzS8K",
+          "type": "invalid_request"
+        },
+        "type": "error"
+      },
+      "status": 400
+    },
+    {
+      "control": "RelayRouter direct chat-only",
+      "endpoint_path": "/chat/completions",
+      "key_env": "RELAYROUTER_API_KEY",
+      "key_present": true,
+      "model": "stealth/openai/gpt-5.6-sol",
+      "request": {
+        "messages": [
+          {
+            "content": "Reply with OK.",
+            "role": "user"
+          }
+        ],
+        "model": "stealth/openai/gpt-5.6-sol"
+      },
+      "request_headers": {
+        "accept": "application/json",
+        "auth_header_present": true,
+        "content_type": "application/json",
+        "vendor_key_header_present": false
+      },
+      "request_id": null,
+      "response": {
+        "cloudflare_error": true,
+        "detail": "The site owner has blocked access based on your browser's signature.",
+        "error_category": "access_denied",
+        "error_code": 1010,
+        "error_name": "browser_signature_banned",
+        "footer": "This error was generated by Cloudflare on behalf of the website owner.",
+        "instance": "a43676ef3ee1191e",
+        "owner_action_required": true,
+        "ray_id": "a43676ef3ee1191e",
+        "retryable": false,
+        "status": 403,
+        "timestamp": "2026-09-30T21:54:10Z",
+        "title": "Error 1010: Access denied",
+        "type": "https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1010/",
+        "what_you_should_do": "**Do not retry.** Your user-agent has been banned by the site owner.",
+        "zone": "api.relayrouter.org"
+      },
+      "status": 403
+    }
+  ],
+  "gateway_probes": [],
+  "inventory_evidence": [
+    "docs/a6api-models.md",
+    "docs/relayrouter-models.md",
+    "docs/04-provider-docs.md"
+  ],
+  "observed_at": "2026-09-30T21:54:10.437114Z",
+  "schema_version": "1.0",
+  "scope": "T03 A6api translation diagnosis and RelayRouter chat-only dependency diagnosis",
+  "sensitive_values_written": false
+}

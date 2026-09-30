@@ -1,0 +1,51 @@
+{
+  "files": [
+    {
+      "original_sha256": "sha256:f4974cae46a12e21b4570f16aaac3588073aaf0344022240643c09c1d4b63394",
+      "path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/provenance.json",
+      "private_path_replacements": 4,
+      "raw_temp_path": "poc/.runtime/raw-evidence/historical-sanitization/provenance.json",
+      "sanitized_sha256": "sha256:c018b1a44323f349e3b7f41c5e1096cb1ce7bdbf5ea290cfada7f84b969f450a",
+      "semantic_fields_unchanged": true
+    },
+    {
+      "original_sha256": "sha256:9737db9c904dba2313b45fa485f4b183c447e4d7bda935fce80d4e0a152686fa",
+      "path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/provenance.json",
+      "private_path_replacements": 4,
+      "raw_temp_path": "poc/.runtime/raw-evidence/historical-sanitization/provenance.json",
+      "sanitized_sha256": "sha256:6192034b13d507689fc7a5aa94373c0161d841dea533cf68adb846a2d8ce22b6",
+      "semantic_fields_unchanged": true
+    },
+    {
+      "original_sha256": "sha256:e1b31a9852a3035c42303897d16664e39f1a6bf598074a8a58f6fb8c8c057365",
+      "path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/provenance.json",
+      "private_path_replacements": 4,
+      "raw_temp_path": "poc/.runtime/raw-evidence/historical-sanitization/provenance.json",
+      "sanitized_sha256": "sha256:2906b206a06d4fa345a66fe062acddfb867a8557e0fdb418d11be76652c4440c",
+      "semantic_fields_unchanged": true
+    },
+    {
+      "original_sha256": "sha256:a38791cc471b724b3fa8ad4d35e35996fb90dffd41cf541cef3fda083e79df5a",
+      "path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/provenance.json",
+      "private_path_replacements": 4,
+      "raw_temp_path": "poc/.runtime/raw-evidence/historical-sanitization/provenance.json",
+      "sanitized_sha256": "sha256:228b121eac031812ce7151ffe06517a475134f20d51e4ed39d720a16e94ea680",
+      "semantic_fields_unchanged": true
+    },
+    {
+      "original_sha256": "sha256:d0dfded0372388401817878297e200e27af371ca3833661e973f06feb2762b09",
+      "path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json",
+      "private_path_replacements": 4,
+      "raw_temp_path": "poc/.runtime/raw-evidence/historical-sanitization/provenance.json",
+      "sanitized_sha256": "sha256:40de589ff28256a2a3efeb688882efecf732fedacf576fe2be6c9f475a3905a3",
+      "semantic_fields_unchanged": true
+    }
+  ],
+  "raw_deleted": true,
+  "raw_files_persisted": false,
+  "raw_staging_root": "poc/.runtime/raw-evidence/historical-sanitization/",
+  "redactor_placeholder": "[REDACTED_PATH]",
+  "sanitization_run": "historical-liteLLM-private-paths-20260930T204000Z",
+  "sanitized_at_utc": "2026-09-30T21:12:01.819057Z",
+  "schema_version": "1.0"
+}

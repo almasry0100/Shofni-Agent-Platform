@@ -1,0 +1,16 @@
+{
+  "phase": "phase_4",
+  "run_id": "phase4-20260930T150128Z",
+  "candidate": "LiteLLM",
+  "status": "BLOCKED",
+  "failure_class": "SETUP_FAILURE",
+  "blocker": "LITELLM_EXECUTABLE_PROVENANCE",
+  "adapter_status": "NOT_RUN",
+  "fixture_status": "NOT_RUN",
+  "startup_status": "NOT_RUN",
+  "reason": "No reproducible open-source-only executable artifact was built. The available candidate Dockerfile includes enterprise source/extras and cannot be used under the batch license boundary.",
+  "candidate_source_modified": false,
+  "candidate_history_modified": false,
+  "candidate_process_started": false,
+  "live_provider_calls": 0
+}

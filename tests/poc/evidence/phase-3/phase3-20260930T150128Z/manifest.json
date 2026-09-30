@@ -1,0 +1,13 @@
+{
+  "phase": "phase_3",
+  "run_id": "phase3-20260930T150128Z",
+  "batch_run_id": "batch-b-20260930T150128Z",
+  "candidate": "Bifrost",
+  "timestamp_utc": "2026-09-30T15:01:28Z",
+  "status": "BLOCKED",
+  "evidence_type": "SOURCE_INSPECTION_EVIDENCE",
+  "candidate_source_modified": false,
+  "startup_attempted": false,
+  "artifact_produced": false,
+  "evidence_files": ["result.json", "provenance.json"]
+}

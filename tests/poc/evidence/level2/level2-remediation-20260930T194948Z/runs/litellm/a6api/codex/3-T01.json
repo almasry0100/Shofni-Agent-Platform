@@ -1,0 +1,34 @@
+{
+  "behavior_mode": "NATIVE",
+  "candidate": "LiteLLM",
+  "candidate_execution": true,
+  "client": "Codex",
+  "client_version": "0.159.0",
+  "evidence_refs": [
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/3-T01.json"
+  ],
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "failure_class": null,
+  "model_id": "a6api-openai",
+  "observations": {
+    "response_id": "resp_bGl0ZWxsbTpjdXN0b21fbGxtX3Byb3ZpZGVyOm9wZW5haTttb2RlbF9pZDo0MjRmYzI1NWViYWFiN2EyYWY5NjMzZGYxOGI2MDVjMGY2MjUxM2YzYmJlNTdhZDA4NWFlZTE0Mzk4ZDUyOGM3O3Jlc3BvbnNlX2lkOnJlc3BfMGM1ZGIyYjJhYmMwYzJmODAxNmFiZDY4MTllYTFjODdkMDlmMTczMmY4NTkwM2RjMzA=",
+    "tool_call_count": 1,
+    "tool_calls": [
+      {
+        "arguments": "{\"path\":\"input/alpha.txt\"}",
+        "call_id": "call_gtfAIS90QKUxfU5mAnY3RGDT",
+        "id": "fc_0c5db2b2abc0c2f8016abd681c2c9887d09c6e8d0064534784",
+        "name": "read_fixture",
+        "namespace": null,
+        "status": "completed",
+        "type": "function_call"
+      }
+    ]
+  },
+  "protocol": "Responses",
+  "provider": "A6api",
+  "repetition": 3,
+  "run_id": "level2-remediation-20260930T194948Z",
+  "status": "PASS",
+  "test_id": "T01"
+}

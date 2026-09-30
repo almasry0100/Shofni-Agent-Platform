@@ -1,0 +1,123 @@
+{
+  "behavior_mode": "UNVERIFIED",
+  "candidate": "LiteLLM",
+  "candidate_execution": true,
+  "client": "Claude Code",
+  "client_version": "2.1.278",
+  "evidence_refs": [
+    "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/1-T03.json",
+    "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+  ],
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "failure_class": "MODEL_BEHAVIOR_FAILURE",
+  "inbound_model_id": "a6api-anthropic",
+  "model_id": "gpt-5.4-mini",
+  "observations": {
+    "response_id": "resp_bGl0ZWxsbTpjdXN0b21fbGxtX3Byb3ZpZGVyOm9wZW5haTttb2RlbF9pZDpmODcxNmVlMDBjMWI1Mjg0MWVjYmNjODJhNGI0ZWM2YTY5ZDlkMmUzZjJhNTVlNjhjYmVlOWE4NDUyYmVlNjczO3Jlc3BvbnNlX2lkOnJlc3BfMTc5MDgwNTUwMjQyODQwMDg4NA==",
+    "tool_call_count": 0,
+    "tool_calls": []
+  },
+  "protocol": "Anthropic Messages",
+  "provider": "A6api",
+  "repetition": 1,
+  "root_cause_correction": "Route Anthropic Messages ingress to A6api's inventory-listed OpenAI-compatible gpt-5.4-mini model instead of native Anthropic passthrough.",
+  "run_id": "level2-remediation-20260930T225100Z",
+  "status": "FAIL",
+  "test_id": "T03",
+  "upstream_wire_contract": {
+    "a6api_model_route_id": "gpt-5.4-mini",
+    "gateway_endpoint": "/v1/messages",
+    "inbound_model_id": "a6api-anthropic",
+    "inbound_protocol": "Anthropic Messages",
+    "max_tokens_mapping": "max_tokens -> max_output_tokens",
+    "provider_selected": "openai",
+    "system_role_mapping": "Anthropic system/messages -> Responses instructions/input message items",
+    "tool_choice_mapping": "Anthropic type=tool/name -> Responses type=function/name",
+    "tool_schema_mapping": "Anthropic input_schema -> Responses function parameters with strict=false",
+    "unsupported_anthropic_only_fields": [],
+    "upstream_protocol": "OpenAI Responses",
+    "upstream_url_base": "https://api.a6api.com",
+    "upstream_url_path": "/v1/responses"
+  },
+  "wire_evidence": {
+    "a6api_model_route_id": "gpt-5.4-mini",
+    "failure_class": "MODEL_BEHAVIOR_FAILURE",
+    "gateway_endpoint": "/v1/messages",
+    "inbound_client_protocol": "Anthropic Messages",
+    "normalized_request": {
+      "max_tokens": 256,
+      "messages": [
+        {
+          "content": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+          "role": "user"
+        }
+      ],
+      "model": "a6api-anthropic",
+      "tool_choice": {
+        "name": "read_fixture",
+        "type": "tool"
+      },
+      "tools": [
+        {
+          "description": "Read one fixture file.",
+          "input_schema": {
+            "properties": {
+              "path": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path"
+            ],
+            "type": "object"
+          },
+          "name": "read_fixture"
+        }
+      ]
+    },
+    "provider_http_status": 200,
+    "provider_selected": "openai",
+    "redacted_provider_error_body": null,
+    "upstream_protocol": "OpenAI Responses",
+    "upstream_request": {
+      "input": [
+        {
+          "content": [
+            {
+              "text": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+              "type": "input_text"
+            }
+          ],
+          "role": "user",
+          "type": "message"
+        }
+      ],
+      "max_output_tokens": 256,
+      "model": "gpt-5.4-mini",
+      "tool_choice": {
+        "name": "read_fixture",
+        "type": "function"
+      },
+      "tools": [
+        {
+          "description": "Read one fixture file.",
+          "name": "read_fixture",
+          "parameters": {
+            "properties": {
+              "path": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "path"
+            ],
+            "type": "object"
+          },
+          "strict": false,
+          "type": "function"
+        }
+      ]
+    },
+    "upstream_url_path": "/v1/responses"
+  }
+}

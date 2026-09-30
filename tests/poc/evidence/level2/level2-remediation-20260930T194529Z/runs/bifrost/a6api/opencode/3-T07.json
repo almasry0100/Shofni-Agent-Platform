@@ -1,0 +1,28 @@
+{
+  "behavior_mode": "NATIVE",
+  "candidate": "Bifrost",
+  "candidate_execution": true,
+  "client": "OpenCode",
+  "client_version": "1.18.33",
+  "evidence_refs": [
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T07.json"
+  ],
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "failure_class": null,
+  "model_id": "gpt-5.4-mini",
+  "observations": {
+    "continuation_response_id": "resp_08bb914a1b6fb16c016abd670c501887d0b6c06b9dfedf1c1d",
+    "final_text_present": true,
+    "first_tool_call": {
+      "arguments": "{\"path\":\"input/alpha.txt\"}",
+      "id": "call_Dc5knhNFibP6rRf85Z7nKVXH",
+      "name": "read_fixture"
+    }
+  },
+  "protocol": "Chat Completions",
+  "provider": "A6api",
+  "repetition": 3,
+  "run_id": "level2-remediation-20260930T194529Z",
+  "status": "PASS",
+  "test_id": "T07"
+}

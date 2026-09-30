@@ -1,0 +1,20 @@
+{
+  "behavior_mode": "UNVERIFIED",
+  "candidate": "Bifrost",
+  "candidate_execution": false,
+  "client": "Codex",
+  "client_version": "0.159.0",
+  "evidence_refs": [],
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "failure_class": "GATEWAY_FAILURE",
+  "model_id": "gpt-5.4-mini",
+  "observations": {
+    "error": "Bifrost executable is missing from the artifact directory",
+    "error_type": "FileNotFoundError"
+  },
+  "protocol": "Responses",
+  "provider": "A6api",
+  "run_id": "level2-remediation-20260930T200500Z",
+  "status": "FAIL",
+  "test_id": "T01"
+}

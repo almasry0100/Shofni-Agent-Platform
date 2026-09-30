@@ -1,0 +1,23 @@
+{
+  "behavior_mode": "UNVERIFIED",
+  "candidate": "Bifrost",
+  "candidate_execution": true,
+  "client": "Claude Code",
+  "client_version": "2.1.278",
+  "evidence_refs": [
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/1-T03.json"
+  ],
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "failure_class": "CLIENT_FAILURE",
+  "model_id": "claude-sonnet-4-5",
+  "observations": {
+    "error": "gateway returned HTTP 400",
+    "error_type": "GatewayRequestError"
+  },
+  "protocol": "Anthropic Messages",
+  "provider": "A6api",
+  "repetition": 1,
+  "run_id": "level2-remediation-20260930T194529Z",
+  "status": "FAIL",
+  "test_id": "T03"
+}

@@ -1,0 +1,163 @@
+{
+  "batch": "B",
+  "batch_status": "PARTIAL",
+  "run_id": "batch-b-20260930T150128Z",
+  "timestamp_utc": "2026-09-30T15:01:28Z",
+  "starting_git_head": "f7dd30fdaee742c5a2dab43323e0196d3dd163e1",
+  "starting_branch": "main",
+  "starting_working_tree": "clean",
+  "current_phase": "phase_6",
+  "phase_3_status": "BLOCKED",
+  "phase_4_status": "BLOCKED",
+  "phase_5_status": "PARTIAL",
+  "phase_6_status": "PASS",
+  "candidate_states": {
+    "Bifrost": "BLOCKED",
+    "LiteLLM": "BLOCKED"
+  },
+  "candidate_artifact_identities": {
+    "Bifrost": {
+      "source_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+      "included_file_count": 5172,
+      "artifact": null,
+      "artifact_digest": null
+    },
+    "LiteLLM": {
+      "source_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+      "included_file_count": 12075,
+      "artifact": null,
+      "artifact_digest": null
+    }
+  },
+  "commands_executed": [
+    {
+      "command": "git rev-parse --show-toplevel; git branch --show-current; git rev-parse HEAD; git status --short --branch; git log -5 --oneline",
+      "exit_code": 0,
+      "purpose": "Verify the Shofni baseline"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc",
+      "exit_code": 0,
+      "purpose": "Pre-batch regression baseline; 55 passed"
+    },
+    {
+      "command": "go version",
+      "exit_code": 1,
+      "purpose": "Check the existing Go toolchain without installing one"
+    },
+    {
+      "command": "docker image ls --digests --no-trunc",
+      "exit_code": 0,
+      "purpose": "Check for an already-present pinned Go candidate image; none available"
+    },
+    {
+      "command": "python -m uv --version",
+      "exit_code": 1,
+      "purpose": "Check the existing UV toolchain without installing one"
+    },
+    {
+      "command": "rustc --version; cargo --version",
+      "exit_code": 1,
+      "purpose": "Check the existing Rust toolchain without installing one"
+    },
+    {
+      "command": "docker image ls --digests --no-trunc",
+      "exit_code": 0,
+      "purpose": "Check for an existing candidate build image; no suitable image is present"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc/scenarios/level2 tests/poc/scenarios/test_t12_report.py tests/poc",
+      "exit_code": 0,
+      "purpose": "Validate explicit blocked Level 2 matrix and complete POC regression; 60 passed"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m poc.reports.build_compatibility_report",
+      "exit_code": 0,
+      "purpose": "Generate the Phase 6 compatibility and gateway reports; run twice with identical hashes"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m poc.reports.build_compatibility_report",
+      "exit_code": 0,
+      "purpose": "Repeat report generation for determinism verification"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc",
+      "exit_code": 0,
+      "purpose": "Final complete POC regression; 60 passed"
+    },
+    {
+      "command": "Batch B JSON parse and evidence-reference validation",
+      "exit_code": 0,
+      "purpose": "Eight JSON artifacts parsed; report evidence references resolved in tests"
+    },
+    {
+      "command": "Final Batch B JSON parse and report evidence-reference validation",
+      "exit_code": 0,
+      "purpose": "Ten JSON artifacts parsed and all report evidence references resolved"
+    },
+    {
+      "command": "Recompute candidate-lock tree digests, included-file counts, manifest hashes, and lock hashes for all four candidates",
+      "exit_code": 0,
+      "purpose": "All four candidates still match Phase 0 provenance"
+    },
+    {
+      "command": "Batch B secret/private-path scan",
+      "exit_code": 0,
+      "purpose": "No credential-like values or private local paths found in Batch B outputs"
+    },
+    {
+      "command": "git diff --check; git diff --cached --name-only; candidate port listener check 8080,4000",
+      "exit_code": 0,
+      "purpose": "Whitespace validation passed, nothing staged, no listeners on candidate ports"
+    }
+  ],
+  "evidence_roots": [
+    "tests/poc/evidence/phase-3/phase3-20260930T150128Z/",
+    "tests/poc/evidence/phase-4/phase4-20260930T150128Z/",
+    "tests/poc/evidence/level2/level2-20260930T150128Z/",
+    "tests/poc/evidence/phase-6/phase6-20260930T150128Z/"
+  ],
+  "blockers": [
+    {
+      "candidate": "Bifrost",
+      "failure_class": "SETUP_FAILURE",
+      "blocker": "BIFROST_EXECUTION_PROVENANCE",
+      "reason": "The transport module has no local replace directives and resolves published core/framework/plugin modules; the candidate has no root go.mod or go.work. Go is unavailable and no pinned Go build image is present, so execution of the inspected local core/plugin source cannot be established."
+    },
+    {
+      "candidate": "LiteLLM",
+      "failure_class": "SETUP_FAILURE",
+      "blocker": "LITELLM_EXECUTABLE_PROVENANCE",
+      "reason": "No pinned executable artifact exists. The host lacks uv, Rust, and Cargo. The candidate Dockerfile is pinned but copies enterprise source and litellm-proxy-extras and installs enterprise extras, so it cannot be used within the open-source license boundary."
+    }
+  ],
+  "completed_checkpoints": [
+    {
+      "phase": "phase_3",
+      "status": "BLOCKED",
+      "evidence": "tests/poc/evidence/phase-3/phase3-20260930T150128Z/"
+    },
+    {
+      "phase": "phase_4",
+      "status": "BLOCKED",
+      "evidence": "tests/poc/evidence/phase-4/phase4-20260930T150128Z/"
+    },
+    {
+      "phase": "phase_5",
+      "status": "PARTIAL",
+      "evidence": "tests/poc/evidence/level2/level2-20260930T150128Z/matrix.json"
+    },
+    {
+      "phase": "phase_6",
+      "status": "PASS",
+      "evidence": "tests/poc/evidence/phase-6/phase6-20260930T150128Z/result.json",
+      "report_hashes": {
+        "docs/poc/compatibility-matrix.json": "sha256:f6fcb79070df06b21509d21b167d1f4bad1f4e74aaf1542909b807c5b8c9acb7",
+        "docs/poc/compatibility-matrix.md": "sha256:34d99abdc16f34ec811162347a1117e74396760305d64af8b2e52088eeda480b",
+        "docs/poc/gateway-results.md": "sha256:1fb71d477ca3d7a6725f06ce7623b51cb480d90e94e45f6ab3de51ca3b0b9206"
+      }
+    }
+  ],
+  "live_provider_run_ids": [],
+  "secrets_persisted": false
+}

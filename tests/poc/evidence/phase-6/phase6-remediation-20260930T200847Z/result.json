@@ -1,0 +1,48 @@
+{
+  "batch_run_id": "batch-b-remediation-20260930T155149Z",
+  "candidate_decision": "NONE",
+  "candidate_scenario_statuses": {
+    "BLOCKED": 0,
+    "FAIL": 24,
+    "PASS": 24
+  },
+  "evidence_references_validated": true,
+  "historical_immutable_private_path_files": [
+    "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z/provenance.json",
+    "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z/provenance.json",
+    "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z/provenance.json",
+    "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z/provenance.json",
+    "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json"
+  ],
+  "historical_level2_runs": [
+    "level2-20260930T150128Z",
+    "level2-remediation-20260930T200500Z",
+    "level2-remediation-20260930T194529Z",
+    "level2-remediation-20260930T194948Z"
+  ],
+  "historical_secret_shape_files": [],
+  "historical_setup_attempts_preserved": true,
+  "json_parse_validated": true,
+  "latest_level2_run_id": "level2-remediation-20260930T194948Z",
+  "live_provider_requests": 48,
+  "new_output_private_paths": [],
+  "new_output_secret_shape_files": [],
+  "observed_at": "2026-09-30T19:49:48.063816Z",
+  "phase": "phase_6",
+  "report_hashes": {
+    "docs/poc/compatibility-matrix.json": "sha256:34f16980c2a016aee724093ab8a81aa13b41cbba574bc180230eeb1353a68315",
+    "docs/poc/compatibility-matrix.md": "sha256:f33da3463ec43ebf69cf699310a0a356465c96c4103f7eb109b0ff6a8f47a3b1",
+    "docs/poc/gateway-results.md": "sha256:cfff14852970abb119291af759eb02a39bf95bcbc61fbb007ec129939fab5ee9"
+  },
+  "reports_deterministic": true,
+  "required_t01_t09_states_present": true,
+  "run_id": "phase6-remediation-20260930T200847Z",
+  "semantic_hashes": {
+    "docs/poc/compatibility-matrix.json": "sha256:0ea3a542fad67618173367ef07f03a42749bb059f6d7bf5c8da02a274dfb6504",
+    "docs/poc/compatibility-matrix.md": "sha256:f33da3463ec43ebf69cf699310a0a356465c96c4103f7eb109b0ff6a8f47a3b1",
+    "docs/poc/gateway-results.md": "sha256:cfff14852970abb119291af759eb02a39bf95bcbc61fbb007ec129939fab5ee9"
+  },
+  "status": "PASS",
+  "synthetic_evidence_separate_from_live": true,
+  "unsupported_pairings_not_applicable": true
+}

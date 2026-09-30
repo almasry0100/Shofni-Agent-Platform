@@ -1,0 +1,265 @@
+{
+  "additional_images_resolved_before_use": [
+    {
+      "immutable_reference": "docker.io/library/node:25-alpine3.23@sha256:4139d71ec06d1d705b0d86fdea4fc4084c95029100bcfdfa8bab80b3328fa4ee",
+      "index_digest": "sha256:bdf2cca6fe3dabd014ea60163eca3f0f7015fbd5c7ee1b0e9ccb4ced6eb02ef4",
+      "name": "Node.js UI build",
+      "platform_manifest_digest": "sha256:4139d71ec06d1d705b0d86fdea4fc4084c95029100bcfdfa8bab80b3328fa4ee",
+      "registry": "Docker Hub",
+      "tag": "node:25-alpine3.23"
+    }
+  ],
+  "attempts": {
+    "bifrost": {
+      "attempts": [
+        {
+          "attempt_id": "phase3-20260930T150128Z",
+          "evidence_path": "tests/poc/evidence/phase-3/phase3-20260930T150128Z/",
+          "historical": true,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T172952Z",
+          "evidence_path": "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z",
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T173130Z",
+          "evidence_path": "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z",
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T174700Z",
+          "evidence_path": "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z",
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T180300Z",
+          "evidence_path": "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z",
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase3-remediation-20260930T180800Z",
+          "evidence_path": "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence": "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z",
+      "latest_attempt_id": "phase3-remediation-20260930T180800Z",
+      "status": "PASS"
+    },
+    "litellm": {
+      "attempts": [
+        {
+          "attempt_id": "phase4-20260930T150128Z",
+          "evidence_path": "tests/poc/evidence/phase-4/phase4-20260930T150128Z/",
+          "historical": true,
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T190000Z",
+          "evidence_path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z",
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T190500Z",
+          "evidence_path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z",
+          "status": "BLOCKED"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T191000Z",
+          "evidence_path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z",
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T191500Z",
+          "evidence_path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z",
+          "status": "FAIL"
+        },
+        {
+          "attempt_id": "phase4-remediation-20260930T192000Z",
+          "evidence_path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence": "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z",
+      "latest_attempt_id": "phase4-remediation-20260930T192000Z",
+      "status": "PASS"
+    }
+  },
+  "batch": "B",
+  "candidate_source_writes": false,
+  "events": [
+    {
+      "candidate": "Bifrost",
+      "event": "all transport-required Bifrost modules mapped to local candidate module paths in external go.work",
+      "evidence_path": "poc/.runtime/bifrost/workspace/go.work",
+      "status": "PASS"
+    },
+    {
+      "candidate": "Bifrost",
+      "candidate_source_modified": false,
+      "event": "local-source Go build blocked because the required embedded transport UI directory is absent from the extracted candidate tree",
+      "status": "BLOCKED_PENDING_UI_BUILD"
+    },
+    {
+      "candidate": "Bifrost",
+      "copied_files": 1093,
+      "enterprise_source_present": false,
+      "event": "temporary UI build context copied from candidate UI source; source file count and package-lock hash match",
+      "package_lock_sha256": "7274a1f1e53a5256e10fd75c90044c6b838e737386d79ae26f71ee81c303f3aa",
+      "runtime_path": "poc/.runtime/bifrost/ui-build-context-20260930T155149Z",
+      "source_files": 1093,
+      "status": "PASS"
+    },
+    {
+      "candidate": "Bifrost",
+      "event": "clean disposable source snapshot tree hash verified before generated UI overlay",
+      "included_file_count": 5172,
+      "matches_candidate_lock": true,
+      "runtime_path": "poc/.runtime/bifrost/source-snapshot-clean-20260930T155149Z",
+      "source_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+      "status": "PASS",
+      "ui_overlay_files": 563,
+      "ui_overlay_sha256_manifest": "poc/.runtime/bifrost/ui-output.sha256.json",
+      "ui_overlay_sha256_manifest_digest": "sha256:46a32efc789f8f8364282a0243059bcac313715c1143651d8a622c09760dac45"
+    },
+    {
+      "candidate": "Bifrost",
+      "event": "fixture-only startup and public API validation using local-source-equivalent binary",
+      "evidence_path": "tests/poc/evidence/phase-3/phase3-remediation-20260930T172952Z",
+      "live_provider_calls": 0,
+      "status": "BLOCKED"
+    },
+    {
+      "candidate": "Bifrost",
+      "event": "fixture-only startup and public API validation using local-source-equivalent binary",
+      "evidence_path": "tests/poc/evidence/phase-3/phase3-remediation-20260930T173130Z",
+      "live_provider_calls": 0,
+      "status": "BLOCKED"
+    },
+    {
+      "candidate": "Bifrost",
+      "event": "fixture-only startup and public API validation using local-source-equivalent binary",
+      "evidence_path": "tests/poc/evidence/phase-3/phase3-remediation-20260930T174700Z",
+      "live_provider_calls": 0,
+      "status": "BLOCKED"
+    },
+    {
+      "candidate": "Bifrost",
+      "event": "fixture-only startup and public API validation using local-source-equivalent binary",
+      "evidence_path": "tests/poc/evidence/phase-3/phase3-remediation-20260930T180300Z",
+      "live_provider_calls": 0,
+      "status": "FAIL"
+    },
+    {
+      "candidate": "Bifrost",
+      "event": "fixture-only startup and public API validation using local-source-equivalent binary",
+      "evidence_path": "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z",
+      "live_provider_calls": 0,
+      "status": "PASS"
+    },
+    {
+      "candidate": "LiteLLM",
+      "event": "open-source-only pinned image startup and fixture-only public API validation",
+      "evidence_path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T190000Z",
+      "live_provider_calls": 0,
+      "status": "BLOCKED"
+    },
+    {
+      "candidate": "LiteLLM",
+      "event": "open-source-only pinned image startup and fixture-only public API validation",
+      "evidence_path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T190500Z",
+      "live_provider_calls": 0,
+      "status": "BLOCKED"
+    },
+    {
+      "candidate": "LiteLLM",
+      "event": "open-source-only pinned image startup and fixture-only public API validation",
+      "evidence_path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T191000Z",
+      "live_provider_calls": 0,
+      "status": "FAIL"
+    },
+    {
+      "candidate": "LiteLLM",
+      "event": "open-source-only pinned image startup and fixture-only public API validation",
+      "evidence_path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T191500Z",
+      "live_provider_calls": 0,
+      "status": "FAIL"
+    },
+    {
+      "candidate": "LiteLLM",
+      "event": "open-source-only pinned image startup and fixture-only public API validation",
+      "evidence_path": "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z",
+      "live_provider_calls": 0,
+      "status": "PASS"
+    }
+  ],
+  "historical_evidence_sanitization": "tests/poc/evidence/phase-4/historical-sanitization-lineage.json",
+  "latest_phase_5_run_id": "level2-remediation-20260930T225100Z",
+  "live_provider_run_ids": [
+    "level2-remediation-20260930T200500Z",
+    "level2-remediation-20260930T194529Z",
+    "level2-remediation-20260930T194948Z",
+    "level2-remediation-20260930T225100Z"
+  ],
+  "new_phase_5_runs": [
+    "level2-remediation-20260930T200500Z",
+    "level2-remediation-20260930T194529Z",
+    "level2-remediation-20260930T194948Z",
+    "level2-remediation-20260930T225100Z"
+  ],
+  "original_batch_manifest": "poc/runs/batch-b-20260930T150128Z/manifest.json",
+  "original_evidence_immutable": true,
+  "phase_6_status": "PASS",
+  "remediation_run_id": "batch-b-remediation-20260930T155149Z",
+  "report_regeneration": {
+    "evidence": "tests/poc/evidence/phase-6/phase6-remediation-20260930T230000Z",
+    "reports_deterministic": true,
+    "run_id": "phase6-remediation-20260930T230000Z",
+    "semantic_hashes": {
+      "docs/poc/compatibility-matrix.json": "sha256:d3adc4be33ef751703a54e608cd7760479b93210deae3993e3a610aadc04b8ef",
+      "docs/poc/compatibility-matrix.md": "sha256:9f91c12687469b2c6c9aae7a8861bc4a09fb4268a5b2675acdeecb527cf7ecc2",
+      "docs/poc/gateway-results.md": "sha256:65f0622fa222a40df3e35006703c8630d474cadd7763c0ae82f42990e866e96c"
+    },
+    "status": "PASS"
+  },
+  "secrets_persisted": false,
+  "started_at_utc": "2026-09-30T15:51:49Z",
+  "status": "PARTIAL",
+  "toolchain_images_resolved_before_use": [
+    {
+      "immutable_reference": "docker.io/library/golang:1.27.0-bookworm@sha256:ba5ef6614ca131b80a635fc6a7b715d9ee8a7f333debdbb81afb68259c7d48d4",
+      "index_digest": "sha256:ded31c68586d2e49e760acc2e65a884b23d032e9bbbed0ae0c55abd3fcaf4452",
+      "name": "Go",
+      "platform_manifest_digest": "sha256:ba5ef6614ca131b80a635fc6a7b715d9ee8a7f333debdbb81afb68259c7d48d4",
+      "registry": "Docker Hub",
+      "tag": "golang:1.27.0-bookworm"
+    },
+    {
+      "immutable_reference": "docker.io/library/rust:1.88.0-bookworm@sha256:4727898c104ecd2e22d780925832502faee9fe4e70581b8572af081370b315a0",
+      "index_digest": "sha256:af306cfa71d987911a781c37b59d7d67d934f49684058f96cf72079c3626bfe0",
+      "name": "Rust",
+      "platform_manifest_digest": "sha256:4727898c104ecd2e22d780925832502faee9fe4e70581b8572af081370b315a0",
+      "registry": "Docker Hub",
+      "tag": "rust:1.88.0-bookworm"
+    },
+    {
+      "immutable_reference": "docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7",
+      "index_digest": "sha256:adafcc17694d715c905b4c7bebd96907a1fd5cf183395f0ebc4d3428bd22d92d",
+      "name": "Python",
+      "platform_manifest_digest": "sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7",
+      "registry": "Docker Hub",
+      "tag": "python:3.13.7-slim-bookworm"
+    },
+    {
+      "immutable_reference": "ghcr.io/astral-sh/uv:0.11.7@sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8",
+      "index_digest": "sha256:240fb85ab0f263ef12f492d8476aa3a2e4e1e333f7d67fbdd923d00a506a516a",
+      "name": "uv",
+      "platform_manifest_digest": "sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8",
+      "registry": "GitHub Container Registry",
+      "tag": "ghcr.io/astral-sh/uv:0.11.7"
+    }
+  ],
+  "toolchain_platform": "linux/amd64"
+}

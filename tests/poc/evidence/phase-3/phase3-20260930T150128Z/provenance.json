@@ -1,0 +1,27 @@
+{
+  "candidate": "Bifrost",
+  "source_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+  "included_file_count": 5172,
+  "phase_0_tree_hash_revalidated": true,
+  "manifest_and_lock_hashes_revalidated": true,
+  "root_go_mod_present": false,
+  "root_go_work_present": false,
+  "transports_module_present": true,
+  "transports_local_replace_directives": false,
+  "candidate_modules_are_wired_to_local_source": false,
+  "go_toolchain_available": false,
+  "pinned_existing_go_image_available": false,
+  "external_workspace_attempt": {
+    "status": "NOT_POSSIBLE_ON_HOST",
+    "reason": "The Go command is unavailable, and no pre-existing pinned Go image is available to evaluate an external go.work configuration."
+  },
+  "modules_declared_by_transport": {
+    "core": "github.com/maximhq/bifrost/core v1.10.2",
+    "framework": "github.com/maximhq/bifrost/framework v1.7.4",
+    "plugins": "Published versioned plugin modules listed in transports/go.mod"
+  },
+  "artifact": null,
+  "artifact_digest": null,
+  "source_to_artifact_relationship": null,
+  "provenance_status": "BLOCKED"
+}

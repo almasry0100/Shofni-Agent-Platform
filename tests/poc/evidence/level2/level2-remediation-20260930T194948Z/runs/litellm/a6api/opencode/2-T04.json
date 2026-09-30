@@ -1,0 +1,24 @@
+{
+  "behavior_mode": "NATIVE",
+  "candidate": "LiteLLM",
+  "candidate_execution": true,
+  "client": "OpenCode",
+  "client_version": "1.18.33",
+  "evidence_refs": [
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T04.json"
+  ],
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "failure_class": null,
+  "model_id": "a6api-openai",
+  "observations": {
+    "response_id": "resp_0e1438728ea3005c016abd6836cb1087d089947ac5093cb39c",
+    "text": "Hello! How can I help?",
+    "textual_tool_call": null
+  },
+  "protocol": "Chat Completions",
+  "provider": "A6api",
+  "repetition": 2,
+  "run_id": "level2-remediation-20260930T194948Z",
+  "status": "PASS",
+  "test_id": "T04"
+}

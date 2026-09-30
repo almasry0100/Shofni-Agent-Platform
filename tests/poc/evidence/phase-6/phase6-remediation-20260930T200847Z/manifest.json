@@ -1,0 +1,35 @@
+{
+  "batch_run_id": "batch-b-remediation-20260930T155149Z",
+  "evidence_files": [
+    "result.json",
+    "manifest.json"
+  ],
+  "evidence_type": "REPORT_GENERATION_AND_VALIDATION_EVIDENCE",
+  "generated_files": [
+    "docs/poc/compatibility-matrix.json",
+    "docs/poc/compatibility-matrix.md",
+    "docs/poc/gateway-results.md",
+    "poc/reports/build_compatibility_report.py"
+  ],
+  "phase": "phase_6",
+  "report_hashes": {
+    "docs/poc/compatibility-matrix.json": "sha256:34f16980c2a016aee724093ab8a81aa13b41cbba574bc180230eeb1353a68315",
+    "docs/poc/compatibility-matrix.md": "sha256:f33da3463ec43ebf69cf699310a0a356465c96c4103f7eb109b0ff6a8f47a3b1",
+    "docs/poc/gateway-results.md": "sha256:cfff14852970abb119291af759eb02a39bf95bcbc61fbb007ec129939fab5ee9"
+  },
+  "run_id": "phase6-remediation-20260930T200847Z",
+  "semantic_hashes": {
+    "docs/poc/compatibility-matrix.json": "sha256:0ea3a542fad67618173367ef07f03a42749bb059f6d7bf5c8da02a274dfb6504",
+    "docs/poc/compatibility-matrix.md": "sha256:f33da3463ec43ebf69cf699310a0a356465c96c4103f7eb109b0ff6a8f47a3b1",
+    "docs/poc/gateway-results.md": "sha256:cfff14852970abb119291af759eb02a39bf95bcbc61fbb007ec129939fab5ee9"
+  },
+  "source_evidence": [
+    "poc/runs/batch-b-20260930T150128Z/manifest.json",
+    "poc/runs/batch-b-remediation-20260930T155149Z/manifest.json",
+    "tests/poc/evidence/level2/level2-20260930T150128Z/matrix.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/matrix.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/matrix.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/matrix.json"
+  ],
+  "status": "PASS"
+}

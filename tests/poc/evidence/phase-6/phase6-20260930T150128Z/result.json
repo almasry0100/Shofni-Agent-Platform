@@ -1,0 +1,32 @@
+{
+  "phase": "phase_6",
+  "run_id": "phase6-20260930T150128Z",
+  "observed_at": "2026-09-30T15:15:10Z",
+  "status": "PASS",
+  "candidate_decision": "NONE",
+  "reports_deterministic": true,
+  "evidence_references_validated": true,
+  "json_parse_validated": true,
+  "required_t01_t09_states_present": true,
+  "unsupported_pairings_not_applicable": true,
+  "synthetic_evidence_separate_from_live": true,
+  "hashes": {
+    "docs/poc/compatibility-matrix.json": "sha256:f6fcb79070df06b21509d21b167d1f4bad1f4e74aaf1542909b807c5b8c9acb7",
+    "docs/poc/compatibility-matrix.md": "sha256:34d99abdc16f34ec811162347a1117e74396760305d64af8b2e52088eeda480b",
+    "docs/poc/gateway-results.md": "sha256:1fb71d477ca3d7a6725f06ce7623b51cb480d90e94e45f6ab3de51ca3b0b9206"
+  },
+  "validation": {
+    "phase_3_4_and_batch_manifest_json": "PASS",
+    "level2_matrix_json": "PASS",
+    "compatibility_matrix_json": "PASS",
+    "candidate_scenario_rows": 20,
+    "candidate_scenario_statuses": {"PASS": 0, "FAIL": 0, "BLOCKED": 20},
+    "not_applicable_direct_pairings": 2,
+    "full_poc_regression": "60 passed",
+    "secret_private_path_scan": "PASS",
+    "git_diff_check": "PASS",
+    "staged_changes": 0,
+    "candidate_processes_started": 0,
+    "candidate_ports_in_use": []
+  }
+}

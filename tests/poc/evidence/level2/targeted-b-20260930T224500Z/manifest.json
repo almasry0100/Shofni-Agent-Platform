@@ -1,0 +1,19 @@
+{
+  "batch_run_id": "batch-b-remediation-20260930T155149Z",
+  "candidate_source_modified": false,
+  "diagnostic_run_id": "targeted-b-20260930T224500Z",
+  "direct_control_count": 5,
+  "evidence_files": [
+    "targeted-diagnostics.json",
+    "manifest.json"
+  ],
+  "evidence_type": "TARGETED_DIAGNOSTIC_EVIDENCE",
+  "gateway_probe_count": 0,
+  "inventory_evidence": [
+    "docs/a6api-models.md",
+    "docs/relayrouter-models.md",
+    "docs/04-provider-docs.md"
+  ],
+  "phase": "phase_5",
+  "sensitive_values_written": false
+}

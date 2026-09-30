@@ -1,0 +1,20 @@
+{
+  "behavior_mode": "UNVERIFIED",
+  "candidate": "Bifrost",
+  "candidate_execution": false,
+  "client": "OpenCode",
+  "client_version": "1.18.33",
+  "evidence_refs": [],
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "failure_class": "GATEWAY_FAILURE",
+  "model_id": "stealth/openai/gpt-5.6-sol",
+  "observations": {
+    "error": "Bifrost executable is missing from the artifact directory",
+    "error_type": "FileNotFoundError"
+  },
+  "protocol": "Chat Completions",
+  "provider": "RelayRouter",
+  "run_id": "level2-remediation-20260930T200500Z",
+  "status": "FAIL",
+  "test_id": "T08"
+}

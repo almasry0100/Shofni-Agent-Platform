@@ -1,0 +1,23 @@
+{
+  "behavior_mode": "UNVERIFIED",
+  "candidate": "LiteLLM",
+  "candidate_execution": true,
+  "client": "OpenCode",
+  "client_version": "1.18.33",
+  "evidence_refs": [
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json"
+  ],
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "failure_class": "CLIENT_FAILURE",
+  "model_id": "stealth/openai/gpt-5.6-sol",
+  "observations": {
+    "error": "gateway returned HTTP 400",
+    "error_type": "GatewayRequestError"
+  },
+  "protocol": "Chat Completions",
+  "provider": "RelayRouter",
+  "repetition": 1,
+  "run_id": "level2-remediation-20260930T200500Z",
+  "status": "FAIL",
+  "test_id": "T08"
+}

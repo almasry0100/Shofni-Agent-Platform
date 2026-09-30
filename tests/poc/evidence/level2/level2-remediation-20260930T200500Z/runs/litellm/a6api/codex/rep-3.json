@@ -1,0 +1,23 @@
+{
+  "behavior_mode": "UNVERIFIED",
+  "candidate": "LiteLLM",
+  "candidate_execution": true,
+  "client": "Codex",
+  "client_version": "0.159.0",
+  "evidence_refs": [
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-3.json"
+  ],
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "failure_class": "CLIENT_FAILURE",
+  "model_id": "gpt-5.4-mini",
+  "observations": {
+    "error": "gateway returned HTTP 400",
+    "error_type": "GatewayRequestError"
+  },
+  "protocol": "Responses",
+  "provider": "A6api",
+  "repetition": 3,
+  "run_id": "level2-remediation-20260930T200500Z",
+  "status": "FAIL",
+  "test_id": "T01"
+}

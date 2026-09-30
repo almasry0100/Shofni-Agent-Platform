@@ -1,0 +1,16 @@
+{
+  "phase": "phase_6",
+  "run_id": "phase6-20260930T150128Z",
+  "batch_run_id": "batch-b-20260930T150128Z",
+  "timestamp_utc": "2026-09-30T15:15:10Z",
+  "status": "PASS",
+  "evidence_type": "SOURCE_INSPECTION_EVIDENCE",
+  "generated_files": [
+    "docs/poc/gateway-results.md",
+    "docs/poc/compatibility-matrix.json",
+    "docs/poc/compatibility-matrix.md",
+    "poc/reports/build_compatibility_report.py"
+  ],
+  "test_file": "tests/poc/scenarios/test_t12_report.py",
+  "evidence_file": "result.json"
+}

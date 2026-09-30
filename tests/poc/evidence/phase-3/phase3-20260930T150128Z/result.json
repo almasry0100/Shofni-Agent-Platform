@@ -1,0 +1,16 @@
+{
+  "phase": "phase_3",
+  "run_id": "phase3-20260930T150128Z",
+  "candidate": "Bifrost",
+  "status": "BLOCKED",
+  "failure_class": "SETUP_FAILURE",
+  "blocker": "BIFROST_EXECUTION_PROVENANCE",
+  "adapter_status": "NOT_RUN",
+  "fixture_status": "NOT_RUN",
+  "startup_status": "NOT_RUN",
+  "reason": "A local-source-equivalent executable could not be built or identified. No candidate startup, adapter behavior, or fixture behavior is claimed.",
+  "candidate_source_modified": false,
+  "candidate_history_modified": false,
+  "candidate_process_started": false,
+  "live_provider_calls": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_produced": true,
+  "batch_run_id": "batch-b-20260930T150128Z",
+  "candidate": "LiteLLM",
+  "candidate_source_modified": false,
+  "evidence_files": [
+    "result.json",
+    "provenance.json"
+  ],
+  "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+  "phase": "phase_4",
+  "run_id": "phase4-remediation-20260930T191500Z",
+  "startup_attempted": true,
+  "status": "FAIL",
+  "timestamp_utc": "2026-09-30T19:04:29.606033Z"
+}

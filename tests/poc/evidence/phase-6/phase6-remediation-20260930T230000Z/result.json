@@ -1,0 +1,43 @@
+{
+  "batch_run_id": "batch-b-remediation-20260930T155149Z",
+  "candidate_decision": "NONE",
+  "candidate_scenario_statuses": {
+    "BLOCKED": 0,
+    "FAIL": 28,
+    "PASS": 26
+  },
+  "evidence_references_validated": true,
+  "historical_immutable_private_path_files": [],
+  "historical_level2_runs": [
+    "level2-20260930T150128Z",
+    "level2-remediation-20260930T200500Z",
+    "level2-remediation-20260930T194529Z",
+    "level2-remediation-20260930T194948Z",
+    "level2-remediation-20260930T225100Z"
+  ],
+  "historical_secret_shape_files": [],
+  "historical_setup_attempts_preserved": true,
+  "json_parse_validated": true,
+  "latest_level2_run_id": "level2-remediation-20260930T225100Z",
+  "live_provider_requests": 54,
+  "new_output_private_paths": [],
+  "new_output_secret_shape_files": [],
+  "observed_at": "2026-09-30T21:59:34.323512Z",
+  "phase": "phase_6",
+  "report_hashes": {
+    "docs/poc/compatibility-matrix.json": "sha256:bed4429402b2129f4cfb70ceea6644228e4cca0458e1dfb780f5d95df30312b4",
+    "docs/poc/compatibility-matrix.md": "sha256:9f91c12687469b2c6c9aae7a8861bc4a09fb4268a5b2675acdeecb527cf7ecc2",
+    "docs/poc/gateway-results.md": "sha256:65f0622fa222a40df3e35006703c8630d474cadd7763c0ae82f42990e866e96c"
+  },
+  "reports_deterministic": true,
+  "required_t01_t09_states_present": true,
+  "run_id": "phase6-remediation-20260930T230000Z",
+  "semantic_hashes": {
+    "docs/poc/compatibility-matrix.json": "sha256:d3adc4be33ef751703a54e608cd7760479b93210deae3993e3a610aadc04b8ef",
+    "docs/poc/compatibility-matrix.md": "sha256:9f91c12687469b2c6c9aae7a8861bc4a09fb4268a5b2675acdeecb527cf7ecc2",
+    "docs/poc/gateway-results.md": "sha256:65f0622fa222a40df3e35006703c8630d474cadd7763c0ae82f42990e866e96c"
+  },
+  "status": "PASS",
+  "synthetic_evidence_separate_from_live": true,
+  "unsupported_pairings_not_applicable": true
+}

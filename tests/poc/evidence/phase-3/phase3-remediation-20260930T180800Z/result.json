@@ -1,0 +1,63 @@
+{
+  "adapter_status": "PASS",
+  "candidate": "Bifrost",
+  "candidate_history_modified": false,
+  "candidate_process_started": true,
+  "candidate_source_modified": false,
+  "checks": {
+    "chat": {
+      "finish_reason": "stop",
+      "fixture_text_length": 96,
+      "status": "PASS"
+    },
+    "error_mapping": {
+      "classification": "RATE_LIMIT",
+      "http_status": 429,
+      "status": "PASS"
+    },
+    "health": {
+      "response_status": "ok",
+      "status": "PASS"
+    },
+    "models": {
+      "model_count": 1,
+      "model_ids": [
+        "openai/fixture-chat-only"
+      ],
+      "status": "PASS"
+    },
+    "responses": {
+      "fixture_text_length": 96,
+      "response_status": "completed",
+      "status": "PASS"
+    },
+    "shutdown": {
+      "api_port_released": true,
+      "container_removed": true,
+      "status": "PASS"
+    },
+    "stream": {
+      "event_count": 6,
+      "finish_reasons": [
+        "stop"
+      ],
+      "fixture_text_length": 96,
+      "status": "PASS"
+    }
+  },
+  "cleanup": {
+    "candidate_api_port_released": true,
+    "candidate_container_removed": true,
+    "fixture_container_removed": true,
+    "internal_network_removed": true,
+    "temporary_app_config_removed": true
+  },
+  "errors": [],
+  "failure_class": null,
+  "fixture_status": "PASS",
+  "live_provider_calls": 0,
+  "phase": "phase_3",
+  "run_id": "phase3-remediation-20260930T180800Z",
+  "startup_status": "PASS",
+  "status": "PASS"
+}

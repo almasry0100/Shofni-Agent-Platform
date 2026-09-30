@@ -1,0 +1,35 @@
+{
+  "adapter_status": "FAIL",
+  "candidate": "LiteLLM",
+  "candidate_history_modified": false,
+  "candidate_process_started": true,
+  "candidate_source_modified": false,
+  "checks": {
+    "shutdown": {
+      "api_port_released": true,
+      "container_removed": true,
+      "status": "PASS"
+    }
+  },
+  "cleanup": {
+    "candidate_api_port_released": true,
+    "candidate_container_removed": true,
+    "fixture_container_removed": true,
+    "internal_network_removed": true,
+    "temporary_config_removed": true
+  },
+  "errors": [
+    {
+      "error": "LiteLLM container exited before health became ready: oxy refused to start: {_REFUSAL_HEADLINE[reason]} The fix is printed once the server exits.\"\n    )\nlitellm.proxy.auth.master_key_boot_check.UnsafeMasterKeyError: LiteLLM proxy refused to start: no master key is set, so every request would be accepted without authentication. The fix is printed once the server exits.\n\nERROR:    Application startup failed. Exiting.\n\nLiteLLM proxy refused to start: no master key is set, so every request would be accepted without authentication.\nNeither general_settings.master_key nor the LITELLM_MASTER_KEY environment variable is set.\n\n1. Generate a key and save it to .env:\n     echo \"LITELLM_MASTER_KEY=sk-$(openssl rand -hex 32)\" | tee -a .env\n   Not using a .env file (docker run, Kubernetes, pip install)? Pass the same value as the\n   LITELLM_MASTER_KEY environment variable instead.\n\nLocal development only: set LITELLM_DANGEROUSLY_PERMIT_WEAK_OR_UNSET_MASTER_KEY=true, or\ngeneral_settings.dangerously_permit_weak_or_unset_master_key: true, to start anyway.",
+      "error_type": "RuntimeError",
+      "stage": "startup_or_setup"
+    }
+  ],
+  "failure_class": "SETUP_FAILURE",
+  "fixture_status": "PASS",
+  "live_provider_calls": 0,
+  "phase": "phase_4",
+  "run_id": "phase4-remediation-20260930T190500Z",
+  "startup_status": "FAIL",
+  "status": "BLOCKED"
+}

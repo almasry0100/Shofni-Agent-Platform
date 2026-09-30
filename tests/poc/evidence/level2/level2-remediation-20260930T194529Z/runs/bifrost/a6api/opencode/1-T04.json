@@ -1,0 +1,24 @@
+{
+  "behavior_mode": "NATIVE",
+  "candidate": "Bifrost",
+  "candidate_execution": true,
+  "client": "OpenCode",
+  "client_version": "1.18.33",
+  "evidence_refs": [
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T04.json"
+  ],
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "failure_class": null,
+  "model_id": "gpt-5.4-mini",
+  "observations": {
+    "response_id": "chatcmpl-elysiumai-20260930194544445632543d4bb237bIvbJcaBd",
+    "text": "Hello!",
+    "textual_tool_call": null
+  },
+  "protocol": "Chat Completions",
+  "provider": "A6api",
+  "repetition": 1,
+  "run_id": "level2-remediation-20260930T194529Z",
+  "status": "PASS",
+  "test_id": "T04"
+}

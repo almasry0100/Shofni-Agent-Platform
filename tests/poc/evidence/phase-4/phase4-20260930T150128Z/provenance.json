@@ -1,0 +1,27 @@
+{
+  "candidate": "LiteLLM",
+  "source_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+  "included_file_count": 12075,
+  "phase_0_tree_hash_revalidated": true,
+  "manifest_and_lock_hashes_revalidated": true,
+  "declared_version": "1.104.0",
+  "python_constraint": ">=3.10,<3.15",
+  "pyproject_sha256": "sha256:4c34d6d5819ceddde9428b1c0c9fce3bd8eab420e9eac5bc51080fe6677203a9",
+  "uv_lock_sha256": "sha256:7c895926f4017f79613328233156a590e25aeec7ce9c3acf0001720e8978b18d",
+  "cargo_lock_sha256": "sha256:e8bbf1dbc1adee0b82afe2bb5f8555b9af66cf712f4458fa9bd467db8e318874",
+  "host_python": "3.12.10",
+  "uv_available": false,
+  "rustc_available": false,
+  "cargo_available": false,
+  "candidate_dockerfile": {
+    "base_images_pinned_by_digest": true,
+    "copies_enterprise_source": true,
+    "copies_litellm_proxy_extras": true,
+    "installs_enterprise_extras": true,
+    "usable_for_batch": false
+  },
+  "license_boundary": "MIT outside enterprise/; enterprise/ and litellm/proxy/enterprise/ excluded",
+  "artifact": null,
+  "artifact_digest": null,
+  "executable_provenance_status": "BLOCKED"
+}

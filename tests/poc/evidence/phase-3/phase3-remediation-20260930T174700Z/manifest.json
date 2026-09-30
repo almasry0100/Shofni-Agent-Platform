@@ -1,0 +1,16 @@
+{
+  "artifact_produced": true,
+  "batch_run_id": "batch-b-20260930T150128Z",
+  "candidate": "Bifrost",
+  "candidate_source_modified": false,
+  "evidence_files": [
+    "result.json",
+    "provenance.json"
+  ],
+  "evidence_type": "SYNTHETIC_FIXTURE_EVIDENCE",
+  "phase": "phase_3",
+  "run_id": "phase3-remediation-20260930T174700Z",
+  "startup_attempted": true,
+  "status": "BLOCKED",
+  "timestamp_utc": "2026-09-30T17:48:31.601914Z"
+}
