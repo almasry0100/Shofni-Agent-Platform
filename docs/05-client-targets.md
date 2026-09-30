@@ -76,6 +76,7 @@ PowerShell: 5.1.26100.9444
 
 Primary local repository workspace:
 
+```text
 <USERPROFILE>\Desktop\Shofni Agent Platform\Shofni Agent Platform
 ```
 
@@ -88,14 +89,14 @@ Installed: YES
 Command: codex
 Version: codex-cli 0.159.0
 Executable:
-C:\Users\shofni\AppData\Roaming\npm\codex.ps1
+<USERPROFILE>\AppData\Roaming\npm\codex.ps1
 ```
 
 Configuration detected:
 
 ```text
-C:\Users\shofni\.codex\config.toml
-C:\Users\shofni\.codex
+<USERPROFILE>\.codex\config.toml
+<USERPROFILE>\.codex
 ```
 
 Target:
@@ -136,14 +137,14 @@ Installed: YES
 Command: claude
 Version: 2.1.278 (Claude Code)
 Executable:
-C:\Users\shofni\AppData\Roaming\npm\claude.ps1
+<USERPROFILE>\AppData\Roaming\npm\claude.ps1
 ```
 
 Configuration detected:
 
 ```text
-C:\Users\shofni\.claude
-C:\Users\shofni\.claude\settings.json
+<USERPROFILE>\.claude
+<USERPROFILE>\.claude\settings.json
 ```
 
 Target:
@@ -170,19 +171,19 @@ Installed: YES
 Command: opencode
 Version: 1.18.33
 Executable:
-C:\Users\shofni\AppData\Roaming\npm\opencode.ps1
+<USERPROFILE>\AppData\Roaming\npm\opencode.ps1
 ```
 
 Configuration directory detected:
 
 ```text
-C:\Users\shofni\.config\opencode
+<USERPROFILE>\.config\opencode
 ```
 
 The candidate file:
 
 ```text
-C:\Users\shofni\.config\opencode\opencode.json
+<USERPROFILE>\.config\opencode\opencode.json
 ```
 
 was not present during the last automated readiness scan.
@@ -309,7 +310,7 @@ POC baseline:
 ```text
 Python 3.12.10
 Executable:
-C:\Users\shofni\AppData\Local\Programs\Python\Python312\python.exe
+<USERPROFILE>\AppData\Local\Programs\Python\Python312\python.exe
 
 pip:
 25.0.1

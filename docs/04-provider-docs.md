@@ -1,7 +1,6 @@
+# 04 ? Provider Documentation Snapshot
 
-
-
-A6api Developer Docs
+## A6api Developer Docs
 
 Connect to A6api model gateway in 30 seconds
 Remember only one entry point: https://api.a6api.com . After creating the token, replace the baseURL and API Key of your existing SDK with A6api to access available models in the model marketplace.
