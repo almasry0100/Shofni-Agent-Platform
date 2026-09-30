@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "snapshot_type": "sanitized_public_readiness",
+  "generated_at": "2026-09-29T17:24:30.6597967+00:00",
+  "sanitized": true,
+  "system": {
+    "windows": "Microsoft Windows 11 Enterprise",
+    "windows_version": "10.0.26200",
+    "architecture": "AMD64",
+    "powershell_version": "5.1.26100.9444"
+  },
+  "clients_and_tools": {
+    "codex": {
+      "installed": true,
+      "command": "codex",
+      "version": "codex-cli 0.159.0"
+    },
+    "claude": {
+      "installed": true,
+      "command": "claude",
+      "version": "2.1.278 (Claude Code)"
+    },
+    "opencode": {
+      "installed": true,
+      "command": "opencode",
+      "version": "1.18.33"
+    },
+    "docker": {
+      "installed": true,
+      "command": "docker",
+      "version": "Docker version 29.8.1, build 4a63305"
+    },
+    "git": {
+      "installed": true,
+      "command": "git",
+      "version": "git version 2.55.0.windows.5"
+    },
+    "gh": {
+      "installed": true,
+      "command": "gh",
+      "version": "gh version 2.101.0 (2026-09-15)\r\nhttps://github.com/cli/cli/releases/tag/v2.101.0"
+    },
+    "node": {
+      "installed": true,
+      "command": "node",
+      "version": "v24.19.0"
+    },
+    "npm": {
+      "installed": true,
+      "command": "npm",
+      "version": "11.17.0"
+    },
+    "python": {
+      "installed": true,
+      "command": "python",
+      "version": "Python 3.12.10"
+    }
+  },
+  "docker": {
+    "daemon_running": true,
+    "server_version": "29.8.1"
+  },
+  "github": {
+    "authenticated": true,
+    "details_redacted": true
+  },
+  "provider_credentials": {
+    "RELAYROUTER_API_KEY": {
+      "present": false,
+      "value_redacted": true
+    },
+    "A6API_KEY": {
+      "present": true,
+      "value_redacted": true
+    }
+  },
+  "config_detection": {
+    "codex_config_detected": true,
+    "claude_config_detected": true,
+    "opencode_config_directory_detected": true
+  },
+  "redaction_notes": [
+    "Computer name removed.",
+    "Operating-system username removed.",
+    "Absolute user-specific executable and configuration paths removed.",
+    "GitHub account name, raw authentication status, token display, and token scopes removed.",
+    "Git global user name and email removed.",
+    "Credential values are never included; only presence/absence is recorded.",
+    "Future/out-of-scope provider credential presence was omitted from the public snapshot."
+  ]
+}
