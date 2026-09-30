@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "case_id": "relayrouter-opencode-no-tools-001",
+  "captured_at_utc": "2026-09-30T04:18:11.544Z",
+  "evidence_type": "LIVE_PROVIDER_EVIDENCE",
+  "source": {
+    "client": "OpenCode",
+    "client_version": "1.18.32",
+    "provider": "relayrouter",
+    "model_id": "private/gpt-5.6-sol",
+    "agent": "build",
+    "workspace": "<USERPROFILE>\\Downloads\\test",
+    "raw_source_filename": "ملف الفشل من relayrouter.json",
+    "secrets_redacted": true
+  },
+  "task": {
+    "intent": "Read config.toml from the local workspace and report its contents.",
+    "target": "<USERPROFILE>\\Downloads\\test\\config.toml"
+  },
+  "observed": {
+    "chat_works": true,
+    "structured_tool_events_count": 0,
+    "tool_calls_observed": false,
+    "tool_execution_observed": false,
+    "assistant_attempts_after_task_request": 3,
+    "assistant_finish_reasons": [
+      "stop",
+      "stop",
+      "stop"
+    ],
+    "assistant_behavior": [
+      {
+        "attempt": 1,
+        "classification": "narration_without_action",
+        "summary": "Assistant says it will open the file, then states it cannot read local files and asks the user to provide the contents."
+      },
+      {
+        "attempt": 2,
+        "classification": "narration_without_action",
+        "summary": "After the user explicitly asks to execute, assistant again states that file tools are unavailable and suggests a PowerShell command instead of issuing a tool call."
+      },
+      {
+        "attempt": 3,
+        "classification": "narration_without_action",
+        "summary": "After another explicit execute request, assistant again reports that file tools are unavailable and finishes without a tool call."
+      }
+    ],
+    "usage_metadata_note": {
+      "input_tokens_reported": 0,
+      "reasoning_tokens_reported": 0,
+      "classification": "observed_metadata_anomaly",
+      "causal_relation_to_tool_failure": "UNVERIFIED"
+    }
+  },
+  "expected": {
+    "structured_tool_call": {
+      "tool": "read",
+      "arguments": {
+        "filePath": "<USERPROFILE>\\Downloads\\test\\config.toml"
+      }
+    },
+    "then": "Return the file contents after successful tool execution."
+  },
+  "positive_control": {
+    "source": "ملف نجاح من a6api.json",
+    "client": "OpenCode",
+    "client_version": "1.18.32",
+    "provider": "a6api",
+    "model_id": "gpt-6-astra",
+    "same_workspace_class": true,
+    "result": {
+      "tool": "read",
+      "tool_call_emitted": true,
+      "tool_status": "completed",
+      "final_answer_after_tool_result": true
+    }
+  },
+  "classification": {
+    "relayrouter_chat": "SUPPORTED",
+    "relayrouter_opencode_native_tools": "UNSUPPORTED_OBSERVED",
+    "failure_class": "PROVIDER_CAPABILITY_MISSING_OR_TRANSLATION_PATH",
+    "root_cause": "UNVERIFIED",
+    "notes": [
+      "This evidence proves the observed RelayRouter/OpenCode route did not expose or produce a usable file-tool call in this session.",
+      "It does not by itself prove whether the limitation originates in RelayRouter, the selected RelayRouter route/model, protocol translation, or another adapter layer.",
+      "The A6api run is a positive control demonstrating that the same OpenCode client can emit and complete a read tool call in the same workspace class."
+    ]
+  },
+  "poc_mapping": [
+    "T04",
+    "T07",
+    "T12"
+  ]
+}

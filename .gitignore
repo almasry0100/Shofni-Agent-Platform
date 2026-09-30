@@ -1,0 +1,101 @@
+# ------------------------------------------------------------
+# Secrets / environment
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ------------------------------------------------------------
+# Node / JS / TS
+# ------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.pnpm-store/
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+pip-wheel-metadata/
+
+# ------------------------------------------------------------
+# Build / coverage
+# ------------------------------------------------------------
+dist/
+build/
+out/
+coverage/
+.coverage
+htmlcov/
+*.lcov
+
+# ------------------------------------------------------------
+# Local runtime / state
+# ------------------------------------------------------------
+.shofni/
+state/
+checkpoints/
+tmp/
+temp/
+.cache/
+*.tmp
+*.log
+*.pid
+
+# Local databases used by POCs/runtime
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+
+# ------------------------------------------------------------
+# Raw evidence may contain secrets or private local data.
+# Sanitized evidence outside these folders may be committed.
+# ------------------------------------------------------------
+docs/repro/raw/
+tests/poc/evidence/raw/
+
+# ------------------------------------------------------------
+# IDE / OS
+# ------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ------------------------------------------------------------
+# Local-only configuration
+# ------------------------------------------------------------
+*.local
+*.local.json
+config.local.*
+settings.local.*
+
+# ------------------------------------------------------------
+# Misc
+# ------------------------------------------------------------
+*.bak
+*.swp
+*.swo
+*~
