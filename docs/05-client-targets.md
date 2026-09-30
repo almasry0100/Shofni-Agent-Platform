@@ -342,7 +342,7 @@ Last observed:
 | Variable | Present |
 |---|---:|
 | `A6API_KEY` | YES |
-| `RELAYROUTER_API_KEY` | NO |
+| `RELAYROUTER_API_KEY` | YES |
 | `OPENROUTER_API_KEY` | NO |
 | `OPENAI_API_KEY` | NO |
 | `ANTHROPIC_API_KEY` | NO |
@@ -354,7 +354,8 @@ A6api:
 credential visible to collected environment
 
 RelayRouter:
-credential not visible in collected environment
+credential visible to current environment and persisted at Windows User scope
+live authentication / Chat Completions route verified
 
 OpenRouter:
 credential not visible in collected environment

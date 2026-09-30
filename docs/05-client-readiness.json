@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "snapshot_type": "sanitized_public_readiness",
-  "generated_at": "2026-09-29T17:24:30.6597967+00:00",
+  "generated_at": "2026-09-30T05:38:21.173959+00:00",
   "sanitized": true,
   "system": {
     "windows": "Microsoft Windows 11 Enterprise",
@@ -66,7 +66,7 @@
   },
   "provider_credentials": {
     "RELAYROUTER_API_KEY": {
-      "present": false,
+      "present": true,
       "value_redacted": true
     },
     "A6API_KEY": {
