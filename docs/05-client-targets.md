@@ -74,10 +74,9 @@ Architecture: AMD64
 PowerShell: 5.1.26100.9444
 ```
 
-Primary local workspace:
+Primary local repository workspace:
 
-```text
-C:\Users\shofni\Desktop\Shofni Agent Platform
+<USERPROFILE>\Desktop\Shofni Agent Platform\Shofni Agent Platform
 ```
 
 ---
