@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "phase": "R2",
+  "observed_at_utc": "2026-10-01T20:06:20Z",
+  "check": "temporary_config_cleanup",
+  "observed_prefix": "poc/.runtime/resolution-r2-",
+  "matching_directories_remaining": 0,
+  "attempt_count": 6,
+  "temporary_config_removed_for_each_attempt": true,
+  "semantic_retry": false
+}

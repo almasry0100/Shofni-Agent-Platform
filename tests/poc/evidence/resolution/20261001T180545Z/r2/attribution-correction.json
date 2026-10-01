@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "phase": "R2",
+  "classification": "EVIDENCE_METADATA_CORRECTION",
+  "attempts": [
+    "resolution-20261001T180545Z-bifrost-t03-rep-1",
+    "resolution-20261001T180545Z-bifrost-t03-rep-2",
+    "resolution-20261001T180545Z-bifrost-t03-rep-3",
+    "resolution-20261001T180545Z-litellm-t03-rep-1",
+    "resolution-20261001T180545Z-litellm-t03-rep-2",
+    "resolution-20261001T180545Z-litellm-t03-rep-3"
+  ],
+  "previous_attribution": "candidate_reached was set from a separate model-list route probe; provider_reached was inferred from client event count.",
+  "corrected_attribution": {
+    "candidate_route_probe_reached": true,
+    "candidate_request_observed": false,
+    "candidate_reached": false,
+    "provider_request_observed": false,
+    "provider_reached": false,
+    "client_reached": true,
+    "classification": "EVIDENCE_OBSERVABILITY_FAILURE",
+    "observed_client_failure_class": "CLIENT_FAILURE",
+    "candidate_attribution": "UNATTRIBUTED_CLIENT_FAILURE"
+  },
+  "correction_reason": "The actual Claude Code repetitions exited with no event output. The evidence records a successful model-list probe but no request-level gateway status, gateway log correlation, or outbound provider observation. The client failures remain preserved; candidate and provider causation are unverified.",
+  "semantic_retry": false
+}

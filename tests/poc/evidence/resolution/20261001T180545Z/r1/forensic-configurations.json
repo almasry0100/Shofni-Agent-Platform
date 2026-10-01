@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "phase": "R1-A",
+  "historical_phase7_distribution_count": 187,
+  "historical_phase11_distribution_count": 232,
+  "selection_metadata_complete": false,
+  "selection_command": null,
+  "selection_projects": null,
+  "selection_groups": null,
+  "selection_extras": null,
+  "reconstruction_status": "PROVENANCE_MISMATCH",
+  "reconstruction_builds_started": 0,
+  "candidate_reached": false,
+  "provider_reached": false,
+  "client_reached": false,
+  "reason": "Phase 7 lacks project/group/extra selection metadata; the plan forbids inferring historical provenance from distribution-count equality or brute-forcing arbitrary UV configurations.",
+  "predeclared_repository_justified_configurations": [
+    {"id": "F1", "cwd": "<OPENHANDS_ROOT>", "command": "uv sync --locked", "projects": "workspace defaults", "groups": "default groups", "extras": "none"},
+    {"id": "F2", "cwd": "<OPENHANDS_ROOT>", "command": "uv sync --locked --no-dev", "projects": "workspace defaults", "groups": "no dev", "extras": "none"},
+    {"id": "F3", "cwd": "<OPENHANDS_ROOT>", "command": "uv sync --locked --package openhands-sdk --no-dev", "projects": ["openhands-sdk"], "groups": "no dev", "extras": "none"},
+    {"id": "F4", "cwd": "<OPENHANDS_ROOT>", "command": "uv sync --locked --package openhands-sdk --package openhands-workspace --no-dev", "projects": ["openhands-sdk", "openhands-workspace"], "groups": "no dev", "extras": "none"}
+  ],
+  "disposition": "Formal OpenHands Resolution Baseline v2"
+}

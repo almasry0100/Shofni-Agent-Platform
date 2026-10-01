@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "phase": "R9",
+  "evidence_type": "final_cleanup_closure",
+  "observed_at_utc": "2026-10-01T22:57:55Z",
+  "continuation_scope": "CLOSURE_ONLY",
+  "no_live_calls": true,
+  "runtime_root": "poc/.runtime/resolution-20261001T180545Z",
+  "runtime_root_exists": false,
+  "raw_evidence_root": "poc/.runtime/resolution-20261001T180545Z/raw-evidence",
+  "raw_evidence_root_exists": false,
+  "raw_evidence_files_remaining": 0,
+  "docker_owned_resources": {
+    "containers": 0,
+    "networks": 0,
+    "temporary_images": 0
+  },
+  "listeners_and_ports": {
+    "checked_ports": [4000, 8080, 8081, 62259, 51152, 51170, 51180, 54234, 54270, 56624, 58934],
+    "listening_matches": 0,
+    "status": "PASS"
+  },
+  "temporary_config_roots_remaining": 0,
+  "execution_time_cleanup": {
+    "status": "BLOCKED_BY_EXECUTION_POLICY",
+    "historical_evidence": "tests/poc/evidence/resolution/20261001T180545Z/r6/cleanup-verification.json"
+  },
+  "final_cleanup": {
+    "status": "PASS_AFTER_USER_MANUAL_REMOVAL",
+    "manual_removal_by_user": true,
+    "runtime_root_removed": true,
+    "raw_evidence_removed": true
+  },
+  "historical_cleanup_evidence_preserved": true,
+  "evidence_refs": [
+    "tests/poc/evidence/resolution/20261001T180545Z/r6/cleanup-verification.json"
+  ]
+}

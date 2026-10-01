@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "phase": "R3",
+  "classification": "EVIDENCE_METADATA_CORRECTION",
+  "field": "evidence_refs",
+  "previous_path": "tests/poc/evidence/resolution/resolution-20261001T180545Z/r3/direct-control.json",
+  "corrected_path": "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+  "affected_records": [
+    "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r3/bifrost/t04.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r3/litellm/t04.json"
+  ],
+  "correction_reason": "The run ID was used as a child path without removing its resolution- prefix. Each corrected target exists. The single direct control result and skipped candidate-attribution rows are unchanged.",
+  "semantic_retry": false
+}

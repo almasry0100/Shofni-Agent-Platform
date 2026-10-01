@@ -1,0 +1,58 @@
+{
+  "attempt_id": "resolution-20261001T180545Z-r1-t10",
+  "attempt_id_after_restart": "cd2ee114-6f6c-4d72-9ed6-0c240135f9d9",
+  "attempt_id_before_restart": "2dc6ef0a-b8b4-4d97-a0dc-68ffbef1d6a3",
+  "candidate_action_events": [
+    {
+      "action": {
+        "kind": "ReadFixtureAction",
+        "path": "input/alpha.txt"
+      },
+      "candidate_event_id": "7d450e55-c915-4ae5-840a-6dd549d10145",
+      "tool_call_id": "call_hzzLZvSf68gwhtFaB3yTk1RN",
+      "tool_name": "read_fixture"
+    }
+  ],
+  "candidate_conversation_id": "ec9dbacc-73db-4b4e-b061-5aa068570c10",
+  "checkpoint_id": "7806d45e-ca74-4f36-92ac-f398cfc2d48c",
+  "final_result": "alpha",
+  "final_selected_model": "gpt-5.5",
+  "gates": {
+    "fresh_restore_process_succeeded": true,
+    "model_a_process_exited_cleanly": true,
+    "model_a_runtime_terminated_before_restore": true,
+    "model_b_selected": true,
+    "new_attempt_id_explicit": true,
+    "prior_tool_result_preserved": true,
+    "read_fixture_action_observed": true,
+    "same_task_id": true,
+    "same_workspace_id": true,
+    "successful_final_result": true
+  },
+  "key_presence": "PRESENT",
+  "model_a": "gpt-5.4-mini",
+  "model_a_process_exit_code": 0,
+  "model_b": "gpt-5.5",
+  "new_attempt_id_explicit": true,
+  "process_boundary": "model A and restore ran in separate child processes; model A exited before restore started",
+  "provider": "A6api",
+  "restore_process_exit_code": 0,
+  "same_task_id": true,
+  "same_workspace_id": true,
+  "schema_version": "1.0",
+  "session_id": "fba9831b-164e-4051-9931-b1eb6e337288",
+  "status": "PASS",
+  "task_id": "b212f556-e3e1-433b-a7c6-1157a3512028",
+  "tool_result": {
+    "ec9dbacc-73db-4b4e-b061-5aa068570c10:call_hzzLZvSf68gwhtFaB3yTk1RN": {
+      "result": "alpha\n",
+      "result_id": "d3175f95-7c08-57df-a497-3f1c94d3c38a",
+      "tool_call_id": "call_hzzLZvSf68gwhtFaB3yTk1RN"
+    }
+  },
+  "workspace_id": "93643d24-d014-45f6-8eec-9a66a81f8a68",
+  "candidate_reached": true,
+  "provider_reached": true,
+  "client_reached": true,
+  "reachability_basis": "The recorded A6api model responses, OpenHands action/result events, and fresh-process continuation were observed."
+}

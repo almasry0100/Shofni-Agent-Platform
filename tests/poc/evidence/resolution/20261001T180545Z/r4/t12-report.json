@@ -1,0 +1,1205 @@
+{
+  "architecture_candidate_eligibility": {
+    "Bifrost": {
+      "candidate_controlled_mandatory_failures": [
+        {
+          "client": "Claude Code",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/1-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/2-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/3-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/1-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/2-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/3-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/1-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/2-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/3-T03.json",
+            "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-1.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-2.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-3.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r2/summary.json"
+          ],
+          "failure_class": "CLIENT_FAILURE",
+          "provider": "A6api",
+          "test_id": "T03"
+        }
+      ],
+      "external_readiness_blockers_excluded_from_architecture_failure": [
+        {
+          "client": "OpenCode",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+          ],
+          "provider": "RelayRouter",
+          "test_id": "T04"
+        },
+        {
+          "client": "OpenCode",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+          ],
+          "provider": "RelayRouter",
+          "test_id": "T07"
+        },
+        {
+          "client": "OpenCode",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+          ],
+          "provider": "RelayRouter",
+          "test_id": "T08"
+        }
+      ],
+      "status": "INELIGIBLE"
+    },
+    "LiteLLM": {
+      "candidate_controlled_mandatory_failures": [
+        {
+          "client": "Claude Code",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/1-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/2-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/3-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/1-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/2-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/3-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-1.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-2.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-3.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/1-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/2-T03.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/3-T03.json",
+            "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-1.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-2.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-3.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r2/summary.json"
+          ],
+          "failure_class": "CLIENT_FAILURE",
+          "provider": "A6api",
+          "test_id": "T03"
+        }
+      ],
+      "external_readiness_blockers_excluded_from_architecture_failure": [
+        {
+          "client": "OpenCode",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T04.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T04.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T04.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T04.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T04.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T04.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+          ],
+          "provider": "RelayRouter",
+          "test_id": "T04"
+        },
+        {
+          "client": "OpenCode",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T07.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T07.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T07.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T07.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T07.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T07.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+          ],
+          "provider": "RelayRouter",
+          "test_id": "T07"
+        },
+        {
+          "client": "OpenCode",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T08.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T08.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T08.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T08.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T08.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T08.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+            "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+          ],
+          "provider": "RelayRouter",
+          "test_id": "T08"
+        }
+      ],
+      "status": "INELIGIBLE"
+    }
+  },
+  "capabilities": {
+    "Bifrost": {
+      "emulated_tools": {
+        "evidence_refs": [
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+        ],
+        "observations": [
+          {
+            "candidate_attribution": "EXTERNAL_PROVIDER_BLOCKED_BEFORE_CANDIDATE",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+            ],
+            "provider": "RelayRouter",
+            "status": "BLOCKED",
+            "test_id": "T04"
+          }
+        ],
+        "status": "BLOCKED_EXTERNAL_PROVIDER"
+      },
+      "fallback": {
+        "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+        "evidence_refs": [
+          "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+          "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+          "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+        ],
+        "fixture_control_status": "UNVERIFIED",
+        "status": "UNVERIFIED"
+      },
+      "native_tools": {
+        "evidence_refs": [
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/1-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/2-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/3-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/1-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/2-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/3-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/1-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/2-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/3-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/1-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/2-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/3-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/1-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/2-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/3-T03.json",
+          "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-1.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-2.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-3.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r2/summary.json"
+        ],
+        "observations": [
+          {
+            "candidate_attribution": "CANDIDATE_REACHED_PASS",
+            "client": "Codex",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/1-T01.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/2-T01.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/3-T01.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/1-T01.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/2-T01.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/3-T01.json"
+            ],
+            "provider": "A6api",
+            "status": "PASS",
+            "test_id": "T01"
+          },
+          {
+            "candidate_attribution": "CANDIDATE_REACHED_CLIENT_FAILURE",
+            "client": "Claude Code",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/1-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/2-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/3-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/1-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/2-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/3-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/1-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/2-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/3-T03.json",
+              "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-1.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-2.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-3.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r2/summary.json"
+            ],
+            "provider": "A6api",
+            "status": "FAIL",
+            "test_id": "T03"
+          },
+          {
+            "candidate_attribution": "CANDIDATE_REACHED_PASS",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T07.json"
+            ],
+            "provider": "A6api",
+            "status": "PASS",
+            "test_id": "T07"
+          }
+        ],
+        "status": "PARTIAL"
+      },
+      "sequential_continuation": {
+        "evidence_refs": [
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+        ],
+        "observations": [
+          {
+            "candidate_attribution": "CANDIDATE_REACHED_PASS",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T07.json"
+            ],
+            "provider": "A6api",
+            "status": "PASS",
+            "test_id": "T07"
+          },
+          {
+            "candidate_attribution": "EXTERNAL_PROVIDER_BLOCKED_BEFORE_CANDIDATE",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+            ],
+            "provider": "RelayRouter",
+            "status": "BLOCKED",
+            "test_id": "T07"
+          }
+        ],
+        "status": "PARTIAL"
+      },
+      "streaming": {
+        "evidence_refs": [
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+        ],
+        "observations": [
+          {
+            "candidate_attribution": "CANDIDATE_REACHED_PASS",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T08.json"
+            ],
+            "provider": "A6api",
+            "status": "PASS",
+            "test_id": "T08"
+          },
+          {
+            "candidate_attribution": "EXTERNAL_PROVIDER_BLOCKED_BEFORE_CANDIDATE",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+            ],
+            "provider": "RelayRouter",
+            "status": "BLOCKED",
+            "test_id": "T08"
+          }
+        ],
+        "status": "PARTIAL"
+      }
+    },
+    "LiteLLM": {
+      "emulated_tools": {
+        "evidence_refs": [
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T04.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T04.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T04.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T04.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T04.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T04.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+        ],
+        "observations": [
+          {
+            "candidate_attribution": "EXTERNAL_PROVIDER_BLOCKED_BEFORE_CANDIDATE",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T04.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T04.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T04.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T04.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T04.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T04.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+            ],
+            "provider": "RelayRouter",
+            "status": "BLOCKED",
+            "test_id": "T04"
+          }
+        ],
+        "status": "BLOCKED_EXTERNAL_PROVIDER"
+      },
+      "fallback": {
+        "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+        "evidence_refs": [
+          "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+          "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+          "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+        ],
+        "fixture_control_status": "UNVERIFIED",
+        "status": "UNVERIFIED"
+      },
+      "native_tools": {
+        "evidence_refs": [
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/1-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/2-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/3-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/1-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/2-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/3-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/1-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/2-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/3-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/1-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/2-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/3-T01.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-1.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-2.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-3.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-1.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-2.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-3.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/1-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/2-T03.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/3-T03.json",
+          "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-1.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-2.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-3.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r2/summary.json"
+        ],
+        "observations": [
+          {
+            "candidate_attribution": "CANDIDATE_REACHED_PASS",
+            "client": "Codex",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/1-T01.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/2-T01.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/3-T01.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/1-T01.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/2-T01.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/3-T01.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-1.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-2.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-3.json"
+            ],
+            "provider": "A6api",
+            "status": "PASS",
+            "test_id": "T01"
+          },
+          {
+            "candidate_attribution": "CANDIDATE_REACHED_CLIENT_FAILURE",
+            "client": "Claude Code",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/1-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/2-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/3-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/1-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/2-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/3-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-1.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-2.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-3.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/1-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/2-T03.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/3-T03.json",
+              "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-1.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-2.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-3.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r2/summary.json"
+            ],
+            "provider": "A6api",
+            "status": "FAIL",
+            "test_id": "T03"
+          },
+          {
+            "candidate_attribution": "CANDIDATE_REACHED_PASS",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json"
+            ],
+            "provider": "A6api",
+            "status": "PASS",
+            "test_id": "T07"
+          }
+        ],
+        "status": "PARTIAL"
+      },
+      "sequential_continuation": {
+        "evidence_refs": [
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T07.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+        ],
+        "observations": [
+          {
+            "candidate_attribution": "CANDIDATE_REACHED_PASS",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json"
+            ],
+            "provider": "A6api",
+            "status": "PASS",
+            "test_id": "T07"
+          },
+          {
+            "candidate_attribution": "EXTERNAL_PROVIDER_BLOCKED_BEFORE_CANDIDATE",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T07.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+            ],
+            "provider": "RelayRouter",
+            "status": "BLOCKED",
+            "test_id": "T07"
+          }
+        ],
+        "status": "PARTIAL"
+      },
+      "streaming": {
+        "evidence_refs": [
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T08.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+          "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+          "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+        ],
+        "observations": [
+          {
+            "candidate_attribution": "CANDIDATE_REACHED_PASS",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json"
+            ],
+            "provider": "A6api",
+            "status": "PASS",
+            "test_id": "T08"
+          },
+          {
+            "candidate_attribution": "EXTERNAL_PROVIDER_BLOCKED_BEFORE_CANDIDATE",
+            "client": "OpenCode",
+            "evidence_refs": [
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T08.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+              "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+              "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+            ],
+            "provider": "RelayRouter",
+            "status": "BLOCKED",
+            "test_id": "T08"
+          }
+        ],
+        "status": "PARTIAL"
+      }
+    }
+  },
+  "compatibility_readiness": [
+    {
+      "candidate_attribution": "CANDIDATE_REACHED_COMPATIBILITY_FAILURE",
+      "candidate_reached": true,
+      "client": "Claude Code",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-1.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-2.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-3.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r2/summary.json"
+      ],
+      "gateway_candidate": "Bifrost",
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "status": "FAILED_COMPATIBILITY",
+      "test_ids": [
+        "T03"
+      ]
+    },
+    {
+      "candidate_attribution": "CANDIDATE_REACHED_PASS",
+      "candidate_reached": true,
+      "client": "Codex",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/3-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/3-T01.json"
+      ],
+      "gateway_candidate": "Bifrost",
+      "protocol": "Responses",
+      "provider": "A6api",
+      "status": "READY",
+      "test_ids": [
+        "T01"
+      ]
+    },
+    {
+      "candidate_attribution": "CANDIDATE_REACHED_PASS",
+      "candidate_reached": true,
+      "client": "OpenCode",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T08.json"
+      ],
+      "gateway_candidate": "Bifrost",
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "status": "READY",
+      "test_ids": [
+        "T04",
+        "T07",
+        "T08"
+      ]
+    },
+    {
+      "candidate_attribution": "EXTERNAL_PROVIDER_BLOCKED_BEFORE_CANDIDATE",
+      "candidate_reached": false,
+      "client": "OpenCode",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+      ],
+      "gateway_candidate": "Bifrost",
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "status": "BLOCKED_EXTERNAL_PROVIDER",
+      "test_ids": [
+        "T04",
+        "T07",
+        "T08"
+      ]
+    },
+    {
+      "candidate_attribution": "CANDIDATE_REACHED_COMPATIBILITY_FAILURE",
+      "candidate_reached": true,
+      "client": "Claude Code",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-3.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-1.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-2.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-3.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r2/summary.json"
+      ],
+      "gateway_candidate": "LiteLLM",
+      "protocol": "Anthropic Messages",
+      "provider": "A6api",
+      "status": "FAILED_COMPATIBILITY",
+      "test_ids": [
+        "T03"
+      ]
+    },
+    {
+      "candidate_attribution": "CANDIDATE_REACHED_PASS",
+      "candidate_reached": true,
+      "client": "Codex",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/3-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/3-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-3.json"
+      ],
+      "gateway_candidate": "LiteLLM",
+      "protocol": "Responses",
+      "provider": "A6api",
+      "status": "READY",
+      "test_ids": [
+        "T01"
+      ]
+    },
+    {
+      "candidate_attribution": "CANDIDATE_REACHED_PASS",
+      "candidate_reached": true,
+      "client": "OpenCode",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json"
+      ],
+      "gateway_candidate": "LiteLLM",
+      "protocol": "Chat Completions",
+      "provider": "A6api",
+      "status": "READY",
+      "test_ids": [
+        "T04",
+        "T07",
+        "T08"
+      ]
+    },
+    {
+      "candidate_attribution": "EXTERNAL_PROVIDER_BLOCKED_BEFORE_CANDIDATE",
+      "candidate_reached": false,
+      "client": "OpenCode",
+      "evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+      ],
+      "gateway_candidate": "LiteLLM",
+      "protocol": "Chat Completions",
+      "provider": "RelayRouter",
+      "status": "BLOCKED_EXTERNAL_PROVIDER",
+      "test_ids": [
+        "T04",
+        "T07",
+        "T08"
+      ]
+    }
+  ],
+  "effective_capability": {
+    "Bifrost": {
+      "emulated_tools": "BLOCKED_EXTERNAL_PROVIDER",
+      "fallback": "UNVERIFIED",
+      "native_tools": "PARTIAL",
+      "sequential_continuation": "PARTIAL",
+      "streaming": "PARTIAL"
+    },
+    "LiteLLM": {
+      "emulated_tools": "BLOCKED_EXTERNAL_PROVIDER",
+      "fallback": "UNVERIFIED",
+      "native_tools": "PARTIAL",
+      "sequential_continuation": "PARTIAL",
+      "streaming": "PARTIAL"
+    }
+  },
+  "evidence_refs": [
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/1-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/2-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/3-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/1-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/2-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/3-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/1-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/2-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/3-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/1-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/2-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/3-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/1-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/2-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/3-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/1-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/2-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/3-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/1-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/2-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/3-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/1-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/2-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/3-T01.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T04.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T07.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T08.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-1.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-2.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-3.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-1.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-2.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-3.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/1-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/2-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/3-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/1-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/2-T03.json",
+    "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/3-T03.json",
+    "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+    "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+    "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+    "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+    "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+    "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+    "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+    "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-1.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-2.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-3.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-1.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-2.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r2/litellm/rep-3.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r2/summary.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json"
+  ],
+  "fixture_controls": [
+    {
+      "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+      "candidate_execution": false,
+      "candidate_label_in_source": "Bifrost",
+      "evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+      ],
+      "status": "PASS",
+      "test_id": "T02"
+    },
+    {
+      "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+      "candidate_execution": false,
+      "candidate_label_in_source": "Bifrost",
+      "evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+      ],
+      "status": "PASS",
+      "test_id": "T05"
+    },
+    {
+      "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+      "candidate_execution": false,
+      "candidate_label_in_source": "Bifrost",
+      "evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+      ],
+      "status": "PASS",
+      "test_id": "T06"
+    },
+    {
+      "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+      "candidate_execution": false,
+      "candidate_label_in_source": "Bifrost",
+      "evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+      ],
+      "status": "PASS",
+      "test_id": "T09-A"
+    },
+    {
+      "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+      "candidate_execution": false,
+      "candidate_label_in_source": "Bifrost",
+      "evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+      ],
+      "status": "PASS",
+      "test_id": "T09-B"
+    },
+    {
+      "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+      "candidate_execution": false,
+      "candidate_label_in_source": "LiteLLM",
+      "evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "status": "PASS",
+      "test_id": "T02"
+    },
+    {
+      "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+      "candidate_execution": false,
+      "candidate_label_in_source": "LiteLLM",
+      "evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "status": "PASS",
+      "test_id": "T05"
+    },
+    {
+      "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+      "candidate_execution": false,
+      "candidate_label_in_source": "LiteLLM",
+      "evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "status": "PASS",
+      "test_id": "T06"
+    },
+    {
+      "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+      "candidate_execution": false,
+      "candidate_label_in_source": "LiteLLM",
+      "evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "status": "PASS",
+      "test_id": "T09-A"
+    },
+    {
+      "candidate_attribution": "CANDIDATE_NEUTRAL_FIXTURE_ONLY",
+      "candidate_execution": false,
+      "candidate_label_in_source": "LiteLLM",
+      "evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "status": "PASS",
+      "test_id": "T09-B"
+    }
+  ],
+  "observed_at_utc": "2026-10-01T19:22:01.200386Z",
+  "readiness_by_provider": {
+    "A6api": "FAILED_COMPATIBILITY",
+    "RelayRouter": "BLOCKED_EXTERNAL_PROVIDER"
+  },
+  "run_id": "resolution-20261001T180545Z",
+  "schema_version": "1.0",
+  "test_id": "T12"
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "phase": "R8",
+  "observed_at_utc": "2026-10-01T20:00:15Z",
+  "candidate_reached": false,
+  "provider_reached": false,
+  "client_reached": false,
+  "architecture_selection": {
+    "gateway": "NO_DECISION_YET",
+    "runtime": "NO_DECISION_YET",
+    "composition": "NO_DECISION_YET",
+    "implementation_plan": "NOT_CREATED_SELECTION_GATE_NOT_MET"
+  },
+  "compatibility_readiness": {
+    "A6api": "PARTIAL",
+    "RelayRouter": "BLOCKED_EXTERNAL_PROVIDER",
+    "Codex": "READY",
+    "Claude Code": "PARTIAL",
+    "OpenCode": "PARTIAL"
+  },
+  "tuples": [
+    {
+      "provider": "A6api",
+      "client": "Codex",
+      "protocol": "Responses",
+      "route": "gpt-5.4-mini",
+      "status": "READY",
+      "gateway_candidates": ["Bifrost", "LiteLLM"],
+      "candidate_reached": true,
+      "provider_reached": true,
+      "client_reached": true
+    },
+    {
+      "provider": "A6api",
+      "client": "Claude Code",
+      "protocol": "Anthropic Messages",
+      "route": "gpt-5.4-mini via OpenAI-compatible Responses upstream",
+      "status": "PARTIAL",
+      "gateway_candidates": ["Bifrost", "LiteLLM"],
+      "candidate_reached": false,
+      "provider_reached": false,
+      "client_reached": true,
+      "repetitions_per_gateway": 3,
+      "client_failures_per_gateway": 3,
+      "root_cause": "UNVERIFIED; no request-level gateway or outbound provider observation"
+    },
+    {
+      "provider": "A6api",
+      "client": "OpenCode",
+      "protocol": "Chat Completions",
+      "route": "gpt-5.4-mini",
+      "status": "READY",
+      "gateway_candidates": ["Bifrost", "LiteLLM"],
+      "candidate_reached": true,
+      "provider_reached": true,
+      "client_reached": true
+    },
+    {
+      "provider": "RelayRouter",
+      "client": "OpenCode",
+      "protocol": "Chat Completions with Shofni tool emulation",
+      "route": "stealth/openai/gpt-5.6-sol",
+      "status": "BLOCKED_EXTERNAL_PROVIDER",
+      "gateway_candidates": ["Bifrost", "LiteLLM"],
+      "candidate_reached": false,
+      "provider_reached": false,
+      "client_reached": true,
+      "attempts": 1,
+      "timeout_seconds": 240,
+      "root_cause": "UNVERIFIED; the direct control timed out without a provider response"
+    },
+    {
+      "provider": "RelayRouter",
+      "client": "Claude Code or Codex",
+      "protocol": "Unsupported pairing for this POC scope",
+      "status": "UNSUPPORTED",
+      "candidate_reached": false,
+      "provider_reached": false,
+      "client_reached": false
+    }
+  ],
+  "runtime_basis": {
+    "OpenHands_baseline_v2": "PASS",
+    "lifecycle": "PASS",
+    "T10": "PASS",
+    "T11_before_side_effect": "PASS",
+    "T11_after_side_effect_before_checkpoint": "PASS",
+    "required_composition": "PARTIAL",
+    "runtime_selection": "NO_DECISION_YET",
+    "reason": "OpenHands cannot be selected until a required Level 2 + Level 3 composition passes, including provider-boundary observability."
+  },
+  "t12_aggregate_note": "The generated T12 report's readiness_by_provider values are A6api=PARTIAL and RelayRouter=BLOCKED_EXTERNAL_PROVIDER. Readiness is reported by tuple here to preserve A6api route differences.",
+  "evidence_refs": [
+    "tests/poc/evidence/resolution/20261001T180545Z/r4/t12-report-r2-attribution-corrected.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r7/gateway-decision.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r6/summary.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r5/mastra-disposition.json"
+  ]
+}

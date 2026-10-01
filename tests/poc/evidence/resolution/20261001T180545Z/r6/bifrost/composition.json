@@ -1,0 +1,251 @@
+{
+  "gateway": "Bifrost",
+  "level2_native_client_owned": [
+    {
+      "candidate_gateway": "shofni-r6-resolution-20261001t180545z-bifrost",
+      "candidate_tool_execution_count": 0,
+      "client_tool_execution_count": 1,
+      "configured_retry_count": 0,
+      "final_marker": null,
+      "final_response_present": true,
+      "level": 2,
+      "model": "gpt-5.4-mini",
+      "provider": "A6api",
+      "provider_boundary_observation": {
+        "configured_route": "https://api.a6api.com/v1/responses",
+        "observed_live_gateway_response": true,
+        "observed_outbound_provider_http": false
+      },
+      "repetition": 1,
+      "runtime_tool_execution_count": 0,
+      "status": "PASS",
+      "tool_call_id": "call_wG5UVRsIyzIbbvhpf6fKvWRk",
+      "tool_execution_backend": "CLIENT",
+      "tool_result": "alpha fixture input\n",
+      "candidate_reached": true,
+      "provider_reached": false,
+      "provider_request_observed": false,
+      "client_reached": true
+    },
+    {
+      "candidate_gateway": "shofni-r6-resolution-20261001t180545z-bifrost",
+      "candidate_tool_execution_count": 0,
+      "client_tool_execution_count": 1,
+      "configured_retry_count": 0,
+      "final_marker": null,
+      "final_response_present": true,
+      "level": 2,
+      "model": "gpt-5.4-mini",
+      "provider": "A6api",
+      "provider_boundary_observation": {
+        "configured_route": "https://api.a6api.com/v1/responses",
+        "observed_live_gateway_response": true,
+        "observed_outbound_provider_http": false
+      },
+      "repetition": 2,
+      "runtime_tool_execution_count": 0,
+      "status": "PASS",
+      "tool_call_id": "call_mUHIm5ixbl2pQBQ57bLaM7CH",
+      "tool_execution_backend": "CLIENT",
+      "tool_result": "alpha fixture input\n",
+      "candidate_reached": true,
+      "provider_reached": false,
+      "provider_request_observed": false,
+      "client_reached": true
+    },
+    {
+      "candidate_gateway": "shofni-r6-resolution-20261001t180545z-bifrost",
+      "candidate_tool_execution_count": 0,
+      "client_tool_execution_count": 1,
+      "configured_retry_count": 0,
+      "final_marker": null,
+      "final_response_present": true,
+      "level": 2,
+      "model": "gpt-5.4-mini",
+      "provider": "A6api",
+      "provider_boundary_observation": {
+        "configured_route": "https://api.a6api.com/v1/responses",
+        "observed_live_gateway_response": true,
+        "observed_outbound_provider_http": false
+      },
+      "repetition": 3,
+      "runtime_tool_execution_count": 0,
+      "status": "PASS",
+      "tool_call_id": "call_oItAXnqzJ9DGWGf36kb7f2Le",
+      "tool_execution_backend": "CLIENT",
+      "tool_result": "alpha fixture input\n",
+      "candidate_reached": true,
+      "provider_reached": false,
+      "provider_request_observed": false,
+      "client_reached": true
+    }
+  ],
+  "level3_runtime_owned": [
+    {
+      "baseline_id": "openhands-resolution-baseline-v2-20261001T180545Z",
+      "checkpoint_id": "820701b9-1c2d-45ad-8619-7d3b84152da3",
+      "diagnostic_tail": "{\"attempt_id\": \"resolution-20261001T180545Z-bifrost-r6-rep-1\", \"attempt_id_after_restart\": \"43cb0b89-137f-438b-a6b3-a6b6db223dfa\", \"attempt_id_before_restart\": \"b1a42427-1604-486e-b0f3-d3dd8842f8e2\", \"candidate_action_events\": [{\"action\": {\"kind\": \"ReadFixtureAction\", \"path\": \"input/alpha.txt\"}, \"candidate_event_id\": \"30480feb-bafd-437a-b946-0651722d9e2d\", \"tool_call_id\": \"call_2caS9iT4LOTkkWGF1QbTsQgj\", \"tool_name\": \"read_fixture\"}], \"candidate_conversation_id\": \"ecfb8b38-d939-4842-a615-d8ed2db96c6a\", \"checkpoint_id\": \"820701b9-1c2d-45ad-8619-7d3b84152da3\", \"final_result\": \"alpha\", \"final_selected_model\": \"gpt-5.5\", \"gates\": {\"fresh_restore_process_succeeded\": true, \"model_a_process_exited_cleanly\": true, \"model_a_runtime_terminated_before_restore\": true, \"model_b_selected\": true, \"new_attempt_id_explicit\": true, \"prior_tool_result_preserved\": true, \"read_fixture_action_observed\": true, \"same_task_id\": true, \"same_workspace_id\": true, \"successful_final_result\": true}, \"key_presence\": \"MISSING\", \"model_a\": \"gpt-5.4-mini\", \"model_a_process_exit_code\": 0, \"model_b\": \"gpt-5.5\", \"new_attempt_id_explicit\": true, \"process_boundary\": \"model A and restore ran in separate child processes; model A exited before restore started\", \"provider\": \"A6api\", \"restore_process_exit_code\": 0, \"same_task_id\": true, \"same_workspace_id\": true, \"schema_version\": \"1.0\", \"session_id\": \"9866650c-51e1-43f1-9f88-7fb60c5e1ccd\", \"status\": \"PASS\", \"task_id\": \"16494f54-2b23-4e06-a21f-9886268c2e3a\", \"tool_result\": {\"ecfb8b38-d939-4842-a615-d8ed2db96c6a:call_2caS9iT4LOTkkWGF1QbTsQgj\": {\"result\": \"alpha\\n\", \"result_id\": \"5d6031ce-b204-598b-8ed3-2f0177ecdedb\", \"tool_call_id\": \"call_2caS9iT4LOTkkWGF1QbTsQgj\"}}, \"workspace_id\": \"21219820-3e57-4f11-9f43-8e8a0f235985\"}\n\n",
+      "direct_provider_bypass": false,
+      "final_result": "alpha",
+      "fresh_process_proven": true,
+      "gateway": "Bifrost",
+      "gateway_local_tool_execution": false,
+      "level": 3,
+      "live_evidence_ref": "t10-live.json",
+      "model_a": "gpt-5.4-mini",
+      "model_b": "gpt-5.5",
+      "provider": "A6api",
+      "provider_boundary_observation": {
+        "configured_route": "https://api.a6api.com/v1/responses",
+        "gateway_response_observed": true,
+        "observed_outbound_provider_http": false
+      },
+      "repetition": 1,
+      "runtime_process_exit_code": 0,
+      "runtime_provider_key": "NOT_PRESENT",
+      "status": "PASS",
+      "task_id": "16494f54-2b23-4e06-a21f-9886268c2e3a",
+      "tool_call_ids": [
+        "call_2caS9iT4LOTkkWGF1QbTsQgj"
+      ],
+      "tool_execution_backend": "RUNTIME",
+      "tool_result": {
+        "ecfb8b38-d939-4842-a615-d8ed2db96c6a:call_2caS9iT4LOTkkWGF1QbTsQgj": {
+          "result": "alpha\n",
+          "result_id": "5d6031ce-b204-598b-8ed3-2f0177ecdedb",
+          "tool_call_id": "call_2caS9iT4LOTkkWGF1QbTsQgj"
+        }
+      },
+      "workspace_id": "21219820-3e57-4f11-9f43-8e8a0f235985",
+      "candidate_reached": true,
+      "provider_reached": false,
+      "provider_request_observed": false,
+      "client_reached": true
+    },
+    {
+      "baseline_id": "openhands-resolution-baseline-v2-20261001T180545Z",
+      "checkpoint_id": "f43cd0b9-412c-45aa-8fd1-8c48c06a5bd6",
+      "diagnostic_tail": "{\"attempt_id\": \"resolution-20261001T180545Z-bifrost-r6-rep-2\", \"attempt_id_after_restart\": \"5c61b8e3-4875-410e-9070-9a54de501847\", \"attempt_id_before_restart\": \"eb824fbc-d3bd-4ff8-910f-63d707042652\", \"candidate_action_events\": [{\"action\": {\"kind\": \"ReadFixtureAction\", \"path\": \"input/alpha.txt\"}, \"candidate_event_id\": \"f39c30d5-b353-418a-9f6e-7d2cea67ad5e\", \"tool_call_id\": \"call_EkUUKgSsGmBkhsipdLKjd978\", \"tool_name\": \"read_fixture\"}], \"candidate_conversation_id\": \"e1f16996-f4c6-4015-92ae-e1bd09ff6029\", \"checkpoint_id\": \"f43cd0b9-412c-45aa-8fd1-8c48c06a5bd6\", \"final_result\": \"alpha\", \"final_selected_model\": \"gpt-5.5\", \"gates\": {\"fresh_restore_process_succeeded\": true, \"model_a_process_exited_cleanly\": true, \"model_a_runtime_terminated_before_restore\": true, \"model_b_selected\": true, \"new_attempt_id_explicit\": true, \"prior_tool_result_preserved\": true, \"read_fixture_action_observed\": true, \"same_task_id\": true, \"same_workspace_id\": true, \"successful_final_result\": true}, \"key_presence\": \"MISSING\", \"model_a\": \"gpt-5.4-mini\", \"model_a_process_exit_code\": 0, \"model_b\": \"gpt-5.5\", \"new_attempt_id_explicit\": true, \"process_boundary\": \"model A and restore ran in separate child processes; model A exited before restore started\", \"provider\": \"A6api\", \"restore_process_exit_code\": 0, \"same_task_id\": true, \"same_workspace_id\": true, \"schema_version\": \"1.0\", \"session_id\": \"b9bd2923-4b22-4065-b44d-d05eee5abcfd\", \"status\": \"PASS\", \"task_id\": \"92f3fd25-c005-4afe-9680-e278f2d59aee\", \"tool_result\": {\"e1f16996-f4c6-4015-92ae-e1bd09ff6029:call_EkUUKgSsGmBkhsipdLKjd978\": {\"result\": \"alpha\\n\", \"result_id\": \"1c7e58e8-bbe4-5893-8183-df64b569cd7e\", \"tool_call_id\": \"call_EkUUKgSsGmBkhsipdLKjd978\"}}, \"workspace_id\": \"13d89a68-3e78-45af-9fb0-3cb96a9d8eb3\"}\n\n",
+      "direct_provider_bypass": false,
+      "final_result": "alpha",
+      "fresh_process_proven": true,
+      "gateway": "Bifrost",
+      "gateway_local_tool_execution": false,
+      "level": 3,
+      "live_evidence_ref": "t10-live.json",
+      "model_a": "gpt-5.4-mini",
+      "model_b": "gpt-5.5",
+      "provider": "A6api",
+      "provider_boundary_observation": {
+        "configured_route": "https://api.a6api.com/v1/responses",
+        "gateway_response_observed": true,
+        "observed_outbound_provider_http": false
+      },
+      "repetition": 2,
+      "runtime_process_exit_code": 0,
+      "runtime_provider_key": "NOT_PRESENT",
+      "status": "PASS",
+      "task_id": "92f3fd25-c005-4afe-9680-e278f2d59aee",
+      "tool_call_ids": [
+        "call_EkUUKgSsGmBkhsipdLKjd978"
+      ],
+      "tool_execution_backend": "RUNTIME",
+      "tool_result": {
+        "e1f16996-f4c6-4015-92ae-e1bd09ff6029:call_EkUUKgSsGmBkhsipdLKjd978": {
+          "result": "alpha\n",
+          "result_id": "1c7e58e8-bbe4-5893-8183-df64b569cd7e",
+          "tool_call_id": "call_EkUUKgSsGmBkhsipdLKjd978"
+        }
+      },
+      "workspace_id": "13d89a68-3e78-45af-9fb0-3cb96a9d8eb3",
+      "candidate_reached": true,
+      "provider_reached": false,
+      "provider_request_observed": false,
+      "client_reached": true
+    },
+    {
+      "baseline_id": "openhands-resolution-baseline-v2-20261001T180545Z",
+      "checkpoint_id": "659ce67a-1baa-45e5-82d7-98cff78e0de1",
+      "diagnostic_tail": "{\"attempt_id\": \"resolution-20261001T180545Z-bifrost-r6-rep-3\", \"attempt_id_after_restart\": \"5752161a-d793-4064-8160-1ec2e44fc417\", \"attempt_id_before_restart\": \"800fb4d7-1b93-479f-89b4-674ed00377a4\", \"candidate_action_events\": [{\"action\": {\"kind\": \"ReadFixtureAction\", \"path\": \"input/alpha.txt\"}, \"candidate_event_id\": \"29941f47-3e10-4698-9d21-41eaaf7d1b99\", \"tool_call_id\": \"call_CgzY7ScrUzlZoy4dKji6alKS\", \"tool_name\": \"read_fixture\"}], \"candidate_conversation_id\": \"fbdfa47d-eb21-4d80-8efa-345d2d1737a3\", \"checkpoint_id\": \"659ce67a-1baa-45e5-82d7-98cff78e0de1\", \"final_result\": \"alpha\", \"final_selected_model\": \"gpt-5.5\", \"gates\": {\"fresh_restore_process_succeeded\": true, \"model_a_process_exited_cleanly\": true, \"model_a_runtime_terminated_before_restore\": true, \"model_b_selected\": true, \"new_attempt_id_explicit\": true, \"prior_tool_result_preserved\": true, \"read_fixture_action_observed\": true, \"same_task_id\": true, \"same_workspace_id\": true, \"successful_final_result\": true}, \"key_presence\": \"MISSING\", \"model_a\": \"gpt-5.4-mini\", \"model_a_process_exit_code\": 0, \"model_b\": \"gpt-5.5\", \"new_attempt_id_explicit\": true, \"process_boundary\": \"model A and restore ran in separate child processes; model A exited before restore started\", \"provider\": \"A6api\", \"restore_process_exit_code\": 0, \"same_task_id\": true, \"same_workspace_id\": true, \"schema_version\": \"1.0\", \"session_id\": \"dcd05b18-7a64-4886-812e-c03f79870ffc\", \"status\": \"PASS\", \"task_id\": \"7a61af5e-cf2b-4738-b6dd-b87df0616f78\", \"tool_result\": {\"fbdfa47d-eb21-4d80-8efa-345d2d1737a3:call_CgzY7ScrUzlZoy4dKji6alKS\": {\"result\": \"alpha\\n\", \"result_id\": \"1841b4be-a310-500e-b9b1-774dcb12322c\", \"tool_call_id\": \"call_CgzY7ScrUzlZoy4dKji6alKS\"}}, \"workspace_id\": \"6f312c68-5e85-46a2-b862-764ed8a6e817\"}\n\n",
+      "direct_provider_bypass": false,
+      "final_result": "alpha",
+      "fresh_process_proven": true,
+      "gateway": "Bifrost",
+      "gateway_local_tool_execution": false,
+      "level": 3,
+      "live_evidence_ref": "t10-live.json",
+      "model_a": "gpt-5.4-mini",
+      "model_b": "gpt-5.5",
+      "provider": "A6api",
+      "provider_boundary_observation": {
+        "configured_route": "https://api.a6api.com/v1/responses",
+        "gateway_response_observed": true,
+        "observed_outbound_provider_http": false
+      },
+      "repetition": 3,
+      "runtime_process_exit_code": 0,
+      "runtime_provider_key": "NOT_PRESENT",
+      "status": "PASS",
+      "task_id": "7a61af5e-cf2b-4738-b6dd-b87df0616f78",
+      "tool_call_ids": [
+        "call_CgzY7ScrUzlZoy4dKji6alKS"
+      ],
+      "tool_execution_backend": "RUNTIME",
+      "tool_result": {
+        "fbdfa47d-eb21-4d80-8efa-345d2d1737a3:call_CgzY7ScrUzlZoy4dKji6alKS": {
+          "result": "alpha\n",
+          "result_id": "1841b4be-a310-500e-b9b1-774dcb12322c",
+          "tool_call_id": "call_CgzY7ScrUzlZoy4dKji6alKS"
+        }
+      },
+      "workspace_id": "6f312c68-5e85-46a2-b862-764ed8a6e817",
+      "candidate_reached": true,
+      "provider_reached": false,
+      "provider_request_observed": false,
+      "client_reached": true
+    }
+  ],
+  "pairing": "Bifrost + OpenHands",
+  "phase": "R6",
+  "provider_boundary_observability": "NOT_OBSERVED",
+  "required_successful_repetitions": 3,
+  "run_id": "resolution-20261001T180545Z",
+  "runtime": "OpenHands Baseline v2",
+  "schema_version": "1.0",
+  "setup": {
+    "container": "shofni-r6-resolution-20261001t180545z-bifrost",
+    "gateway": "Bifrost",
+    "gateway_probe": {
+      "missing_routes": [],
+      "model_ids": [
+        "openai/gpt-5.4-mini",
+        "openai/gpt-5.5"
+      ],
+      "requested_routes": [
+        "gpt-5.4-mini",
+        "gpt-5.5"
+      ],
+      "selected_routes_present": true,
+      "status": "PASS"
+    },
+    "host_gateway_url": "http://127.0.0.1:56624/openai/v1",
+    "internal_gateway_url": "http://shofni-r6-resolution-20261001t180545z-bifrost:8080",
+    "network": "shofni-r6-net-resolution-20261001t180545z-bifrost",
+    "provider": "A6api",
+    "provider_route_a": "gpt-5.4-mini",
+    "provider_route_b": "gpt-5.5",
+    "setup_corrections": [
+      {
+        "cause": "Docker on Windows rejects the path-list mount syntax used by historical attempts.",
+        "correction": "Validated explicit --mount type=bind,source=C:/...,target=... with forward-slash drive paths in one disposable Linux container before semantic repetitions.",
+        "semantic_retry": false,
+        "type": "SETUP_CORRECTION"
+      }
+    ]
+  },
+  "status": "PARTIAL",
+  "candidate_reached": true,
+  "provider_reached": false,
+  "provider_request_observed": false,
+  "client_reached": true
+}

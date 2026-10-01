@@ -1,0 +1,47 @@
+{
+  "attempt_id": "800fb4d7-1b93-479f-89b4-674ed00377a4",
+  "candidate_conversation_id": "fbdfa47d-eb21-4d80-8efa-345d2d1737a3",
+  "candidate_events": [
+    {
+      "action": {
+        "kind": "ReadFixtureAction",
+        "path": "input/alpha.txt"
+      },
+      "candidate_event_id": "29941f47-3e10-4698-9d21-41eaaf7d1b99",
+      "candidate_event_type": "ActionEvent",
+      "tool_call_id": "call_CgzY7ScrUzlZoy4dKji6alKS",
+      "tool_name": "read_fixture"
+    },
+    {
+      "candidate_event_id": "bbbc75be-c596-4eca-928d-ce50d53177c9",
+      "candidate_event_type": "ObservationEvent",
+      "tool_call_id": "call_CgzY7ScrUzlZoy4dKji6alKS",
+      "tool_name": "read_fixture"
+    },
+    {
+      "candidate_event_id": "5cad146b-a345-4e51-8d64-ead31c8ca307",
+      "candidate_event_type": "ConversationErrorEvent"
+    },
+    {
+      "candidate_event_id": "c3e4b698-2e04-4a72-a220-62aa0922e834",
+      "candidate_event_type": "SystemPromptEvent"
+    },
+    {
+      "candidate_event_id": "538522d0-8742-43b2-97f2-4ce1596b9317",
+      "candidate_event_type": "MessageEvent"
+    }
+  ],
+  "checkpoint_id": "659ce67a-1baa-45e5-82d7-98cff78e0de1",
+  "model": "gpt-5.4-mini",
+  "provider": "A6api",
+  "session_id": "dcd05b18-7a64-4886-812e-c03f79870ffc",
+  "task_id": "7a61af5e-cf2b-4738-b6dd-b87df0616f78",
+  "tool_results": {
+    "fbdfa47d-eb21-4d80-8efa-345d2d1737a3:call_CgzY7ScrUzlZoy4dKji6alKS": {
+      "result": "alpha\n",
+      "result_id": "1841b4be-a310-500e-b9b1-774dcb12322c",
+      "tool_call_id": "call_CgzY7ScrUzlZoy4dKji6alKS"
+    }
+  },
+  "workspace_id": "6f312c68-5e85-46a2-b862-764ed8a6e817"
+}

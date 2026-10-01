@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "phase": "R6",
+  "observed_at_utc": "2026-10-01T20:06:20Z",
+  "docker_containers_remaining": [],
+  "docker_networks_remaining": [],
+  "docker_runtime_image_remaining": false,
+  "verified_listening_ports_remaining": [],
+  "verified_released_host_ports": [
+    62259,
+    51152,
+    51170,
+    51180,
+    54234,
+    54270,
+    56624,
+    58934
+  ],
+  "resolution_run_runtime_root_removed": false,
+  "resolution_run_runtime_root": "poc/.runtime/resolution-20261001T180545Z",
+  "raw_evidence_remaining": true,
+  "raw_evidence_file_count": 9,
+  "resolution_owned_temporary_configuration_removed": false,
+  "cleanup_status": "BLOCKED_BY_EXECUTION_POLICY",
+  "cleanup_blocker": "The environment execution policy rejected the explicit recursive removal command for the validated run-owned root with 'blocked by policy'.",
+  "evidence_is_sanitized_and_preserved_separately": true
+}

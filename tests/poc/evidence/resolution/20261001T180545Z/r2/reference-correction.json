@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "phase": "R2",
+  "classification": "EVIDENCE_METADATA_CORRECTION",
+  "field": "evidence_path",
+  "attempts": [
+    "resolution-20261001T180545Z-bifrost-t03-rep-1",
+    "resolution-20261001T180545Z-bifrost-t03-rep-2",
+    "resolution-20261001T180545Z-bifrost-t03-rep-3",
+    "resolution-20261001T180545Z-litellm-t03-rep-1",
+    "resolution-20261001T180545Z-litellm-t03-rep-2",
+    "resolution-20261001T180545Z-litellm-t03-rep-3"
+  ],
+  "previous_path_pattern": "tests/poc/evidence/resolution/resolution-20261001T180545Z/r2/{candidate}/rep-{n}.json",
+  "corrected_path_pattern": "tests/poc/evidence/resolution/20261001T180545Z/r2/{candidate}/rep-{n}.json",
+  "correction_reason": "The runner stored each record under the run timestamp directory but included the full resolution- run ID as an extra path segment in evidence_path. All six corrected targets exist and match their attempt IDs; result statuses, classifications, outputs, and repetition counts are unchanged.",
+  "semantic_retry": false
+}

@@ -1,0 +1,47 @@
+{
+  "access_classification": "TIMEOUT_WITHOUT_PROVIDER_RESPONSE",
+  "attempt_id": "resolution-20261001T180545Z-r3-a-direct-opencode-relayrouter",
+  "candidate": null,
+  "candidate_attribution": "NO_CANDIDATE_REACHED",
+  "candidate_reached": false,
+  "classification": "EXTERNAL_PROVIDER_BLOCKED",
+  "cleanup": {
+    "process_tree_terminated": true,
+    "runtime_root_removed": true
+  },
+  "client": "OpenCode",
+  "client_reached": true,
+  "client_version": "1.18.33",
+  "cloudflare_code": null,
+  "command_identity": {
+    "executable": "opencode.cmd",
+    "format": "json",
+    "pure": true,
+    "version": "1.18.33"
+  },
+  "event_summary": {
+    "event_count": 0,
+    "event_types": [],
+    "events": [],
+    "malformed_lines": 0,
+    "tool_event_count": 0
+  },
+  "finished_at_utc": "2026-10-01T19:22:01.200386Z",
+  "phase": "R3",
+  "process_exit_code": null,
+  "process_started": true,
+  "prompt": "Read input/alpha.txt exactly once and return its exact contents.",
+  "provider": "RelayRouter",
+  "provider_base_url": "https://api.relayrouter.org/v1",
+  "provider_http_observed": false,
+  "provider_reached": false,
+  "provider_route": "stealth/openai/gpt-5.6-sol",
+  "run_id": "resolution-20261001T180545Z",
+  "sanitized_diagnostics": "OpenCode direct control reached the 240 second bounded timeout; no HTTP/provider response was observed.",
+  "schema_version": "1.0",
+  "started_at_utc": null,
+  "status": "BLOCKED",
+  "test_id": "T04",
+  "timeout": true,
+  "timeout_seconds": 240
+}

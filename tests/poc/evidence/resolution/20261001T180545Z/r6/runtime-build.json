@@ -1,0 +1,21 @@
+{
+  "build": {
+    "candidate_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+    "exit_code": 0,
+    "inspect": "shofni-openhands-resolution-v2@sha256:e50309a5aa33a619636deed2c0361a89937860ef3a7fa1a957638b4839ee13e4|sha256:e50309a5aa33a619636deed2c0361a89937860ef3a7fa1a957638b4839ee13e4",
+    "lock_sha256": "sha256:58c8b04e867891f3d7671bb0c34e459d5de5fa61fb25e3c10f63ec57b1bdd02e",
+    "python_image": "python:3.12.10-slim-bookworm@sha256:97983fa8cc88343512862c62307159a82261c3528dc025f79e5a3f7af43e50b4",
+    "stderr_tail": "to-grpc==1.39.1\n#11 6.683  + opentelemetry-exporter-otlp-proto-http==1.39.1\n#11 6.683  + opentelemetry-instrumentation==0.60b1\n#11 6.683  + opentelemetry-instrumentation-threading==0.60b1\n#11 6.683  + opentelemetry-proto==1.39.1\n#11 6.683  + opentelemetry-sdk==1.39.1\n#11 6.683  + opentelemetry-semantic-conventions==0.60b1\n#11 6.683  + opentelemetry-semantic-conventions-ai==0.4.13\n#11 6.684  + orjson==3.11.7\n#11 6.684  + packaging==26.3\n#11 6.684  + pathable==0.4.4\n#11 6.684  + pillow==12.3.0\n#11 6.684  + platformdirs==4.4.0\n#11 6.684  + propcache==0.4.1\n#11 6.684  + protobuf==6.33.5\n#11 6.684  + py-key-value-aio==0.4.4\n#11 6.684  + pycparser==2.23\n#11 6.684  + pydantic==2.12.5\n#11 6.684  + pydantic-core==2.41.5\n#11 6.684  + pydantic-settings==2.11.0\n#11 6.684  + pygments==2.20.0\n#11 6.684  + pyjwt==2.13.0\n#11 6.684  + pyperclip==1.11.0\n#11 6.684  + python-dotenv==1.2.2\n#11 6.684  + python-frontmatter==1.1.0\n#11 6.684  + python-json-logger==4.0.0\n#11 6.684  + python-multipart==0.0.31\n#11 6.684  + pyyaml==6.0.2\n#11 6.684  + redis==7.2.1\n#11 6.684  + referencing==0.36.2\n#11 6.684  + regex==2025.9.18\n#11 6.684  + requests==2.33.0\n#11 6.684  + rich==14.3.3\n#11 6.684  + rich-rst==1.3.2\n#11 6.684  + rpds-py==0.27.1\n#11 6.684  + secretstorage==3.5.0\n#11 6.684  + sniffio==1.3.1\n#11 6.684  + socksio==1.0.0\n#11 6.684  + sortedcontainers==2.4.0\n#11 6.684  + sse-starlette==3.0.2\n#11 6.684  + starlette==1.3.1\n#11 6.684  + tenacity==9.1.2\n#11 6.684  + tiktoken=[REDACTED]\n#11 6.684  + tokenizers==0.23.1\n#11 6.684  + tqdm==4.67.1\n#11 6.684  + tree-sitter==0.25.2\n#11 6.684  + tree-sitter-bash==0.25.1\n#11 6.684  + typing-extensions==4.15.0\n#11 6.684  + typing-inspection==0.4.2\n#11 6.684  + uncalled-for==0.2.0\n#11 6.684  + urllib3==2.7.0\n#11 6.684  + uvicorn==0.52.4\n#11 6.684  + watchfiles==1.1.1\n#11 6.685  + websockets==15.0.1\n#11 6.685  + wrapt==1.17.3\n#11 6.685  + yarl==1.22.0\n#11 6.685  + zipp==3.23.0\n#11 DONE 8.5s\n\n#12 [stage-1 6/6] WORKDIR /workspace\n#12 DONE 0.3s\n\n#13 exporting to image\n#13 exporting layers\n#13 exporting layers 7.2s done\n#13 exporting manifest sha256:4130107447ede1122d1e109f5cb7b86626f6bb7df05284082517143bc2094db0 0.0s done\n#13 exporting config sha256:d55accc35d433f8281f83f0a02406693f096a18203eddddaa59351f172b6c5e5 0.0s done\n#13 exporting attestation manifest sha256:2500833f09fb009f63020e9b1d9ff63b453f2687a1439cd58c0f76b411cacf51\n#13 exporting attestation manifest sha256:2500833f09fb009f63020e9b1d9ff63b453f2687a1439cd58c0f76b411cacf51 0.1s done\n#13 exporting manifest list sha256:e50309a5aa33a619636deed2c0361a89937860ef3a7fa1a957638b4839ee13e4 0.1s done\n#13 naming to docker.io/library/shofni-openhands-resolution-v2:resolution-20261001T180545Z\n#13 naming to docker.io/library/shofni-openhands-resolution-v2:resolution-20261001T180545Z done\n#13 unpacking to docker.io/library/shofni-openhands-resolution-v2:resolution-20261001T180545Z\n#13 unpacking to docker.io/library/shofni-openhands-resolution-v2:resolution-20261001T180545Z 6.9s done\n#13 DONE 14.4s\n",
+    "stdout_tail": "",
+    "sync_command": "uv sync --locked --package openhands-sdk --no-dev --no-editable --python 3.12",
+    "tag": "shofni-openhands-resolution-v2:resolution-20261001T180545Z",
+    "uv_image": "ghcr.io/astral-sh/uv:0.11.7@sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8"
+  },
+  "phase": "R6",
+  "run_id": "resolution-20261001T180545Z",
+  "status": "PASS",
+  "record_kind": "RUNTIME_IMAGE_BUILD",
+  "candidate_reached": false,
+  "provider_reached": false,
+  "client_reached": false
+}

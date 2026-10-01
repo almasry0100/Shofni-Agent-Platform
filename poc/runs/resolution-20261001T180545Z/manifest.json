@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "resolution_plan": "docs/poc/poc-resolution-plan-v1.1.md",
+  "resolution_plan_sha256": "09844BA74273E7D63756B60CFDB468BD5E8B1BE5CD3DC37819F9B1C1A8071CB7",
+  "resolution_plan_tracking_state": "UNTRACKED",
+  "starting_repository": {
+    "repository": "almasry0100/Shofni-Agent-Platform",
+    "root": "<WORKSPACE_ROOT>",
+    "branch": "main",
+    "head": "3b59332e76abcae7c50f4374ff63e80b60296195",
+    "origin_main": "3b59332e76abcae7c50f4374ff63e80b60296195",
+    "head_subject": "Complete Phase 14 bounded POC follow-up",
+    "historical_baseline_in_history": true,
+    "initial_git_status": ["?? docs/poc/poc-resolution-plan-v1.1.md"],
+    "initial_staged_files": [],
+    "initial_modified_tracked_files": [],
+    "initial_untracked_files": ["docs/poc/poc-resolution-plan-v1.1.md"],
+    "initial_diff_check": "PASS",
+    "baseline_tests": {"command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc", "collected": 81, "passed": 81, "failed": 0}
+  },
+  "entry_gates": {
+    "python": "3.12.10",
+    "pytest": "9.1.1",
+    "claude_code": {"path": "<USERPROFILE>/AppData/Roaming/npm/claude.ps1", "version": "2.1.278"},
+    "opencode": {"path": "<USERPROFILE>/AppData/Roaming/npm/opencode.ps1", "version": "1.18.33"},
+    "codex": {"path": "<USERPROFILE>/AppData/Roaming/npm/codex.ps1", "version": "0.159.0"},
+    "docker": {"version": "29.8.1", "os": "linux", "architecture": "amd64"},
+    "uv": {"host": "MISSING", "locked_image_version": "0.11.7"},
+    "node": "24.19.0",
+    "pnpm": "11.25.0",
+    "go": "MISSING",
+    "windows_host_architecture": "AMD64",
+    "ports": {"4000": "FREE", "8080": "FREE", "8081": "FREE"},
+    "provider_routes": {
+      "A6api": {"base_url": "https://api.a6api.com", "model_a": "gpt-5.4-mini", "model_b": "gpt-5.5", "credential_presence": "PRESENT"},
+      "RelayRouter": {"base_url": "https://api.relayrouter.org/v1", "model": "stealth/openai/gpt-5.6-sol", "credential_presence": "PRESENT"}
+    },
+    "openrouter_used": false
+  },
+  "final_tests": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc",
+    "collected": 88,
+    "passed": 88,
+    "failed": 0,
+    "focused_resolution_command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc/unit/test_resolution_policy.py tests/poc/unit/test_resolution_ledger.py tests/poc/unit/test_resolution_composition.py",
+    "focused_resolution_collected": 7,
+    "focused_resolution_passed": 7,
+    "tracked_source_compileall": "PASS"
+  },
+  "candidate_identities": [
+    {"candidate": "Bifrost", "role": "Level 2 gateway", "source_path": "<WORKSPACE_PARENT>/bifrost-dev", "tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe", "included_file_count": 5172, "artifact_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5", "lock_reference": "docs/poc/candidate-lock.json", "source_modified": false},
+    {"candidate": "LiteLLM", "role": "Level 2 gateway", "source_path": "<WORKSPACE_PARENT>/litellm-main", "tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb", "included_file_count": 12075, "artifact_sha256": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280", "wheel_sha256": "sha256:762b286fe81491f242040b14f28338da0ebf4f32fea50972b6969ee578011d52", "lock_reference": "docs/poc/candidate-lock.json", "source_modified": false},
+    {"candidate": "OpenHands", "role": "Level 3 runtime", "source_path": "<WORKSPACE_PARENT>/software-agent-sdk-main", "tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468", "included_file_count": 1796, "lock_reference": "docs/poc/candidate-lock.json", "source_lock_sha256": "sha256:58c8b04e867891f3d7671bb0c34e459d5de5fa61fb25e3c10f63ec57b1bdd02e", "runtime_image_digest": "sha256:e50309a5aa33a619636deed2c0361a89937860ef3a7fa1a957638b4839ee13e4", "source_modified": false},
+    {"candidate": "Mastra", "role": "Level 3 runtime", "source_path": "<WORKSPACE_PARENT>/mastra-main", "tree_hash": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05", "included_file_count": 18938, "lock_reference": "docs/poc/candidate-lock.json", "license_boundary": "ee/ excluded", "source_modified": false}
+  ],
+  "ownership": {
+    "containers": [],
+    "networks": [],
+    "ports": [],
+    "temporary_configs": [],
+    "runtime_roots": [],
+    "raw_evidence_root": null
+  },
+  "phases": {
+    "R0": {"status": "PASS", "taxonomy": "poc.evidence.taxonomy.ResolutionClass", "policy": "candidate/external attribution frozen"},
+    "R1": {"status": "PASS", "classification": "PASS", "baseline_id": "openhands-resolution-baseline-v2-20261001T180545Z", "evidence_refs": ["tests/poc/evidence/resolution/20261001T180545Z/r1/forensic-configurations.json", "tests/poc/evidence/resolution/20261001T180545Z/r1/baseline-v2/manifest.json", "tests/poc/evidence/resolution/20261001T180545Z/r1/t10.json", "tests/poc/evidence/resolution/20261001T180545Z/r1/t11.json"], "setup_corrections": 1, "provider_requests": 4, "candidate_reached": true, "provider_reached": true, "client_reached": true},
+    "R2": {"status": "PARTIAL", "classification": "EVIDENCE_OBSERVABILITY_FAILURE", "repetitions_required_per_gateway": 3, "repetitions_completed_per_gateway": {"Bifrost": 3, "LiteLLM": 3}, "candidate_route_probe_reached": true, "candidate_request_observed": false, "candidate_reached": false, "provider_request_observed": false, "provider_reached": false, "client_reached": true, "observed_client_failure_class": "CLIENT_FAILURE", "semantic_retry": false, "evidence_refs": ["tests/poc/evidence/resolution/20261001T180545Z/r2/summary.json", "tests/poc/evidence/resolution/20261001T180545Z/r2/attribution-correction.json", "tests/poc/evidence/resolution/20261001T180545Z/r2/reference-correction.json", "tests/poc/evidence/resolution/20261001T180545Z/r2/cleanup-verification.json"]},
+    "R3": {"status": "BLOCKED", "classification": "EXTERNAL_PROVIDER_BLOCKED", "direct_control_attempts": 1, "repetitions_required_per_gateway": 3, "candidate_t04_executed": false, "candidate_reached": false, "provider_reached": false, "client_reached": true, "cause": "TIMEOUT_WITHOUT_PROVIDER_RESPONSE; external cause unverified", "evidence_refs": ["tests/poc/evidence/resolution/20261001T180545Z/r3/summary.json", "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json", "tests/poc/evidence/resolution/20261001T180545Z/r3/reference-correction.json"]},
+    "R4": {
+      "status": "PASS",
+      "latest_level2_run_id": "level2-remediation-20260930T225100Z",
+      "canonical_t01_t09_rows": 26,
+      "canonical_ledger_rows": 28,
+      "t12_report_rows": 2,
+      "candidate_neutral_fixture_rows": 10,
+      "relayrouter_external_attribution_rows": 6,
+      "classification": "PASS",
+      "architecture_candidate_eligibility": {"Bifrost": "NO_DECISION_YET", "LiteLLM": "NO_DECISION_YET"},
+      "compatibility_readiness": {"A6api": "PARTIAL", "RelayRouter": "BLOCKED_EXTERNAL_PROVIDER"},
+      "evidence_refs": [
+        "tests/poc/evidence/resolution/20261001T180545Z/r4/canonical-ledger-r2-attribution-corrected.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r4/t12-report-r2-attribution-corrected.json",
+        "tests/poc/evidence/resolution/20261001T180545Z/r4/artifact-supersession.json"
+      ]
+    },
+    "R5": {"status": "PASS", "classification": "INELIGIBLE", "candidate": "Mastra", "disposition": "INELIGIBLE_FOR_CURRENT_OSS_RUNTIME_SELECTION", "historical_status": "BLOCKED / LICENSE_BOUNDARY_BLOCKER", "t10": "NOT_RUN_DUE_TO_INELIGIBILITY", "t11": "NOT_RUN_DUE_TO_INELIGIBILITY", "candidate_reached": false, "provider_reached": false, "client_reached": false, "evidence_refs": ["tests/poc/evidence/resolution/20261001T180545Z/r5/mastra-disposition.json"]},
+    "R6": {"status": "PARTIAL", "classification": "EVIDENCE_OBSERVABILITY_FAILURE", "repetitions_required_per_gateway": 3, "repetitions_completed_per_gateway": {"Bifrost": {"level2_client": 3, "level3_runtime": 3}, "LiteLLM": {"level2_client": 3, "level3_runtime": 3}}, "level2_backend": "CLIENT", "level3_backend": "RUNTIME", "semantic_subcases": "PASS", "provider_boundary_observability": "NOT_OBSERVED", "candidate_reached": true, "provider_reached": false, "client_reached": true, "setup_corrections_per_gateway": 1, "evidence_refs": ["tests/poc/evidence/resolution/20261001T180545Z/r6/summary.json", "tests/poc/evidence/resolution/20261001T180545Z/r6/bifrost/composition.json", "tests/poc/evidence/resolution/20261001T180545Z/r6/litellm/composition.json", "tests/poc/evidence/resolution/20261001T180545Z/r6/runtime-build.json", "tests/poc/evidence/resolution/20261001T180545Z/r6/cleanup-verification.json"]},
+    "R7": {"status": "PASS", "classification": "NO_DECISION_YET", "gateway_architecture_selection": "NO_DECISION_YET", "candidate_eligibility": {"Bifrost": "NO_DECISION_YET", "LiteLLM": "NO_DECISION_YET"}, "tie_break_applied": false, "equivalence_claimed": false, "candidate_reached": false, "provider_reached": false, "client_reached": false, "evidence_refs": ["tests/poc/evidence/resolution/20261001T180545Z/r7/gateway-decision.json", "tests/poc/evidence/resolution/20261001T180545Z/r4/t12-report-r2-attribution-corrected.json", "tests/poc/evidence/resolution/20261001T180545Z/r6/summary.json", "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json"]},
+    "R8": {"status": "PASS", "classification": "NO_DECISION_YET", "architecture_selection": {"gateway": "NO_DECISION_YET", "runtime": "NO_DECISION_YET", "composition": "NO_DECISION_YET", "implementation_plan": "NOT_CREATED_SELECTION_GATE_NOT_MET"}, "compatibility_readiness": {"A6api": "PARTIAL", "RelayRouter": "BLOCKED_EXTERNAL_PROVIDER", "Codex": "READY", "Claude Code": "PARTIAL", "OpenCode": "PARTIAL"}, "candidate_reached": false, "provider_reached": false, "client_reached": false, "evidence_refs": ["tests/poc/evidence/resolution/20261001T180545Z/r8/decision-surfaces.json", "tests/poc/evidence/resolution/20261001T180545Z/r7/gateway-decision.json", "tests/poc/evidence/resolution/20261001T180545Z/r4/t12-report-r2-attribution-corrected.json", "tests/poc/evidence/resolution/20261001T180545Z/r6/summary.json", "tests/poc/evidence/resolution/20261001T180545Z/r5/mastra-disposition.json"]},
+    "R9": {"status": "PASS", "classification": "PASS", "candidate_reached": false, "provider_reached": false, "client_reached": false, "artifacts": ["docs/poc/poc-resolution-results.md", "docs/poc/final-backend-selection.md", "docs/poc/final-runtime-selection.md", "docs/poc/final-compatibility-readiness.md"], "implementation_plan": "NOT_CREATED_SELECTION_GATE_NOT_MET", "cleanup_status": "PASS_AFTER_USER_MANUAL_REMOVAL", "validation": {"resolution_json_files": 59, "resolution_ndjson_files": 0, "evidence_refs_checked": 4390, "missing_evidence_refs": 0, "redaction_scan": "PASS", "candidate_revalidation": "PASS", "artifact_revalidation": "PASS", "git_diff_check": "PASS", "plan_integrity_match": true}, "evidence_refs": ["tests/poc/evidence/resolution/20261001T180545Z/r6/cleanup-verification.json", "tests/poc/evidence/resolution/20261001T180545Z/r9/cleanup-closure.json"]}
+  },
+  "repetition_counters": {"R2": {"Bifrost": 3, "LiteLLM": 3}, "R3": {"direct_control": 1, "Bifrost": 0, "LiteLLM": 0}, "R6": {"Bifrost": {"level2_client": 3, "level3_runtime": 3}, "LiteLLM": {"level2_client": 3, "level3_runtime": 3}}},
+  "decision": {"gateway": "NO_DECISION_YET", "runtime": "NO_DECISION_YET", "composition": "NO_DECISION_YET", "compatibility_readiness": {"A6api": "PARTIAL", "RelayRouter": "BLOCKED_EXTERNAL_PROVIDER", "Codex": "READY", "Claude Code": "PARTIAL", "OpenCode": "PARTIAL"}, "tie_break_applied": false, "implementation_plan_created": false},
+  "cleanup": {"status": "PASS", "execution_time_status": "BLOCKED_BY_EXECUTION_POLICY", "final_closure_status": "PASS_AFTER_USER_MANUAL_REMOVAL", "manual_removal_by_user": true, "docker_containers_remaining": [], "docker_networks_remaining": [], "temporary_images_remaining": [], "verified_listening_ports_remaining": [], "resolution_run_runtime_root_removed": true, "raw_evidence_remaining": false, "raw_evidence_file_count": 0, "designated_raw_evidence_file_count_observed": 0, "raw_evidence_count_scope_note": "Historical R6 cleanup evidence records nine raw files across the run-owned runtime state and five under the designated raw-evidence subtree; final closure verification found the user-removed runtime and raw-evidence roots absent.", "resolution_owned_temporary_configuration_removed": true, "evidence_ref": "tests/poc/evidence/resolution/20261001T180545Z/r9/cleanup-closure.json", "historical_evidence_ref": "tests/poc/evidence/resolution/20261001T180545Z/r6/cleanup-verification.json"},
+  "commit": false,
+  "push": false
+}

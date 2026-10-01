@@ -1,0 +1,18 @@
+{
+  "candidate": "LiteLLM",
+  "candidate_reached": false,
+  "classification": "EXTERNAL_PROVIDER_BLOCKED",
+  "client": "OpenCode",
+  "client_reached": true,
+  "evidence_refs": [
+    "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json"
+  ],
+  "phase": "R3",
+  "provider": "RelayRouter",
+  "provider_reached": false,
+  "reason": "The single direct RelayRouter/OpenCode control exceeded its bounded timeout before a provider response; no gateway candidate was started.",
+  "run_id": "resolution-20261001T180545Z",
+  "schema_version": "1.0",
+  "status": "BLOCKED",
+  "test_id": "T04"
+}

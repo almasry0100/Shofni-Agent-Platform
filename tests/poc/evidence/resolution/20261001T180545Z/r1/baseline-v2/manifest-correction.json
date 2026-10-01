@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "classification": "EVIDENCE_METADATA_CORRECTION",
+  "field": "source_lock_sha256",
+  "previous_recorded_value": "sha256:58c8b04e867891f3d7671bb0c34e459d5de5fa61fb25f3e3c10f63ec57b1bdd02e",
+  "corrected_value": "sha256:58c8b04e867891f3d7671bb0c34e459d5de5fa61fb25e3c10f63ec57b1bdd02e",
+  "observed_file": "poc/.runtime/resolution-20261001T180545Z/source/uv.lock",
+  "correction_reason": "The original recorded digest differed from a fresh SHA-256 calculation of the locked source file by a transcription error. The lock file itself was not modified.",
+  "semantic_retry": false
+}

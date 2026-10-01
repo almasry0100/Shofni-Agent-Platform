@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "phase": "R5",
+  "candidate_reached": false,
+  "provider_reached": false,
+  "client_reached": false,
+  "candidate": "Mastra",
+  "candidate_version": "@mastra/core 1.72.0-alpha.8",
+  "candidate_tree_hash": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05",
+  "historical_status": "BLOCKED",
+  "historical_classification": "LICENSE_BOUNDARY_BLOCKER",
+  "resolution_disposition": "INELIGIBLE_FOR_CURRENT_OSS_RUNTIME_SELECTION",
+  "resolution_classification": "INELIGIBLE",
+  "t10": "NOT_RUN_DUE_TO_INELIGIBILITY",
+  "t11": "NOT_RUN_DUE_TO_INELIGIBILITY",
+  "ee_source_used": false,
+  "ee_imports_patched_stubbed_or_aliased": false,
+  "prebuilt_artifact_with_ee_closure_used": false,
+  "provider_calls": 0,
+  "candidate_execution_reruns": 0,
+  "permanent_project_rejection": false,
+  "candidate_reached": false,
+  "provider_reached": false,
+  "client_reached": false,
+  "evidence_refs": [
+    "tests/poc/evidence/phase-14-followup/D-F3/20261001T130018Z/license-decision.json",
+    "tests/poc/evidence/phase-8/phase8-closure-20261001T035711Z/closure-report.json"
+  ]
+}

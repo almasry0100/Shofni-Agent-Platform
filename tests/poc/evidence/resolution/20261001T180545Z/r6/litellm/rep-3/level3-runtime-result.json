@@ -1,0 +1,41 @@
+{
+  "baseline_id": "openhands-resolution-baseline-v2-20261001T180545Z",
+  "checkpoint_id": "95dae56a-75e6-46ea-8708-e4db6a507fc8",
+  "diagnostic_tail": "{\"attempt_id\": \"resolution-20261001T180545Z-litellm-r6-rep-3\", \"attempt_id_after_restart\": \"ada0054d-33de-4d02-ba0b-3db8f777df60\", \"attempt_id_before_restart\": \"1ce35356-66f5-400f-8b12-7eefe60968d6\", \"candidate_action_events\": [{\"action\": {\"kind\": \"ReadFixtureAction\", \"path\": \"input/alpha.txt\"}, \"candidate_event_id\": \"1901e982-1ce9-41c3-8a5a-d8d49c2697ff\", \"tool_call_id\": \"call_MdFcLJdfA7D9UEQqbMJyKYUT\", \"tool_name\": \"read_fixture\"}], \"candidate_conversation_id\": \"b8495469-37ec-4ac4-b73b-029b680e47e2\", \"checkpoint_id\": \"95dae56a-75e6-46ea-8708-e4db6a507fc8\", \"final_result\": \"alpha\", \"final_selected_model\": \"gpt-5.5\", \"gates\": {\"fresh_restore_process_succeeded\": true, \"model_a_process_exited_cleanly\": true, \"model_a_runtime_terminated_before_restore\": true, \"model_b_selected\": true, \"new_attempt_id_explicit\": true, \"prior_tool_result_preserved\": true, \"read_fixture_action_observed\": true, \"same_task_id\": true, \"same_workspace_id\": true, \"successful_final_result\": true}, \"key_presence\": \"MISSING\", \"model_a\": \"gpt-5.4-mini\", \"model_a_process_exit_code\": 0, \"model_b\": \"gpt-5.5\", \"new_attempt_id_explicit\": true, \"process_boundary\": \"model A and restore ran in separate child processes; model A exited before restore started\", \"provider\": \"A6api\", \"restore_process_exit_code\": 0, \"same_task_id\": true, \"same_workspace_id\": true, \"schema_version\": \"1.0\", \"session_id\": \"d2693a57-42af-4f99-bf36-140cea37c1f2\", \"status\": \"PASS\", \"task_id\": \"ba1075ff-698e-4e16-931d-0a78480de5a2\", \"tool_result\": {\"b8495469-37ec-4ac4-b73b-029b680e47e2:call_MdFcLJdfA7D9UEQqbMJyKYUT\": {\"result\": \"alpha\\n\", \"result_id\": \"ca3f669a-0e06-5910-8870-f5374e67a17d\", \"tool_call_id\": \"call_MdFcLJdfA7D9UEQqbMJyKYUT\"}}, \"workspace_id\": \"c521d938-7830-4a30-a750-87f6cec342cc\"}\n\n",
+  "direct_provider_bypass": false,
+  "final_result": "alpha",
+  "fresh_process_proven": true,
+  "gateway": "LiteLLM",
+  "gateway_local_tool_execution": false,
+  "level": 3,
+  "live_evidence_ref": "t10-live.json",
+  "model_a": "gpt-5.4-mini",
+  "model_b": "gpt-5.5",
+  "provider": "A6api",
+  "provider_boundary_observation": {
+    "configured_route": "https://api.a6api.com/v1/responses",
+    "gateway_response_observed": true,
+    "observed_outbound_provider_http": false
+  },
+  "repetition": 3,
+  "runtime_process_exit_code": 0,
+  "runtime_provider_key": "NOT_PRESENT",
+  "status": "PASS",
+  "task_id": "ba1075ff-698e-4e16-931d-0a78480de5a2",
+  "tool_call_ids": [
+    "call_MdFcLJdfA7D9UEQqbMJyKYUT"
+  ],
+  "tool_execution_backend": "RUNTIME",
+  "tool_result": {
+    "b8495469-37ec-4ac4-b73b-029b680e47e2:call_MdFcLJdfA7D9UEQqbMJyKYUT": {
+      "result": "alpha\n",
+      "result_id": "ca3f669a-0e06-5910-8870-f5374e67a17d",
+      "tool_call_id": "call_MdFcLJdfA7D9UEQqbMJyKYUT"
+    }
+  },
+  "workspace_id": "c521d938-7830-4a30-a750-87f6cec342cc",
+  "candidate_reached": true,
+  "provider_reached": false,
+  "provider_request_observed": false,
+  "client_reached": true
+}

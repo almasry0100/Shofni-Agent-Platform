@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "phase": "R4",
+  "classification": "EVIDENCE_REVISION",
+  "superseded_artifacts": [
+    "tests/poc/evidence/resolution/20261001T180545Z/r4/canonical-ledger.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r4/t12-report.json"
+  ],
+  "authoritative_artifacts": [
+    "tests/poc/evidence/resolution/20261001T180545Z/r4/canonical-ledger-r2-attribution-corrected.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r4/t12-report-r2-attribution-corrected.json"
+  ],
+  "reason": "R2 request-level evidence does not show that any Claude Code T03 request reached a gateway candidate or produced an outbound provider request. The revised ledger preserves the six client failures and represents the mandatory T03 evidence as unresolved rather than candidate-attributed.",
+  "previous_artifacts_preserved": true,
+  "historical_evidence_modified": false
+}

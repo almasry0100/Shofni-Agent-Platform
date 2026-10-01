@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "run_id": "resolution-20261001T180545Z",
+  "phase": "R7",
+  "observed_at_utc": "2026-10-01T20:00:15Z",
+  "candidate_reached": false,
+  "provider_reached": false,
+  "client_reached": false,
+  "gateway_architecture_selection": "NO_DECISION_YET",
+  "candidate_eligibility": {
+    "Bifrost": "NO_DECISION_YET",
+    "LiteLLM": "NO_DECISION_YET"
+  },
+  "tie_break": {
+    "status": "NOT_APPLIED",
+    "reason": "Neither gateway has complete mandatory candidate evidence; the R2 T03 request was not correlated to either candidate and the R6 composition records remain PARTIAL due missing outbound provider telemetry.",
+    "numeric_scores_used": false,
+    "equivalence_claimed": false
+  },
+  "candidate_controlled_failures": [],
+  "unresolved_mandatory_evidence": [
+    {
+      "test_id": "T03",
+      "provider": "A6api",
+      "client": "Claude Code",
+      "status": "BLOCKED",
+      "classification": "EVIDENCE_OBSERVABILITY_FAILURE",
+      "candidate_reached": false,
+      "client_failures_per_gateway": 3,
+      "provider_requests_observed": 0
+    },
+    {
+      "test_id": "R6 composition",
+      "status": "PARTIAL",
+      "classification": "EVIDENCE_OBSERVABILITY_FAILURE",
+      "candidate_reached": true,
+      "repetitions_per_gateway": 3,
+      "semantic_level2_client_owned_passes_per_gateway": 3,
+      "semantic_level3_runtime_owned_passes_per_gateway": 3,
+      "outbound_provider_http_observed_per_gateway": 0
+    }
+  ],
+  "external_readiness_blockers_excluded_from_candidate_failure": [
+    {
+      "provider": "RelayRouter",
+      "client": "OpenCode",
+      "status": "BLOCKED",
+      "classification": "EXTERNAL_PROVIDER_BLOCKED",
+      "candidate_reached": false,
+      "cause": "TIMEOUT_WITHOUT_PROVIDER_RESPONSE; external cause unverified"
+    }
+  ],
+  "evidence_refs": [
+    "tests/poc/evidence/resolution/20261001T180545Z/r4/t12-report-r2-attribution-corrected.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r6/summary.json",
+    "tests/poc/evidence/resolution/20261001T180545Z/r3/direct-control.json"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "candidate_conversation_id": "80360118-fb3f-442c-8f55-b2fd18172fe6",
+  "candidate_events": [
+    {
+      "action": {
+        "kind": "ReadFixtureAction",
+        "path": "input/alpha.txt"
+      },
+      "candidate_event_id": "3227eb1f-c985-4710-b003-40c3948062dc",
+      "candidate_event_type": "ActionEvent",
+      "tool_call_id": "call_Y8evJkB9YtQ0DXkBvZNrgDrT",
+      "tool_name": "read_fixture"
+    },
+    {
+      "candidate_event_id": "195f083d-b123-4940-8e75-e9ae462c7309",
+      "candidate_event_type": "ObservationEvent",
+      "tool_call_id": "call_Y8evJkB9YtQ0DXkBvZNrgDrT",
+      "tool_name": "read_fixture"
+    },
+    {
+      "candidate_event_id": "c53a37bf-da3f-4d8d-8a13-8316dc8ac4c2",
+      "candidate_event_type": "ConversationErrorEvent"
+    },
+    {
+      "candidate_event_id": "3c46e6ca-6a66-4936-b74a-be7eeb97dd35",
+      "candidate_event_type": "SystemPromptEvent"
+    },
+    {
+      "candidate_event_id": "23adf8be-aae9-4d7e-9694-edd81d18f6ea",
+      "candidate_event_type": "MessageEvent"
+    },
+    {
+      "candidate_event_id": "9b869055-83cc-4080-b9d1-a3df5346360f",
+      "candidate_event_type": "MessageEvent",
+      "content": "Resume with the saved tool result and answer with its exact content.",
+      "role": "user"
+    },
+    {
+      "candidate_event_id": "a269d352-d397-43f1-838c-ba2547b56020",
+      "candidate_event_type": "MessageEvent",
+      "content": "alpha",
+      "role": "assistant"
+    }
+  ],
+  "final_result": "alpha",
+  "model": "gpt-5.5",
+  "provider": "A6api",
+  "task_state": {
+    "attempt_id": "ca7154e5-c83b-4030-9451-7c2222614cde",
+    "candidate_runtime_ref": "80360118-fb3f-442c-8f55-b2fd18172fe6",
+    "last_committed_tool_call_id": "call_Y8evJkB9YtQ0DXkBvZNrgDrT",
+    "last_committed_tool_result_id": "72c4f1bd-e5f3-58e9-9693-06dcb8f14843",
+    "lifecycle_status": "COMPLETED",
+    "selected_model": "gpt-5.5",
+    "selected_provider": "A6api",
+    "session_id": "d04a65fd-8843-48e8-b695-58221f8226e6",
+    "task_id": "43a531d3-7aad-42a1-8ed7-17edb70a5deb",
+    "workspace_id": "68f110ec-cc84-441d-92fd-68d389993d5a"
+  },
+  "tool_results": {
+    "80360118-fb3f-442c-8f55-b2fd18172fe6:call_Y8evJkB9YtQ0DXkBvZNrgDrT": {
+      "result": "alpha\n",
+      "result_id": "72c4f1bd-e5f3-58e9-9693-06dcb8f14843",
+      "tool_call_id": "call_Y8evJkB9YtQ0DXkBvZNrgDrT"
+    }
+  }
+}

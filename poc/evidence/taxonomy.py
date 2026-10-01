@@ -4,6 +4,26 @@ from enum import Enum
 from typing import TypeAlias
 
 
+class ResolutionClass(str, Enum):
+    """Resolution-only outcome and attribution values.
+
+    Historical evidence keeps its original taxonomy.  This separate enum is
+    used by the bounded Resolution run so external readiness blockers cannot
+    be mistaken for candidate failures.
+    """
+
+    PASS = "PASS"
+    FAIL = "FAIL"
+    BLOCKED = "BLOCKED"
+    NOT_APPLICABLE = "NOT_APPLICABLE"
+    INELIGIBLE = "INELIGIBLE"
+    EXTERNAL_PROVIDER_BLOCKED = "EXTERNAL_PROVIDER_BLOCKED"
+    SETUP_FAILURE = "SETUP_FAILURE"
+    PROVENANCE_MISMATCH = "PROVENANCE_MISMATCH"
+    EVIDENCE_OBSERVABILITY_FAILURE = "EVIDENCE_OBSERVABILITY_FAILURE"
+    EQUIVALENT_FOR_CURRENT_REQUIREMENTS = "EQUIVALENT_FOR_CURRENT_REQUIREMENTS"
+
+
 class FailureClass(str, Enum):
     SETUP_FAILURE = "SETUP_FAILURE"
     UNSUPPORTED_FEATURE = "UNSUPPORTED_FEATURE"

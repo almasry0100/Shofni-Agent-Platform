@@ -1,0 +1,73 @@
+{
+  "attempt_id": "resolution-20261001T180545Z-bifrost-t03-rep-2",
+  "candidate": "Bifrost",
+  "candidate_reached": false,
+  "classification": "CLIENT_FAILURE",
+  "cleanup": {
+    "api_port_released": true,
+    "candidate_container_removed": true,
+    "errors": [],
+    "network_removed": true,
+    "temporary_config_removed": true
+  },
+  "client": "Claude Code",
+  "client_output": {
+    "event_count": 0,
+    "event_types": [],
+    "events": [],
+    "malformed_lines": 0,
+    "result_event_present": false,
+    "tool_result_count": 0,
+    "tool_results": [],
+    "tool_use_count": 0,
+    "tool_uses": []
+  },
+  "client_process_exit_code": 1,
+  "client_process_started": true,
+  "client_reached": true,
+  "client_version": "2.1.278",
+  "configured_provider_route": "https://api.a6api.com/v1/responses",
+  "configured_retry_count": 0,
+  "evidence_path": "tests/poc/evidence/resolution/20261001T180545Z/r2/bifrost/rep-2.json",
+  "finished_at_utc": "2026-10-01T19:04:05.548928Z",
+  "gateway_http_statuses": "NOT_EXPOSED_BY_CLIENT_ADAPTER",
+  "gateway_identity": {
+    "container": "shofni-df2-gateway-on-20261001t180545z-bifrost-t03-rep-2-bifrost",
+    "host_route": "http://127.0.0.1:51152/anthropic",
+    "inbound_model": "gpt-5.4-mini",
+    "network": "shofni-df2-on-20261001t180545z-bifrost-t03-rep-2-bifrost"
+  },
+  "model_id": "gpt-5.4-mini",
+  "phase": "R2",
+  "provider": "A6api",
+  "provider_reached": false,
+  "repetition": 2,
+  "route_probe": {
+    "missing_routes": [],
+    "model_ids": [
+      "openai/gpt-5.4-mini"
+    ],
+    "requested_routes": [
+      "gpt-5.4-mini"
+    ],
+    "selected_routes_present": true,
+    "status": "PASS"
+  },
+  "run_id": "resolution-20261001T180545Z",
+  "schema_version": "1.0",
+  "started_at_utc": "2026-10-01T19:04:00.540863Z",
+  "status": "FAIL",
+  "test_id": "T03",
+  "tool_execution_count": 0,
+  "upstream_observability": {
+    "configured_route": "https://api.a6api.com/v1/responses",
+    "observed_provider_request": false,
+    "source": "gateway_logs_not_instrumented"
+  },
+  "candidate_route_probe_reached": true,
+  "candidate_request_observed": false,
+  "provider_request_observed": false,
+  "candidate_attribution": "UNATTRIBUTED_CLIENT_FAILURE",
+  "attribution_classification": "EVIDENCE_OBSERVABILITY_FAILURE",
+  "observed_client_failure_class": "CLIENT_FAILURE"
+}

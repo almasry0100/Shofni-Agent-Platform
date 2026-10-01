@@ -1,0 +1,41 @@
+{
+  "baseline_id": "openhands-resolution-baseline-v2-20261001T180545Z",
+  "checkpoint_id": "bf5e963b-4651-4579-9785-da9c5d15d39b",
+  "diagnostic_tail": "{\"attempt_id\": \"resolution-20261001T180545Z-litellm-r6-rep-2\", \"attempt_id_after_restart\": \"d663b527-648f-4f6f-86ab-4824d6bc4b3a\", \"attempt_id_before_restart\": \"a25cc09c-8536-4aca-9f33-d03bab3be5ae\", \"candidate_action_events\": [{\"action\": {\"kind\": \"ReadFixtureAction\", \"path\": \"input/alpha.txt\"}, \"candidate_event_id\": \"4ac57fe7-a652-4590-b6a7-4e0d40d9fe48\", \"tool_call_id\": \"call_QzQVBrxL4oSMn7PmDFmJEp3K\", \"tool_name\": \"read_fixture\"}], \"candidate_conversation_id\": \"c829d210-44bf-444d-bf3f-7f29aee0c347\", \"checkpoint_id\": \"bf5e963b-4651-4579-9785-da9c5d15d39b\", \"final_result\": \"alpha\", \"final_selected_model\": \"gpt-5.5\", \"gates\": {\"fresh_restore_process_succeeded\": true, \"model_a_process_exited_cleanly\": true, \"model_a_runtime_terminated_before_restore\": true, \"model_b_selected\": true, \"new_attempt_id_explicit\": true, \"prior_tool_result_preserved\": true, \"read_fixture_action_observed\": true, \"same_task_id\": true, \"same_workspace_id\": true, \"successful_final_result\": true}, \"key_presence\": \"MISSING\", \"model_a\": \"gpt-5.4-mini\", \"model_a_process_exit_code\": 0, \"model_b\": \"gpt-5.5\", \"new_attempt_id_explicit\": true, \"process_boundary\": \"model A and restore ran in separate child processes; model A exited before restore started\", \"provider\": \"A6api\", \"restore_process_exit_code\": 0, \"same_task_id\": true, \"same_workspace_id\": true, \"schema_version\": \"1.0\", \"session_id\": \"840c329d-ceb2-4692-b76e-286992e42e55\", \"status\": \"PASS\", \"task_id\": \"1339d623-63e1-47d8-a0d8-e12cd9638d9b\", \"tool_result\": {\"c829d210-44bf-444d-bf3f-7f29aee0c347:call_QzQVBrxL4oSMn7PmDFmJEp3K\": {\"result\": \"alpha\\n\", \"result_id\": \"b9fe5577-0346-5769-8dd4-6f75200d9e17\", \"tool_call_id\": \"call_QzQVBrxL4oSMn7PmDFmJEp3K\"}}, \"workspace_id\": \"3b8933be-7e8d-47ef-bd81-de971d0c18bf\"}\n\n",
+  "direct_provider_bypass": false,
+  "final_result": "alpha",
+  "fresh_process_proven": true,
+  "gateway": "LiteLLM",
+  "gateway_local_tool_execution": false,
+  "level": 3,
+  "live_evidence_ref": "t10-live.json",
+  "model_a": "gpt-5.4-mini",
+  "model_b": "gpt-5.5",
+  "provider": "A6api",
+  "provider_boundary_observation": {
+    "configured_route": "https://api.a6api.com/v1/responses",
+    "gateway_response_observed": true,
+    "observed_outbound_provider_http": false
+  },
+  "repetition": 2,
+  "runtime_process_exit_code": 0,
+  "runtime_provider_key": "NOT_PRESENT",
+  "status": "PASS",
+  "task_id": "1339d623-63e1-47d8-a0d8-e12cd9638d9b",
+  "tool_call_ids": [
+    "call_QzQVBrxL4oSMn7PmDFmJEp3K"
+  ],
+  "tool_execution_backend": "RUNTIME",
+  "tool_result": {
+    "c829d210-44bf-444d-bf3f-7f29aee0c347:call_QzQVBrxL4oSMn7PmDFmJEp3K": {
+      "result": "alpha\n",
+      "result_id": "b9fe5577-0346-5769-8dd4-6f75200d9e17",
+      "tool_call_id": "call_QzQVBrxL4oSMn7PmDFmJEp3K"
+    }
+  },
+  "workspace_id": "3b8933be-7e8d-47ef-bd81-de971d0c18bf",
+  "candidate_reached": true,
+  "provider_reached": false,
+  "provider_request_observed": false,
+  "client_reached": true
+}

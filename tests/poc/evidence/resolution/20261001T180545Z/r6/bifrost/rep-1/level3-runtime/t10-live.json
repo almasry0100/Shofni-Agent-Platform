@@ -1,0 +1,58 @@
+{
+  "attempt_id": "resolution-20261001T180545Z-bifrost-r6-rep-1",
+  "attempt_id_after_restart": "43cb0b89-137f-438b-a6b3-a6b6db223dfa",
+  "attempt_id_before_restart": "b1a42427-1604-486e-b0f3-d3dd8842f8e2",
+  "candidate_action_events": [
+    {
+      "action": {
+        "kind": "ReadFixtureAction",
+        "path": "input/alpha.txt"
+      },
+      "candidate_event_id": "30480feb-bafd-437a-b946-0651722d9e2d",
+      "tool_call_id": "call_2caS9iT4LOTkkWGF1QbTsQgj",
+      "tool_name": "read_fixture"
+    }
+  ],
+  "candidate_conversation_id": "ecfb8b38-d939-4842-a615-d8ed2db96c6a",
+  "checkpoint_id": "820701b9-1c2d-45ad-8619-7d3b84152da3",
+  "final_result": "alpha",
+  "final_selected_model": "gpt-5.5",
+  "gates": {
+    "fresh_restore_process_succeeded": true,
+    "model_a_process_exited_cleanly": true,
+    "model_a_runtime_terminated_before_restore": true,
+    "model_b_selected": true,
+    "new_attempt_id_explicit": true,
+    "prior_tool_result_preserved": true,
+    "read_fixture_action_observed": true,
+    "same_task_id": true,
+    "same_workspace_id": true,
+    "successful_final_result": true
+  },
+  "key_presence": "MISSING",
+  "model_a": "gpt-5.4-mini",
+  "model_a_process_exit_code": 0,
+  "model_b": "gpt-5.5",
+  "new_attempt_id_explicit": true,
+  "process_boundary": "model A and restore ran in separate child processes; model A exited before restore started",
+  "provider": "A6api",
+  "restore_process_exit_code": 0,
+  "same_task_id": true,
+  "same_workspace_id": true,
+  "schema_version": "1.0",
+  "session_id": "9866650c-51e1-43f1-9f88-7fb60c5e1ccd",
+  "status": "PASS",
+  "task_id": "16494f54-2b23-4e06-a21f-9886268c2e3a",
+  "tool_result": {
+    "ecfb8b38-d939-4842-a615-d8ed2db96c6a:call_2caS9iT4LOTkkWGF1QbTsQgj": {
+      "result": "alpha\n",
+      "result_id": "5d6031ce-b204-598b-8ed3-2f0177ecdedb",
+      "tool_call_id": "call_2caS9iT4LOTkkWGF1QbTsQgj"
+    }
+  },
+  "workspace_id": "21219820-3e57-4f11-9f43-8e8a0f235985",
+  "candidate_reached": true,
+  "provider_reached": false,
+  "provider_request_observed": false,
+  "client_reached": true
+}

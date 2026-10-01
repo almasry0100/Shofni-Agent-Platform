@@ -1,0 +1,50 @@
+{
+  "architecture": "linux/amd64",
+  "baseline_id": "openhands-resolution-baseline-v2-20261001T180545Z",
+  "candidate": "OpenHands Software Agent SDK",
+  "candidate_source_modified": false,
+  "candidate_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+  "candidate_version": "1.49.6",
+  "credential_presence": "PRESENT",
+  "cwd": "<OPENHANDS_ROOT>",
+  "dependency_closure_rationale": "The SDK package and its declared locked dependencies are the minimum surface used by poc.runtime.openhands_backend; development groups, tools, workspace and agent-server packages were excluded.",
+  "extras": [],
+  "groups": "no-dev",
+  "installed_distribution_count": 126,
+  "normalized_inventory_sha256": "sha256:302931e4646e0367463da771be4ddc2405417b624b05a0b8b15e3717bc85a22c",
+  "phase": "R1-B",
+  "provider": "A6api",
+  "python_image_digest": "sha256:97983fa8cc88343512862c62307159a82261c3528dc025f79e5a3f7af43e50b4",
+  "python_version": "3.12.10",
+  "run_id": "resolution-20261001T180545Z",
+  "runtime_environment": "poc/.runtime/resolution-20261001T180545Z/baseline-v2/venv",
+  "runtime_gates": {
+    "T10": "tests/poc/evidence/resolution/20261001T180545Z/r1/t10.json",
+    "T11": "tests/poc/evidence/resolution/20261001T180545Z/r1/t11.json",
+    "lifecycle": "PASS_OFFLINE_REGRESSION"
+  },
+  "schema_version": "1.0",
+  "selected_projects": [
+    "openhands-sdk"
+  ],
+  "setup_corrections": [
+    {
+      "cause": "candidate source mounted read-only prevented setuptools egg-info creation",
+      "correction": "copied the locked candidate tree into the Resolution-owned runtime snapshot; source tree hash remained identical",
+      "semantic_retry": false,
+      "type": "SETUP_FAILURE"
+    }
+  ],
+  "source_lock": "<OPENHANDS_ROOT>/uv.lock",
+  "source_lock_sha256": "sha256:58c8b04e867891f3d7671bb0c34e459d5de5fa61fb25e3c10f63ec57b1bdd02e",
+  "source_tree_file_count": 1796,
+  "status": "PASS",
+  "sync_command": "uv sync --locked --package openhands-sdk --no-dev --no-editable --python 3.12",
+  "uv_binary_sha256": "sha256:738da53ba461e12a22f34cee972eaa5f59ef926ff368aafa8a98edb783233da1",
+  "uv_image_digest": "sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8",
+  "uv_version": "0.11.7",
+  "record_kind": "RUNTIME_IDENTITY_NOT_EXECUTION",
+  "candidate_reached": false,
+  "provider_reached": false,
+  "client_reached": false
+}
