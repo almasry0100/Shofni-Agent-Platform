@@ -323,4 +323,3 @@ def test_mastra_runtime_block_is_propagated_to_each_composition_row(tmp_path) ->
     }
     assert all(row["classification"] == "LICENSE_BOUNDARY_BLOCKER" for row in rows)
     assert all((evidence_root / f"{row['pairing'].split()[0].lower()}-mastra/blocker.json").is_file() for row in rows)
-
