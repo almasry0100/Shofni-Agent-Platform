@@ -1,0 +1,19 @@
+# Batch D Evidence Coverage
+
+| Case | Status | Evidence class | Candidates |
+|---|---|---|---|
+| T01 | **PASS** | LIVE_PROVIDER_EVIDENCE, UNSPECIFIED | Bifrost, LiteLLM |
+| T02 | **PASS** | SYNTHETIC_FIXTURE_EVIDENCE, UNSPECIFIED | Bifrost, LiteLLM |
+| T03 | **FAIL** | LIVE_PROVIDER_EVIDENCE, UNSPECIFIED | Bifrost, LiteLLM |
+| T04 | **FAIL** | LIVE_PROVIDER_EVIDENCE, UNSPECIFIED | Bifrost, LiteLLM |
+| T05 | **PASS** | SYNTHETIC_FIXTURE_EVIDENCE, UNSPECIFIED | Bifrost, LiteLLM |
+| T06 | **PASS** | SYNTHETIC_FIXTURE_EVIDENCE, UNSPECIFIED | Bifrost, LiteLLM |
+| T07 | **FAIL** | LIVE_PROVIDER_EVIDENCE, UNSPECIFIED | Bifrost, LiteLLM |
+| T08 | **FAIL** | LIVE_PROVIDER_EVIDENCE, UNSPECIFIED | Bifrost, LiteLLM |
+| T09-A | **PASS** | SYNTHETIC_FIXTURE_EVIDENCE, UNSPECIFIED | Bifrost, LiteLLM |
+| T09-B | **PASS** | SYNTHETIC_FIXTURE_EVIDENCE, UNSPECIFIED | Bifrost, LiteLLM |
+| T10 | **PASS** | LIVE_PROVIDER_EVIDENCE, BLOCKED_LICENSE_EVIDENCE | Mastra, OpenHands Software Agent SDK |
+| T11 | **PASS** | LIVE_PROVIDER_EVIDENCE, BLOCKED_LICENSE_EVIDENCE | Mastra, OpenHands Software Agent SDK |
+| T12 | **PASS** | REPORT_GENERATION_AND_VALIDATION_EVIDENCE | Bifrost, LiteLLM |
+
+Historical attempts remain indexed in `tests/poc/evidence/phase-12/`.

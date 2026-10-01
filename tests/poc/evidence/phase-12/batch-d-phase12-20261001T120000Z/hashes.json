@@ -1,0 +1,17 @@
+{
+  "byte_hashes": {
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/composition-results.json": "sha256:96624841712804601421cfdeb97cd1577bac52dba41839ffebdb792980b14188",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/consolidation-manifest.json": "sha256:481013aa94606a28f1ff7509fddb1d9dadabd193c822a3e15c79630d66fd3f28",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/coverage-index.json": "sha256:a7a5bf06754c12139811329ef7c8306b72211b3bb41d165a3932ad12992ce9a5",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/coverage.ndjson": "sha256:321b6bd05e3dba9060d9b7d2bbcab43cf478c784af3e044ab24214d55e94cc67",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/evidence-gaps.json": "sha256:b8efe810d4e6fef36e6e3c288bdece6a56ae771c79f7ab591ef70b28b09db025"
+  },
+  "schema_version": "1.0",
+  "semantic_hashes": {
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/composition-results.json": "sha256:9bba78e1c38f76a75184f49523b8707a8d0e2c97bb6270159265f3b022544d7c",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/consolidation-manifest.json": "sha256:6d9ab2a6072a1f952d94e52e2718d8edcee0c9fb4c9478cd678ef91a5c4f8fdb",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/coverage-index.json": "sha256:2199fded06ed6eb4638bdc3333e8c2fa168f0c80060f8b66c22262421d892c7e",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/coverage.ndjson": "sha256:321b6bd05e3dba9060d9b7d2bbcab43cf478c784af3e044ab24214d55e94cc67",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/evidence-gaps.json": "sha256:ec35603cdfe03793365a28f79bc185c824904bd91b008b4d81e0494f1e198cb3"
+  }
+}

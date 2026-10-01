@@ -35,6 +35,7 @@ class BifrostHTTPBackend:
         container_name: str,
         client_container: str | None = None,
         provider_config: Mapping[str, Any] | None = None,
+        environment: Mapping[str, str | None] | None = None,
         readiness_timeout: float = 60.0,
     ) -> None:
         if "@sha256:" not in image_ref or image_ref.endswith(":latest"):
@@ -52,6 +53,7 @@ class BifrostHTTPBackend:
         self.container_name = container_name
         self.client_container = client_container
         self.provider_config = dict(provider_config or {})
+        self.environment = dict(environment or {})
         self.readiness_timeout = readiness_timeout
         self.base_url = f"http://127.0.0.1:{host_port}"
         self._started = False
@@ -111,6 +113,10 @@ class BifrostHTTPBackend:
             "/opt/bifrost/bifrost-http", "-host", "0.0.0.0", "-port", "8080",
             "-app-dir", "/data", "-log-level", "error",
         ]
+        for name, value in sorted(self.environment.items()):
+            command[command.index(self.image_ref):command.index(self.image_ref)] = [
+                "--env", name if value is None else f"{name}={value}"
+            ]
         result = subprocess.run(command, capture_output=True, text=True, check=False)
         if result.returncode != 0:
             raise RuntimeError("Docker could not start the pinned Bifrost runtime")

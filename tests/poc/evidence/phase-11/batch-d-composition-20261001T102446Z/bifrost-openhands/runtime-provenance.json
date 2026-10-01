@@ -1,0 +1,7 @@
+{
+  "candidate": "OpenHands Software Agent SDK",
+  "python_image_digest": "sha256:97983fa8cc88343512862c62307159a82261c3528dc025f79e5a3f7af43e50b4",
+  "source_ref": "tests/poc/evidence/phase-7/phase7-remediation-20261001T045000Z/provenance.json",
+  "source_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+  "version": "1.49.6"
+}

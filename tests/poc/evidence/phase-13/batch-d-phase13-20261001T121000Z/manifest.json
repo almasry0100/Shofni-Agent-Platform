@@ -1,0 +1,8 @@
+{
+  "decision_ref": "tests/poc/evidence/phase-13/batch-d-phase13-20261001T121000Z/decision.json",
+  "live_provider_calls": 0,
+  "phase": "phase_13",
+  "run_id": "batch-d-phase13-20261001T121000Z",
+  "schema_version": "1.0",
+  "status": "NO_DECISION_YET"
+}

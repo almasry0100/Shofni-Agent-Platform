@@ -1,0 +1,21 @@
+{
+  "container": "shofni-d-gateway-batch-d-composition-20261001t113000z-litellm",
+  "gateway": "LiteLLM",
+  "gateway_probe": {
+    "model_ids": [
+      "gpt-5.4-mini",
+      "gpt-5.5"
+    ],
+    "selected_routes_present": true,
+    "status": "PASS"
+  },
+  "host_gateway_url": "http://127.0.0.1:59944/v1",
+  "network": "shofni-d-batch-d-composition-20261001t113000z-litellm",
+  "runtime_build": {
+    "exit_code": 0,
+    "stderr": "#0 building with \"desktop-linux\" instance using docker driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 382B done\n#1 DONE 0.0s\n\n#2 [internal] load metadata for docker.io/library/python:3.12.10-slim-bookworm@sha256:97983fa8cc88343512862c62307159a82261c3528dc025f79e5a3f7af43e50b4\n#2 DONE 0.1s\n\n#3 [internal] load metadata for ghcr.io/astral-sh/uv@sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8\n#3 DONE 0.1s\n\n#4 [internal] load .dockerignore\n#4 transferring context: 4.27kB done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 DONE 0.0s\n\n#6 [stage-1 1/5] FROM docker.io/library/python:3.12.10-slim-bookworm@sha256:97983fa8cc88343512862c62307159a82261c3528dc025f79e5a3f7af43e50b4\n#6 resolve docker.io/library/python:3.12.10-slim-bookworm@sha256:97983fa8cc88343512862c62307159a82261c3528dc025f79e5a3f7af43e50b4 0.1s done\n#6 DONE 0.1s\n\n#7 [uv 1/1] FROM ghcr.io/astral-sh/uv@sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8\n#7 resolve ghcr.io/astral-sh/uv@sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8\n#7 resolve ghcr.io/astral-sh/uv@sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8 0.1s done\n#7 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 62.64kB 0.1s done\n#5 DONE 0.2s\n\n#8 [stage-1 3/5] COPY . /candidate\n#8 CACHED\n\n#9 [stage-1 4/5] WORKDIR /candidate\n#9 CACHED\n\n#10 [stage-1 2/5] COPY --from=uv /uv /usr/local/bin/uv\n#10 CACHED\n\n#11 [stage-1 5/5] RUN UV_PROJECT_ENVIRONMENT=/opt/openhands uv sync --locked\n#11 CACHED\n\n#12 exporting to image\n#12 exporting layers done\n#12 exporting manifest sha256:6ddde34a66acc910fd61c60eca915169c2cc697b6e69d9b5fc8a99ee68ee6878 0.0s done\n#12 exporting config sha256:763a5dc3e1e9759ab6ad094e71d91c6baf5034a2f4e634a5c8e076fbab961f17 0.0s done\n#12 exporting attestation manifest sha256:0957a1fa57fd6440cc5ce91ff7e289172f5dfc3cd199c9c25ff5aca200fbd787\n#12 exporting attestation manifest sha256:0957a1fa57fd6440cc5ce91ff7e289172f5dfc3cd199c9c25ff5aca200fbd787 0.1s done\n#12 exporting manifest list sha256:11806a3efe21e79e5db33d8b8e6c81a4f8fa18c64f70d19b1292326e92cb8515 0.1s done\n#12 naming to docker.io/library/shofni-openhands-phase11:batch-d-composition-20261001T113000Z\n#12 naming to docker.io/library/shofni-openhands-phase11:batch-d-composition-20261001T113000Z done\n#12 unpacking to docker.io/library/shofni-openhands-phase11:batch-d-composition-20261001T113000Z\n#12 unpacking to docker.io/library/shofni-openhands-phase11:batch-d-composition-20261001T113000Z 19.8s done\n#12 DONE 20.0s\n",
+    "stdout": ""
+  },
+  "runtime_gateway_url": "http://shofni-d-gateway-batch-d-composition-20261001t113000z-litellm:4000/v1",
+  "runtime_image": "shofni-openhands-phase11:batch-d-composition-20261001T113000Z"
+}

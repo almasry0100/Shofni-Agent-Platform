@@ -1,0 +1,4 @@
+{
+  "gateway": "Bifrost",
+  "logs": "2026/10/01 11:09:28 maxprocs: Leaving GOMAXPROCS=4: CPU quota undefined\n{\"level\":\"error\",\"time\":\"2026-10-01T11:09:28Z\",\"message\":\"failed to initialize governance plugin: failed to initialize governance store: failed to load governance data from config memory: governance config is nil\"}\n{\"level\":\"error\",\"time\":\"2026-10-01T11:09:32Z\",\"message\":\"auth middleware requires config store, skipping auth middleware initialization\"}\n"
+}

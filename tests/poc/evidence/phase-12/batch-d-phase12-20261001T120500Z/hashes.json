@@ -1,0 +1,19 @@
+{
+  "byte_hashes": {
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/composition-results.json": "sha256:f21d2604dda8137c507b020daba8c99a321ef6ac23269121c7ddad7a85fbd62c",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/consolidation-manifest.json": "sha256:4a67631f60a8c7aed0370fe4d5419188979cc15229bbd6cf0f5e7293b13c2151",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/coverage-index.json": "sha256:7f9110d229ab01a0849b033f17cb2db0f64da5b746d13a36087d39bb575d996d",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/coverage.ndjson": "sha256:deed7e197fbdecdc52a7c2d725ff81a41387e802d055f2d252eea35590a6b1b8",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/evidence-gaps.json": "sha256:b8efe810d4e6fef36e6e3c288bdece6a56ae771c79f7ab591ef70b28b09db025",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/schema-validation.json": "sha256:4f2e446bb3edd55bb4c1f3da9ece9621cf0c2594ac500a61c88e5726f726b254"
+  },
+  "schema_version": "1.0",
+  "semantic_hashes": {
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/composition-results.json": "sha256:faa8c564ad42ddf82c23d2ee32439698f2d3e65de18d36463841dd9fa0c90744",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/consolidation-manifest.json": "sha256:92e67c10a3a1d9f13fcaac73c2fc9db7241ff48c2a87e7df2e8592321eecd3d1",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/coverage-index.json": "sha256:f5e95da5a12cf31ffb562a53b74b7d29664db41cf479babdc3307f9e4391de7c",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/coverage.ndjson": "sha256:deed7e197fbdecdc52a7c2d725ff81a41387e802d055f2d252eea35590a6b1b8",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/evidence-gaps.json": "sha256:ec35603cdfe03793365a28f79bc185c824904bd91b008b4d81e0494f1e198cb3",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/schema-validation.json": "sha256:6e7ebe8c82ad51cfbe2dbbb5f2a5bfbbbf918e7047ee1a6dcc560a487232a1c5"
+  }
+}

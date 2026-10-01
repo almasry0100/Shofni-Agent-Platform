@@ -1,0 +1,4 @@
+{
+  "gateway": "LiteLLM",
+  "logs": "<frozen runpy>:128: RuntimeWarning: 'litellm.proxy.proxy_cli' found in sys.modules after import of package 'litellm.proxy', but prior to execution of 'litellm.proxy.proxy_cli'; this may result in unpredictable behaviour\n11:10:19 - LiteLLM Proxy:CRITICAL: proxy_server.py:6469 - LITELLM_MASTER_KEY is not set! All requests will be treated as INTERNAL_USER with no admin access. Set LITELLM_MASTER_KEY for production use.\n"
+}

@@ -1,0 +1,30 @@
+{
+  "canonical_report_deterministic": true,
+  "evidence_files": [
+    "coverage-index.json",
+    "coverage.ndjson",
+    "composition-results.json",
+    "evidence-gaps.json",
+    "consolidation-manifest.json",
+    "schema-validation.json",
+    "hashes.json"
+  ],
+  "live_provider_calls": 0,
+  "phase": "phase_12",
+  "reports_regenerated_twice": true,
+  "run_id": "batch-d-phase12-20261001T120500Z",
+  "schema_version": "1.0",
+  "source_run_ids": [
+    "batch-d-composition-20261001T102446Z",
+    "batch-d-composition-20261001T113000Z",
+    "level2-20260930T150128Z",
+    "level2-remediation-20260930T194529Z",
+    "level2-remediation-20260930T194948Z",
+    "level2-remediation-20260930T200500Z",
+    "level2-remediation-20260930T225100Z",
+    "level3-remediation-20261001T044500Z",
+    "level3-remediation-20261001T045800Z",
+    "phase6-remediation-20260930T230000Z"
+  ],
+  "status": "FAIL"
+}

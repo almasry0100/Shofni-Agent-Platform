@@ -1,0 +1,9 @@
+{
+  "decision": "NO_DECISION_YET",
+  "evidence_ref": "tests/poc/evidence/phase-14/batch-d-phase14-20261001T121000Z/plan.json",
+  "phase": "phase_14",
+  "production_implementation_started": false,
+  "run_id": "batch-d-phase14-20261001T121000Z",
+  "schema_version": "1.0",
+  "status": "COMPLETE"
+}

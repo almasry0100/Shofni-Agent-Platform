@@ -1,0 +1,15 @@
+{
+  "checkpoint_id": null,
+  "classification": "SETUP_FAILURE",
+  "commit": false,
+  "evidence_root": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-openhands",
+  "pairing": "Bifrost + OpenHands",
+  "provider_transition_id": "3bf70a71-ae3b-5980-acd4-b25b6d416e3d",
+  "push": false,
+  "run_id": "batch-d-composition-20261001T113000Z",
+  "schema_version": "1.0",
+  "status": "FAIL",
+  "task_id": null,
+  "tool_call_ids": [],
+  "workspace_id": null
+}

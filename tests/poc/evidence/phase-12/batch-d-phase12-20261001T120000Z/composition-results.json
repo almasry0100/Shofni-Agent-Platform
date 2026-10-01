@@ -1,0 +1,292 @@
+{
+  "attempts": [
+    {
+      "checkpoint_id": null,
+      "classification": "SETUP_FAILURE",
+      "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/bifrost-openhands/composition-manifest.json",
+      "run_id": "batch-d-composition-20261001T102446Z",
+      "status": "FAIL",
+      "task_id": null,
+      "tool_call_ids": [],
+      "workspace_id": null
+    },
+    {
+      "checkpoint_id": null,
+      "classification": "SETUP_FAILURE",
+      "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-openhands/composition-manifest.json",
+      "run_id": "batch-d-composition-20261001T113000Z",
+      "status": "FAIL",
+      "task_id": null,
+      "tool_call_ids": [],
+      "workspace_id": null
+    },
+    {
+      "checkpoint_id": null,
+      "classification": "LICENSE_BOUNDARY_BLOCKER",
+      "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/bifrost-mastra/composition-manifest.json",
+      "run_id": "batch-d-composition-20261001T102446Z",
+      "status": "BLOCKED",
+      "task_id": null,
+      "tool_call_ids": [],
+      "workspace_id": null
+    },
+    {
+      "checkpoint_id": null,
+      "classification": "LICENSE_BOUNDARY_BLOCKER",
+      "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-mastra/composition-manifest.json",
+      "run_id": "batch-d-composition-20261001T113000Z",
+      "status": "BLOCKED",
+      "task_id": null,
+      "tool_call_ids": [],
+      "workspace_id": null
+    },
+    {
+      "checkpoint_id": null,
+      "classification": "SETUP_FAILURE",
+      "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/litellm-openhands/composition-manifest.json",
+      "run_id": "batch-d-composition-20261001T102446Z",
+      "status": "FAIL",
+      "task_id": null,
+      "tool_call_ids": [],
+      "workspace_id": null
+    },
+    {
+      "checkpoint_id": null,
+      "classification": "SETUP_FAILURE",
+      "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-openhands/composition-manifest.json",
+      "run_id": "batch-d-composition-20261001T113000Z",
+      "status": "FAIL",
+      "task_id": null,
+      "tool_call_ids": [],
+      "workspace_id": null
+    },
+    {
+      "checkpoint_id": null,
+      "classification": "LICENSE_BOUNDARY_BLOCKER",
+      "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/litellm-mastra/composition-manifest.json",
+      "run_id": "batch-d-composition-20261001T102446Z",
+      "status": "BLOCKED",
+      "task_id": null,
+      "tool_call_ids": [],
+      "workspace_id": null
+    },
+    {
+      "checkpoint_id": null,
+      "classification": "LICENSE_BOUNDARY_BLOCKER",
+      "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-mastra/composition-manifest.json",
+      "run_id": "batch-d-composition-20261001T113000Z",
+      "status": "BLOCKED",
+      "task_id": null,
+      "tool_call_ids": [],
+      "workspace_id": null
+    }
+  ],
+  "cases": [
+    {
+      "candidates": [
+        "Bifrost",
+        "OpenHands"
+      ],
+      "classifications": [
+        "SETUP_FAILURE"
+      ],
+      "client": "OpenHands RuntimeBackend",
+      "effective_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "SETUP_FAILURE",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-openhands/composition-manifest.json",
+          "run_id": "batch-d-composition-20261001T113000Z",
+          "status": "FAIL",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "evidence_class": [
+        "LIVE_PROVIDER_EVIDENCE"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/bifrost-openhands/composition-manifest.json",
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-openhands/composition-manifest.json"
+      ],
+      "historical_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "SETUP_FAILURE",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/bifrost-openhands/composition-manifest.json",
+          "run_id": "batch-d-composition-20261001T102446Z",
+          "status": "FAIL",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "pairing": "Bifrost + OpenHands",
+      "protocol": "OpenAI-compatible gateway route",
+      "provenance_run_ids": [
+        "batch-d-composition-20261001T102446Z",
+        "batch-d-composition-20261001T113000Z"
+      ],
+      "provider": "A6api",
+      "status": "FAIL",
+      "test_id": "COMPOSITION:Bifrost + OpenHands"
+    },
+    {
+      "candidates": [
+        "Bifrost",
+        "Mastra"
+      ],
+      "classifications": [
+        "LICENSE_BOUNDARY_BLOCKER"
+      ],
+      "client": "Mastra durable Agent",
+      "effective_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "LICENSE_BOUNDARY_BLOCKER",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-mastra/composition-manifest.json",
+          "run_id": "batch-d-composition-20261001T113000Z",
+          "status": "BLOCKED",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "evidence_class": [
+        "BLOCKED_LICENSE_EVIDENCE"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/bifrost-mastra/composition-manifest.json",
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-mastra/composition-manifest.json"
+      ],
+      "historical_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "LICENSE_BOUNDARY_BLOCKER",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/bifrost-mastra/composition-manifest.json",
+          "run_id": "batch-d-composition-20261001T102446Z",
+          "status": "BLOCKED",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "pairing": "Bifrost + Mastra",
+      "protocol": "OpenAI-compatible gateway route",
+      "provenance_run_ids": [
+        "batch-d-composition-20261001T102446Z",
+        "batch-d-composition-20261001T113000Z"
+      ],
+      "provider": null,
+      "status": "BLOCKED",
+      "test_id": "COMPOSITION:Bifrost + Mastra"
+    },
+    {
+      "candidates": [
+        "LiteLLM",
+        "OpenHands"
+      ],
+      "classifications": [
+        "SETUP_FAILURE"
+      ],
+      "client": "OpenHands RuntimeBackend",
+      "effective_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "SETUP_FAILURE",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-openhands/composition-manifest.json",
+          "run_id": "batch-d-composition-20261001T113000Z",
+          "status": "FAIL",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "evidence_class": [
+        "LIVE_PROVIDER_EVIDENCE"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/litellm-openhands/composition-manifest.json",
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-openhands/composition-manifest.json"
+      ],
+      "historical_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "SETUP_FAILURE",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/litellm-openhands/composition-manifest.json",
+          "run_id": "batch-d-composition-20261001T102446Z",
+          "status": "FAIL",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "pairing": "LiteLLM + OpenHands",
+      "protocol": "OpenAI-compatible gateway route",
+      "provenance_run_ids": [
+        "batch-d-composition-20261001T102446Z",
+        "batch-d-composition-20261001T113000Z"
+      ],
+      "provider": "A6api",
+      "status": "FAIL",
+      "test_id": "COMPOSITION:LiteLLM + OpenHands"
+    },
+    {
+      "candidates": [
+        "LiteLLM",
+        "Mastra"
+      ],
+      "classifications": [
+        "LICENSE_BOUNDARY_BLOCKER"
+      ],
+      "client": "Mastra durable Agent",
+      "effective_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "LICENSE_BOUNDARY_BLOCKER",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-mastra/composition-manifest.json",
+          "run_id": "batch-d-composition-20261001T113000Z",
+          "status": "BLOCKED",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "evidence_class": [
+        "BLOCKED_LICENSE_EVIDENCE"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/litellm-mastra/composition-manifest.json",
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-mastra/composition-manifest.json"
+      ],
+      "historical_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "LICENSE_BOUNDARY_BLOCKER",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/litellm-mastra/composition-manifest.json",
+          "run_id": "batch-d-composition-20261001T102446Z",
+          "status": "BLOCKED",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "pairing": "LiteLLM + Mastra",
+      "protocol": "OpenAI-compatible gateway route",
+      "provenance_run_ids": [
+        "batch-d-composition-20261001T102446Z",
+        "batch-d-composition-20261001T113000Z"
+      ],
+      "provider": null,
+      "status": "BLOCKED",
+      "test_id": "COMPOSITION:LiteLLM + Mastra"
+    }
+  ],
+  "phase": "phase_11",
+  "run_ids": [
+    "batch-d-composition-20261001T102446Z",
+    "batch-d-composition-20261001T113000Z"
+  ],
+  "schema_version": "1.0"
+}

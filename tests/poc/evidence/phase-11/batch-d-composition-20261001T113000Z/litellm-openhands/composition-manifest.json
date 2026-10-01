@@ -1,0 +1,18 @@
+{
+  "checkpoint_id": null,
+  "classification": "SETUP_FAILURE",
+  "evidence_class": "LIVE_PROVIDER_EVIDENCE",
+  "pairing": "LiteLLM + OpenHands",
+  "provider_transition": {
+    "model_a": "gpt-5.4-mini",
+    "model_b": "gpt-5.5"
+  },
+  "run_id": "batch-d-composition-20261001T113000Z",
+  "schema_version": "1.0",
+  "setup_diagnostic": "process-diagnostics.json",
+  "started_at_utc": "2026-10-01T11:09:37.289237Z",
+  "status": "FAIL",
+  "task_id": null,
+  "tool_call_ids": [],
+  "workspace_id": null
+}

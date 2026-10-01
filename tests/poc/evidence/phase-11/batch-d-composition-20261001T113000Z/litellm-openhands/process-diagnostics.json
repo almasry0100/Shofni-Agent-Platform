@@ -1,0 +1,41 @@
+{
+  "model_a": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--network",
+      "shofni-d-batch-d-composition-20261001t113000z-litellm",
+      "--platform",
+      "linux/amd64",
+      "--mount",
+      "[REDACTED_PATH] Agent Platform\\Shofni Agent Platform:/workspace:ro",
+      "--mount",
+      "[REDACTED_PATH] Agent Platform\\Shofni Agent Platform\\tests\\poc\\evidence\\phase-11\\batch-d-composition-20261001T113000Z\\litellm-openhands:/evidence",
+      "--mount",
+      "[REDACTED_PATH] Agent Platform\\Shofni Agent Platform\\poc\\.runtime\\batch-d-batch-d-composition-20261001T113000Z-litellm-runtime:/runtime",
+      "--env",
+      "PYTHONPATH=/workspace",
+      "--env",
+      "SHOFNI_ATTEMPT_ID=batch-d-composition-20261001T113000Z-litellm-openhands",
+      "shofni-openhands-phase11:batch-d-composition-20261001T113000Z",
+      "/opt/openhands/bin/python",
+      "-m",
+      "poc.runners.openhands_level3_live",
+      "--stage",
+      "model-a",
+      "--runtime-root",
+      "/runtime",
+      "--evidence-root",
+      "/evidence",
+      "--model-a",
+      "gpt-5.4-mini",
+      "--base-url",
+      "http://shofni-d-gateway-batch-d-composition-20261001t113000z-litellm:4000/v1",
+      "--gateway-mode"
+    ],
+    "exit_code": 125,
+    "stderr": "invalid argument \"C:\\\\Users\\\\shofni\\\\Desktop\\\\Shofni Agent Platform\\\\Shofni Agent Platform:/workspace:ro\" for \"--mount\" flag: invalid field '[REDACTED_PATH] Agent Platform\\Shofni Agent Platform:/workspace:ro' must be a key=value pair\n\nUsage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]\n\nRun 'docker run --help' for more information\n",
+    "stdout": ""
+  }
+}

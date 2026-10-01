@@ -26,8 +26,12 @@ def _load_json(path: Path) -> dict[str, Any]:
     return value
 
 
-def _run_model_a(runtime_root: Path, evidence_root: Path, model_a: str) -> None:
-    backend = OpenHandsRuntimeBackend(runtime_root)
+def _run_model_a(runtime_root: Path, evidence_root: Path, model_a: str, base_url: str | None, gateway_mode: bool) -> None:
+    backend = OpenHandsRuntimeBackend(
+        runtime_root,
+        base_url=base_url,
+        api_key="gateway-client" if gateway_mode else None,
+    )
     backend.start()
     state = backend.create_task(
         {
@@ -60,12 +64,16 @@ def _run_model_a(runtime_root: Path, evidence_root: Path, model_a: str) -> None:
     backend.stop()
 
 
-def _run_restore(runtime_root: Path, evidence_root: Path, model_b: str) -> None:
+def _run_restore(runtime_root: Path, evidence_root: Path, model_b: str, base_url: str | None, gateway_mode: bool) -> None:
     before = _load_json(evidence_root / "model-a-state.json")
     checkpoint = Checkpoint.from_dict(
         _load_json(runtime_root / "checkpoints" / f"{before['checkpoint_id']}.json")
     )
-    backend = OpenHandsRuntimeBackend(runtime_root)
+    backend = OpenHandsRuntimeBackend(
+        runtime_root,
+        base_url=base_url,
+        api_key="gateway-client" if gateway_mode else None,
+    )
     backend.start()
     restored = backend.resume(checkpoint)
     backend.switch_model(restored.task_id, model_b)
@@ -94,19 +102,27 @@ def run_t10(
     model_a: str,
     model_b: str,
     attempt_id: str,
+    base_url: str | None = None,
+    gateway_mode: bool = False,
 ) -> dict[str, Any]:
     evidence_root.mkdir(parents=True, exist_ok=True)
     command_prefix = [sys.executable, "-m", "poc.runners.openhands_level3_live"]
+    child_env = os.environ.copy()
+    if gateway_mode:
+        child_env.pop("A6API_KEY", None)
+        child_env.pop("A6API_BASE_URL", None)
     first = subprocess.run(
         command_prefix + [
             "--stage", "model-a", "--runtime-root", str(runtime_root),
             "--evidence-root", str(evidence_root), "--model-a", model_a,
+            *( ["--base-url", base_url] if base_url else [] ),
+            *( ["--gateway-mode"] if gateway_mode else [] ),
         ],
         capture_output=True,
         text=True,
         check=False,
         timeout=300,
-        env=os.environ.copy(),
+        env=child_env,
     )
     if not (evidence_root / "model-a-state.json").is_file():
         raise RuntimeError("model A process did not persist its checkpoint evidence")
@@ -114,12 +130,14 @@ def run_t10(
         command_prefix + [
             "--stage", "restore", "--runtime-root", str(runtime_root),
             "--evidence-root", str(evidence_root), "--model-b", model_b,
+            *( ["--base-url", base_url] if base_url else [] ),
+            *( ["--gateway-mode"] if gateway_mode else [] ),
         ],
         capture_output=True,
         text=True,
         check=False,
         timeout=300,
-        env=os.environ.copy(),
+        env=child_env,
     )
     before = _load_json(evidence_root / "model-a-state.json")
     after = _load_json(evidence_root / "restored-state.json")
@@ -184,16 +202,18 @@ def main() -> None:
     parser.add_argument("--evidence-root", type=Path, required=True)
     parser.add_argument("--model-a", default="gpt-5.4-mini")
     parser.add_argument("--model-b", default="gpt-5.5")
+    parser.add_argument("--base-url")
+    parser.add_argument("--gateway-mode", action="store_true")
     parser.add_argument("--attempt-id", default=os.environ.get("SHOFNI_ATTEMPT_ID", "level3-corrective-live"))
     args = parser.parse_args()
     if args.stage == "model-a":
-        _run_model_a(args.runtime_root, args.evidence_root, args.model_a)
+        _run_model_a(args.runtime_root, args.evidence_root, args.model_a, args.base_url, args.gateway_mode)
         return
     if args.stage == "restore":
-        _run_restore(args.runtime_root, args.evidence_root, args.model_b)
+        _run_restore(args.runtime_root, args.evidence_root, args.model_b, args.base_url, args.gateway_mode)
         return
     print(json.dumps(
-        run_t10(args.runtime_root, args.evidence_root, args.model_a, args.model_b, args.attempt_id),
+        run_t10(args.runtime_root, args.evidence_root, args.model_a, args.model_b, args.attempt_id, args.base_url, args.gateway_mode),
         sort_keys=True,
     ))
 

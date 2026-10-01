@@ -1,0 +1,12 @@
+{
+  "direct_provider_bypass": false,
+  "gateway": "LiteLLM",
+  "gateway_container": "shofni-d-gateway-batch-d-composition-20261001t113000z-litellm",
+  "gateway_network": "shofni-d-batch-d-composition-20261001t113000z-litellm",
+  "gateway_upstream": "https://api.a6api.com",
+  "host_gateway_url": "http://127.0.0.1:59944/v1",
+  "provider": "A6api",
+  "runtime": "OpenHands Software Agent SDK 1.49.6",
+  "runtime_base_url": "http://shofni-d-gateway-batch-d-composition-20261001t113000z-litellm:4000/v1",
+  "runtime_provider_key": "NOT_PRESENT"
+}

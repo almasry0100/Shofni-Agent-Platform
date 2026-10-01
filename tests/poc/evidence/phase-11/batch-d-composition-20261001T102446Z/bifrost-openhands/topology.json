@@ -1,0 +1,9 @@
+{
+  "direct_provider_bypass": false,
+  "gateway": "Bifrost",
+  "gateway_upstream": "https://api.a6api.com",
+  "provider": "A6api",
+  "runtime": "OpenHands Software Agent SDK 1.49.6",
+  "runtime_base_url": "http://127.0.0.1:55641/openai/v1",
+  "runtime_provider_key": "NOT_PRESENT"
+}

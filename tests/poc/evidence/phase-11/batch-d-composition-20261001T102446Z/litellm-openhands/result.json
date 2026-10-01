@@ -1,0 +1,11 @@
+{
+  "classification": "SETUP_FAILURE",
+  "expected_result": "alpha",
+  "final_result": null,
+  "gateway": "LiteLLM",
+  "model_a": "gpt-5.4-mini",
+  "model_b": "gpt-5.5",
+  "provider": "A6api",
+  "runtime": "OpenHands",
+  "status": "FAIL"
+}

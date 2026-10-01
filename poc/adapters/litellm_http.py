@@ -32,7 +32,7 @@ class LiteLLMHTTPBackend:
         host_port: int,
         container_name: str,
         client_container: str | None = None,
-        environment: Mapping[str, str] | None = None,
+        environment: Mapping[str, str | None] | None = None,
         readiness_timeout: float = 90.0,
     ) -> None:
         if "@sha256:" not in image_ref or image_ref.endswith(":latest"):
@@ -74,7 +74,7 @@ class LiteLLMHTTPBackend:
             "--num_workers", "1",
         ]
         for name, value in sorted(self.environment.items()):
-            command[5:5] = ["--env", f"{name}={value}"]
+            command[5:5] = ["--env", name if value is None else f"{name}={value}"]
         result = subprocess.run(command, capture_output=True, text=True, check=False)
         if result.returncode != 0:
             raise RuntimeError("Docker could not start the pinned LiteLLM runtime")

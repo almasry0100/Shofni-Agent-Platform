@@ -1,0 +1,30 @@
+{
+  "failed_cases_with_diagnostics": [
+    "T03",
+    "T04",
+    "T07",
+    "T08",
+    "COMPOSITION:Bifrost + OpenHands",
+    "COMPOSITION:LiteLLM + OpenHands"
+  ],
+  "gaps": [
+    {
+      "class": "EVIDENCE_OBSERVABILITY_FAILURE",
+      "detail": "The sealed first attempt has setup failure metadata but no underlying process/setup diagnostic; task, workspace, checkpoint, and tool IDs remain unobserved.",
+      "scope": "Phase 11 first OpenHands attempt"
+    },
+    {
+      "class": "EVIDENCE_OBSERVABILITY_FAILURE",
+      "detail": "The bounded rerun built the pinned environment and probed gateway routes, but Windows subprocess capture failed before OpenHands task evidence was produced; no executable composition PASS is available.",
+      "scope": "Phase 11 executable compositions"
+    },
+    {
+      "class": "PROVENANCE_VARIANCE",
+      "detail": "The rerun image installed 232 distributions while the historical Phase 7 environment records 187; the rerun image is retained only as setup evidence and is not promoted to Phase 7 provenance.",
+      "scope": "Phase 11 OpenHands image"
+    }
+  ],
+  "missing_required_ids": [],
+  "schema_version": "1.0",
+  "status": "FAIL"
+}

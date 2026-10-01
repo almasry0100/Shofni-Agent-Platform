@@ -1,0 +1,54 @@
+{
+  "composition_pairings": [
+    "Bifrost + OpenHands",
+    "Bifrost + Mastra",
+    "LiteLLM + OpenHands",
+    "LiteLLM + Mastra"
+  ],
+  "composition_results": "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/composition-results.json",
+  "coverage_index": "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/coverage-index.json",
+  "coverage_ndjson": "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/coverage.ndjson",
+  "evidence_gaps": "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z/evidence-gaps.json",
+  "historical_phase11_run_ids": [
+    "batch-d-composition-20261001T102446Z",
+    "batch-d-composition-20261001T113000Z"
+  ],
+  "live_provider_calls": 0,
+  "phase": "phase_12",
+  "redaction_scan": {
+    "private_path_files": [],
+    "secret_shape_files": "[REDACTED]"
+  },
+  "redaction_scan_version": "poc.evidence.redactor.v1",
+  "reports_regenerated_twice": true,
+  "required_tests": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09-A",
+    "T09-B",
+    "T10",
+    "T11",
+    "T12"
+  ],
+  "run_id": "batch-d-phase12-20261001T120000Z",
+  "schema_version": "1.0",
+  "skipped_blocked_unsupported": {
+    "Mastra": "BLOCKED: LICENSE_BOUNDARY_BLOCKER inherited from Phase 8",
+    "RelayRouter direct cells": "NOT_APPLICABLE: unsupported direct pairing"
+  },
+  "source_run_ids": [
+    "batch-d-composition-20261001T102446Z",
+    "batch-d-composition-20261001T113000Z",
+    "level2-remediation-20260930T194529Z",
+    "level3-remediation-20261001T044500Z",
+    "level3-remediation-20261001T045800Z",
+    "phase6-remediation-20260930T230000Z"
+  ],
+  "status": "FAIL"
+}

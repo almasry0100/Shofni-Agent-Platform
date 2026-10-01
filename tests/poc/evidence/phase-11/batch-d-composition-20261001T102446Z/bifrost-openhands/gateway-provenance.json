@@ -1,0 +1,6 @@
+{
+  "artifact": "poc/.runtime/bifrost/artifacts-remediation/bifrost-http",
+  "artifact_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+  "source_ref": "docs/poc/candidate-lock.json",
+  "source_tree_ref": "docs/poc/candidate-lock.json"
+}

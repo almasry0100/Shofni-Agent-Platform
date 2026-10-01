@@ -1,0 +1,2993 @@
+{
+  "composition_cases": [
+    {
+      "candidates": [
+        "Bifrost",
+        "OpenHands"
+      ],
+      "classifications": [
+        "SETUP_FAILURE"
+      ],
+      "client": "OpenHands RuntimeBackend",
+      "effective_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "SETUP_FAILURE",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-openhands/composition-manifest.json",
+          "manifest_ref": "poc/runs/composition-bifrost-openhands/manifest.json",
+          "provider_transition_id": "3bf70a71-ae3b-5980-acd4-b25b6d416e3d",
+          "run_id": "batch-d-composition-20261001T113000Z",
+          "status": "FAIL",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "evidence_class": [
+        "LIVE_PROVIDER_EVIDENCE"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/bifrost-openhands/composition-manifest.json",
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-openhands/composition-manifest.json"
+      ],
+      "historical_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "SETUP_FAILURE",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/bifrost-openhands/composition-manifest.json",
+          "manifest_ref": "poc/runs/composition-bifrost-openhands/manifest.json",
+          "provider_transition_id": "3bf70a71-ae3b-5980-acd4-b25b6d416e3d",
+          "run_id": "batch-d-composition-20261001T102446Z",
+          "status": "FAIL",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "pairing": "Bifrost + OpenHands",
+      "protocol": "OpenAI-compatible gateway route",
+      "provenance_run_ids": [
+        "batch-d-composition-20261001T102446Z",
+        "batch-d-composition-20261001T113000Z"
+      ],
+      "provider": "A6api",
+      "status": "FAIL",
+      "test_id": "COMPOSITION:Bifrost + OpenHands"
+    },
+    {
+      "candidates": [
+        "Bifrost",
+        "Mastra"
+      ],
+      "classifications": [
+        "LICENSE_BOUNDARY_BLOCKER"
+      ],
+      "client": "Mastra durable Agent",
+      "effective_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "LICENSE_BOUNDARY_BLOCKER",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-mastra/composition-manifest.json",
+          "manifest_ref": "poc/runs/composition-bifrost-mastra/manifest.json",
+          "provider_transition_id": null,
+          "run_id": "batch-d-composition-20261001T113000Z",
+          "status": "BLOCKED",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "evidence_class": [
+        "BLOCKED_LICENSE_EVIDENCE"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/bifrost-mastra/composition-manifest.json",
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-mastra/composition-manifest.json"
+      ],
+      "historical_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "LICENSE_BOUNDARY_BLOCKER",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/bifrost-mastra/composition-manifest.json",
+          "manifest_ref": "poc/runs/composition-bifrost-mastra/manifest.json",
+          "provider_transition_id": null,
+          "run_id": "batch-d-composition-20261001T102446Z",
+          "status": "BLOCKED",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "pairing": "Bifrost + Mastra",
+      "protocol": "OpenAI-compatible gateway route",
+      "provenance_run_ids": [
+        "batch-d-composition-20261001T102446Z",
+        "batch-d-composition-20261001T113000Z"
+      ],
+      "provider": null,
+      "status": "BLOCKED",
+      "test_id": "COMPOSITION:Bifrost + Mastra"
+    },
+    {
+      "candidates": [
+        "LiteLLM",
+        "OpenHands"
+      ],
+      "classifications": [
+        "SETUP_FAILURE"
+      ],
+      "client": "OpenHands RuntimeBackend",
+      "effective_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "SETUP_FAILURE",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-openhands/composition-manifest.json",
+          "manifest_ref": "poc/runs/composition-litellm-openhands/manifest.json",
+          "provider_transition_id": "293ec58b-74ec-5017-adce-ee37a80336ab",
+          "run_id": "batch-d-composition-20261001T113000Z",
+          "status": "FAIL",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "evidence_class": [
+        "LIVE_PROVIDER_EVIDENCE"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/litellm-openhands/composition-manifest.json",
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-openhands/composition-manifest.json"
+      ],
+      "historical_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "SETUP_FAILURE",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/litellm-openhands/composition-manifest.json",
+          "manifest_ref": "poc/runs/composition-litellm-openhands/manifest.json",
+          "provider_transition_id": "293ec58b-74ec-5017-adce-ee37a80336ab",
+          "run_id": "batch-d-composition-20261001T102446Z",
+          "status": "FAIL",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "pairing": "LiteLLM + OpenHands",
+      "protocol": "OpenAI-compatible gateway route",
+      "provenance_run_ids": [
+        "batch-d-composition-20261001T102446Z",
+        "batch-d-composition-20261001T113000Z"
+      ],
+      "provider": "A6api",
+      "status": "FAIL",
+      "test_id": "COMPOSITION:LiteLLM + OpenHands"
+    },
+    {
+      "candidates": [
+        "LiteLLM",
+        "Mastra"
+      ],
+      "classifications": [
+        "LICENSE_BOUNDARY_BLOCKER"
+      ],
+      "client": "Mastra durable Agent",
+      "effective_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "LICENSE_BOUNDARY_BLOCKER",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-mastra/composition-manifest.json",
+          "manifest_ref": "poc/runs/composition-litellm-mastra/manifest.json",
+          "provider_transition_id": null,
+          "run_id": "batch-d-composition-20261001T113000Z",
+          "status": "BLOCKED",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "evidence_class": [
+        "BLOCKED_LICENSE_EVIDENCE"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/litellm-mastra/composition-manifest.json",
+        "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-mastra/composition-manifest.json"
+      ],
+      "historical_attempts": [
+        {
+          "checkpoint_id": null,
+          "classification": "LICENSE_BOUNDARY_BLOCKER",
+          "evidence_ref": "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/litellm-mastra/composition-manifest.json",
+          "manifest_ref": "poc/runs/composition-litellm-mastra/manifest.json",
+          "provider_transition_id": null,
+          "run_id": "batch-d-composition-20261001T102446Z",
+          "status": "BLOCKED",
+          "task_id": null,
+          "tool_call_ids": [],
+          "workspace_id": null
+        }
+      ],
+      "pairing": "LiteLLM + Mastra",
+      "protocol": "OpenAI-compatible gateway route",
+      "provenance_run_ids": [
+        "batch-d-composition-20261001T102446Z",
+        "batch-d-composition-20261001T113000Z"
+      ],
+      "provider": null,
+      "status": "BLOCKED",
+      "test_id": "COMPOSITION:LiteLLM + Mastra"
+    }
+  ],
+  "logical_cases": [
+    {
+      "behavior_modes": [
+        "NATIVE",
+        "UNVERIFIED"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "classifications": [
+        "CLIENT_FAILURE",
+        "GATEWAY_FAILURE",
+        "SETUP_FAILURE"
+      ],
+      "clients": [
+        "Codex"
+      ],
+      "effective_attempts": [
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/1-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/2-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/3-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/1-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/2-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/3-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence_class": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "UNSPECIFIED"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/3-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/3-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/3-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/1-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/2-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/3-T01.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-3.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+      ],
+      "historical_attempts": [
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-1.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-2.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/codex/rep-3.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/1-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/2-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/codex/3-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/1-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/2-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/codex/3-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/1-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/2-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/codex/3-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/1-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/2-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/codex/3-T01.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "protocols": [
+        "Responses"
+      ],
+      "provenance_run_ids": [
+        "level2-remediation-20260930T194529Z",
+        "level2-remediation-20260930T194948Z",
+        "level2-remediation-20260930T200500Z"
+      ],
+      "providers": [
+        "A6api"
+      ],
+      "status": "PASS",
+      "test_id": "T01"
+    },
+    {
+      "behavior_modes": [
+        "EMULATED",
+        "UNVERIFIED"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "classifications": [
+        "SETUP_FAILURE"
+      ],
+      "clients": [
+        "Codex",
+        "candidate-neutral fixture harness"
+      ],
+      "effective_attempts": [
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence_class": [
+        "SYNTHETIC_FIXTURE_EVIDENCE",
+        "UNSPECIFIED"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "historical_attempts": [
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t02_chat_only/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "protocols": [
+        "Responses-style client to chat-only fixture",
+        "candidate-neutral fixture contract"
+      ],
+      "provenance_run_ids": [
+        "level2-remediation-20260930T194529Z",
+        "level2-remediation-20260930T194948Z",
+        "level2-remediation-20260930T200500Z"
+      ],
+      "providers": [
+        "ChatOnlyProviderFixture",
+        "Shofni synthetic fixture"
+      ],
+      "status": "PASS",
+      "test_id": "T02"
+    },
+    {
+      "behavior_modes": [
+        "NATIVE",
+        "UNVERIFIED"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "classifications": [
+        "CLIENT_FAILURE",
+        "GATEWAY_FAILURE",
+        "MODEL_BEHAVIOR_FAILURE",
+        "SETUP_FAILURE"
+      ],
+      "clients": [
+        "Claude Code"
+      ],
+      "effective_attempts": [
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/1-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/2-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/3-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/1-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/2-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/3-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "MODEL_BEHAVIOR_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/1-T03.json",
+            "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+          ],
+          "run_id": "level2-remediation-20260930T225100Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "MODEL_BEHAVIOR_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/2-T03.json",
+            "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+          ],
+          "run_id": "level2-remediation-20260930T225100Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/3-T03.json",
+            "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+          ],
+          "run_id": "level2-remediation-20260930T225100Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "MODEL_BEHAVIOR_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/1-T03.json",
+            "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+          ],
+          "run_id": "level2-remediation-20260930T225100Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/2-T03.json",
+            "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+          ],
+          "run_id": "level2-remediation-20260930T225100Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/3-T03.json",
+            "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json"
+          ],
+          "run_id": "level2-remediation-20260930T225100Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence_class": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "UNSPECIFIED"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-3.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/bifrost/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/1-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/2-T03.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/runs/litellm/a6api/claude-code/3-T03.json",
+        "tests/poc/evidence/level2/targeted-b-20260930T225000Z/targeted-diagnostics.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+      ],
+      "historical_attempts": [
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-1.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-2.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/claude-code/rep-3.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/1-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/2-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/claude-code/3-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/1-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/2-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/claude-code/3-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/1-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/2-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/claude-code/3-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/1-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/2-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/claude-code/3-T03.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        }
+      ],
+      "protocols": [
+        "Anthropic Messages",
+        "Anthropic Messages through OpenAI-compatible A6api route"
+      ],
+      "provenance_run_ids": [
+        "level2-remediation-20260930T194529Z",
+        "level2-remediation-20260930T194948Z",
+        "level2-remediation-20260930T200500Z",
+        "level2-remediation-20260930T225100Z"
+      ],
+      "providers": [
+        "A6api"
+      ],
+      "status": "FAIL",
+      "test_id": "T03"
+    },
+    {
+      "behavior_modes": [
+        "NATIVE",
+        "UNVERIFIED"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "classifications": [
+        "CLIENT_FAILURE",
+        "GATEWAY_FAILURE",
+        "SETUP_FAILURE"
+      ],
+      "clients": [
+        "OpenCode"
+      ],
+      "effective_attempts": [
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        }
+      ],
+      "evidence_class": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "UNSPECIFIED"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T04.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+      ],
+      "historical_attempts": [
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T04.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        }
+      ],
+      "protocols": [
+        "Chat Completions",
+        "Chat Completions plus Shofni emulation"
+      ],
+      "provenance_run_ids": [
+        "level2-remediation-20260930T194529Z",
+        "level2-remediation-20260930T194948Z",
+        "level2-remediation-20260930T200500Z"
+      ],
+      "providers": [
+        "A6api",
+        "RelayRouter"
+      ],
+      "status": "FAIL",
+      "test_id": "T04"
+    },
+    {
+      "behavior_modes": [
+        "EMULATED",
+        "UNVERIFIED"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "classifications": [
+        "SETUP_FAILURE"
+      ],
+      "clients": [
+        "Shofni fixture harness",
+        "candidate-neutral fixture harness"
+      ],
+      "effective_attempts": [
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence_class": [
+        "SYNTHETIC_FIXTURE_EVIDENCE",
+        "UNSPECIFIED"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "historical_attempts": [
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t05_text_valid/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "protocols": [
+        "Candidate-neutral compatibility layer",
+        "candidate-neutral fixture contract"
+      ],
+      "provenance_run_ids": [
+        "level2-remediation-20260930T194529Z",
+        "level2-remediation-20260930T194948Z",
+        "level2-remediation-20260930T200500Z"
+      ],
+      "providers": [
+        "Shofni synthetic fixture",
+        "TextualToolCallFixture"
+      ],
+      "status": "PASS",
+      "test_id": "T05"
+    },
+    {
+      "behavior_modes": [
+        "EMULATED",
+        "UNVERIFIED"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "classifications": [
+        "SETUP_FAILURE"
+      ],
+      "clients": [
+        "Shofni fixture harness",
+        "candidate-neutral fixture harness"
+      ],
+      "effective_attempts": [
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence_class": [
+        "SYNTHETIC_FIXTURE_EVIDENCE",
+        "UNSPECIFIED"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "historical_attempts": [
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t06_trailing_comma/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "protocols": [
+        "Candidate-neutral compatibility layer",
+        "candidate-neutral fixture contract"
+      ],
+      "provenance_run_ids": [
+        "level2-remediation-20260930T194529Z",
+        "level2-remediation-20260930T194948Z",
+        "level2-remediation-20260930T200500Z"
+      ],
+      "providers": [
+        "MalformedToolJsonFixture",
+        "Shofni synthetic fixture"
+      ],
+      "status": "PASS",
+      "test_id": "T06"
+    },
+    {
+      "behavior_modes": [
+        "NATIVE",
+        "UNVERIFIED"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "classifications": [
+        "CLIENT_FAILURE",
+        "GATEWAY_FAILURE",
+        "SETUP_FAILURE"
+      ],
+      "clients": [
+        "Codex, Claude Code, OpenCode",
+        "OpenCode"
+      ],
+      "effective_attempts": [
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        }
+      ],
+      "evidence_class": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "UNSPECIFIED"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T07.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+      ],
+      "historical_attempts": [
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T07.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        }
+      ],
+      "protocols": [
+        "Chat Completions",
+        "Sequential two-tool continuation"
+      ],
+      "provenance_run_ids": [
+        "level2-remediation-20260930T194529Z",
+        "level2-remediation-20260930T194948Z",
+        "level2-remediation-20260930T200500Z"
+      ],
+      "providers": [
+        "A6api",
+        "RelayRouter"
+      ],
+      "status": "FAIL",
+      "test_id": "T07"
+    },
+    {
+      "behavior_modes": [
+        "NATIVE",
+        "UNVERIFIED"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "classifications": [
+        "CLIENT_FAILURE",
+        "GATEWAY_FAILURE",
+        "SETUP_FAILURE"
+      ],
+      "clients": [
+        "Codex, Claude Code, OpenCode",
+        "OpenCode"
+      ],
+      "effective_attempts": [
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        }
+      ],
+      "evidence_class": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "UNSPECIFIED"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T08.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json",
+        "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json",
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t08_stream_complete/record.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+      ],
+      "historical_attempts": [
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t08_stream_complete/record.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t08_stream_complete/record.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-1.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-2.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/a6api/opencode/rep-3.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-1.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-2.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "CLIENT_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T200500Z/runs/litellm/relayrouter/opencode/rep-3.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/a6api/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/bifrost/relayrouter/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/a6api/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194529Z/runs/litellm/relayrouter/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/relayrouter/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/a6api/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/1-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/2-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        },
+        {
+          "classification": "GATEWAY_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/litellm/relayrouter/opencode/3-T08.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "FAIL"
+        }
+      ],
+      "protocols": [
+        "Chat Completions",
+        "Streaming"
+      ],
+      "provenance_run_ids": [
+        "level2-remediation-20260930T194529Z",
+        "level2-remediation-20260930T194948Z",
+        "level2-remediation-20260930T200500Z"
+      ],
+      "providers": [
+        "A6api",
+        "A6api and RelayRouter",
+        "RelayRouter"
+      ],
+      "status": "FAIL",
+      "test_id": "T08"
+    },
+    {
+      "behavior_modes": [
+        "NATIVE",
+        "UNVERIFIED"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "classifications": [
+        "SETUP_FAILURE"
+      ],
+      "clients": [
+        "Codex, Claude Code, OpenCode",
+        "candidate-neutral fixture harness"
+      ],
+      "effective_attempts": [
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence_class": [
+        "SYNTHETIC_FIXTURE_EVIDENCE",
+        "UNSPECIFIED"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "historical_attempts": [
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_before_tool/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "protocols": [
+        "Fallback before tool effect",
+        "candidate-neutral fixture contract"
+      ],
+      "provenance_run_ids": [
+        "level2-remediation-20260930T194529Z",
+        "level2-remediation-20260930T194948Z",
+        "level2-remediation-20260930T200500Z"
+      ],
+      "providers": [
+        "FailBeforeToolFixture; A6api route A to B not run",
+        "Shofni synthetic fixture"
+      ],
+      "status": "PASS",
+      "test_id": "T09-A"
+    },
+    {
+      "behavior_modes": [
+        "NATIVE",
+        "UNVERIFIED"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "classifications": [
+        "SETUP_FAILURE"
+      ],
+      "clients": [
+        "Codex, Claude Code, OpenCode",
+        "candidate-neutral fixture harness"
+      ],
+      "effective_attempts": [
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence_class": [
+        "SYNTHETIC_FIXTURE_EVIDENCE",
+        "UNSPECIFIED"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+        "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json",
+        "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+      ],
+      "historical_attempts": [
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+            "tests/poc/evidence/phase-3/phase3-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": "SETUP_FAILURE",
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+            "tests/poc/evidence/phase-4/phase4-20260930T150128Z/result.json"
+          ],
+          "run_id": null,
+          "status": "BLOCKED"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T200500Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194529Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+            "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        },
+        {
+          "classification": null,
+          "evidence_refs": [
+            "tests/poc/evidence/phase-2/phase2-20260930T132937Z/scenarios/t09_after_tool/record.json",
+            "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/result.json"
+          ],
+          "run_id": "level2-remediation-20260930T194948Z",
+          "status": "PASS"
+        }
+      ],
+      "protocols": [
+        "Fallback after successful tool effect",
+        "candidate-neutral fixture contract"
+      ],
+      "provenance_run_ids": [
+        "level2-remediation-20260930T194529Z",
+        "level2-remediation-20260930T194948Z",
+        "level2-remediation-20260930T200500Z"
+      ],
+      "providers": [
+        "FailAfterToolFixture",
+        "Shofni synthetic fixture"
+      ],
+      "status": "PASS",
+      "test_id": "T09-B"
+    },
+    {
+      "behavior_modes": [
+        "NATIVE",
+        "RUNTIME"
+      ],
+      "candidate_outcomes": {
+        "Mastra": "BLOCKED",
+        "OpenHands Software Agent SDK": "PASS"
+      },
+      "candidates": [
+        "Mastra",
+        "OpenHands Software Agent SDK"
+      ],
+      "classifications": [
+        "LICENSE_BOUNDARY_BLOCKER"
+      ],
+      "clients": [
+        "OpenHands RuntimeBackend"
+      ],
+      "effective_attempts": [
+        {
+          "evidence_ref": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T081124Z/result.json",
+          "run_id": "level3-remediation-20261001T081124Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence_class": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "BLOCKED_LICENSE_EVIDENCE"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/level3/openhands/T10/batch-c-20260930T224748Z/result.json",
+        "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T044500Z/result.json",
+        "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T065630Z/result.json",
+        "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T081124Z/result.json",
+        "tests/poc/evidence/phase-8/phase8-closure-20261001T035711Z/closure-report.json"
+      ],
+      "historical_attempts": [
+        {
+          "evidence_ref": "tests/poc/evidence/level3/openhands/T10/batch-c-20260930T224748Z/result.json",
+          "run_id": "batch-c-20260930T224748Z",
+          "status": "BLOCKED"
+        },
+        {
+          "evidence_ref": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T044500Z/result.json",
+          "run_id": "level3-remediation-20261001T044500Z",
+          "status": "PASS"
+        },
+        {
+          "evidence_ref": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T065630Z/result.json",
+          "run_id": "level3-remediation-20261001T065630Z",
+          "status": "PASS"
+        }
+      ],
+      "protocols": [
+        "OpenAI-compatible gateway route"
+      ],
+      "provenance_run_ids": [
+        "level3-remediation-20261001T044500Z",
+        "level3-remediation-20261001T065630Z",
+        "level3-remediation-20261001T081124Z",
+        "phase8-closure-20261001T035711Z"
+      ],
+      "providers": [
+        "A6api"
+      ],
+      "status": "PASS",
+      "test_id": "T10"
+    },
+    {
+      "behavior_modes": [
+        "NATIVE",
+        "RUNTIME"
+      ],
+      "candidate_outcomes": {
+        "Mastra": "BLOCKED",
+        "OpenHands Software Agent SDK": "PASS"
+      },
+      "candidates": [
+        "Mastra",
+        "OpenHands Software Agent SDK"
+      ],
+      "classifications": [
+        "LICENSE_BOUNDARY_BLOCKER"
+      ],
+      "clients": [
+        "OpenHands RuntimeBackend"
+      ],
+      "effective_attempts": [
+        {
+          "evidence_ref": "tests/poc/evidence/level3/openhands/T11/level3-remediation-20261001T073136Z/result.json",
+          "run_id": "level3-remediation-20261001T073136Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence_class": [
+        "LIVE_PROVIDER_EVIDENCE",
+        "BLOCKED_LICENSE_EVIDENCE"
+      ],
+      "exact_evidence_refs": [
+        "tests/poc/evidence/level3/openhands/T11/batch-c-20260930T224748Z/result.json",
+        "tests/poc/evidence/level3/openhands/T11/level3-remediation-20261001T045800Z/result.json",
+        "tests/poc/evidence/level3/openhands/T11/level3-remediation-20261001T073136Z/result.json",
+        "tests/poc/evidence/phase-8/phase8-closure-20261001T035711Z/closure-report.json"
+      ],
+      "historical_attempts": [
+        {
+          "evidence_ref": "tests/poc/evidence/level3/openhands/T11/batch-c-20260930T224748Z/result.json",
+          "run_id": "batch-c-20260930T224748Z",
+          "status": "BLOCKED"
+        },
+        {
+          "evidence_ref": "tests/poc/evidence/level3/openhands/T11/level3-remediation-20261001T045800Z/result.json",
+          "run_id": "level3-remediation-20261001T045800Z",
+          "status": "PASS"
+        }
+      ],
+      "protocols": [
+        "OpenAI-compatible gateway route"
+      ],
+      "provenance_run_ids": [
+        "level3-remediation-20261001T045800Z",
+        "level3-remediation-20261001T073136Z",
+        "phase8-closure-20261001T035711Z"
+      ],
+      "providers": [
+        "A6api"
+      ],
+      "status": "PASS",
+      "test_id": "T11"
+    },
+    {
+      "behavior_modes": [
+        "REPORT"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "classifications": [
+        "NONE"
+      ],
+      "clients": [
+        "Codex",
+        "Claude Code",
+        "OpenCode"
+      ],
+      "effective_attempts": [
+        {
+          "evidence_refs": [
+            "docs/poc/compatibility-matrix.json",
+            "docs/poc/compatibility-matrix.md",
+            "tests/poc/evidence/phase-6/phase6-remediation-20260930T230000Z/result.json",
+            "tests/poc/evidence/phase-6/phase6-remediation-20260930T230000Z/manifest.json"
+          ],
+          "run_id": "phase6-remediation-20260930T230000Z",
+          "status": "PASS"
+        }
+      ],
+      "evidence_class": [
+        "REPORT_GENERATION_AND_VALIDATION_EVIDENCE"
+      ],
+      "exact_evidence_refs": [
+        "docs/poc/compatibility-matrix.json",
+        "docs/poc/compatibility-matrix.md",
+        "tests/poc/evidence/phase-6/phase6-remediation-20260930T230000Z/result.json",
+        "tests/poc/evidence/phase-6/phase6-remediation-20260930T230000Z/manifest.json"
+      ],
+      "historical_attempts": [],
+      "protocols": [
+        "OpenAI-compatible",
+        "Anthropic Messages",
+        "Responses"
+      ],
+      "provenance_run_ids": [
+        "phase6-remediation-20260930T230000Z"
+      ],
+      "providers": [
+        "A6api",
+        "RelayRouter",
+        "Shofni synthetic fixture"
+      ],
+      "status": "PASS",
+      "test_id": "T12"
+    }
+  ],
+  "phase": "phase_12",
+  "required_tests": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09-A",
+    "T09-B",
+    "T10",
+    "T11",
+    "T12"
+  ],
+  "run_id": "batch-d-phase12-20261001T121200Z",
+  "schema_version": "1.0"
+}

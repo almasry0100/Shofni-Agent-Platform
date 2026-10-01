@@ -1,0 +1,48 @@
+{
+  "live_provider_key_presence": "PRESENT",
+  "model_a": "gpt-5.4-mini",
+  "model_b": "gpt-5.5",
+  "phase": "phase_11",
+  "provider": "A6api",
+  "rows": [
+    {
+      "checkpoint_id": null,
+      "classification": "SETUP_FAILURE",
+      "evidence_root": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-openhands",
+      "final_result": null,
+      "pairing": "Bifrost + OpenHands",
+      "provider_transition_id": "3bf70a71-ae3b-5980-acd4-b25b6d416e3d",
+      "status": "FAIL",
+      "task_id": null,
+      "tool_call_ids": [],
+      "workspace_id": null
+    },
+    {
+      "classification": "LICENSE_BOUNDARY_BLOCKER",
+      "evidence_root": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-mastra",
+      "pairing": "Bifrost + Mastra",
+      "status": "BLOCKED"
+    },
+    {
+      "checkpoint_id": null,
+      "classification": "SETUP_FAILURE",
+      "evidence_root": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-openhands",
+      "final_result": null,
+      "pairing": "LiteLLM + OpenHands",
+      "provider_transition_id": "293ec58b-74ec-5017-adce-ee37a80336ab",
+      "status": "FAIL",
+      "task_id": null,
+      "tool_call_ids": [],
+      "workspace_id": null
+    },
+    {
+      "classification": "LICENSE_BOUNDARY_BLOCKER",
+      "evidence_root": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-mastra",
+      "pairing": "LiteLLM + Mastra",
+      "status": "BLOCKED"
+    }
+  ],
+  "run_id": "batch-d-composition-20261001T113000Z",
+  "schema_version": "1.0",
+  "status": "PARTIAL"
+}

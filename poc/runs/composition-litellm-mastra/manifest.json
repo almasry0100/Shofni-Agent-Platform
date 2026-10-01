@@ -1,0 +1,10 @@
+{
+  "classification": "LICENSE_BOUNDARY_BLOCKER",
+  "commit": false,
+  "evidence_root": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/litellm-mastra",
+  "pairing": "LiteLLM + Mastra",
+  "push": false,
+  "run_id": "batch-d-composition-20261001T113000Z",
+  "schema_version": "1.0",
+  "status": "BLOCKED"
+}

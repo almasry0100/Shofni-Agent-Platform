@@ -1,0 +1,8 @@
+{
+  "evidence_links_validated": true,
+  "json_parse_validated": true,
+  "ndjson_parse_validated": true,
+  "schema_validated": true,
+  "schema_version": "1.0",
+  "unresolved_evidence_refs": []
+}

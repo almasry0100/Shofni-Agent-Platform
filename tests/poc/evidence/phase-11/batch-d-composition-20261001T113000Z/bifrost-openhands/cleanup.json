@@ -1,0 +1,7 @@
+{
+  "container_removed": true,
+  "network_removed": true,
+  "runtime_image_removed": true,
+  "runtime_root_removed": false,
+  "temporary_root_removed": true
+}

@@ -1,0 +1,6 @@
+{
+  "artifact": "runtime image shofni-litellm-oss-remediation:1.104.0@sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+  "artifact_sha256": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+  "source_ref": "docs/poc/candidate-lock.json",
+  "source_tree_ref": "docs/poc/candidate-lock.json"
+}

@@ -1,0 +1,8 @@
+{
+  "evidence_class": "BLOCKED_LICENSE_EVIDENCE",
+  "live_provider_calls": 0,
+  "pairing": "LiteLLM + Mastra",
+  "run_id": "batch-d-composition-20261001T113000Z",
+  "schema_version": "1.0",
+  "status": "BLOCKED"
+}

@@ -1,0 +1,72 @@
+{
+  "architecture_boundary": {
+    "candidate_replaceability": true,
+    "level2_tool_execution_backend": "CLIENT",
+    "level3_tool_execution_backend": "RUNTIME"
+  },
+  "bounded_follow_up": [
+    {
+      "candidate": "OpenHands 1.49.6 with each pinned gateway artifact",
+      "client": "OpenHands RuntimeBackend",
+      "id": "D-F1",
+      "max_reruns": 1,
+      "output": "new sanitized Phase 11 evidence and manifest",
+      "pass_criterion": "fresh runtime processes produce task/workspace continuity, new attempt, checkpoint, one correlated native read_fixture action/result, model A gpt-5.4-mini to model B gpt-5.5, final alpha, and gateway route evidence",
+      "provider": "A6api",
+      "scenario": "Bifrost + OpenHands and LiteLLM + OpenHands identical native read/checkpoint composition",
+      "stop_condition": "stop on provider/auth failure, semantic failure, or missing correlation; do not retry automatically"
+    },
+    {
+      "candidate": "Bifrost and LiteLLM",
+      "client": "Codex/Claude Code matrix clients",
+      "id": "D-F2",
+      "max_reruns": 1,
+      "output": "new Level 2 matrix rows plus sanitized raw-protocol-equivalent diagnostics",
+      "pass_criterion": "protocol and fallback result matches the acceptance scenario with exact failure classification and no duplicate side effect",
+      "provider": "A6api",
+      "scenario": "Reproduce measured Level 2 T03/T04 failures against the latest locked gateway artifacts",
+      "stop_condition": "preserve any repeated FAIL; no winner selection"
+    },
+    {
+      "candidate": "Mastra @mastra/core 1.72.0-alpha.8",
+      "client": "Mastra durable Agent",
+      "id": "D-F3",
+      "max_reruns": 0,
+      "output": "license decision record",
+      "pass_criterion": "only if a newly licensed/approved OSS path exists without ee imports; otherwise retain BLOCKED",
+      "provider": "none",
+      "scenario": "Mastra durable Agent closure review",
+      "stop_condition": "do not use, stub, or patch EE source"
+    }
+  ],
+  "decision": "NO_DECISION_YET",
+  "dependency_license_inventory": {
+    "candidates": [
+      {
+        "license": "Apache-2.0",
+        "name": "Bifrost",
+        "tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe"
+      },
+      {
+        "license": "MIT outside enterprise/",
+        "name": "LiteLLM",
+        "tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb"
+      },
+      {
+        "license": "MIT",
+        "name": "OpenHands Software Agent SDK",
+        "tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468"
+      },
+      {
+        "license": "Apache-2.0 outside ee/; BLOCKED required durable Agent closure",
+        "name": "Mastra",
+        "tree_hash": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05"
+      }
+    ],
+    "source": "docs/poc/candidate-lock.json"
+  },
+  "phase": "phase_14",
+  "production_implementation_started": false,
+  "run_id": "batch-d-phase14-20261001T120700Z",
+  "schema_version": "1.0"
+}

@@ -1,0 +1,128 @@
+{
+  "attempt_ids": [],
+  "batch": "D",
+  "batch_status": "COMPLETE_NO_DECISION",
+  "blockers": [
+    "EVIDENCE_OBSERVABILITY_FAILURE: Phase 11 executable OpenHands task evidence incomplete",
+    "LICENSE_BOUNDARY_BLOCKER: Mastra durable Agent closure reaches excluded EE auth modules",
+    "Measured Level 2 FAIL rows remain in T03/T04"
+  ],
+  "candidate_artifact_identities": {
+    "Bifrost": {
+      "artifact_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+      "source_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe"
+    },
+    "LiteLLM": {
+      "runtime_image_digest": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+      "source_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+      "wheel_sha256": "sha256:762b286fe81491f242040b14f28338da0ebf4f32fea50972b6969ee578011d52"
+    },
+    "Mastra": {
+      "source_tree_hash": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05",
+      "status": "BLOCKED",
+      "version": "@mastra/core 1.72.0-alpha.8"
+    },
+    "OpenHands": {
+      "source_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+      "version": "1.49.6"
+    }
+  },
+  "checkpoint_ids": [],
+  "cleanup_state": "VALIDATED: Batch D containers, networks, images, runtime roots, and temporary config roots absent; candidate trees and unrelated runtime roots preserved",
+  "commands_executed": [
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc",
+      "exit_code": 0,
+      "result": "71 passed"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m poc.runners.phase11_composition --run-id batch-d-composition-20261001T113000Z",
+      "exit_code": 1,
+      "result": "sealed setup failure; first attempt preserved"
+    },
+    {
+      "command": "Phase 0 candidate identity revalidation",
+      "exit_code": 0,
+      "result": "all four source tree hashes, counts, manifest hashes, and lock hashes match"
+    },
+    {
+      "command": "Phase 12-14 sealed consolidation run batch-d-phase12-20261001T121200Z",
+      "exit_code": 1,
+      "result": "Phase 12 evidence gap; Phase 13 NO_DECISION_YET; Phase 14 bounded plan"
+    }
+  ],
+  "commit": false,
+  "composition_statuses": {
+    "Bifrost + Mastra": "BLOCKED",
+    "Bifrost + OpenHands": "FAIL",
+    "LiteLLM + Mastra": "BLOCKED",
+    "LiteLLM + OpenHands": "FAIL"
+  },
+  "current_phase": "phase_14",
+  "decision_state": "NO_DECISION_YET",
+  "evidence_roots": [
+    "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z",
+    "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120000Z",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120700Z",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T121000Z",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T121200Z",
+    "tests/poc/evidence/phase-13/batch-d-phase13-20261001T120000Z",
+    "tests/poc/evidence/phase-13/batch-d-phase13-20261001T120500Z",
+    "tests/poc/evidence/phase-13/batch-d-phase13-20261001T120700Z",
+    "tests/poc/evidence/phase-13/batch-d-phase13-20261001T121000Z",
+    "tests/poc/evidence/phase-13/batch-d-phase13-20261001T121200Z",
+    "tests/poc/evidence/phase-14/batch-d-phase14-20261001T120000Z",
+    "tests/poc/evidence/phase-14/batch-d-phase14-20261001T120500Z",
+    "tests/poc/evidence/phase-14/batch-d-phase14-20261001T120700Z",
+    "tests/poc/evidence/phase-14/batch-d-phase14-20261001T121000Z",
+    "tests/poc/evidence/phase-14/batch-d-phase14-20261001T121200Z"
+  ],
+  "exit_codes": [
+    0,
+    1,
+    0,
+    1
+  ],
+  "gateway_artifact_identities": {
+    "Bifrost": "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z/provenance.json",
+    "LiteLLM": "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z/provenance.json"
+  },
+  "historical_evidence_roots_consumed": [
+    "tests/poc/evidence/phase-3/phase3-remediation-20260930T180800Z",
+    "tests/poc/evidence/phase-4/phase4-remediation-20260930T192000Z",
+    "tests/poc/evidence/phase-7/phase7-remediation-20261001T045000Z",
+    "tests/poc/evidence/phase-8/phase8-closure-20261001T035711Z",
+    "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T081124Z",
+    "tests/poc/evidence/level3/openhands/T11/level3-remediation-20261001T073136Z"
+  ],
+  "phase_11_status": "PARTIAL",
+  "phase_12_run_id": "batch-d-phase12-20261001T121200Z",
+  "phase_12_status": "FAIL",
+  "phase_13_run_id": "batch-d-phase13-20261001T121200Z",
+  "phase_13_status": "NO_DECISION_YET",
+  "phase_14_run_id": "batch-d-phase14-20261001T121200Z",
+  "phase_14_status": "COMPLETE",
+  "provider_transition_ids": [
+    "293ec58b-74ec-5017-adce-ee37a80336ab",
+    "3bf70a71-ae3b-5980-acd4-b25b6d416e3d"
+  ],
+  "push": false,
+  "run_id": "batch-d-20261001T102446Z",
+  "runtime_artifact_identities": {
+    "Mastra": "tests/poc/evidence/phase-8/phase8-closure-20261001T035711Z/closure-report.json",
+    "OpenHands": "tests/poc/evidence/phase-7/phase7-remediation-20261001T045000Z/provenance.json"
+  },
+  "selected_provider_model_routes": {
+    "model_a": "gpt-5.4-mini",
+    "model_b": "gpt-5.5",
+    "provider": "A6api",
+    "route_inventory": "docs/a6api-models.md"
+  },
+  "started_at_utc": "2026-10-01T10:24:46Z",
+  "starting_git_head": "4016b8edf8a8501ff50b35b8769aece49a3d1744",
+  "task_ids": [],
+  "tool_call_ids": [],
+  "workspace_ids": []
+}

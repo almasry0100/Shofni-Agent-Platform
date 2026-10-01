@@ -1,0 +1,135 @@
+{
+  "decision": "NO_DECISION_YET",
+  "evidence_refs": [
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T120500Z/consolidation-manifest.json",
+    "tests/poc/evidence/phase-8/phase8-closure-20261001T035711Z/closure-report.json"
+  ],
+  "live_provider_calls": 0,
+  "mandatory_failures_or_gaps": [
+    {
+      "classifications": [
+        "CLIENT_FAILURE",
+        "GATEWAY_FAILURE",
+        "MODEL_BEHAVIOR_FAILURE",
+        "SETUP_FAILURE"
+      ],
+      "status": "FAIL",
+      "test_id": "T03"
+    },
+    {
+      "classifications": [
+        "CLIENT_FAILURE",
+        "GATEWAY_FAILURE",
+        "SETUP_FAILURE"
+      ],
+      "status": "FAIL",
+      "test_id": "T04"
+    },
+    {
+      "classifications": [
+        "CLIENT_FAILURE",
+        "GATEWAY_FAILURE",
+        "SETUP_FAILURE"
+      ],
+      "status": "FAIL",
+      "test_id": "T07"
+    },
+    {
+      "classifications": [
+        "CLIENT_FAILURE",
+        "GATEWAY_FAILURE",
+        "SETUP_FAILURE"
+      ],
+      "status": "FAIL",
+      "test_id": "T08"
+    },
+    {
+      "classifications": [
+        "SETUP_FAILURE"
+      ],
+      "status": "FAIL",
+      "test_id": "COMPOSITION:Bifrost + OpenHands"
+    },
+    {
+      "classifications": [
+        "LICENSE_BOUNDARY_BLOCKER"
+      ],
+      "status": "BLOCKED",
+      "test_id": "COMPOSITION:Bifrost + Mastra"
+    },
+    {
+      "classifications": [
+        "SETUP_FAILURE"
+      ],
+      "status": "FAIL",
+      "test_id": "COMPOSITION:LiteLLM + OpenHands"
+    },
+    {
+      "classifications": [
+        "LICENSE_BOUNDARY_BLOCKER"
+      ],
+      "status": "BLOCKED",
+      "test_id": "COMPOSITION:LiteLLM + Mastra"
+    }
+  ],
+  "phase": "phase_13",
+  "planes": {
+    "composition": {
+      "blocking_cases": [
+        "COMPOSITION:Bifrost + OpenHands",
+        "COMPOSITION:Bifrost + Mastra",
+        "COMPOSITION:LiteLLM + OpenHands",
+        "COMPOSITION:LiteLLM + Mastra"
+      ],
+      "decision": "NO_DECISION_YET",
+      "mandatory_gates": [
+        "Bifrost + OpenHands",
+        "Bifrost + Mastra",
+        "LiteLLM + OpenHands",
+        "LiteLLM + Mastra"
+      ]
+    },
+    "gateway": {
+      "blocking_cases": [
+        "T03",
+        "T04",
+        "T07",
+        "T08",
+        "COMPOSITION:Bifrost + OpenHands",
+        "COMPOSITION:Bifrost + Mastra",
+        "COMPOSITION:LiteLLM + OpenHands",
+        "COMPOSITION:LiteLLM + Mastra"
+      ],
+      "candidates": [
+        "Bifrost",
+        "LiteLLM"
+      ],
+      "decision": "NO_DECISION_YET",
+      "mandatory_gates": [
+        "T01-T09",
+        "T12",
+        "composition route proof"
+      ]
+    },
+    "runtime": {
+      "blocking_cases": [
+        "T10",
+        "T11",
+        "Mastra"
+      ],
+      "candidates": [
+        "OpenHands Software Agent SDK",
+        "Mastra"
+      ],
+      "decision": "NO_DECISION_YET",
+      "mandatory_gates": [
+        "T10",
+        "T11",
+        "fresh-process identity",
+        "license boundary"
+      ]
+    }
+  },
+  "run_id": "batch-d-phase13-20261001T120500Z",
+  "schema_version": "1.0"
+}

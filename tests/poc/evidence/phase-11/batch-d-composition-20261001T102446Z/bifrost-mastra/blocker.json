@@ -1,0 +1,8 @@
+{
+  "candidate": "Mastra",
+  "classification": "LICENSE_BOUNDARY_BLOCKER",
+  "ee_source_used": false,
+  "phase8_evidence": "tests/poc/evidence/phase-8/phase8-closure-20261001T035711Z/closure-report.json",
+  "reason": "Required durable Agent import closure reaches excluded EE-licensed auth modules; no OSS-only durable runtime path satisfies Phase 8 semantics.",
+  "status": "BLOCKED"
+}
