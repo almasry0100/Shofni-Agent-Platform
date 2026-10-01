@@ -57,6 +57,7 @@ class BifrostHTTPBackend:
         self.readiness_timeout = readiness_timeout
         self.base_url = f"http://127.0.0.1:{host_port}"
         self._started = False
+        self._startup_process_result: subprocess.CompletedProcess[str] | None = None
 
     def start(self) -> None:
         if self._started:
@@ -117,7 +118,8 @@ class BifrostHTTPBackend:
             command[command.index(self.image_ref):command.index(self.image_ref)] = [
                 "--env", name if value is None else f"{name}={value}"
             ]
-        result = subprocess.run(command, capture_output=True, text=True, check=False)
+        result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8", errors="replace", check=False)
+        self._startup_process_result = result
         if result.returncode != 0:
             raise RuntimeError("Docker could not start the pinned Bifrost runtime")
         self._started = True
@@ -139,6 +141,8 @@ class BifrostHTTPBackend:
             ["docker", "stop", "--time", "10", self.container_name],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             check=False,
         )
         self._started = False
@@ -332,6 +336,8 @@ class BifrostHTTPBackend:
             ],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             check=False,
         )
         if result.returncode != 0:
@@ -355,6 +361,8 @@ class BifrostHTTPBackend:
             ["docker", "inspect", "--format", "{{.State.Running}}", self.container_name],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             check=False,
         )
         return result.returncode == 0 and result.stdout.strip() == "true"

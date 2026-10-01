@@ -51,6 +51,7 @@ class LiteLLMHTTPBackend:
         self.readiness_timeout = readiness_timeout
         self.base_url = f"http://127.0.0.1:{host_port}"
         self._started = False
+        self._startup_process_result: subprocess.CompletedProcess[str] | None = None
 
     def start(self) -> None:
         if self._started:
@@ -75,7 +76,8 @@ class LiteLLMHTTPBackend:
         ]
         for name, value in sorted(self.environment.items()):
             command[5:5] = ["--env", name if value is None else f"{name}={value}"]
-        result = subprocess.run(command, capture_output=True, text=True, check=False)
+        result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8", errors="replace", check=False)
+        self._startup_process_result = result
         if result.returncode != 0:
             raise RuntimeError("Docker could not start the pinned LiteLLM runtime")
         self._started = True
@@ -99,10 +101,12 @@ class LiteLLMHTTPBackend:
             ["docker", "stop", "--time", "10", self.container_name],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             check=False,
         )
         if self._container_exists():
-            subprocess.run(["docker", "rm", "--force", self.container_name], capture_output=True, text=True, check=False)
+            subprocess.run(["docker", "rm", "--force", self.container_name], capture_output=True, text=True, encoding="utf-8", errors="replace", check=False)
         self._started = False
         if result.returncode != 0 and self._container_exists():
             raise RuntimeError("Docker could not stop the LiteLLM runtime")
@@ -270,6 +274,8 @@ class LiteLLMHTTPBackend:
             ],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             check=False,
         )
         if result.returncode != 0:
@@ -290,7 +296,7 @@ class LiteLLMHTTPBackend:
 
     def _container_exists(self) -> bool:
         result = subprocess.run(
-            ["docker", "inspect", self.container_name], capture_output=True, text=True, check=False,
+            ["docker", "inspect", self.container_name], capture_output=True, text=True, encoding="utf-8", errors="replace", check=False,
         )
         return result.returncode == 0
 
@@ -299,6 +305,8 @@ class LiteLLMHTTPBackend:
             ["docker", "inspect", "--format", "{{.State.Running}}", self.container_name],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             check=False,
         )
         return result.returncode == 0 and result.stdout.strip() == "true"

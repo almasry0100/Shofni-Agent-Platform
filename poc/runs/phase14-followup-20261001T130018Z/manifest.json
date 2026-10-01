@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase_14_followup",
+  "run_id": "20261001T130018Z",
+  "started_at_utc": "2026-10-01T13:00:18Z",
+  "starting_head": "2889e86d472d23693c76a46460c09ed2b651d27e",
+  "starting_branch": "main",
+  "origin_main": "2889e86d472d23693c76a46460c09ed2b651d27e",
+  "authoritative_plan": "tests/poc/evidence/phase-14/batch-d-phase14-20261001T121200Z/plan.json",
+  "provider_model_ids": {
+    "provider": "A6api",
+    "d_f1": ["gpt-5.4-mini", "gpt-5.5"],
+    "d_f2_t03": "gpt-5.4-mini",
+    "d_f2_t04_plan_requirement": "A6api"
+  },
+  "gateway_artifacts": {
+    "Bifrost": {
+      "candidate_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+      "artifact": "poc/.runtime/bifrost/artifacts-remediation/bifrost-http",
+      "artifact_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5"
+    },
+    "LiteLLM": {
+      "candidate_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+      "runtime_image": "shofni-litellm-oss-remediation:1.104.0",
+      "runtime_image_digest": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+      "wheel_sha256": "sha256:762b286fe81491f242040b14f28338da0ebf4f32fea50972b6969ee578011d52"
+    }
+  },
+  "runtime_identity": {
+    "candidate": "OpenHands Software Agent SDK",
+    "version": "1.49.6",
+    "candidate_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+    "phase7_python": "3.12.10",
+    "phase7_uv": "0.11.7",
+    "phase7_distribution_count": 187,
+    "phase11_distribution_count": 232,
+    "provenance_reconciliation": "UNRESOLVED_PROVENANCE_MISMATCH"
+  },
+  "candidate_identities": {
+    "Bifrost": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+    "LiteLLM": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+    "OpenHands": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+    "Mastra": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05"
+  },
+  "attempt_ids": {
+    "d_f1": [],
+    "d_f2_t03_bifrost": "20261001T130018Z-bifrost-t03-attempt-1",
+    "d_f2_t03_litellm": "20261001T130018Z-litellm-t03-attempt-1",
+    "d_f2_t04": [],
+    "d_f3": "20261001T130018Z-mastra-license-review",
+    "historical_phase11": [
+      "batch-d-composition-20261001T102446Z",
+      "batch-d-composition-20261001T113000Z"
+    ]
+  },
+  "task_workspace_checkpoint_tool_call_ids": {
+    "d_f1": null,
+    "d_f2": {
+      "task_id": null,
+      "workspace_id": null,
+      "workspace_seed_by_candidate": {
+        "Bifrost": "20261001T130018Z-bifrost-t03-attempt-1",
+        "LiteLLM": "20261001T130018Z-litellm-t03-attempt-1"
+      },
+      "checkpoint_id": null,
+      "tool_call_ids": {
+        "Bifrost": "call_mDRIbTNNn8AlSYNllQQNFDrH",
+        "LiteLLM": "call_2poyA2jdAAxbefa5OHEJiDuG"
+      }
+    },
+    "d_f3": null
+  },
+  "evidence_roots": {
+    "d_f1": "tests/poc/evidence/phase-14-followup/D-F1/20261001T130018Z/",
+    "d_f2": "tests/poc/evidence/phase-14-followup/D-F2/20261001T130018Z/",
+    "d_f3": "tests/poc/evidence/phase-14-followup/D-F3/20261001T130018Z/",
+    "summary": "tests/poc/evidence/phase-14-followup/20261001T130018Z/summary.json"
+  },
+  "historical_evidence_roots_consumed": [
+    "tests/poc/evidence/phase-7/phase7-remediation-20261001T045000Z/",
+    "tests/poc/evidence/phase-8/phase8-closure-20261001T035711Z/",
+    "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/",
+    "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/",
+    "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/",
+    "tests/poc/evidence/level2/targeted-b-20260930T225000Z/",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T121200Z/",
+    "tests/poc/evidence/phase-13/batch-d-phase13-20261001T121200Z/"
+  ],
+  "credential_presence_only": {
+    "A6API_KEY": "PRESENT"
+  },
+  "d_f1_status": {
+    "overall": "BLOCKED",
+    "classification": "PROVENANCE_MISMATCH",
+    "bifrost_openhands": "BLOCKED",
+    "litellm_openhands": "BLOCKED",
+    "live_attempts": 0
+  },
+  "d_f2_status": {
+    "overall": "PARTIAL",
+    "t03_bifrost": "PASS_RAW_PROTOCOL_EQUIVALENT_GATEWAY_PROBE",
+    "t03_litellm": "PASS_RAW_PROTOCOL_EQUIVALENT_GATEWAY_PROBE",
+    "actual_claude_code_invoked": false,
+    "full_client_acceptance": "UNVERIFIED",
+    "t04_bifrost": "BLOCKED",
+    "t04_litellm": "BLOCKED",
+    "t04_classification": "EVIDENCE_DESIGN_CONFLICT",
+    "gateway_request_attempts": 4,
+    "upstream_provider_http_telemetry": "NOT_OBSERVED"
+  },
+  "d_f3_status": {
+    "overall": "BLOCKED",
+    "classification": "LICENSE_BOUNDARY_BLOCKER"
+  },
+  "cleanup_state": {
+    "status": "PASS",
+    "followup_containers": [],
+    "followup_networks": [],
+    "followup_images": [],
+    "followup_runtime_roots": [],
+    "preexisting_pinned_images_removed": false,
+    "temporary_configs_removed": true,
+    "ephemeral_ports_released": true
+  },
+  "candidate_hash_validation": {
+    "Bifrost": {"actual": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe", "matches_phase0": true, "included_file_count": 5172},
+    "LiteLLM": {"actual": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb", "matches_phase0": true, "included_file_count": 12075},
+    "OpenHands": {"actual": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468", "matches_phase0": true, "included_file_count": 1796},
+    "Mastra": {"actual": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05", "matches_phase0": true, "included_file_count": 18938}
+  },
+  "final_decision_delta": "NO_DECISION_YET. T03 raw gateway protocol probes passed, but D-F1 provenance is unresolved, T04 conflicts with its committed contract, and Mastra remains license-blocked.",
+  "commit": false,
+  "push": false
+}

@@ -21,6 +21,7 @@ import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
 
 from poc.adapters.bifrost_http import BifrostHTTPBackend
 from poc.adapters.litellm_http import LiteLLMHTTPBackend
@@ -60,6 +61,51 @@ def _run(command: list[str], *, check: bool = False, env: dict[str, str] | None 
     if check and result.returncode != 0:
         raise RuntimeError(f"command failed: {command[0]}")
     return result
+
+
+def _tail_text(value: str, limit: int = 4000, root: Path | None = None) -> str:
+    result = str(redact_value(value[-limit:]))
+    if root is not None:
+        for private_root in (root.resolve(), root.parent.resolve(), Path.home().resolve()):
+            result = re.sub(re.escape(str(private_root)), "<LOCAL_PATH>", result, flags=re.IGNORECASE)
+    return result
+
+
+def _docker_bind_mount(source: Path, target: str, *, readonly: bool = False) -> str:
+    mount = f"type=bind,source={source.resolve()},target={target}"
+    return mount + (",readonly" if readonly else "")
+
+
+def _matches_model_route(model_id: object, requested_model: str) -> bool:
+    if not isinstance(model_id, str):
+        return False
+    return model_id == requested_model or model_id.rsplit("/", 1)[-1] == requested_model
+
+
+def _route_probe(models: list[dict[str, Any]], requested_models: tuple[str, ...]) -> dict[str, Any]:
+    model_ids = sorted(str(item["id"]) for item in models if isinstance(item.get("id"), str) and item["id"])
+    missing = [requested for requested in requested_models if not any(_matches_model_route(item.get("id"), requested) for item in models)]
+    return {
+        "status": "PASS" if not missing else "FAIL",
+        "model_ids": model_ids,
+        "requested_routes": list(requested_models),
+        "missing_routes": missing,
+        "selected_routes_present": not missing,
+    }
+
+
+def _validate_runtime_gateway_url(url: str, container: str, internal_port: int) -> None:
+    parsed = urlsplit(url)
+    if parsed.scheme != "http" or parsed.hostname != container or parsed.port != internal_port:
+        raise ValueError("OpenHands runtime must use the gateway container DNS name and internal port")
+
+
+def _process_diagnostic(result: subprocess.CompletedProcess[str], root: Path | None = None) -> dict[str, Any]:
+    return {
+        "exit_code": result.returncode,
+        "stdout_tail": _tail_text(result.stdout or "", root=root),
+        "stderr_tail": _tail_text(result.stderr or "", root=root),
+    }
 
 
 def _stop_container(name: str) -> None:
@@ -162,9 +208,30 @@ def _start_gateway(root: Path, gateway: str, run_id: str, temp_root: Path, netwo
     try:
         backend.start()
     except BaseException as error:
-        details = _docker_logs(container)
+        startup_result = getattr(backend, "_startup_process_result", None)
+        diagnostics = _process_diagnostic(startup_result, root) if startup_result is not None else {
+            "exit_code": None,
+            "stdout_tail": "",
+            "stderr_tail": "",
+        }
+        diagnostics["gateway_readiness"] = "FAIL"
+        try:
+            diagnostics["container_logs_tail"] = _tail_text(_docker_logs(container), 8000, root)
+        except Exception as log_error:
+            diagnostics["container_logs_error"] = type(log_error).__name__
+        inspect = _run(["docker", "inspect", "--format", "{{.State.Status}}|{{.State.ExitCode}}", container])
+        if inspect.returncode == 0:
+            state, _, exit_code = inspect.stdout.strip().partition("|")
+            diagnostics["container_state"] = state
+            diagnostics["container_exit_code"] = int(exit_code) if exit_code.isdigit() else None
+        else:
+            diagnostics["container_state"] = "UNAVAILABLE"
+            diagnostics["container_exit_code"] = None
         _stop_container(container)
-        raise RuntimeError(f"gateway startup failed: {type(error).__name__}: {details[-4000:]}") from error
+        _run(["docker", "network", "rm", network])
+        wrapped = RuntimeError(f"gateway startup failed: {type(error).__name__}")
+        wrapped.startup_diagnostics = diagnostics
+        raise wrapped from error
     internal_port = 8080 if gateway == "Bifrost" else 4000
     internal_url = f"http://{container}:{internal_port}{base_url_suffix}"
     return backend, network, container, backend.base_url + base_url_suffix, internal_url
@@ -189,9 +256,9 @@ def _run_openhands(root: Path, runtime_image: str, network: str, runtime_root: P
     env.pop("A6API_KEY", None)
     env.pop("A6API_BASE_URL", None)
     env["PYTHONPATH"] = "/workspace"
-    mounted_evidence = f"type=bind,source={evidence_root},target=/evidence"
-    mounted_runtime = f"type=bind,source={runtime_root},target=/runtime"
-    source_mount = f"type=bind,source={root},target=/workspace,readonly"
+    mounted_evidence = _docker_bind_mount(evidence_root, "/evidence")
+    mounted_runtime = _docker_bind_mount(runtime_root, "/runtime")
+    source_mount = _docker_bind_mount(root, "/workspace", readonly=True)
     command = ["docker", "run", "--rm", "--network", network, "--platform", "linux/amd64", "--mount", source_mount, "--mount", mounted_evidence, "--mount", mounted_runtime, "--env", "PYTHONPATH=/workspace", "--env", f"SHOFNI_ATTEMPT_ID={attempt_id}", runtime_image, "/opt/openhands/bin/python", "-m", "poc.runners.openhands_level3_live"]
     first_command = command + ["--stage", "model-a", "--runtime-root", "/runtime", "--evidence-root", "/evidence", "--model-a", MODEL_A, "--base-url", gateway_url, "--gateway-mode"]
     first = subprocess.run(
@@ -199,12 +266,7 @@ def _run_openhands(root: Path, runtime_image: str, network: str, runtime_root: P
         env=env, capture_output=True, text=True, encoding="utf-8", errors="replace", check=False, timeout=300,
     )
     diagnostics: dict[str, Any] = {
-        "model_a": {
-            "command": first_command,
-            "exit_code": first.returncode,
-            "stdout": first.stdout,
-            "stderr": first.stderr,
-        },
+        "model_a": _process_diagnostic(first, root),
     }
     if not (evidence_root / "model-a-state.json").is_file():
         return first.returncode, -1, {
@@ -217,12 +279,7 @@ def _run_openhands(root: Path, runtime_image: str, network: str, runtime_root: P
         second_command,
         env=env, capture_output=True, text=True, encoding="utf-8", errors="replace", check=False, timeout=300,
     )
-    diagnostics["restore"] = {
-        "command": second_command,
-        "exit_code": second.returncode,
-        "stdout": second.stdout,
-        "stderr": second.stderr,
-    }
+    diagnostics["restore"] = _process_diagnostic(second, root)
     if not (evidence_root / "restored-state.json").is_file():
         return first.returncode, second.returncode, {
             "error_type": "RuntimeSetupFailure",
@@ -277,28 +334,46 @@ def _pair(root: Path, evidence_root: Path, gateway: str, run_id: str) -> dict[st
         dockerfile = root / "poc/.runtime/openhands/phase11-env/Dockerfile"
         build = _run(["docker", "build", "--platform", "linux/amd64", "--file", str(dockerfile), "--tag", runtime_image, str(candidate_root)])
         if build.returncode != 0:
-            setup_context["runtime_build"] = {"exit_code": build.returncode, "stdout": build.stdout, "stderr": build.stderr}
+            setup_context["runtime_build"] = _process_diagnostic(build, root)
             raise RuntimeError("pinned OpenHands environment build failed")
-        setup_context["runtime_build"] = {"exit_code": build.returncode, "stdout": build.stdout, "stderr": build.stderr}
-        gateway_obj, network, container, gateway_url, internal_gateway_url = _start_gateway(root, gateway, run_id, temp_parent, network)
+        setup_context["runtime_build"] = _process_diagnostic(build, root)
+        try:
+            gateway_obj, network, container, gateway_url, internal_gateway_url = _start_gateway(root, gateway, run_id, temp_parent, network)
+            setup_context["gateway_readiness"] = {"status": "PASS", "container": container}
+            startup_result = getattr(gateway_obj, "_startup_process_result", None)
+            setup_context["gateway_startup"] = _process_diagnostic(startup_result, root) if startup_result is not None else {
+                "exit_code": None,
+                "stdout_tail": "",
+                "stderr_tail": "",
+            }
+        except Exception as error:
+            setup_context["gateway_readiness"] = {"status": "FAIL", "error_type": type(error).__name__, "error": _tail_text(str(error), root=root)}
+            if hasattr(error, "startup_diagnostics"):
+                setup_context["gateway_startup"] = error.startup_diagnostics
+            raise
         setup_context.update({"container": container, "host_gateway_url": gateway_url, "runtime_gateway_url": internal_gateway_url})
         try:
             listed_models = gateway_obj.list_models()
-            setup_context["gateway_probe"] = {
-                "status": "PASS",
-                "model_ids": sorted(str(item.get("id")) for item in listed_models if isinstance(item, dict) and item.get("id")),
-                "selected_routes_present": all(any(item.get("id") == model or str(item.get("id", "")).rsplit("/", 1)[-1] == model for item in listed_models if isinstance(item, dict)) for model in (MODEL_A, MODEL_B)),
-            }
+            setup_context["gateway_probe"] = _route_probe(listed_models, (MODEL_A, MODEL_B))
         except Exception as error:
-            setup_context["gateway_probe"] = {"status": "FAIL", "error_type": type(error).__name__, "error": str(error)}
+            setup_context["gateway_probe"] = {"status": "FAIL", "error_type": type(error).__name__, "error": _tail_text(str(error), root=root)}
             raise
+        if setup_context["gateway_probe"]["status"] != "PASS":
+            raise RuntimeError("selected A6api model routes are unavailable at the gateway")
+        internal_port = 8080 if gateway == "Bifrost" else 4000
+        _validate_runtime_gateway_url(internal_gateway_url, container, internal_port)
         try:
             first_exit, second_exit, live = _run_openhands(root, runtime_image, network, runtime_root, pair_root, internal_gateway_url, f"{run_id}-{gateway.lower()}-openhands")
         except Exception as error:
-            first_exit, second_exit, live = -1, -1, {"error_type": type(error).__name__, "error": str(error), "process_diagnostics": {}}
-            setup_context["runtime_execution"] = {"error_type": type(error).__name__, "error": str(error)}
+            first_exit, second_exit, live = -1, -1, {"error_type": type(error).__name__, "error": _tail_text(str(error), root=root), "process_diagnostics": {}}
+            setup_context["runtime_execution"] = {"error_type": type(error).__name__, "error": _tail_text(str(error), root=root)}
         if live.get("error_type"):
             setup_context["runtime_execution"] = {"error_type": live.get("error_type"), "error": live.get("error"), "model_a_exit_code": first_exit, "restore_exit_code": second_exit}
+        elif live.get("process_diagnostics"):
+            setup_context["runtime_startup"] = {
+                stage: {"status": "PASS" if diagnostic.get("exit_code") == 0 else "FAIL", **diagnostic}
+                for stage, diagnostic in live["process_diagnostics"].items()
+            }
         if live.get("process_diagnostics"):
             _write(pair_root / "process-diagnostics.json", live["process_diagnostics"])
         if "task_id" in live:
@@ -347,7 +422,7 @@ def _pair(root: Path, evidence_root: Path, gateway: str, run_id: str) -> dict[st
         })
         _write(pair_root / "setup.json", setup_context)
         if container:
-            _write(pair_root / "gateway-log-tail.json", {"gateway": gateway, "logs": _docker_logs(container)[-8000:]})
+            _write(pair_root / "gateway-log-tail.json", {"gateway": gateway, "logs": _tail_text(_docker_logs(container), 8000, root)})
         _write(pair_root / "gateway-provenance.json", {"source_ref": "docs/poc/candidate-lock.json", "artifact": BIFROST_ARTIFACT if gateway == "Bifrost" else "runtime image " + LITELLM_IMAGE, "artifact_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5" if gateway == "Bifrost" else "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280", "source_tree_ref": "docs/poc/candidate-lock.json"})
         _write(pair_root / "runtime-provenance.json", {"source_ref": "tests/poc/evidence/phase-7/phase7-remediation-20261001T045000Z/provenance.json", "candidate": "OpenHands Software Agent SDK", "version": "1.49.6", "source_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468", "python_image_digest": "sha256:97983fa8cc88343512862c62307159a82261c3528dc025f79e5a3f7af43e50b4", "uv_image_digest": "sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8", "runtime_image": runtime_image})
         _write(pair_root / "result.json", {"status": status, "classification": classification, "provider": "A6api", "model_a": MODEL_A, "model_b": MODEL_B, "expected_result": "alpha", "final_result": live.get("final_result"), "gateway": gateway, "runtime": "OpenHands"})
@@ -358,7 +433,7 @@ def _pair(root: Path, evidence_root: Path, gateway: str, run_id: str) -> dict[st
     except BaseException as error:
         diagnostic = {
             "error_type": type(error).__name__,
-            "error": str(error),
+            "error": _tail_text(str(error), root=root),
             "setup_context": setup_context,
         }
         _write(pair_root / "setup.json", diagnostic)

@@ -1,0 +1,250 @@
+{
+  "actual_claude_code_invoked": false,
+  "attempt_id": "20261001T130018Z-bifrost-t03-attempt-1",
+  "candidate": "Bifrost",
+  "candidate_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+  "claim_limitations": [
+    "This probes the Anthropic Messages gateway boundary and continuation flow.",
+    "It does not prove actual Claude Code parsing or client-side schema acceptance.",
+    "The A6api route and OpenAI Responses path are configured; upstream HTTP telemetry is not directly observed."
+  ],
+  "claude_code_client_validation": "UNVERIFIED",
+  "cleanup": {
+    "api_port_released": true,
+    "candidate_container_removed": true,
+    "errors": [],
+    "network_removed": true,
+    "temporary_config_removed": true
+  },
+  "client": "Claude Code",
+  "client_execution_backend": "CLIENT",
+  "client_execution_mode": "RAW_PROTOCOL_EQUIVALENT_GATEWAY_PROBE",
+  "client_version": "2.1.278",
+  "configured_upstream_route": {
+    "canonical_translation": "Anthropic Messages -> gateway canonical request -> OpenAI Responses",
+    "client_protocol": "Anthropic Messages",
+    "configured_retry_count": 0,
+    "gateway_endpoint": "/anthropic/v1/messages",
+    "provider": "A6api",
+    "provider_base_url": "https://api.a6api.com",
+    "provider_path": "/v1/responses",
+    "provider_protocol": "OpenAI Responses",
+    "provider_route": "gpt-5.4-mini"
+  },
+  "continuation_request": {
+    "max_tokens": 256,
+    "messages": [
+      {
+        "content": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+        "role": "user"
+      },
+      {
+        "content": [
+          {
+            "id": "call_mDRIbTNNn8AlSYNllQQNFDrH",
+            "input": {
+              "path": "input/alpha.txt"
+            },
+            "name": "read_fixture",
+            "type": "tool_use"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "content": [
+          {
+            "content": "alpha fixture input\n",
+            "tool_use_id": "call_mDRIbTNNn8AlSYNllQQNFDrH",
+            "type": "tool_result"
+          }
+        ],
+        "role": "user"
+      }
+    ],
+    "model": "gpt-5.4-mini",
+    "protocol": "messages",
+    "tool_choice": {
+      "type": "auto"
+    },
+    "tools": [
+      {
+        "description": "Read one fixture file.",
+        "input_schema": {
+          "properties": {
+            "path": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "path"
+          ],
+          "type": "object"
+        },
+        "name": "read_fixture"
+      }
+    ]
+  },
+  "continuation_response": {
+    "content": [
+      {
+        "text": "`input/alpha.txt` contains:\n\n```text\nalpha fixture input\n```",
+        "type": "text"
+      }
+    ],
+    "id": "resp_0bf825fb34819f4b016abe64c831f087d09fe858e03c726567",
+    "model": "gpt-5.4-mini",
+    "role": "assistant",
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 3584,
+      "input_tokens": 887,
+      "output_tokens": 20,
+      "service_tier": "standard"
+    }
+  },
+  "continuation_tool_call_count": 0,
+  "failure_class": null,
+  "final_response": {
+    "response_id": "resp_0bf825fb34819f4b016abe64c831f087d09fe858e03c726567",
+    "stop_reason": "end_turn",
+    "text": "`input/alpha.txt` contains:\n\n```text\nalpha fixture input\n```"
+  },
+  "gateway_artifact_identity": {
+    "binary_path": "poc/.runtime/bifrost/artifacts-remediation/bifrost-http",
+    "binary_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+    "container_image": "docker.io/library/golang:1.27.0-bookworm@sha256:ba5ef6614ca131b80a635fc6a7b715d9ee8a7f333debdbb81afb68259c7d48d4"
+  },
+  "gateway_http_statuses": [
+    200,
+    200
+  ],
+  "gateway_identity": {
+    "container": "shofni-df2-gateway-20261001t130018z-bifrost",
+    "inbound_model_id": "gpt-5.4-mini",
+    "network": "shofni-df2-20261001t130018z-bifrost",
+    "readiness": "PASS"
+  },
+  "gateway_request_attempts": 2,
+  "initial_response": {
+    "content": [
+      {
+        "id": "call_mDRIbTNNn8AlSYNllQQNFDrH",
+        "input": {
+          "path": "input/alpha.txt"
+        },
+        "name": "read_fixture",
+        "type": "tool_use"
+      }
+    ],
+    "id": "resp_0e4ce8d957a6f6d4016abe64becb6887d0839e7f412167aaa5",
+    "model": "gpt-5.4-mini",
+    "role": "assistant",
+    "stop_reason": "tool_use",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "input_tokens": 4435,
+      "output_tokens": 21,
+      "service_tier": "standard"
+    }
+  },
+  "model_id": "gpt-5.4-mini",
+  "native_tool_calls": [
+    {
+      "id": "call_mDRIbTNNn8AlSYNllQQNFDrH",
+      "input": {
+        "path": "input/alpha.txt"
+      },
+      "name": "read_fixture",
+      "type": "tool_use"
+    }
+  ],
+  "normalized_request": {
+    "max_tokens": 256,
+    "messages": [
+      {
+        "content": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+        "role": "user"
+      }
+    ],
+    "model": "gpt-5.4-mini",
+    "protocol": "messages",
+    "tool_choice": {
+      "name": "read_fixture",
+      "type": "tool"
+    },
+    "tools": [
+      {
+        "description": "Read one fixture file.",
+        "input_schema": {
+          "properties": {
+            "path": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "path"
+          ],
+          "type": "object"
+        },
+        "name": "read_fixture"
+      }
+    ]
+  },
+  "provider": "A6api",
+  "provider_key_presence": "PRESENT",
+  "route_probe": {
+    "missing_routes": [],
+    "model_ids": [
+      "openai/gpt-5.4-mini"
+    ],
+    "requested_routes": [
+      "gpt-5.4-mini"
+    ],
+    "selected_routes_present": true,
+    "status": "PASS"
+  },
+  "run_id": "20261001T130018Z",
+  "schema_version": "1.0",
+  "started_at_utc": "2026-10-01T13:48:36.862324Z",
+  "status": "PASS",
+  "test_id": "T03",
+  "tool_arguments": {
+    "path": "input/alpha.txt"
+  },
+  "tool_call_ids": [
+    "call_mDRIbTNNn8AlSYNllQQNFDrH"
+  ],
+  "tool_execution_count": 1,
+  "tool_name": "read_fixture",
+  "tool_result_mapping": {
+    "result": "alpha fixture input\n",
+    "tool_use_id": "call_mDRIbTNNn8AlSYNllQQNFDrH"
+  },
+  "tool_schema": {
+    "properties": {
+      "path": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "path"
+    ],
+    "type": "object"
+  },
+  "upstream_request_observability": "NOT_INSTRUMENTED_BY_GATEWAY_HTTP_CLIENT"
+}

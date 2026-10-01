@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "followup_id": "D-F3",
+  "run_id": "20261001T130018Z",
+  "candidate": "Mastra @mastra/core 1.72.0-alpha.8",
+  "candidate_tree_hash": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05",
+  "lockfile_sha256": "sha256:0eab30f28bb2ccd340090be696f6b3ba730ec3dae3203a17ee31082bbd7a4ba3",
+  "status": "BLOCKED",
+  "classification": "LICENSE_BOUNDARY_BLOCKER",
+  "legitimate_oss_only_path_satisfies_all_phase_8_semantics": false,
+  "required_semantics": [
+    "Agent event/state behavior",
+    "durable Agent recovery",
+    "run registry",
+    "snapshots and recovery",
+    "fresh-process recovery",
+    "model switch after recovery"
+  ],
+  "source_closure": [
+    {
+      "file": "packages/core/src/agent/durable/durable-agent.ts",
+      "edge": "DurableAgent extends Agent"
+    },
+    {
+      "file": "packages/core/src/agent/agent.ts",
+      "edge": "public Agent imports MastraFGAPermissions and ActorSignal from ../auth/ee; also dynamically imports ../auth/ee/fga-check"
+    },
+    {
+      "file": "packages/core/src/agent/durable/types.ts",
+      "edge": "durable types import ActorSignal from ../../auth/ee/fga-check"
+    },
+    {
+      "file": "LICENSE.md",
+      "edge": "content under any directory named ee/ is licensed under ee/LICENSE"
+    },
+    {
+      "file": "ee/LICENSE",
+      "edge": "enterprise source-available license; not open source"
+    }
+  ],
+  "ee_source_used": false,
+  "ee_imports_stubbed_patched_or_aliased": false,
+  "prebuilt_artifact_with_ee_closure_used": false,
+  "provider_calls": 0,
+  "execution_reruns": 0,
+  "evidence_roots": [
+    "tests/poc/evidence/phase-8/phase8-closure-20261001T035711Z/closure-report.json",
+    "tests/poc/evidence/phase-8/batch-c-20260930T224748Z/result.json"
+  ],
+  "decision": "Retain BLOCKED / LICENSE_BOUNDARY_BLOCKER. No newly licensed OSS durable Agent path satisfying all Phase 8 semantics was found in the exact pinned source."
+}

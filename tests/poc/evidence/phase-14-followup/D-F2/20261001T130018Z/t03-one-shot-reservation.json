@@ -1,0 +1,10 @@
+{
+  "attempt_ids": [
+    "20261001T130018Z-bifrost-t03-attempt-1",
+    "20261001T130018Z-litellm-t03-attempt-1"
+  ],
+  "reserved_at_utc": "2026-10-01T13:48:36.862324Z",
+  "run_id": "20261001T130018Z",
+  "schema_version": "1.0",
+  "scope": "one T03 gateway-protocol attempt per locked candidate"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "followup_id": "D-F2",
+  "run_id": "20261001T130018Z",
+  "scenario": "T04",
+  "pairings": [
+    {"candidate": "Bifrost", "status": "BLOCKED", "classification": "EVIDENCE_DESIGN_CONFLICT"},
+    {"candidate": "LiteLLM", "status": "BLOCKED", "classification": "EVIDENCE_DESIGN_CONFLICT"}
+  ],
+  "phase14_plan_requirements": {
+    "provider": "A6api",
+    "clients": ["Codex", "Claude Code"]
+  },
+  "authoritative_t04_contract": {
+    "client": "OpenCode",
+    "client_protocol": "OpenAI-compatible Chat Completions",
+    "provider": "RelayRouter",
+    "required_behavior": "chat-only action intent -> Shofni emulation -> one structured OpenCode tool call -> tool result -> final answer",
+    "source": "docs/06-poc-acceptance-scenarios.md"
+  },
+  "executable_as_written": false,
+  "provider_calls": 0,
+  "candidate_processes_started": 0,
+  "relayrouter_substitution_used": false,
+  "historical_evidence": {
+    "a6api_opencode_rows": "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/",
+    "a6api_opencode_result": "PASS/NATIVE greeting with no tool call; does not reproduce T04 emulation",
+    "relayrouter_opencode_rows": "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/",
+    "relayrouter_failure": "GATEWAY_FAILURE; HTTP 530"
+  },
+  "resolution": "Do not alter the committed T04 acceptance scenario or substitute RelayRouter for the Phase 14 A6api constraint. Preserve T04 as blocked until the plan and acceptance contract are reconciled in a separately authorized scope."
+}

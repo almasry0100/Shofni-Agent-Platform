@@ -1,0 +1,240 @@
+{
+  "actual_claude_code_invoked": false,
+  "attempt_id": "20261001T130018Z-litellm-t03-attempt-1",
+  "candidate": "LiteLLM",
+  "candidate_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+  "claim_limitations": [
+    "This probes the Anthropic Messages gateway boundary and continuation flow.",
+    "It does not prove actual Claude Code parsing or client-side schema acceptance.",
+    "The A6api route and OpenAI Responses path are configured; upstream HTTP telemetry is not directly observed."
+  ],
+  "claude_code_client_validation": "UNVERIFIED",
+  "cleanup": {
+    "api_port_released": true,
+    "candidate_container_removed": true,
+    "errors": [],
+    "network_removed": true,
+    "temporary_config_removed": true
+  },
+  "client": "Claude Code",
+  "client_execution_backend": "CLIENT",
+  "client_execution_mode": "RAW_PROTOCOL_EQUIVALENT_GATEWAY_PROBE",
+  "client_version": "2.1.278",
+  "configured_upstream_route": {
+    "canonical_translation": "Anthropic Messages -> gateway canonical request -> OpenAI Responses",
+    "client_protocol": "Anthropic Messages",
+    "configured_retry_count": 0,
+    "gateway_endpoint": "/v1/messages",
+    "provider": "A6api",
+    "provider_base_url": "https://api.a6api.com",
+    "provider_path": "/v1/responses",
+    "provider_protocol": "OpenAI Responses",
+    "provider_route": "gpt-5.4-mini"
+  },
+  "continuation_request": {
+    "max_tokens": 256,
+    "messages": [
+      {
+        "content": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+        "role": "user"
+      },
+      {
+        "content": [
+          {
+            "id": "call_2poyA2jdAAxbefa5OHEJiDuG",
+            "input": {
+              "path": "input/alpha.txt"
+            },
+            "name": "read_fixture",
+            "type": "tool_use"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "content": [
+          {
+            "content": "alpha fixture input\n",
+            "tool_use_id": "call_2poyA2jdAAxbefa5OHEJiDuG",
+            "type": "tool_result"
+          }
+        ],
+        "role": "user"
+      }
+    ],
+    "model": "a6api-anthropic",
+    "protocol": "messages",
+    "tool_choice": {
+      "type": "auto"
+    },
+    "tools": [
+      {
+        "description": "Read one fixture file.",
+        "input_schema": {
+          "properties": {
+            "path": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "path"
+          ],
+          "type": "object"
+        },
+        "name": "read_fixture"
+      }
+    ]
+  },
+  "continuation_response": {
+    "content": [
+      {
+        "text": "The fixture contains:\n\n```text\nalpha fixture input\n```",
+        "type": "text"
+      }
+    ],
+    "id": "resp_bGl0ZWxsbTpjdXN0b21fbGxtX3Byb3ZpZGVyOm9wZW5haTttb2RlbF9pZDpmODcxNmVlMDBjMWI1Mjg0MWVjYmNjODJhNGI0ZWM2YTY5ZDlkMmUzZjJhNTVlNjhjYmVlOWE4NDUyYmVlNjczO3Jlc3BvbnNlX2lkOnJlc3BfMDg0YmE5NWI0M2ZhNmYxNjAxNmFiZTY0ZTA1MDcwODdkMGI2ODVjYjhmYjgxYTY5Mjg=",
+    "model": "a6api-anthropic",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_read_input_tokens": 3584,
+      "input_tokens": 887,
+      "output_tokens": 16
+    }
+  },
+  "continuation_tool_call_count": 0,
+  "failure_class": null,
+  "final_response": {
+    "response_id": "resp_bGl0ZWxsbTpjdXN0b21fbGxtX3Byb3ZpZGVyOm9wZW5haTttb2RlbF9pZDpmODcxNmVlMDBjMWI1Mjg0MWVjYmNjODJhNGI0ZWM2YTY5ZDlkMmUzZjJhNTVlNjhjYmVlOWE4NDUyYmVlNjczO3Jlc3BvbnNlX2lkOnJlc3BfMDg0YmE5NWI0M2ZhNmYxNjAxNmFiZTY0ZTA1MDcwODdkMGI2ODVjYjhmYjgxYTY5Mjg=",
+    "stop_reason": "end_turn",
+    "text": "The fixture contains:\n\n```text\nalpha fixture input\n```"
+  },
+  "gateway_artifact_identity": {
+    "runtime_image": "shofni-litellm-oss-remediation:1.104.0@sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+    "wheel_path": "poc/.runtime/litellm/artifacts/litellm-1.104.0-cp310-abi3-manylinux_2_34_x86_64.whl",
+    "wheel_sha256": "sha256:762b286fe81491f242040b14f28338da0ebf4f32fea50972b6969ee578011d52"
+  },
+  "gateway_http_statuses": [
+    200,
+    200
+  ],
+  "gateway_identity": {
+    "container": "shofni-df2-gateway-20261001t130018z-litellm",
+    "inbound_model_id": "a6api-anthropic",
+    "network": "shofni-df2-20261001t130018z-litellm",
+    "readiness": "PASS"
+  },
+  "gateway_request_attempts": 2,
+  "initial_response": {
+    "content": [
+      {
+        "id": "call_2poyA2jdAAxbefa5OHEJiDuG",
+        "input": {
+          "path": "input/alpha.txt"
+        },
+        "name": "read_fixture",
+        "type": "tool_use"
+      }
+    ],
+    "id": "resp_bGl0ZWxsbTpjdXN0b21fbGxtX3Byb3ZpZGVyOm9wZW5haTttb2RlbF9pZDpmODcxNmVlMDBjMWI1Mjg0MWVjYmNjODJhNGI0ZWM2YTY5ZDlkMmUzZjJhNTVlNjhjYmVlOWE4NDUyYmVlNjczO3Jlc3BvbnNlX2lkOnJlc3BfMDM4NWY2OTA4YWNhZTdkMTAxNmFiZTY0ZGQzMjY0ODdkMDhiMmQ0NTVlNTc4MGIzODg=",
+    "model": "a6api-anthropic",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "tool_use",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_read_input_tokens": 3456,
+      "input_tokens": 979,
+      "output_tokens": 21
+    }
+  },
+  "model_id": "gpt-5.4-mini",
+  "native_tool_calls": [
+    {
+      "id": "call_2poyA2jdAAxbefa5OHEJiDuG",
+      "input": {
+        "path": "input/alpha.txt"
+      },
+      "name": "read_fixture",
+      "type": "tool_use"
+    }
+  ],
+  "normalized_request": {
+    "max_tokens": 256,
+    "messages": [
+      {
+        "content": "Use the read_fixture tool exactly once with path input/alpha.txt.",
+        "role": "user"
+      }
+    ],
+    "model": "a6api-anthropic",
+    "protocol": "messages",
+    "tool_choice": {
+      "name": "read_fixture",
+      "type": "tool"
+    },
+    "tools": [
+      {
+        "description": "Read one fixture file.",
+        "input_schema": {
+          "properties": {
+            "path": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "path"
+          ],
+          "type": "object"
+        },
+        "name": "read_fixture"
+      }
+    ]
+  },
+  "provider": "A6api",
+  "provider_key_presence": "PRESENT",
+  "route_probe": {
+    "missing_routes": [],
+    "model_ids": [
+      "a6api-anthropic"
+    ],
+    "requested_routes": [
+      "a6api-anthropic"
+    ],
+    "selected_routes_present": true,
+    "status": "PASS"
+  },
+  "run_id": "20261001T130018Z",
+  "schema_version": "1.0",
+  "started_at_utc": "2026-10-01T13:49:00.983755Z",
+  "status": "PASS",
+  "test_id": "T03",
+  "tool_arguments": {
+    "path": "input/alpha.txt"
+  },
+  "tool_call_ids": [
+    "call_2poyA2jdAAxbefa5OHEJiDuG"
+  ],
+  "tool_execution_count": 1,
+  "tool_name": "read_fixture",
+  "tool_result_mapping": {
+    "result": "alpha fixture input\n",
+    "tool_use_id": "call_2poyA2jdAAxbefa5OHEJiDuG"
+  },
+  "tool_schema": {
+    "properties": {
+      "path": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "path"
+    ],
+    "type": "object"
+  },
+  "upstream_request_observability": "NOT_INSTRUMENTED_BY_GATEWAY_HTTP_CLIENT"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20261001T130018Z",
+  "pairing": "LiteLLM + OpenHands",
+  "status": "BLOCKED",
+  "classification": "PROVENANCE_MISMATCH",
+  "model_a": "gpt-5.4-mini",
+  "model_b": "gpt-5.5",
+  "gateway_artifact_sha256": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+  "provider_route": "A6api",
+  "runtime_candidate_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+  "runtime_provenance_evidence": "tests/poc/evidence/phase-14-followup/D-F1/20261001T130018Z/provenance-review.json",
+  "provider_calls": 0,
+  "runtime_started": false,
+  "task_id": null,
+  "workspace_id": null,
+  "checkpoint_id": null,
+  "tool_call_ids": [],
+  "cleanup_required": false
+}

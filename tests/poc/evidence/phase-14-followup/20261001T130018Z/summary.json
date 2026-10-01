@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase14_followup",
+  "run_id": "20261001T130018Z",
+  "overall_status": "PARTIAL",
+  "starting_head": "2889e86d472d23693c76a46460c09ed2b651d27e",
+  "branch": "main",
+  "starting_worktree_clean": true,
+  "d_f1": {
+    "overall": "BLOCKED",
+    "classification": "PROVENANCE_MISMATCH",
+    "bifrost_openhands": "BLOCKED",
+    "litellm_openhands": "BLOCKED",
+    "runtime_candidate": "OpenHands Software Agent SDK 1.49.6",
+    "runtime_candidate_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+    "phase7_distribution_count": 187,
+    "phase11_distribution_count": 232,
+    "additional_phase11_distributions": 45,
+    "execution_closure_equivalence_proven": false,
+    "intended_topologies_not_executed": [
+      "OpenHands RuntimeBackend -> Bifrost -> A6api",
+      "OpenHands RuntimeBackend -> LiteLLM -> A6api"
+    ],
+    "model_a": "gpt-5.4-mini",
+    "model_b": "gpt-5.5",
+    "provider_requests": 0,
+    "runtime_processes_started": 0,
+    "harness_controls": {
+      "windows_bind_mounts": "PASS_OFFLINE_TESTED",
+      "gateway_dns_internal_port": "PASS_OFFLINE_TESTED",
+      "bifrost_route_namespace_and_fail_fast": "PASS_OFFLINE_TESTED",
+      "utf8_safe_capture_and_sanitized_bounded_diagnostics": "PASS_OFFLINE_TESTED",
+      "gateway_startup_and_container_readiness_diagnostics": "IMPLEMENTED_NOT_LIVE_EXECUTED"
+    },
+    "evidence": "tests/poc/evidence/phase-14-followup/D-F1/20261001T130018Z/provenance-review.json"
+  },
+  "d_f2": {
+    "overall": "PARTIAL",
+    "provider": "A6api",
+    "model_id": "gpt-5.4-mini",
+    "t03_execution_mode": "RAW_PROTOCOL_EQUIVALENT_GATEWAY_PROBE",
+    "canonical_translation_claim": "Anthropic Messages ingress through the pinned gateway to its configured A6api OpenAI Responses route; upstream wire telemetry was not directly observed.",
+    "tool_schema": {
+      "name": "read_fixture",
+      "input_schema": {
+        "type": "object",
+        "properties": {"path": {"type": "string"}},
+        "required": ["path"]
+      }
+    },
+    "configured_gateway_retries": 0,
+    "actual_claude_code_invoked": false,
+    "claude_code_client_validation": "UNVERIFIED",
+    "gateway_request_attempts": 4,
+    "upstream_provider_http_telemetry": "NOT_OBSERVED",
+    "t03": {
+      "Bifrost": {
+        "status": "PASS_RAW_PROTOCOL_EQUIVALENT",
+        "attempt_id": "20261001T130018Z-bifrost-t03-attempt-1",
+        "candidate_tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe",
+        "gateway_artifact_sha256": "sha256:22e3f48c7e9dcaff1ae68c18f5281cc0e771c000bf99e54f8d9c28c62e4adac5",
+        "client_protocol": "Anthropic Messages",
+        "gateway_endpoint": "/anthropic/v1/messages",
+        "configured_provider_route": "A6api OpenAI Responses /v1/responses, gpt-5.4-mini",
+        "route_probe": "PASS",
+        "gateway_http_statuses": [200, 200],
+        "tool_name": "read_fixture",
+        "tool_arguments": {"path": "input/alpha.txt"},
+        "tool_call_id": "call_mDRIbTNNn8AlSYNllQQNFDrH",
+        "tool_result": "alpha fixture input\n",
+        "tool_execution_count": 1,
+        "continuation_tool_call_count": 0,
+        "final_stop_reason": "end_turn",
+        "final_response_contains_fixture_result": true,
+        "cleanup": "PASS",
+        "evidence": "tests/poc/evidence/phase-14-followup/D-F2/20261001T130018Z/bifrost-t03.json"
+      },
+      "LiteLLM": {
+        "status": "PASS_RAW_PROTOCOL_EQUIVALENT",
+        "attempt_id": "20261001T130018Z-litellm-t03-attempt-1",
+        "candidate_tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb",
+        "gateway_runtime_image_digest": "sha256:36fd553758eb8a79c858d1be08a43dabe390e8e003dcb71f3e98ba9a605da280",
+        "gateway_wheel_sha256": "sha256:762b286fe81491f242040b14f28338da0ebf4f32fea50972b6969ee578011d52",
+        "client_protocol": "Anthropic Messages",
+        "gateway_endpoint": "/v1/messages",
+        "inbound_model_id": "a6api-anthropic",
+        "configured_provider_route": "A6api OpenAI Responses /v1/responses, gpt-5.4-mini",
+        "route_probe": "PASS",
+        "gateway_http_statuses": [200, 200],
+        "tool_name": "read_fixture",
+        "tool_arguments": {"path": "input/alpha.txt"},
+        "tool_call_id": "call_2poyA2jdAAxbefa5OHEJiDuG",
+        "tool_result": "alpha fixture input\n",
+        "tool_execution_count": 1,
+        "continuation_tool_call_count": 0,
+        "final_stop_reason": "end_turn",
+        "final_response_contains_fixture_result": true,
+        "cleanup": "PASS",
+        "evidence": "tests/poc/evidence/phase-14-followup/D-F2/20261001T130018Z/litellm-t03.json"
+      }
+    },
+    "t04": {
+      "Bifrost": {"status": "BLOCKED", "classification": "EVIDENCE_DESIGN_CONFLICT"},
+      "LiteLLM": {"status": "BLOCKED", "classification": "EVIDENCE_DESIGN_CONFLICT"},
+      "phase14_plan_provider_and_clients": "A6api; Codex/Claude Code matrix clients",
+      "authoritative_contract_provider_and_client": "RelayRouter; OpenCode",
+      "provider_calls": 0,
+      "candidate_processes_started": 0,
+      "evidence": "tests/poc/evidence/phase-14-followup/D-F2/20261001T130018Z/t04-design-conflict.json"
+    }
+  },
+  "d_f3": {
+    "overall": "BLOCKED",
+    "classification": "LICENSE_BOUNDARY_BLOCKER",
+    "candidate": "Mastra @mastra/core 1.72.0-alpha.8",
+    "candidate_tree_hash": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05",
+    "oss_only_path_satisfies_phase8_semantics": false,
+    "ee_code_used_or_modified": false,
+    "execution_reruns": 0,
+    "provider_calls": 0,
+    "evidence": "tests/poc/evidence/phase-14-followup/D-F3/20261001T130018Z/license-decision.json"
+  },
+  "candidate_provenance": {
+    "Bifrost": {"tree_hash": "sha256:df94a64815001fc9af685dd4f7f06b0609a7eff57a092b10dcd61ed0b1e38efe", "matches_phase0": true, "included_file_count": 5172},
+    "LiteLLM": {"tree_hash": "sha256:3493d676d2c162b05d4962939eb7183648a277ecadd9f58613964c6881616ffb", "matches_phase0": true, "included_file_count": 12075},
+    "OpenHands": {"tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468", "matches_phase0": true, "included_file_count": 1796},
+    "Mastra": {"tree_hash": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05", "matches_phase0": true, "included_file_count": 18938}
+  },
+  "plane_decisions": {
+    "gateway": "NO_DECISION_YET",
+    "gateway_reason": "T03 raw protocol probes passed for both gateways, but T04 remains in conflict and prior mandatory Level 2 failures remain.",
+    "runtime": "NO_DECISION_YET",
+    "runtime_reason": "OpenHands D-F1 is blocked by unresolved environment provenance; Mastra remains license-blocked.",
+    "composition": "NO_DECISION_YET",
+    "composition_reason": "Neither D-F1 gateway composition was executed or proven.",
+    "selected_candidates": []
+  },
+  "architecture_boundary": {"level2": "CLIENT", "level3": "RUNTIME"},
+  "scope_confirmations": {
+    "candidate_source_modified": false,
+    "mastra_ee_used": false,
+    "openrouter_used": false,
+    "relayrouter_substitution_used": false,
+    "winner_forced": false,
+    "production_implementation_started": false,
+    "rerun_budgets_respected": true
+  },
+  "historical_evidence_preserved": true,
+  "historical_evidence_roots_consumed": [
+    "tests/poc/evidence/phase-7/phase7-remediation-20261001T045000Z/",
+    "tests/poc/evidence/phase-8/phase8-closure-20261001T035711Z/",
+    "tests/poc/evidence/phase-11/batch-d-composition-20261001T102446Z/",
+    "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/",
+    "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/",
+    "tests/poc/evidence/level2/level2-remediation-20260930T225100Z/",
+    "tests/poc/evidence/level2/targeted-b-20260930T225000Z/",
+    "tests/poc/evidence/phase-12/batch-d-phase12-20261001T121200Z/",
+    "tests/poc/evidence/phase-13/batch-d-phase13-20261001T121200Z/"
+  ],
+  "remaining_gaps": [
+    "Phase 7 project/group/extra selection is not recorded, so the 187 versus 232 OpenHands environment closures cannot be proven equivalent.",
+    "The T03 rows exercise the Anthropic Messages gateway boundary through a raw-protocol-equivalent harness, not the Claude Code executable or its client-side parser.",
+    "The gateway HTTP client does not expose upstream A6api HTTP statuses, so only the configured route, model inventory, and gateway responses are evidenced.",
+    "The Phase 14 A6api/Claude Code T04 constraint conflicts with the committed OpenCode/RelayRouter acceptance contract."
+  ],
+  "security_and_cleanup": {
+    "A6API_KEY": "PRESENT; presence only",
+    "credential_value_or_hash_persisted": false,
+    "authorization_headers_or_cookies_persisted": false,
+    "raw_evidence_persisted": false,
+    "followup_containers_remaining": 0,
+    "followup_networks_remaining": 0,
+    "followup_images_created": 0,
+    "followup_runtime_roots_remaining": 0,
+    "temporary_configs_removed": true,
+    "ports_released": true
+  },
+  "validation": {
+    "baseline_tests_passed": 71,
+    "full_tests_passed": 81,
+    "focused_tests_passed": 24,
+    "followup_regression_tests_passed": 10,
+    "json_ndjson_records_parsed": 10,
+    "evidence_references_checked": 26,
+    "json_ndjson_validation": "PASS",
+    "evidence_reference_validation": "PASS",
+    "secret_and_private_path_scan": "PASS",
+    "text_subprocess_utf8_capture_audit": "PASS",
+    "candidate_hash_revalidation": "PASS",
+    "cleanup_verification": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "final_git_state": {
+    "branch": "main",
+    "head": "2889e86d472d23693c76a46460c09ed2b651d27e",
+    "origin_main": "2889e86d472d23693c76a46460c09ed2b651d27e",
+    "staged_files": [],
+    "working_tree_clean_after_run": false,
+    "commit": false,
+    "push": false
+  },
+  "final_decision": "NO_DECISION_YET",
+  "commit": false,
+  "push": false
+}

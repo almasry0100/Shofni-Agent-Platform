@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "followup_id": "D-F1",
+  "run_id": "20261001T130018Z",
+  "status": "BLOCKED",
+  "classification": "PROVENANCE_MISMATCH",
+  "candidate": "OpenHands Software Agent SDK 1.49.6",
+  "candidate_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+  "phase7_environment": {
+    "install_command": "uv sync --locked",
+    "workspace_project_selection": "NOT_RECORDED",
+    "extras_and_groups": "NOT_RECORDED",
+    "python": "3.12.10",
+    "uv_version": "0.11.7",
+    "distribution_count": 187,
+    "evidence": "tests/poc/evidence/phase-7/phase7-remediation-20261001T045000Z/provenance.json"
+  },
+  "phase11_environment": {
+    "install_command": "UV_PROJECT_ENVIRONMENT=/opt/openhands uv sync --locked",
+    "workspace_project_selection": "workspace root; all four local workspace projects built",
+    "extras_and_groups": "install log includes development tooling; exact group selection is not separately recorded",
+    "python": "3.12.10",
+    "uv_version": "0.11.7",
+    "resolved_lock_entries": 418,
+    "installed_distribution_count": 232,
+    "evidence": "tests/poc/evidence/phase-11/batch-d-composition-20261001T113000Z/bifrost-openhands/setup.json"
+  },
+  "comparison": {
+    "phase7_inventory_is_subset_of_phase11": true,
+    "phase11_additional_distributions": 45,
+    "shared_versions_equal": 186,
+    "shared_versions_unverified": ["tiktoken"],
+    "python_version_equal": true,
+    "uv_version_equal": true,
+    "candidate_tree_hash_equal": true,
+    "frozen_lock_requested_in_both": true,
+    "equivalent_execution_closure_proven": false,
+    "counting_methodology_only_proven": false,
+    "reason": "The package inventories are different sets, while Phase 7 omits workspace/project selection and extras/groups and Phase 11 omits a separately captured installed inventory. The 45 additional distributions cannot be dismissed as a counting-only difference."
+  },
+  "harness_gate": {
+    "windows_bind_syntax": "PASS",
+    "runtime_uses_gateway_dns_and_internal_port": "PASS",
+    "bifrost_namespace_normalization_and_route_fail_fast": "PASS",
+    "utf8_replacement_capture": "PASS",
+    "sanitized_tail_and_startup_diagnostics": "OFFLINE_TESTED",
+    "gateway_start_exit_code_stdout_stderr_capture": "OFFLINE_TESTED",
+    "gateway_readiness_and_container_exit_diagnostics": "IMPLEMENTED_NOT_LIVE_EXECUTED",
+    "verification": "offline regression tests; no D-F1 composition started"
+  },
+  "provider_calls": 0,
+  "runtime_processes_started": 0,
+  "task_id": null,
+  "workspace_id": null,
+  "checkpoint_id": null,
+  "tool_call_ids": [],
+  "historical_evidence_preserved": true
+}
