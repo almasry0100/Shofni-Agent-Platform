@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "run_id": "batch-c-20260930T224748Z",
+  "phase": 8,
+  "candidate": "Mastra open-source core",
+  "source_tree_hash": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05",
+  "included_file_count": 18938,
+  "candidate_manifests_and_lock_revalidated": true,
+  "license": "Apache-2.0; ee/ excluded",
+  "snapshot": "poc/.runtime/mastra/workspace",
+  "snapshot_contains_ee": false,
+  "runtime_toolchain": {"node": "v24.19.0", "node_requirement": ">=22.13.0", "pnpm": "11.21.0", "pnpm_integrity": "sha512.521705bce689924eac72f5a3587122f362689ef6571e55ba80076fd637c11132ecffada26fad4ea79c485bfddbfd3d5a2a5b05805a77e893de71ec8a6cca3bb1"},
+  "lock_sha256": "sha256:0eab30f28bb2ccd340090be696f6b3ba730ec3dae3203a17ee31082bbd7a4ba3",
+  "dependency_closure": {"workspace_projects": 14, "packages": 953, "frozen_lockfile": true, "supply_chain_policy_entries": 4874, "policy_check": "PASS"},
+  "build_attempts": [
+    {"command": "pnpm install --filter @mastra/core... --frozen-lockfile", "exit_code": 0, "result": "PASS"},
+    {"command": "pnpm --filter @mastra/core... run build", "exit_code": 1, "result": "dependency build order invoked api-extractor before its generated dist entrypoint"},
+    {"command": "pnpm --sort --workspace-concurrency=1 --filter @mastra/core... run build:lib", "exit_code": 1, "result": "core build unresolved imports from excluded ../auth/ee"}
+  ],
+  "artifact_identity": null,
+  "status": "BLOCKED",
+  "failure_class": "SETUP_FAILURE",
+  "live_provider_calls": 0,
+  "candidate_source_modified": false
+}

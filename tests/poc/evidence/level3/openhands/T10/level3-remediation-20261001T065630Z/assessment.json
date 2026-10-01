@@ -1,0 +1,6 @@
+{
+  "attempt_id": "level3-remediation-20261001T065630Z",
+  "assessment": "SUPERSEDED_INCOMPLETE_GATE",
+  "reason": "The restored adapter ran in the same Python process as model A. It did not satisfy the required terminate-runtime/start-fresh-process T10 boundary. The passing effective attempt is level3-remediation-20261001T081124Z.",
+  "original_capture_preserved": true
+}

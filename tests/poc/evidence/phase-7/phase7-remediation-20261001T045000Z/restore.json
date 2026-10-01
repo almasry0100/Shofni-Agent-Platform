@@ -1,0 +1,10 @@
+{
+  "attempted": true,
+  "new_attempt_id": true,
+  "prior_tool_result_preserved": true,
+  "restored_model": "fixture-model-b",
+  "same_candidate_conversation_id": true,
+  "same_task_id": true,
+  "same_workspace_id": true,
+  "status": "PASS"
+}

@@ -1,0 +1,7 @@
+{"candidate_event_type":"ActionEvent","candidate_event_id":"48ddc1d9-f4e5-49af-9240-9c921a7c5727","tool_name":"read_fixture","tool_call_id":"call_Vjja9j8p5TPGJcLz05YI6FGr","action":{"kind":"ReadFixtureAction","path":"input/alpha.txt"},"role":null,"content":null}
+{"candidate_event_type":"ObservationEvent","candidate_event_id":"054951d9-64fc-4b15-aa8d-20fd33671825","tool_name":"read_fixture","tool_call_id":"call_Vjja9j8p5TPGJcLz05YI6FGr","action":null,"role":null,"content":null}
+{"candidate_event_type":"ConversationErrorEvent","candidate_event_id":"8bdff3b4-3cca-4b4d-a7a5-26d8699a23dc","tool_name":null,"tool_call_id":null,"action":null,"role":null,"content":null}
+{"candidate_event_type":"SystemPromptEvent","candidate_event_id":"782cf173-27e5-4d01-a618-0d63e25be464","tool_name":null,"tool_call_id":null,"action":null,"role":null,"content":null}
+{"candidate_event_type":"MessageEvent","candidate_event_id":"f581a6de-5856-4c4c-b1c8-3e3909706c5a","tool_name":null,"tool_call_id":null,"action":null,"role":null,"content":null}
+{"candidate_event_type":"MessageEvent","candidate_event_id":"05335b92-e124-468b-a1ea-045f0d99a4bb","tool_name":null,"tool_call_id":null,"action":null,"role":"user","content":"Resume with the saved tool result and answer with its exact content."}
+{"candidate_event_type":"MessageEvent","candidate_event_id":"c5dc8cbe-142a-499b-b23d-3dc0a8bf5114","tool_name":null,"tool_call_id":null,"action":null,"role":"assistant","content":"alpha"}

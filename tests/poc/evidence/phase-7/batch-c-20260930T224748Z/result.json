@@ -1,0 +1,13 @@
+{
+  "status": "BLOCKED",
+  "failure_class": "SETUP_FAILURE",
+  "reason": "The pinned uv container could not identify libc because its minimal image lacks common platform probe binaries. The permitted bounded retry ended before dependency resolution or candidate startup.",
+  "lifecycle_tested": false,
+  "fresh_process_restore_tested": false,
+  "task_identity_tested": false,
+  "workspace_identity_tested": false,
+  "model_switch_tested": false,
+  "live_provider_calls": 0,
+  "cleanup": "No candidate runtime process or environment was created; empty generated runtime directories are disposable and ignored.",
+  "candidate_source_modified": false
+}

@@ -1,0 +1,17 @@
+{
+  "attempt_id": "level3-remediation-20261001T065630Z",
+  "provider": "A6api",
+  "model_a": "gpt-5.4-mini",
+  "model_b": "gpt-5.5",
+  "task_id": "2437085a-4c5c-4369-bd89-21f83e69bca2",
+  "workspace_id": "cf9d0c2b-e6ad-4d13-814e-e72babb11e00",
+  "checkpoint_id": "b8971416-3f63-4550-bea6-d9c1fb8767fb",
+  "same_task_id": true,
+  "same_workspace_id": true,
+  "new_attempt_id_explicit": true,
+  "prior_tool_result_preserved": true,
+  "final_result": "alpha",
+  "inventory_evidence": "docs/a6api-models.md",
+  "successful_batch_b_evidence": "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T04.json",
+  "status": "PASS"
+}

@@ -1,0 +1,21 @@
+{
+  "attempt_id": "level3-remediation-20261001T081124Z",
+  "provider": "A6api",
+  "model_a": "gpt-5.4-mini",
+  "model_b": "gpt-5.5",
+  "task_id": "c2e44512-9788-4170-84ea-7fd1e9e8cc7e",
+  "workspace_id": "bc6f750f-b087-4799-9d3b-6eb907199cf0",
+  "session_id": "5d60b8ed-e07b-4dd4-9a75-a16a349b622d",
+  "checkpoint_id": "85a0cd06-89c2-499b-bd97-fb9111649c05",
+  "model_a_process_exit_code": 0,
+  "restore_process_exit_code": 0,
+  "process_boundary": "model A and restore ran in separate child processes; model A exited before restore started",
+  "same_task_id": true,
+  "same_workspace_id": true,
+  "new_attempt_id_explicit": true,
+  "prior_tool_result_preserved": true,
+  "final_result": "alpha",
+  "inventory_evidence": "docs/a6api-models.md",
+  "successful_batch_b_evidence": "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T04.json",
+  "status": "PASS"
+}

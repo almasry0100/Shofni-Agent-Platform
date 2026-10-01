@@ -1,0 +1,71 @@
+{
+  "adapter_execution_model": "temporary Shofni RuntimeBackend-conforming harness under ignored poc/.runtime",
+  "attempt_history": [
+    {
+      "attempt_id": "level3-remediation-20261001T041900Z",
+      "reason": "model A returned narration without a tool call; no complete Shofni checkpoint flow",
+      "status": "INCOMPLETE"
+    },
+    {
+      "attempt_id": "level3-remediation-20261001T042900Z",
+      "reason": "deterministic result message changed finished conversation status before checkpoint",
+      "status": "FAILED_HARNESS"
+    },
+    {
+      "attempt_id": "level3-remediation-20261001T043300Z",
+      "reason": "A6api gpt-5.5 response completed but LiteLLM Responses transform required created_at",
+      "status": "LIVE_RESPONSE_PARSE_FAILURE"
+    },
+    {
+      "attempt_id": "level3-remediation-20261001T043800Z",
+      "reason": "same missing created_at transform failure",
+      "status": "LIVE_RESPONSE_PARSE_FAILURE"
+    },
+    {
+      "attempt_id": "level3-remediation-20261001T044100Z",
+      "reason": "same missing created_at transform failure with OpenAI model prefix",
+      "status": "LIVE_RESPONSE_PARSE_FAILURE"
+    },
+    {
+      "attempt_id": "level3-remediation-20261001T044500Z",
+      "reason": "Chat Completions bridge bypass; persisted fresh-process model B final assistant event is alpha; runner exited only on event-content serialization",
+      "status": "PASS"
+    }
+  ],
+  "attempt_id": "level3-remediation-20261001T044500Z",
+  "candidate": "OpenHands Software Agent SDK",
+  "candidate_conversation_id": "d8ab9c0e-9f28-4f29-855b-b1c2c94daf07",
+  "checkpoint_id": "cbebd601-4182-46d0-8b60-b03c6fb8af3b",
+  "deterministic_tool_read": {
+    "content": "alpha\n",
+    "operation": "deterministic_local_read",
+    "path": "fixture.txt",
+    "source": "Shofni RuntimeBackend fixture operation"
+  },
+  "duplicate_effects": 0,
+  "inventory_evidence": "docs/a6api-models.md",
+  "key_presence": "PRESENT",
+  "litellm_note": "Initial gpt-5.5 Responses bridge calls returned completed alpha responses but LiteLLM rejected the missing created_at field; the final restored call used Chat Completions bridge bypass and produced a persisted assistant alpha event.",
+  "model_a": "gpt-5.4-mini",
+  "model_a_observation": "OpenHands received an assistant narration without a native tool call; the Shofni RuntimeBackend adapter then performed and persisted the deterministic fixture read before checkpoint.",
+  "model_b": "gpt-5.5",
+  "model_b_final_result": "alpha",
+  "model_transition": [
+    "gpt-5.4-mini",
+    "gpt-5.5"
+  ],
+  "new_attempt_id_explicit": true,
+  "prior_result_preserved": true,
+  "process_boundary": "separate create and restore Docker processes; restore process exited after model B response",
+  "provider": "A6api",
+  "read_operation_is_idempotent": true,
+  "same_task_id": true,
+  "same_workspace_id": true,
+  "schema_version": "1.0",
+  "shoffni_attempt_id_after_restart": "b9f0e945-1dd2-47cb-b5a9-d39ce206e7fa",
+  "status": "PASS",
+  "successful_batch_b_evidence": "tests/poc/evidence/level2/level2-remediation-20260930T194948Z/runs/bifrost/a6api/opencode/1-T04.json",
+  "task_id": "111990cd-0b75-46b1-820d-77a4555532e5",
+  "test_id": "T10",
+  "workspace_id": "79c93080-30ab-4850-bc48-34f13634c6a1"
+}

@@ -1,0 +1,29 @@
+{
+  "attempt_history": [
+    {
+      "reason": "Windows path traversal encountered an entry already absent",
+      "status": "PARTIAL_FAILURE"
+    },
+    {
+      "reason": "WinError 145 on a long nested uv-cache directory",
+      "status": "PARTIAL_FAILURE"
+    },
+    {
+      "reason": "extended-length paths removed all exact allowlisted roots and post-delete checks passed",
+      "status": "PASS"
+    }
+  ],
+  "attempt_id": "cleanup-remediation-20261001T050000Z",
+  "candidate_containers_remaining": false,
+  "custom_networks_created": false,
+  "implementation": "repository Python 3.12.10 shutil.rmtree; Windows extended-length paths",
+  "mastra_paths_removed": 4,
+  "openhands_paths_removed": 19,
+  "preexisting_openhands_python_uv_cache_roots_touched": false,
+  "raw_evidence_remaining": false,
+  "resolved_path_scope_checks": true,
+  "schema_version": "1.0",
+  "scope_root": "poc/.runtime/",
+  "status": "PASS",
+  "unrelated_bifrost_litellm_toolchains_roots_touched": false
+}

@@ -1,0 +1,31 @@
+{
+  "architecture": "linux/amd64",
+  "attempt_id": "phase7-remediation-20261001T045000Z",
+  "candidate_snapshot_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+  "candidate_tree_writes": false,
+  "environment_identity": "poc/.runtime/openhands/phase7-remediation-20261001T035711Z/env/venv",
+  "install": "uv sync --locked passed in disposable candidate snapshot; 187 distributions installed",
+  "installed_candidate_packages": {
+    "openhands-agent-server": "1.49.6",
+    "openhands-sdk": "1.49.6",
+    "openhands-tools": "1.49.6",
+    "openhands-workspace": "1.49.6"
+  },
+  "packages_json": "tests/poc/evidence/phase-7/phase7-remediation-20261001T045000Z/resolved-packages.json",
+  "python": "3.12.10",
+  "python_image": "python:3.12.10-slim-bookworm",
+  "python_image_digest": "sha256:97983fa8cc88343512862c62307159a82261c3528dc025f79e5a3f7af43e50b4",
+  "python_project_sha256": {
+    "openhands-agent-server/pyproject.toml": "sha256:060e346e1d55fb527e25c3a663d405f821f94ebd09c8d84cb9eed0edb05c548a",
+    "openhands-sdk/pyproject.toml": "sha256:a04bba1da1dafffd1d1358cb4a86a3190c4608c8a8bb7086ae13f1ea1b9128a7",
+    "openhands-tools/pyproject.toml": "sha256:bccf6fd7f20952291ee7f44c00f63cc15f3d9ba645028ee41848c1d480b46e9a",
+    "openhands-workspace/pyproject.toml": "sha256:d4fa2cb003e7e3eaa5466d42c5adbca5a999acc244dbba02b0ba25ce5c8b283a",
+    "pyproject.toml": "sha256:e461d50436dfa92ac04f02b441baa09916bc8c6a6580a07b48698e668957b0eb"
+  },
+  "resolved_package_count": 187,
+  "schema_version": "1.0",
+  "uv_binary_sha256": "738DA53BAE461E12A22F34CEE972EAA5F59EF926FF368AFA8A98EDB783233DA1",
+  "uv_image_digest": "sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8",
+  "uv_version": "0.11.7",
+  "workspace_lock_sha256": "sha256:58c8b04e867891f3d7671bb0c34e459d5de5fa61fb25e3c10f63ec57b1bdd02e"
+}

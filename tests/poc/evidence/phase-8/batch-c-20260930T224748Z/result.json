@@ -1,0 +1,14 @@
+{
+  "status": "BLOCKED",
+  "failure_class": "SETUP_FAILURE",
+  "reason": "Frozen dependency installation passed, but the pinned open-source core build resolves source imports to auth/ee modules that are absent when ee/ is excluded. Building by adding separately licensed EE source would violate the candidate boundary.",
+  "runtime_lifecycle_tested": false,
+  "fresh_process_restore_tested": false,
+  "task_identity_tested": false,
+  "workspace_identity_tested": false,
+  "snapshot_and_run_registry_tested": false,
+  "model_switch_tested": false,
+  "ee_used": false,
+  "live_provider_calls": 0,
+  "candidate_source_modified": false
+}

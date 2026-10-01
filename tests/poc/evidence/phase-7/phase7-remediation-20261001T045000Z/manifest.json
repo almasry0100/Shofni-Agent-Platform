@@ -1,0 +1,14 @@
+{
+  "attempt_id": "phase7-remediation-20261001T045000Z",
+  "candidate": "OpenHands Software Agent SDK",
+  "evidence_files": [
+    "result.json",
+    "provenance.json",
+    "resolved-packages.json",
+    "events.ndjson",
+    "restore.json"
+  ],
+  "phase": "7",
+  "schema_version": "1.0",
+  "status": "PASS"
+}

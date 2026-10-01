@@ -1,0 +1,1 @@
+"""Permanent POC integration tests."""

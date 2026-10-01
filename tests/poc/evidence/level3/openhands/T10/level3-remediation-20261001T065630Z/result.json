@@ -1,0 +1,47 @@
+{
+  "attempt_id": "level3-remediation-20261001T065630Z",
+  "attempt_id_after_restart": "b24ecfa9-bfd2-4801-ad0b-883a45399690",
+  "attempt_id_before_restart": "5d1e046a-ce2f-4f18-b42f-b3bb300e0512",
+  "candidate_action_events": [
+    {
+      "action": {
+        "kind": "ReadFixtureAction",
+        "path": "input/alpha.txt"
+      },
+      "candidate_event_id": "52caebed-14cc-4759-b022-71356f7d2139",
+      "tool_call_id": "call_Yufuq9AZeLU4GTYwXHrXukW3",
+      "tool_name": "read_fixture"
+    }
+  ],
+  "candidate_conversation_id": "a20a0154-a2c2-4275-a4a5-13bb5878bd3d",
+  "checkpoint_id": "b8971416-3f63-4550-bea6-d9c1fb8767fb",
+  "final_result": "alpha",
+  "final_selected_model": "gpt-5.5",
+  "gates": {
+    "model_b_selected": true,
+    "new_attempt_id_explicit": true,
+    "prior_tool_result_preserved": true,
+    "read_fixture_action_observed": true,
+    "same_task_id": true,
+    "same_workspace_id": true,
+    "successful_final_result": true
+  },
+  "model_a": "gpt-5.4-mini",
+  "model_b": "gpt-5.5",
+  "new_attempt_id_explicit": true,
+  "process_boundary": "separate adapter instances with stopped first conversation",
+  "provider": "A6api",
+  "same_task_id": true,
+  "same_workspace_id": true,
+  "status": "PASS",
+  "task_id": "2437085a-4c5c-4369-bd89-21f83e69bca2",
+  "tool_result": {
+    "a20a0154-a2c2-4275-a4a5-13bb5878bd3d:call_Yufuq9AZeLU4GTYwXHrXukW3": {
+      "result": "alpha\n",
+      "result_id": "bda13217-4689-53b3-b7fe-51404279371c",
+      "tool_call_id": "call_Yufuq9AZeLU4GTYwXHrXukW3"
+    }
+  },
+  "workspace_id": "cf9d0c2b-e6ad-4d13-814e-e72babb11e00",
+  "key_presence": "PRESENT"
+}

@@ -1,0 +1,38 @@
+{
+  "attempt_id": "level3-remediation-20261001T073136Z",
+  "attempt_id_after": "c916a7fe-904d-4a81-b45c-e25d408fb51f",
+  "attempt_id_before": "ab3f9429-d099-4717-9bad-ab0bf8f48581",
+  "boundary": "before_append",
+  "candidate_conversation_id": "987d5ae2-8690-478c-9ea3-5aae9a9bfb8e",
+  "checkpoint_id": "c3e4bd8a-3640-4f43-a03a-6898ea51c936",
+  "duplicate_suppressed": false,
+  "expected_crash_exit_code": 71,
+  "first_process_exit_code": 71,
+  "gates": {
+    "candidate_append_action_observed": true,
+    "expected_duplicate_behavior": true,
+    "final_completion": true,
+    "first_process_exited_at_boundary": true,
+    "first_process_gone_before_recovery": true,
+    "new_attempt_id_explicit": true,
+    "one_durable_ledger_row": true,
+    "one_logical_result": true,
+    "recovery_process_succeeded": true,
+    "same_operation_id": true,
+    "same_task_id": true,
+    "same_workspace_id": true
+  },
+  "ledger_row_count": 1,
+  "logical_result": {
+    "marker": "alpha"
+  },
+  "model": "gpt-5.4-mini",
+  "operation_id_after": "987d5ae2-8690-478c-9ea3-5aae9a9bfb8e:call_dSxTF4YP0TE5oTyvQBcfhARJ",
+  "operation_id_before": "987d5ae2-8690-478c-9ea3-5aae9a9bfb8e:call_dSxTF4YP0TE5oTyvQBcfhARJ",
+  "process_boundary": "first child terminated before recovery child started",
+  "provider": "A6api",
+  "recovery_process_exit_code": 0,
+  "status": "PASS",
+  "task_id": "d69929bc-b43f-4afc-9d96-3553d7600706",
+  "workspace_id": "278b3cf4-dccf-4097-991e-72eed9386814"
+}

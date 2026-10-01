@@ -1,0 +1,39 @@
+{
+  "attempt_id": "level3-remediation-20261001T073136Z",
+  "candidate": "OpenHands Software Agent SDK",
+  "test_id": "T11",
+  "schema_version": "1.0",
+  "status": "PASS",
+  "case_before_append": {
+    "checkpoint_id": "c3e4bd8a-3640-4f43-a03a-6898ea51c936",
+    "first_process_exit_code": 71,
+    "recovery_process_exit_code": 0,
+    "operation_id": "987d5ae2-8690-478c-9ea3-5aae9a9bfb8e:call_dSxTF4YP0TE5oTyvQBcfhARJ",
+    "same_operation_id_after_restore": true,
+    "ledger_rows": 1,
+    "logical_results": 1,
+    "duplicate_suppressed": false,
+    "task_id": "d69929bc-b43f-4afc-9d96-3553d7600706",
+    "workspace_id": "278b3cf4-dccf-4097-991e-72eed9386814",
+    "attempt_id_before": "ab3f9429-d099-4717-9bad-ab0bf8f48581",
+    "attempt_id_after": "c916a7fe-904d-4a81-b45c-e25d408fb51f"
+  },
+  "case_after_append_before_checkpoint": {
+    "checkpoint_id": "2ba47416-7c88-4b64-b93a-b48bc4d06c26",
+    "first_process_exit_code": 73,
+    "recovery_process_exit_code": 0,
+    "operation_id": "e4015ae1-b695-4647-947e-40781c08bb02:call_uy9fUA9ol3eDWnhf1dDKT0pj",
+    "same_operation_id_after_restore": true,
+    "ledger_rows": 1,
+    "logical_results": 1,
+    "duplicate_suppressed": true,
+    "task_id": "a3c46091-c0f2-4a24-b98a-415eeaf50e21",
+    "workspace_id": "439bd4a0-86e4-436a-9206-02e34cc7e58a",
+    "attempt_id_before": "bc956144-7c54-410b-8809-aa68113e0355",
+    "attempt_id_after": "81b5acb3-5798-4711-b3e3-ae6eecfff252"
+  },
+  "duplicate_side_effect_failure": false,
+  "unguarded_lookup_then_append": false,
+  "execution_scope": "Level 3 OpenHands RuntimeBackend checkpoint and SQLite fixture control; no external side effect",
+  "ledger": "repository poc.fixtures.ledger.LedgerFixture; SQLite PRIMARY KEY operation_id; atomic INSERT ON CONFLICT DO NOTHING"
+}

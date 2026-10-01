@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "run_id": "batch-c-20260930T224748Z",
+  "runtime": "mastra",
+  "test_id": "T11",
+  "status": "BLOCKED",
+  "failure_class": "SETUP_FAILURE",
+  "entry_gate": "Phase 8 BLOCKED",
+  "crash_before_append": "BLOCKED_NOT_RUN",
+  "crash_after_append_before_checkpoint": "BLOCKED_NOT_RUN",
+  "operation_ids": [],
+  "ledger_rows": 0,
+  "physical_duplicate_appends": 0,
+  "reason": "The open-source core did not produce a runnable artifact while respecting the ee/ exclusion."
+}

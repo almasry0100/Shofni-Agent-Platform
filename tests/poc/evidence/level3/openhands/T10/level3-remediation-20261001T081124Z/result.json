@@ -1,0 +1,54 @@
+{
+  "attempt_id": "level3-remediation-20261001T081124Z",
+  "attempt_id_after_restart": "4874f989-9348-4cc6-8244-64498c3badb8",
+  "attempt_id_before_restart": "839b3634-bf67-4ed1-8259-4f38d917bb80",
+  "candidate_action_events": [
+    {
+      "action": {
+        "kind": "ReadFixtureAction",
+        "path": "input/alpha.txt"
+      },
+      "candidate_event_id": "48ddc1d9-f4e5-49af-9240-9c921a7c5727",
+      "tool_call_id": "call_Vjja9j8p5TPGJcLz05YI6FGr",
+      "tool_name": "read_fixture"
+    }
+  ],
+  "candidate_conversation_id": "0528d20c-1944-4790-96a0-24bb1c721d1c",
+  "checkpoint_id": "85a0cd06-89c2-499b-bd97-fb9111649c05",
+  "final_result": "alpha",
+  "final_selected_model": "gpt-5.5",
+  "gates": {
+    "fresh_restore_process_succeeded": true,
+    "model_a_process_exited_cleanly": true,
+    "model_a_runtime_terminated_before_restore": true,
+    "model_b_selected": true,
+    "new_attempt_id_explicit": true,
+    "prior_tool_result_preserved": true,
+    "read_fixture_action_observed": true,
+    "same_task_id": true,
+    "same_workspace_id": true,
+    "successful_final_result": true
+  },
+  "key_presence": "PRESENT",
+  "model_a": "gpt-5.4-mini",
+  "model_a_process_exit_code": 0,
+  "model_b": "gpt-5.5",
+  "new_attempt_id_explicit": true,
+  "process_boundary": "model A and restore ran in separate child processes; model A exited before restore started",
+  "provider": "A6api",
+  "restore_process_exit_code": 0,
+  "same_task_id": true,
+  "same_workspace_id": true,
+  "session_id": "5d60b8ed-e07b-4dd4-9a75-a16a349b622d",
+  "status": "PASS",
+  "task_id": "c2e44512-9788-4170-84ea-7fd1e9e8cc7e",
+  "tool_result": {
+    "0528d20c-1944-4790-96a0-24bb1c721d1c:call_Vjja9j8p5TPGJcLz05YI6FGr": {
+      "result": "alpha\n",
+      "result_id": "57745ecb-7825-569b-865e-5b64c120ba57",
+      "tool_call_id": "call_Vjja9j8p5TPGJcLz05YI6FGr"
+    }
+  },
+  "workspace_id": "bc6f750f-b087-4799-9d3b-6eb907199cf0",
+  "schema_version": "1.0"
+}

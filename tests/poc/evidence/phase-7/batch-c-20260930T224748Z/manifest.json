@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "run_id": "batch-c-20260930T224748Z",
+  "phase": 7,
+  "candidate": "OpenHands Software Agent SDK",
+  "source_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+  "included_file_count": 1796,
+  "candidate_manifests_and_lock_revalidated": true,
+  "license": "MIT",
+  "setup_attempts": [
+    {"attempt": 1, "toolchain": "uv 0.11.7 container sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8", "exit_code": 2, "classification": "SETUP_FAILURE", "detail": "invalid subcommand invocation; setup did not start"},
+    {"attempt": 2, "toolchain": "uv 0.11.7 container sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8", "exit_code": 2, "classification": "SETUP_FAILURE", "detail": "minimal image has no libc probe binaries; uv could not determine libc before installing Python"}
+  ],
+  "python_version": "not installed",
+  "uv_version": "0.11.7",
+  "artifact_identity": null,
+  "runtime_environment_identity": null,
+  "status": "BLOCKED",
+  "failure_class": "SETUP_FAILURE",
+  "live_provider_calls": 0,
+  "candidate_source_modified": false
+}

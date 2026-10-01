@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "run_id": "batch-c-20260930T224748Z",
+  "runtime": "openhands",
+  "test_id": "T11",
+  "status": "BLOCKED",
+  "failure_class": "SETUP_FAILURE",
+  "entry_gate": "Phase 7 BLOCKED",
+  "crash_before_append": "BLOCKED_NOT_RUN",
+  "crash_after_append_before_checkpoint": "BLOCKED_NOT_RUN",
+  "operation_ids": [],
+  "ledger_rows": 0,
+  "physical_duplicate_appends": 0,
+  "reason": "Runtime setup gate did not pass; no candidate runtime artifact was produced."
+}

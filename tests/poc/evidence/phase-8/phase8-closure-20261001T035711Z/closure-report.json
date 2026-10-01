@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "phase8-closure-20261001T035711Z",
+  "candidate": "Mastra",
+  "candidate_version": "@mastra/core 1.72.0-alpha.8",
+  "candidate_tree_hash": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05",
+  "source_lock_hash": "sha256:0eab30f28bb2ccd340090be696f6b3ba730ec3dae3203a17ee31082bbd7a4ba3",
+  "excluded_license_boundary": "ee/ and packages/core/src/auth/ee/",
+  "required_entrypoints": [
+    "packages/core/package.json exports ./agent",
+    "packages/core/package.json exports ./agent/durable",
+    "packages/core/src/agent/index.ts",
+    "packages/core/src/agent/durable/index.ts",
+    "packages/core/src/agent/durable/create-durable-agent.ts",
+    "packages/core/src/agent/durable/durable-agent.ts",
+    "packages/core/src/agent/durable/workflows/index.ts",
+    "packages/core/src/agent/durable/run-registry.ts",
+    "packages/core/src/storage/index.ts",
+    "packages/core/src/storage/factory-storage.ts",
+    "packages/core/src/storage/filesystem-db.ts"
+  ],
+  "required_import_chain": [
+    {
+      "from": "packages/core/src/agent/durable/index.ts",
+      "to": "packages/core/src/agent/durable/create-durable-agent.ts",
+      "kind": "static re-export"
+    },
+    {
+      "from": "packages/core/src/agent/durable/create-durable-agent.ts",
+      "to": "packages/core/src/agent/durable/durable-agent.ts",
+      "kind": "static import"
+    },
+    {
+      "from": "packages/core/src/agent/durable/durable-agent.ts",
+      "to": "packages/core/src/agent/agent.ts",
+      "kind": "static import of Agent"
+    },
+    {
+      "from": "packages/core/src/agent/agent.ts",
+      "to": "packages/core/src/auth/ee/index.ts",
+      "kind": "static runtime import at line 8 and static type import at line 9"
+    },
+    {
+      "from": "packages/core/src/agent/agent.ts",
+      "to": "packages/core/src/auth/ee/fga-check.ts",
+      "kind": "dynamic import at line 7422 reachable from Agent execution"
+    }
+  ],
+  "required_capabilities": {
+    "agent_and_durable_agent": "REQUIRES_EE_IMPORT_CLOSURE",
+    "durable_workflow": "REQUIRES_DURABLE_AGENT",
+    "run_registry": "PART_OF_DURABLE_AGENT",
+    "filesystem_storage": "AVAILABLE_AS_OPEN_SOURCE_MODULE_BUT_INSUFFICIENT_ALONE",
+    "recovery_and_snapshot": "PART_OF_DURABLE_AGENT",
+    "model_switch": "REQUIRES_AGENT",
+    "fresh_process_recovery": "PART_OF_DURABLE_AGENT"
+  },
+  "legitimate_oss_only_path_satisfies_all_phase_8_semantics": false,
+  "ee_source_used": false,
+  "ee_imports_patched_or_stubbed": false,
+  "conclusion": "B_REQUIRED_DURABLE_AGENT_STATIC_CLOSURE_REQUIRES_EE_LICENSED_AUTH_MODULES",
+  "effective_phase_8_status": "BLOCKED",
+  "failure_class": "LICENSE_BOUNDARY_BLOCKER",
+  "reason": "The pinned @mastra/core durable Agent import closure reaches packages/core/src/auth/ee and packages/core/src/auth/ee/fga-check.ts. Filesystem storage and generic workflow modules alone do not supply the required Agent, durable Agent recovery, run registry, and model-switch semantics."
+}

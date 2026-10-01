@@ -1,0 +1,1 @@
+{"event":"setup_blocked","failure_class":"SETUP_FAILURE","phase":8,"reason":"open-source core build imports excluded auth/ee modules","run_id":"batch-c-20260930T224748Z"}

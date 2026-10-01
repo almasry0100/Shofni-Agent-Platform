@@ -1,0 +1,16 @@
+{
+  "authorization_material_recorded": false,
+  "provider": "A6api",
+  "transitions": [
+    {
+      "model_id": "gpt-5.4-mini",
+      "request_completed": true,
+      "stage": "before_checkpoint"
+    },
+    {
+      "model_id": "gpt-5.5",
+      "request_completed": true,
+      "stage": "after_fresh_process_restore"
+    }
+  ]
+}

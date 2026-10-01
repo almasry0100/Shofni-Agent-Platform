@@ -1,0 +1,426 @@
+{
+  "attempt_ids": [
+    "a4f0efa1-caa8-4fc5-9093-704050e12db8",
+    "ee1c1217-eab0-4f2f-8284-7e5cd05ada38",
+    "8ab14dab-00cd-4e0d-8f7f-9754a370de86",
+    "b9f0e945-1dd2-47cb-b5a9-d39ce206e7fa"
+  ],
+  "batch": "C",
+  "batch_status": "PARTIAL",
+  "blockers": [
+    "Phase 8 BLOCKED: LICENSE_BOUNDARY_BLOCKER: required pinned @mastra/core durable Agent import closure reaches EE-licensed auth modules."
+  ],
+  "candidates": {
+    "mastra": {
+      "artifact_identity": null,
+      "candidate": "Mastra open-source core",
+      "declared_version": "@mastra/core 1.72.0-alpha.8; pnpm 11.21.0",
+      "effective_blocker": "LICENSE_BOUNDARY_BLOCKER: required pinned @mastra/core durable Agent import closure reaches EE-licensed auth modules",
+      "historical_state": "BLOCKED_SETUP",
+      "included_file_count": 18938,
+      "license": "Apache-2.0; ee/ excluded",
+      "setup": {
+        "build_status": "BLOCKED: open-source core source imports missing ../auth/ee modules",
+        "dependency_closure": "14 workspace projects; 953 packages; frozen install passed",
+        "ee_in_snapshot": false,
+        "lock_sha256": "sha256:0eab30f28bb2ccd340090be696f6b3ba730ec3dae3203a17ee31082bbd7a4ba3",
+        "node_requirement": ">=22.13.0",
+        "node_version": "v24.19.0",
+        "pnpm_integrity": "sha512.521705bce689924eac72f5a3587122f362689ef6571e55ba80076fd637c11132ecffada26fad4ea79c485bfddbfd3d5a2a5b05805a77e893de71ec8a6cca3bb1",
+        "pnpm_version": "11.21.0"
+      },
+      "source_path": "<WORKSPACE_PARENT>/mastra-main",
+      "source_tree_hash": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05",
+      "state": "BLOCKED"
+    },
+    "openhands": {
+      "artifact_identity": {
+        "platform": "linux/amd64",
+        "python": "3.12.10",
+        "python_image_digest": "sha256:97983fa8cc88343512862c62307159a82261c3528dc025f79e5a3f7af43e50b4",
+        "uv": "0.11.7",
+        "uv_binary_sha256": "738DA53BAE461E12A22F34CEE972EAA5F59EF926FF368AFA8A98EDB783233DA1",
+        "uv_image_digest": "sha256:733b4042187702f832f7fdecb3aff14a61b288c4ca37af188bb5715c1caebaf8"
+      },
+      "candidate": "OpenHands Software Agent SDK",
+      "declared_version": "openhands-sdk 1.49.6; openhands-workspace 1.49.6",
+      "historical_state": "BLOCKED",
+      "included_file_count": 1796,
+      "install_status": "PASS: frozen candidate lock installed 187 distributions in disposable full Python environment",
+      "license": "MIT",
+      "source_path": "<WORKSPACE_PARENT>/software-agent-sdk-main",
+      "source_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+      "state": "PASS"
+    },
+    "phase_0_all_four_revalidation": "PASS"
+  },
+  "checkpoint_ids": [
+    "4dcba881-8663-4150-9eb4-333e7be8fc65",
+    "cbebd601-4182-46d0-8b60-b03c6fb8af3b",
+    "b8971416-3f63-4550-bea6-d9c1fb8767fb",
+    "85a0cd06-89c2-499b-bd97-fb9111649c05"
+  ],
+  "cleanup": {
+    "cleanup_status": "COMPLETE: final scoped pass removed the four remaining exact Batch C runtime roots and corrective pytest basetemp using repository Python shutil.rmtree after resolved-path containment checks under poc/.runtime and Windows extended-length paths; pre-existing OpenHands cache and unrelated roots retained",
+    "mastra_runtime_root": "Batch C corepack, store, and workspace roots removed; empty parent removed",
+    "older_bifrost_litellm_toolchains_roots": "untouched",
+    "openhands_runtime_root": "New Batch C remediation toolchain, T10/T11 runtime, and debug roots removed; pre-existing poc/.runtime/openhands and unrelated Bifrost/LiteLLM roots retained",
+    "raw_evidence_present": false
+  },
+  "commands_executed": [
+    {
+      "command": "git rev-parse --show-toplevel",
+      "exit_code": 0
+    },
+    {
+      "command": "git status --short --branch",
+      "exit_code": 0,
+      "result": "## main"
+    },
+    {
+      "command": "git log -5 --oneline --decorate",
+      "exit_code": 0
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc",
+      "exit_code": 0,
+      "result": "62 passed"
+    },
+    {
+      "command": "Phase 0 candidate tree/manifest/lock hash revalidation",
+      "exit_code": 0,
+      "result": "all four candidate identities match"
+    },
+    {
+      "command": "A6API_KEY environment presence check",
+      "exit_code": 0,
+      "result": "PRESENT; value not read"
+    },
+    {
+      "command": "pinned OpenHands uv container: initial invocation",
+      "exit_code": 2,
+      "result": "invalid subcommand; no setup work performed"
+    },
+    {
+      "command": "pinned OpenHands uv container: bounded setup retry",
+      "exit_code": 2,
+      "result": "libc detection unavailable in minimal container; dependency resolution did not start"
+    },
+    {
+      "command": "Corepack version probe from outer workspace",
+      "exit_code": 0,
+      "result": "default pnpm 12.8.1 was cached outside the repository runtime root; exact Phase 8 install separately used isolated COREPACK_HOME and pinned 11.21.0; global tool unchanged"
+    },
+    {
+      "command": "Mastra disposable snapshot creation excluding ee/",
+      "exit_code": 1,
+      "result": "robocopy success; ee absent"
+    },
+    {
+      "command": "Mastra frozen filtered install",
+      "exit_code": 0,
+      "result": "pnpm 11.21.0; 14 projects; 953 packages; lock policy passed"
+    },
+    {
+      "command": "Mastra workspace dependency build",
+      "exit_code": 1,
+      "result": "initial parallel build order lacked generated type output"
+    },
+    {
+      "command": "Mastra dependency-ordered open-source core build",
+      "exit_code": 1,
+      "result": "core bundle has unresolved ../auth/ee imports; ee excluded as required"
+    },
+    {
+      "command": "Full POC suite after Batch C",
+      "exit_code": 0,
+      "result": "62 passed"
+    },
+    {
+      "command": "Batch C evidence JSON/NDJSON parse and redaction scan",
+      "exit_code": 0,
+      "result": "46 files parsed; no sensitive-pattern matches"
+    },
+    {
+      "command": "All four candidate tree/manifest/lock revalidation after Batch C",
+      "exit_code": 0,
+      "result": "all hashes and included-file counts match"
+    },
+    {
+      "command": "Scoped generated runtime cleanup",
+      "exit_code": 1,
+      "result": "PowerShell recursive Remove-Item commands rejected by execution policy before execution; setup-only OpenHands and Mastra roots retained"
+    },
+    {
+      "command": "OpenHands full Python 3.12.10 container plus uv 0.11.7; frozen lock install",
+      "exit_code": 0,
+      "result": "187 distributions installed; candidate tree remained read-only"
+    },
+    {
+      "command": "Phase 7 OpenHands RuntimeBackend fixture create and fresh-process restore",
+      "exit_code": 0,
+      "result": "same Shofni task/workspace and candidate conversation; prior file tool result preserved; fixture model switched"
+    },
+    {
+      "command": "Phase 8 Mastra static source-closure analysis",
+      "exit_code": 0,
+      "result": "required durable Agent closure reaches excluded EE auth modules; effective BLOCKED"
+    },
+    {
+      "command": "Phase 9 T10 A6api live model A to B",
+      "exit_code": 1,
+      "result": "final candidate assistant response alpha was persisted after fresh restore; harness exited during event serialization; complete event independently parsed and validated"
+    },
+    {
+      "command": "Phase 10 T11 SQLite LedgerFixture crash-before and crash-after append boundaries",
+      "exit_code": 0,
+      "result": "one row per operation; append-after recovery duplicate suppressed"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc",
+      "exit_code": 0,
+      "result": "62 passed"
+    },
+    {
+      "command": "A6API_KEY presence check",
+      "exit_code": 0,
+      "result": "PRESENT; value not read or recorded"
+    },
+    {
+      "command": "Scoped Python cleanup under poc/.runtime",
+      "exit_code": 0,
+      "result": "19 OpenHands remediation paths and 4 Mastra Batch C roots removed; unrelated roots preserved"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc",
+      "exit_code": 0,
+      "result": "68 passed after adapter fixes and live attempt remediation"
+    },
+    {
+      "command": "OpenHands Phase 9 T10 permanent adapter fresh-process A6api run",
+      "exit_code": 0,
+      "result": "real read_fixture ActionEvent; gpt-5.4-mini to gpt-5.5; same task/workspace; prior result alpha preserved; final alpha"
+    },
+    {
+      "command": "OpenHands Phase 10 T11 process-crash controls",
+      "exit_code": 0,
+      "result": "exit 71 before append and exit 73 after durable append; separate recovery processes exit 0; one row and logical result each; duplicate suppressed only after append"
+    },
+    {
+      "command": "OpenHands Phase 9 T10 separate-process A6api control",
+      "exit_code": 0,
+      "result": "model A and restore child processes exited 0; real read_fixture ActionEvent; gpt-5.4-mini to gpt-5.5; same task/workspace; prior alpha preserved; final alpha"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc",
+      "exit_code": 0,
+      "result": "68 passed after final T10 fresh-process runner"
+    },
+    {
+      "command": "Scoped final Python cleanup under poc/.runtime",
+      "exit_code": 0,
+      "result": "four remaining exact Batch C roots removed after resolved-path containment checks; other roots retained"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc/integration/runtime tests/poc/scenarios/level3",
+      "exit_code": 0,
+      "result": "7 passed; T10 restore and both T11 crash boundaries use fresh OS processes"
+    },
+    {
+      "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/poc --basetemp poc/.runtime/pytest-corrective-final-20261001T082238Z",
+      "exit_code": 0,
+      "result": "69 passed; all subprocess runtime state stayed under ignored poc/.runtime"
+    },
+    {
+      "command": "Final candidate provenance, evidence parse/reference, secret, and private-path validation",
+      "exit_code": 0,
+      "result": "all four tree, manifest, and lock identities match; all evidence parses and references resolve; zero secret or private-path matches"
+    },
+    {
+      "command": "Scoped Python cleanup of final pytest basetemp under poc/.runtime",
+      "exit_code": 0,
+      "result": "exact corrective pytest root removed after resolved-path containment check"
+    }
+  ],
+  "committed": false,
+  "completed_checkpoints": [
+    "baseline_verified",
+    "phase_0_candidate_identities_revalidated",
+    "phase_7_blocked_gate_sealed",
+    "phase_8_blocked_gate_sealed",
+    "phase_9_blocked_rows_sealed",
+    "phase_10_blocked_rows_sealed",
+    "phase_7_openhands_remediation_pass",
+    "phase_8_mastra_license_closure_blocked",
+    "phase_9_t10_openhands_fixture_and_live_pass",
+    "phase_10_t11_openhands_both_crash_boundaries_pass",
+    "phase_9_t10_openhands_live_permanent_adapter_pass",
+    "phase_10_t11_openhands_fresh_process_both_boundaries_pass"
+  ],
+  "current_phase": "10",
+  "evidence_roots": [
+    "tests/poc/evidence/phase-7/",
+    "tests/poc/evidence/phase-8/",
+    "tests/poc/evidence/level3/openhands/",
+    "tests/poc/evidence/level3/mastra/",
+    "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T065630Z/",
+    "tests/poc/evidence/level3/openhands/T11/level3-remediation-20261001T073136Z/",
+    "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T081124Z/"
+  ],
+  "finished_at_utc": "2026-10-01T08:31:56Z",
+  "full_poc_test_result": "69 passed",
+  "historical_effective_state_before_remediation": {
+    "evidence_run_id": "batch-c-20260930T224748Z",
+    "phase_10": "BLOCKED",
+    "phase_7": "BLOCKED",
+    "phase_8": "BLOCKED",
+    "phase_9": "BLOCKED"
+  },
+  "level_boundaries": {
+    "level_2_tool_execution_backend": "CLIENT",
+    "level_3_tool_execution_backend": "RUNTIME"
+  },
+  "live_provider_run_ids": [
+    "level3-remediation-20261001T044500Z",
+    "level3-remediation-20261001T065630Z",
+    "level3-remediation-20261001T081124Z"
+  ],
+  "phase_10_status": "PASS",
+  "phase_11_started": false,
+  "phase_7_status": "PASS",
+  "phase_8_status": "BLOCKED",
+  "phase_9_status": "PASS",
+  "post_batch_candidate_revalidation": "PASS: all four source tree hashes and included-file counts, manifests, and lock hashes match docs/poc/candidate-lock.json",
+  "provider_model_transitions": [
+    {
+      "evidence": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T044500Z/provider-transition.json",
+      "model_a": "gpt-5.4-mini",
+      "model_b": "gpt-5.5",
+      "provider": "A6api",
+      "task_id": "111990cd-0b75-46b1-820d-77a4555532e5",
+      "workspace_id": "79c93080-30ab-4850-bc48-34f13634c6a1"
+    },
+    {
+      "evidence": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T065630Z/provider-transition.json",
+      "model_a": "gpt-5.4-mini",
+      "model_b": "gpt-5.5",
+      "provider": "A6api",
+      "task_id": "2437085a-4c5c-4369-bd89-21f83e69bca2",
+      "workspace_id": "cf9d0c2b-e6ad-4d13-814e-e72babb11e00"
+    },
+    {
+      "evidence": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T081124Z/provider-transition.json",
+      "model_a": "gpt-5.4-mini",
+      "model_b": "gpt-5.5",
+      "provider": "A6api",
+      "task_id": "c2e44512-9788-4170-84ea-7fd1e9e8cc7e",
+      "workspace_id": "bc6f750f-b087-4799-9d3b-6eb907199cf0"
+    }
+  ],
+  "pushed": false,
+  "remediation_attempts": {
+    "phase_10": [
+      {
+        "attempt_id": "level3-remediation-20261001T045800Z",
+        "evidence": "tests/poc/evidence/level3/openhands/T11/level3-remediation-20261001T045800Z/result.json",
+        "status": "PASS"
+      },
+      {
+        "attempt_id": "level3-remediation-20261001T073136Z",
+        "evidence": "tests/poc/evidence/level3/openhands/T11/level3-remediation-20261001T073136Z/result.json",
+        "status": "PASS",
+        "boundaries": [
+          "before_append",
+          "after_append_before_checkpoint"
+        ]
+      }
+    ],
+    "phase_7": [
+      {
+        "attempt_id": "phase7-remediation-20261001T035711Z",
+        "status": "SETUP_PASS_LIFECYCLE_HARNESS_ASSERTION_FAILURE"
+      },
+      {
+        "attempt_id": "phase7-remediation-20261001T041200Z",
+        "status": "PASS_DIAGNOSTIC_LIFECYCLE"
+      },
+      {
+        "attempt_id": "phase7-remediation-20261001T045000Z",
+        "evidence": "tests/poc/evidence/phase-7/phase7-remediation-20261001T045000Z/result.json",
+        "status": "PASS"
+      }
+    ],
+    "phase_8": [
+      {
+        "attempt_id": "phase8-closure-20261001T035711Z",
+        "evidence": "tests/poc/evidence/phase-8/phase8-closure-20261001T035711Z/closure-report.json",
+        "status": "BLOCKED"
+      }
+    ],
+    "phase_9": [
+      {
+        "attempt_id": "level3-remediation-20261001T044500Z",
+        "fixture_evidence": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T045000Z/fixture.json",
+        "live_evidence": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T044500Z/result.json",
+        "status": "HISTORICAL_PASS_INCOMPLETE_TOOL_GATE",
+        "tool_gate_observation": "Model A narrated without a native tool action; the Shofni adapter executed the deterministic read itself, so this attempt does not satisfy live T10 tool execution. Original evidence remains preserved."
+      },
+      {
+        "attempt_id": "level3-remediation-20261001T065630Z",
+        "fixture_evidence": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T045000Z/fixture.json",
+        "live_evidence": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T065630Z/result.json",
+        "status": "SUPERSEDED_INCOMPLETE_GATE",
+        "supersedes_harness_incomplete_attempts": true,
+        "assessment": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T065630Z/assessment.json"
+      },
+      {
+        "attempt_id": "level3-remediation-20261001T081124Z",
+        "fixture_evidence": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T045000Z/fixture.json",
+        "live_evidence": "tests/poc/evidence/level3/openhands/T10/level3-remediation-20261001T081124Z/result.json",
+        "status": "PASS",
+        "fresh_process_restore": true,
+        "model_a_tool_action_proven": true,
+        "exact_fixture_result_persisted": "alpha\\n"
+      }
+    ]
+  },
+  "permanent_regression_paths": [
+    "poc/runtime/openhands_backend.py",
+    "poc/runtime/openhands_tool_definitions.py",
+    "poc/runners/openhands_level3_live.py",
+    "poc/runners/openhands_t11_live.py",
+    "tests/poc/integration/runtime/test_openhands_lifecycle.py",
+    "tests/poc/integration/runtime/test_openhands_restore.py",
+    "tests/poc/scenarios/level3/test_t10_checkpoint_switch_resume.py",
+    "tests/poc/scenarios/level3/test_t11_append_ledger.py",
+    "tests/poc/support/fake_candidate.py",
+    "tests/poc/support/runtime_worker.py"
+  ],
+  "run_id": "batch-c-20260930T224748Z",
+  "schema_version": "1.0",
+  "security": {
+    "authorization_headers_recorded": false,
+    "credential_values_recorded": false,
+    "private_absolute_paths_recorded": false
+  },
+  "session_ids": [
+    "e0593be0-8ed0-4034-8198-a204e393351e",
+    "8f48bb3e-e498-4e1d-bdef-702558a15af8"
+  ],
+  "started_at_utc": "2026-09-30T22:47:48Z",
+  "starting_branch": "main",
+  "starting_git_head": "30d3e34b0d8bcf1f8e0ad35c425e394e2ff44443",
+  "starting_working_tree": "clean",
+  "task_ids": [
+    "edf455f1-674f-43e2-b303-1c1854ef14f3",
+    "111990cd-0b75-46b1-820d-77a4555532e5",
+    "2437085a-4c5c-4369-bd89-21f83e69bca2",
+    "c2e44512-9788-4170-84ea-7fd1e9e8cc7e"
+  ],
+  "workspace_ids": [
+    "69e135dd-2224-48d0-b4b8-55952e4a5b88",
+    "79c93080-30ab-4850-bc48-34f13634c6a1",
+    "cf9d0c2b-e6ad-4d13-814e-e72babb11e00",
+    "bc6f750f-b087-4799-9d3b-6eb907199cf0"
+  ]
+}

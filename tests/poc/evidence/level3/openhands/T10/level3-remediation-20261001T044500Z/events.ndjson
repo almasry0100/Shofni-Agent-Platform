@@ -1,0 +1,11 @@
+{"id": "afe71667-aa98-48c7-acfa-ab93785b16b5", "kind": "SystemPromptEvent", "source": "agent"}
+{"id": "d5961b4f-8b9b-4152-b5b5-a1cc74b5d811", "kind": "MessageEvent", "parent_id": "afe71667-aa98-48c7-acfa-ab93785b16b5", "role": "user", "source": "user"}
+{"assistant_text": "I\u2019ll inspect the requested fixture once, then report its exact contents.", "id": "0f6284fd-32e4-4fa5-b2e1-b9ef0849aac8", "kind": "MessageEvent", "llm_response_id": "chatcmpl-c6b25d29-001f-4052-97d4-30fc370e64d2", "parent_id": "d5961b4f-8b9b-4152-b5b5-a1cc74b5d811", "role": "assistant", "source": "agent"}
+{"id": "d7695753-7d13-4adb-8e7a-c4a47f764434", "kind": "MessageEvent", "parent_id": "0f6284fd-32e4-4fa5-b2e1-b9ef0849aac8", "role": "user", "source": "user"}
+{"id": "cd77dbc4-9ecd-47f2-8e94-b4894cf4a1cf", "kind": "ConversationErrorEvent", "parent_id": "d7695753-7d13-4adb-8e7a-c4a47f764434", "source": "environment"}
+{"id": "deded71e-930a-4dcc-a390-6bae72866dd5", "kind": "MessageEvent", "parent_id": "cd77dbc4-9ecd-47f2-8e94-b4894cf4a1cf", "role": "user", "source": "user"}
+{"id": "55504b54-07c8-4636-af47-fb18c567352f", "kind": "ConversationErrorEvent", "parent_id": "deded71e-930a-4dcc-a390-6bae72866dd5", "source": "environment"}
+{"id": "21283416-0726-4e4b-ba8c-5638c78666b0", "kind": "MessageEvent", "parent_id": "55504b54-07c8-4636-af47-fb18c567352f", "role": "user", "source": "user"}
+{"id": "25e05f17-cda4-43d0-ae32-a9f0ab148491", "kind": "ConversationErrorEvent", "parent_id": "21283416-0726-4e4b-ba8c-5638c78666b0", "source": "environment"}
+{"id": "9c862f9d-0e59-4473-968e-697c2efa59bd", "kind": "MessageEvent", "parent_id": "25e05f17-cda4-43d0-ae32-a9f0ab148491", "role": "user", "source": "user"}
+{"assistant_text": "alpha", "id": "fb427c69-cb6d-45f2-ad2e-9bc0f520fc6c", "kind": "MessageEvent", "llm_response_id": "resp_07eab43c236e2a04016abde312a6fc87d1b6f17ef5e8de5c99", "parent_id": "9c862f9d-0e59-4473-968e-697c2efa59bd", "role": "assistant", "source": "agent"}

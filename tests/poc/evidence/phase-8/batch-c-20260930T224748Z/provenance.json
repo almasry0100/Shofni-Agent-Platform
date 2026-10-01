@@ -1,0 +1,20 @@
+{
+  "candidate": "Mastra",
+  "upstream_reference": "https://github.com/mastra-ai/mastra",
+  "source_tree_sha256": "sha256:2f31743b5591fe158903bc50c4cd6886153d754d01ffd8627906eb23ad605d05",
+  "declared_package": "@mastra/core 1.72.0-alpha.8",
+  "root_workspace_version": "0.1.11",
+  "root_manifest_sha256": "sha256:76922d123a1470c98819b95b50ab0cbbfeab1fbb6430344e41f7d875b0f0fc58",
+  "core_manifest_sha256": "sha256:6ee4eb8fce128eeb8308a671ca6def3224dc1933ddef62b759d106dd523cb3d0",
+  "lock_sha256": "sha256:0eab30f28bb2ccd340090be696f6b3ba730ec3dae3203a17ee31082bbd7a4ba3",
+  "pnpm": "11.21.0",
+  "pnpm_integrity": "sha512.521705bce689924eac72f5a3587122f362689ef6571e55ba80076fd637c11132ecffada26fad4ea79c485bfddbfd3d5a2a5b05805a77e893de71ec8a6cca3bb1",
+  "node": "v24.19.0",
+  "node_requirement": ">=22.13.0",
+  "license": "Apache-2.0; packages/core open-source tree only",
+  "ee_source_used": false,
+  "ee_source_present_in_snapshot": false,
+  "workspace_snapshot": "poc/.runtime/mastra/workspace",
+  "isolated_store": "poc/.runtime/mastra/store",
+  "artifact_built": false
+}

@@ -1,0 +1,14 @@
+{
+  "attempt_id": "level3-remediation-20261001T081124Z",
+  "candidate": "OpenHands Software Agent SDK",
+  "phase": "9",
+  "test_id": "T10",
+  "schema_version": "1.0",
+  "status": "PASS",
+  "fixture_control": "level3-remediation-20261001T045000Z",
+  "evidence_files": [
+    "result.json",
+    "provider-transition.json",
+    "events.ndjson"
+  ]
+}

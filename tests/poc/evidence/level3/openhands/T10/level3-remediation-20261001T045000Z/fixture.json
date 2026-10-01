@@ -1,0 +1,16 @@
+{
+  "candidate_conversation_id": "6cd82d29-be5d-4f57-a89c-10bfc1c5e866",
+  "control": "T10 deterministic provider fixture",
+  "models": [
+    "fixture-model-a",
+    "fixture-model-b"
+  ],
+  "new_attempt_id": true,
+  "prior_tool_result_preserved": true,
+  "same_task_id_after_restart": true,
+  "same_workspace_id_after_restart": true,
+  "status": "PASS",
+  "task_id": "edf455f1-674f-43e2-b303-1c1854ef14f3",
+  "tool_result": "alpha\n",
+  "workspace_id": "69e135dd-2224-48d0-b4b8-55952e4a5b88"
+}

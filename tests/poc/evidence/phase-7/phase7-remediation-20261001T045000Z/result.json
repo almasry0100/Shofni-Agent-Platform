@@ -1,0 +1,32 @@
+{
+  "attempt_id": "phase7-remediation-20261001T045000Z",
+  "attempt_id_after_restart": "ee1c1217-eab0-4f2f-8284-7e5cd05ada38",
+  "attempt_id_before_restart": "a4f0efa1-caa8-4fc5-9093-704050e12db8",
+  "candidate": "OpenHands Software Agent SDK",
+  "candidate_conversation_id": "6cd82d29-be5d-4f57-a89c-10bfc1c5e866",
+  "candidate_execution_status": "finished",
+  "candidate_tree_hash": "sha256:e1258a81a1304726a1622943078907b689fccc524d733838fd57e10665ebd468",
+  "checkpoint_id": "4dcba881-8663-4150-9eb4-333e7be8fc65",
+  "event_count_after_restart": 9,
+  "event_count_before_restart": 7,
+  "fixture_only": true,
+  "live_provider_calls": 0,
+  "model_switch": {
+    "from": "fixture-model-a",
+    "restored_model": "fixture-model-b",
+    "to": "fixture-model-b"
+  },
+  "new_attempt_id_explicit": true,
+  "prior_tool_result_preserved": true,
+  "process_boundary": "separate create and restore Docker processes; both exited cleanly",
+  "runtime_backend_contract": "poc.contracts.runtime.RuntimeBackend",
+  "same_candidate_conversation_after_restart": true,
+  "same_task_id_after_restart": true,
+  "same_workspace_id_after_restart": true,
+  "schema_version": "1.0",
+  "session_id": "e0593be0-8ed0-4034-8198-a204e393351e",
+  "status": "PASS",
+  "task_id": "edf455f1-674f-43e2-b303-1c1854ef14f3",
+  "tool_result": "alpha\n",
+  "workspace_id": "69e135dd-2224-48d0-b4b8-55952e4a5b88"
+}

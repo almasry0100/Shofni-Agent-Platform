@@ -1,0 +1,37 @@
+{
+  "attempt_id": "level3-remediation-20261001T045800Z",
+  "candidate": "OpenHands Software Agent SDK",
+  "case_after_append_before_checkpoint": {
+    "checkpoint_id": "c4fb1ae4-7356-4206-8212-a17460933c2a",
+    "duplicate_suppressed": true,
+    "durable_append_before_exit": true,
+    "injected_process_exit_code": 73,
+    "ledger_rows": 1,
+    "logical_results": 1,
+    "operation_id": "36e859e5-8770-445c-b4b4-7d708a55cfad",
+    "same_operation_id_after_restore": true,
+    "session_id": "150040fc-aece-4a28-888c-a13b4ae5c143",
+    "status": "PASS",
+    "task_id": "c1f40819-c06d-4fec-8533-e826f8ad55c3",
+    "workspace_id": "026bca02-814b-484c-b94c-670408e3854d"
+  },
+  "case_before_append": {
+    "checkpoint_id": "75195a0c-1963-4412-8e12-ea356410dac9",
+    "duplicate_suppressed": false,
+    "ledger_rows": 1,
+    "logical_results": 1,
+    "operation_id": "f68ff53d-f0a5-4173-8f08-112ad21f5093",
+    "same_operation_id_after_restore": true,
+    "session_id": "740d1d1b-43a8-41f1-ab47-6c670bab75d1",
+    "status": "PASS",
+    "task_id": "d743c1c2-dd12-4c59-ad3d-83937cef3044",
+    "workspace_id": "671d8d76-5398-4e78-9890-dc0827179b2a"
+  },
+  "duplicate_side_effect_failure": false,
+  "execution_scope": "Level 3 Shofni RuntimeBackend checkpoint and SQLite fixture control; no external side effect",
+  "ledger": "repository poc.fixtures.ledger.LedgerFixture; SQLite PRIMARY KEY operation_id; atomic INSERT ON CONFLICT DO NOTHING",
+  "schema_version": "1.0",
+  "status": "PASS",
+  "test_id": "T11",
+  "unguarded_lookup_then_append": false
+}
